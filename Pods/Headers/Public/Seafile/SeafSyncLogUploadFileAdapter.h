@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Log/Adapters/SeafSyncLogUploadFileAdapter.h

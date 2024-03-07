@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/FIleProvider/Providers/SeafSyncFilteredProvider.h

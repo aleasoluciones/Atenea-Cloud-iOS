@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.h

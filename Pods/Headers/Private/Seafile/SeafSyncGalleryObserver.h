@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Observers/Impl/SeafSyncGalleryObserver.h

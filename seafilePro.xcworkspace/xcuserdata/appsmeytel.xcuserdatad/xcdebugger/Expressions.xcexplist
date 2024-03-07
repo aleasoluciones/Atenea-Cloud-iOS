@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__44-[Support4kPreview downloadVideoAndCheck4K:]_block_invoke:Support4kPreview.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview playVideoWithURL:]:Support4kPreview.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafSyncSettingsViewController tableView:didSelectRowAtIndexPath:]:SeafSyncSettingsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.userInteractionEnabled">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview checkIfVideoIs4k]:Support4kPreview.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "player.status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__33-[SeafDir mkdir:success:failure:]_block_invoke:SeafDir.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafDir handleResponse:json:]:SeafDir.m">
+      </ContextState>
+      <ContextState
+         contextName = "__47-[Support4kPreview getDownloadURLForRepo:path:]_block_invoke:Support4kPreview.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.planUser">
+            </PersistentString>
+            <PersistentString
+               value = "self.planUser.support4k">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview setupPlayerWithURL:]:Support4kPreview.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.player">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__63-[SeafConnection sendRequestAsync:method:form:success:failure:]_block_invoke_3:SeafConnection.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.sessionMgr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[SeafFileFilterFactory getPreviewFiltersWith:repoId:]:SeafFileFilterFactory.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafConnection sendRequestAsync:method:form:success:failure:]:SeafConnection.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafBase getShareLink:]:SeafBase.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview meetsCondition:]:Support4kPreview.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview getDownloadURLForRepo:path:]:Support4kPreview.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Support4kPreview isVideo4K:]:Support4kPreview.m">
+      </ContextState>
+      <ContextState
+         contextName = "__25-[SeafBase getShareLink:]_block_invoke:SeafBase.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafFileViewController downloadDir:]:SeafFileViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dir.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafSyncSettingsViewController tableCellForCreateSettingsSection:cellForRowAtIndexPath:]:SeafSyncSettingsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SeafDir loadContentSuccess:failure:]:SeafDir.m">
+      </ContextState>
+      <ContextState
+         contextName = "__26-[SeafFile downloadByFile]_block_invoke_2:SeafFile.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "target">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

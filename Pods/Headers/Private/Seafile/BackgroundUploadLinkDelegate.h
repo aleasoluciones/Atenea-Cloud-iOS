@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/BackgroundTasks/BackgroundTaskDelegates/Delegates/BackgroundUploadLinkDelegate.h

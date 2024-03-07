@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Expiration/Expirators/Impl/SyncPermanentSettingExpirator.h

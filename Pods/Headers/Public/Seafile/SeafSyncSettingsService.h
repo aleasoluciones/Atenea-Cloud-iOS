@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Settings/Services/SeafSyncSettingsService.h

@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Settings/Repository/Impl/SeafSyncCoreDataSettingsRepository.h

@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/FIleProvider/SyncItems/SeafSyncFileItem.h

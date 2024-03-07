@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafSync/Errors/ErrorTypes/SeafSyncQuotaExceededError.h

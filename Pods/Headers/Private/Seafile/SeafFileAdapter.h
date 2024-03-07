@@ -1,0 +1,1 @@
+../../../../Pod/Classes/AccountPlan/FilterFilePlanStrategy/AdaptersFile/SeafFileAdapter.h

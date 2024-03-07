@@ -1,0 +1,1 @@
+../../../../Pod/Classes/SeafRecovery/SeafTrashChecker.h
