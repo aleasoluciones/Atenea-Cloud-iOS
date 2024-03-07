@@ -1,0 +1,58 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Observer\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_observer_protocol-p}{}\label{protocol_seaf_sync_observer_protocol-p}\index{$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}}
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Observer\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Observer\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.098039cm]{de/d08/protocol_seaf_sync_observer_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_a45b58d618960d3b0b27ab0e09d1c4d22}{observer\+Identifier}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_a16ebb0074a88fd01a29e7c98d0aba88c}{start\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_aaa049155bc2c03890583d6a3f2e46fa7}{stop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The protocol defines methods for an observer that watches for synchronization events. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_observer_protocol-p_a45b58d618960d3b0b27ab0e09d1c4d22}\label{protocol_seaf_sync_observer_protocol-p_a45b58d618960d3b0b27ab0e09d1c4d22} 
+\index{$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}!observerIdentifier@{observerIdentifier}}
+\index{observerIdentifier@{observerIdentifier}!$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{observerIdentifier}{observerIdentifier}}
+{\footnotesize\ttfamily -\/ (id) observer\+Identifier \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns an identifier for the observer. \begin{DoxyReturn}{Returns}
+An identifier string. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_observer_protocol-p_a16ebb0074a88fd01a29e7c98d0aba88c}\label{protocol_seaf_sync_observer_protocol-p_a16ebb0074a88fd01a29e7c98d0aba88c} 
+\index{$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}!start:@{start:}}
+\index{start:@{start:}!$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{start:}{start:}}
+{\footnotesize\ttfamily -\/ (void) start\+: \begin{DoxyParamCaption}\item[{(nullable Seaf\+Sync\+Observer\+Protocol\+Callback)}]{callback }\end{DoxyParamCaption}}
+
+Starts the observer and registers a callback block to be executed when changes are detected. 
+\begin{DoxyParams}{Parameters}
+{\em callback} & A callback block to be executed when changes are detected. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_observer_protocol-p_aaa049155bc2c03890583d6a3f2e46fa7}\label{protocol_seaf_sync_observer_protocol-p_aaa049155bc2c03890583d6a3f2e46fa7} 
+\index{$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}!stop@{stop}}
+\index{stop@{stop}!$<$SeafSyncObserverProtocol$>$@{$<$SeafSyncObserverProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily -\/ (void) stop \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Stops the observer. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Observers/Seaf\+Sync\+Observer\+Protocol.\+h\end{DoxyCompactItemize}

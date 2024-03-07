@@ -1,0 +1,112 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Settings\+Repository\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_settings_repository-p}{}\label{protocol_seaf_sync_settings_repository-p}\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Settings\+Repository\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/d02/protocol_seaf_sync_settings_repository-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_a7e46d9f88205d465585d55b907a9dfc4}{all}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_a2b5ecd8f9f1d9786654b8b620ff2258e}{filter\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_a84cc01c30ec5e6c91f6e0f846c7ff9ae}{insert\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_a77cbcf3beba9861700710f7a33f88e47}{update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_af278dee4d0d3449420cd4a034a6d1999}{remove\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p_ab4b9e2f67d72e7bd674b11e4776a94a7}{clear}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_settings_repository-p_a7e46d9f88205d465585d55b907a9dfc4}\label{protocol_seaf_sync_settings_repository-p_a7e46d9f88205d465585d55b907a9dfc4} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!all@{all}}
+\index{all@{all}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) all \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Retrieves all synchronization settings. \begin{DoxyReturn}{Returns}
+An array containing all synchronization settings. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_a23accf3d3833ffd1ec18b6db4d474aa8}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+\Hypertarget{protocol_seaf_sync_settings_repository-p_ab4b9e2f67d72e7bd674b11e4776a94a7}\label{protocol_seaf_sync_settings_repository-p_ab4b9e2f67d72e7bd674b11e4776a94a7} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!clear@{clear}}
+\index{clear@{clear}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily -\/ (void) clear \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Removes all existing synchronization settings. 
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_a31ab5fe60e5e0f7dc520fe180a0df631}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+\Hypertarget{protocol_seaf_sync_settings_repository-p_a2b5ecd8f9f1d9786654b8b620ff2258e}\label{protocol_seaf_sync_settings_repository-p_a2b5ecd8f9f1d9786654b8b620ff2258e} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!filter:@{filter:}}
+\index{filter:@{filter:}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{filter:}{filter:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) filter\+: \begin{DoxyParamCaption}\item[{(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+Retrieves filtered synchronization settings. \begin{DoxyReturn}{Returns}
+An array containing all synchronization settings. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_a8e2bef519731fd56dc97328ea7b495b6}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+\Hypertarget{protocol_seaf_sync_settings_repository-p_a84cc01c30ec5e6c91f6e0f846c7ff9ae}\label{protocol_seaf_sync_settings_repository-p_a84cc01c30ec5e6c91f6e0f846c7ff9ae} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!insert:@{insert:}}
+\index{insert:@{insert:}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{insert:}{insert:}}
+{\footnotesize\ttfamily -\/ (void) insert\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Inserts a new synchronization setting. 
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to insert. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_abb52271b04af77fff07164e2978115e8}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+\Hypertarget{protocol_seaf_sync_settings_repository-p_af278dee4d0d3449420cd4a034a6d1999}\label{protocol_seaf_sync_settings_repository-p_af278dee4d0d3449420cd4a034a6d1999} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!remove:@{remove:}}
+\index{remove:@{remove:}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{remove:}{remove:}}
+{\footnotesize\ttfamily -\/ (void) remove\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Removes an existing synchronization setting. 
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to remove. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_a319d4f256f5c0ddfc5c794b1852a738b}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+\Hypertarget{protocol_seaf_sync_settings_repository-p_a77cbcf3beba9861700710f7a33f88e47}\label{protocol_seaf_sync_settings_repository-p_a77cbcf3beba9861700710f7a33f88e47} 
+\index{$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}!update:@{update:}}
+\index{update:@{update:}!$<$SeafSyncSettingsRepository$>$@{$<$SeafSyncSettingsRepository$>$}}
+\doxysubsubsection{\texorpdfstring{update:}{update:}}
+{\footnotesize\ttfamily -\/ (void) update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Updates an existing synchronization setting. 
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to update. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{interface_default_seaf_sync_settings_repository_a1bc1a2f3d406b02ba9503601c9504d36}{Default\+Seaf\+Sync\+Settings\+Repository}}.
+
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Settings/\+Repository/\mbox{\hyperlink{_seaf_sync_settings_repository_8h}{Seaf\+Sync\+Settings\+Repository.\+h}}\end{DoxyCompactItemize}

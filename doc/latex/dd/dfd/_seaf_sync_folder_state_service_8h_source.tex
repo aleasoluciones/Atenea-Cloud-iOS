@@ -1,0 +1,45 @@
+\doxysection{Seaf\+Sync\+Folder\+State\+Service.\+h}
+\hypertarget{_seaf_sync_folder_state_service_8h_source}{}\label{_seaf_sync_folder_state_service_8h_source}\index{Pod/Classes/SeafSync/Tree/TreeFolderState/Services/SeafSyncFolderStateService.h@{Pod/Classes/SeafSync/Tree/TreeFolderState/Services/SeafSyncFolderStateService.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncFolderStateService.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 25/9/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncTreeState.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafSyncTreeFolderStateRepository.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_tree_8h}{SeafSyncTree.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_folder_state_service}{SeafSyncFolderStateService}}\ :\ NSObject}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//MARK:\ CRUD\ Methods}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ -\/(void)insert:(\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *)state;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ -\/(void)update:(\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *)state;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ -\/(void)remove:(\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *)state;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ -\/(NSMutableArray<\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *>\ *)\mbox{\hyperlink{interface_seaf_sync_folder_state_service_a09820741ced8b3e848560a199e76a2c4}{all}};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ -\/(void)\mbox{\hyperlink{interface_seaf_sync_folder_state_service_a280ceee089f3fb4c516f02706b1b5b63}{clear}};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//MARK:\ Find\ Methods}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ -\/(NSArray<\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *>\ *)findByURL:(NSURL\ *)url;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ -\/(NSArray<\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *>\ *)findBySyncSetting:(NSString\ *)syncSettingId;}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ -\/(NSArray<\mbox{\hyperlink{interface_seaf_sync_tree_state}{SeafSyncTreeState}}\ *>\ *)find:(NSPredicate\ *)predicate;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

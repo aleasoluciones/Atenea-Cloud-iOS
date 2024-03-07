@@ -1,0 +1,37 @@
+\doxysection{Seaf\+UIBridge.\+h}
+\hypertarget{_seaf_u_i_bridge_8h_source}{}\label{_seaf_u_i_bridge_8h_source}\index{Pod/Classes/SeafUIBridge/SeafUIBridge.h@{Pod/Classes/SeafUIBridge/SeafUIBridge.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafUIBridge.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 11/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_u_i_bridge}{SeafUIBridge}}\ :\ NSObject}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ +\ (void)initializeWith:(UIWindow\ *)window;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00031\ +\ (instancetype)\mbox{\hyperlink{interface_seaf_u_i_bridge_a3e484eb23f8135327d5b0316ba8e6d26}{sharedInstance}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00038\ -\/\ (UIViewController\ *)\mbox{\hyperlink{interface_seaf_u_i_bridge_a214b527a10ea8df6643ddd7026212031}{viewController}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00047\ -\/\ (void)presentViewController:(UIViewController\ *)viewControllerToPresent}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animated:(BOOL)flag}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ completion:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(\textcolor{keywordtype}{void}))completion;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ -\/(void)\ alert:(NSString\ *)\ title\ message:(NSString\ *)\ message;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

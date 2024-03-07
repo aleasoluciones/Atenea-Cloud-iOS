@@ -1,0 +1,30 @@
+\doxysection{Seaf\+Sync\+Gallery\+Enqueuer.\+h}
+\hypertarget{_seaf_sync_gallery_enqueuer_8h_source}{}\label{_seaf_sync_gallery_enqueuer_8h_source}\index{Pod/Classes/SeafSync/Enqueuers/Impl/SeafSyncGalleryEnqueuer.h@{Pod/Classes/SeafSync/Enqueuers/Impl/SeafSyncGalleryEnqueuer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncGalleryEnqueuer.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 2/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_enqueuer_protocol_8h}{SeafEnqueuerProtocol.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafSyncProviderProtocol.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_settings_8h}{SeafSyncSettings.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_gallery_enqueuer}{SeafSyncGalleryEnqueuer}}\ :\ NSObject<\mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p}{SeafEnqueuerProtocol}}>}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00025\ -\/\ (id)init:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)settings\ connection:(SeafConnection\ *)connection;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00037\ -\/\ (id)init:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)settings\ connection:(SeafConnection\ *)connection\ andFileProvider:(\textcolor{keywordtype}{id}<SeafSyncProviderProtocol>)\ fileProvider;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

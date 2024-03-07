@@ -1,0 +1,104 @@
+\doxysection{Seaf\+Sync\+Networker\+Service Class Reference}
+\hypertarget{interface_seaf_sync_networker_service}{}\label{interface_seaf_sync_networker_service}\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Networker\+Service.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Networker\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/d1f/interface_seaf_sync_networker_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_seaf_sync_networker_service_afbe68d087de260eaae4720c0a8eec68f}{has\+Connection}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_seaf_sync_networker_service_ae64262b79c33ca1c2ceddfbf3289eb5f}{wifi\+Connection\+Available}}
+\item 
+(Seaf\+Sync\+Network\+State) -\/ \mbox{\hyperlink{interface_seaf_sync_networker_service_ae1f5d52baaaa23aab7b5f42e740389d9}{network\+State}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_networker_service_a2d54135ab19a7f03aea85cb961664ce5}{subscribe\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_networker_service_aec2d2776183ba03fdec1cbada4d889d3}{un\+Subscribe\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_seaf_sync_networker_service_a1c968348b8449de0c1800fd8d6389093}{shared\+Instance\+For\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_seaf_sync_networker_service}{Seaf\+Sync\+Networker\+Service} class provides network-\/related functionality for synchronization. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_networker_service_afbe68d087de260eaae4720c0a8eec68f}\label{interface_seaf_sync_networker_service_afbe68d087de260eaae4720c0a8eec68f} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!hasConnection@{hasConnection}}
+\index{hasConnection@{hasConnection}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{hasConnection}{hasConnection}}
+{\footnotesize\ttfamily -\/ (BOOL) has\+Connection \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Checks if there is an active network connection. \begin{DoxyReturn}{Returns}
+YES if a connection is available, NO otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_networker_service_ae1f5d52baaaa23aab7b5f42e740389d9}\label{interface_seaf_sync_networker_service_ae1f5d52baaaa23aab7b5f42e740389d9} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!networkState@{networkState}}
+\index{networkState@{networkState}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{networkState}{networkState}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+Network\+State) network\+State \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the current network state. \begin{DoxyReturn}{Returns}
+The current network state as a Seaf\+Sync\+Network\+State enum. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_networker_service_a1c968348b8449de0c1800fd8d6389093}\label{interface_seaf_sync_networker_service_a1c968348b8449de0c1800fd8d6389093} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!sharedInstanceFor:@{sharedInstanceFor:}}
+\index{sharedInstanceFor:@{sharedInstanceFor:}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{sharedInstanceFor:}{sharedInstanceFor:}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance\+For\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+Returns a shared instance of \doxylink{interface_seaf_sync_networker_service}{Seaf\+Sync\+Networker\+Service} for the specified Seaf\+Connection. 
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seaf\+Connection for which the networker service is associated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_sync_networker_service}{Seaf\+Sync\+Networker\+Service}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_networker_service_a2d54135ab19a7f03aea85cb961664ce5}\label{interface_seaf_sync_networker_service_a2d54135ab19a7f03aea85cb961664ce5} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!subscribe:@{subscribe:}}
+\index{subscribe:@{subscribe:}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{subscribe:}{subscribe:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_networker_service_observer_delegate-p}{Seaf\+Sync\+Networker\+Service\+Observer\+Delegate}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+Subscribes an observer to receive network-\/related notifications. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer conforming to the \doxylink{protocol_seaf_sync_networker_service_observer_delegate-p}{Seaf\+Sync\+Networker\+Service\+Observer\+Delegate} protocol. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_networker_service_aec2d2776183ba03fdec1cbada4d889d3}\label{interface_seaf_sync_networker_service_aec2d2776183ba03fdec1cbada4d889d3} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!unSubscribe:@{unSubscribe:}}
+\index{unSubscribe:@{unSubscribe:}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{unSubscribe:}{unSubscribe:}}
+{\footnotesize\ttfamily -\/ (void) un\+Subscribe\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_networker_service_observer_delegate-p}{Seaf\+Sync\+Networker\+Service\+Observer\+Delegate}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+Unsubscribes an observer from receiving network-\/related notifications. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to be unsubscribed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_networker_service_ae64262b79c33ca1c2ceddfbf3289eb5f}\label{interface_seaf_sync_networker_service_ae64262b79c33ca1c2ceddfbf3289eb5f} 
+\index{SeafSyncNetworkerService@{SeafSyncNetworkerService}!wifiConnectionAvailable@{wifiConnectionAvailable}}
+\index{wifiConnectionAvailable@{wifiConnectionAvailable}!SeafSyncNetworkerService@{SeafSyncNetworkerService}}
+\doxysubsubsection{\texorpdfstring{wifiConnectionAvailable}{wifiConnectionAvailable}}
+{\footnotesize\ttfamily -\/ (BOOL) wifi\+Connection\+Available \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Checks if a Wi-\/\+Fi connection is available. \begin{DoxyReturn}{Returns}
+YES if a Wi-\/\+Fi connection is available, NO otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Network\+Status/Seaf\+Sync\+Networker\+Service.\+h\end{DoxyCompactItemize}

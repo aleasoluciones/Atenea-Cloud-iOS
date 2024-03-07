@@ -1,0 +1,68 @@
+\doxysection{Seaf\+Sync\+Expiration\+Manager Class Reference}
+\hypertarget{interface_seaf_sync_expiration_manager}{}\label{interface_seaf_sync_expiration_manager}\index{SeafSyncExpirationManager@{SeafSyncExpirationManager}}
+
+
+Manages the expiration of synchronization logs in Seafile.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Expiration\+Manager.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Expiration\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d87/interface_seaf_sync_expiration_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_expiration_manager_a3a47a0c9a8af544bea43a8954860fa3e}{run\+:}}
+\begin{DoxyCompactList}\small\item\em Runs the expiration process based on the provided settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_seaf_sync_expiration_manager_accafde2bfd0b5a26e8fa62d08fbcef7e}{shared\+Instance}}
+\begin{DoxyCompactList}\small\item\em Provides a shared instance of \doxylink{interface_seaf_sync_expiration_manager}{Seaf\+Sync\+Expiration\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the expiration of synchronization logs in Seafile. 
+
+The \doxylink{interface_seaf_sync_expiration_manager}{Seaf\+Sync\+Expiration\+Manager} class is responsible for calculating the expiration date of synchronization logs based on the configured duration and removing the expired logs from the cloud repository. It utilizes the \doxylink{interface_seaf_sync_expirator_factory}{Seaf\+Sync\+Expirator\+Factory} to get the appropriate expirator based on the provided settings. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_expiration_manager_a3a47a0c9a8af544bea43a8954860fa3e}\label{interface_seaf_sync_expiration_manager_a3a47a0c9a8af544bea43a8954860fa3e} 
+\index{SeafSyncExpirationManager@{SeafSyncExpirationManager}!run:@{run:}}
+\index{run:@{run:}!SeafSyncExpirationManager@{SeafSyncExpirationManager}}
+\doxysubsubsection{\texorpdfstring{run:}{run:}}
+{\footnotesize\ttfamily -\/ (void) run\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+
+
+Runs the expiration process based on the provided settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization settings used for expiration. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_expiration_manager_accafde2bfd0b5a26e8fa62d08fbcef7e}\label{interface_seaf_sync_expiration_manager_accafde2bfd0b5a26e8fa62d08fbcef7e} 
+\index{SeafSyncExpirationManager@{SeafSyncExpirationManager}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!SeafSyncExpirationManager@{SeafSyncExpirationManager}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provides a shared instance of \doxylink{interface_seaf_sync_expiration_manager}{Seaf\+Sync\+Expiration\+Manager}. 
+
+\begin{DoxyReturn}{Returns}
+The shared instance of \doxylink{interface_seaf_sync_expiration_manager}{Seaf\+Sync\+Expiration\+Manager}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Expiration/\mbox{\hyperlink{_seaf_sync_expiration_manager_8h}{Seaf\+Sync\+Expiration\+Manager.\+h}}\end{DoxyCompactItemize}

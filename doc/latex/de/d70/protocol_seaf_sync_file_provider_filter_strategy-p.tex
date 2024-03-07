@@ -1,0 +1,51 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+File\+Provider\+Filter\+Strategy\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_file_provider_filter_strategy-p}{}\label{protocol_seaf_sync_file_provider_filter_strategy-p}\index{$<$SeafSyncFileProviderFilterStrategy$>$@{$<$SeafSyncFileProviderFilterStrategy$>$}}
+
+
+Protocol for implementing file provider filter strategies.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+File\+Provider\+Filter\+Strategy.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+File\+Provider\+Filter\+Strategy\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.191489cm]{de/d70/protocol_seaf_sync_file_provider_filter_strategy-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p_a56a1dbd8808e7b10e0a93430f8643b71}{meets\+Condition\+:}}
+\begin{DoxyCompactList}\small\item\em Determines whether the provided item meets the specified condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Protocol for implementing file provider filter strategies. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_file_provider_filter_strategy-p_a56a1dbd8808e7b10e0a93430f8643b71}\label{protocol_seaf_sync_file_provider_filter_strategy-p_a56a1dbd8808e7b10e0a93430f8643b71} 
+\index{$<$SeafSyncFileProviderFilterStrategy$>$@{$<$SeafSyncFileProviderFilterStrategy$>$}!meetsCondition:@{meetsCondition:}}
+\index{meetsCondition:@{meetsCondition:}!$<$SeafSyncFileProviderFilterStrategy$>$@{$<$SeafSyncFileProviderFilterStrategy$>$}}
+\doxysubsubsection{\texorpdfstring{meetsCondition:}{meetsCondition:}}
+{\footnotesize\ttfamily -\/ (BOOL) meets\+Condition\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$)}]{item\+To\+Evaluate }\end{DoxyParamCaption}}
+
+
+
+Determines whether the provided item meets the specified condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+To\+Evaluate} & The item to evaluate against the condition. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if the item meets the condition, NO otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Filter\+Strategies/Seaf\+Sync\+File\+Provider\+Filter\+Strategy.\+h\end{DoxyCompactItemize}

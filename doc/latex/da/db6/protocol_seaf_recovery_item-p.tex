@@ -1,0 +1,88 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Recovery\+Item\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_recovery_item-p}{}\label{protocol_seaf_recovery_item-p}\index{$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}}
+
+
+{\ttfamily \#include $<$Seaf\+Recovery\+Item.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Recovery\+Item\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/db6/protocol_seaf_recovery_item-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_ac8cf561553a9a3bb6b85bf429b3acb2f}{name}}
+\item 
+(NSInteger) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a77480a16be78f882134a10ecad2f97e9}{size\+In\+Bytes}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a002c38d75c5de5bc150c71f79ba69353}{recover\+Using\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a518faeb29c84978d2b557a5ee5a863ff}{revert\+Recovery\+Using\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a protocol for recovery items. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_recovery_item-p_ac8cf561553a9a3bb6b85bf429b3acb2f}\label{protocol_seaf_recovery_item-p_ac8cf561553a9a3bb6b85bf429b3acb2f} 
+\index{$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}!name@{name}}
+\index{name@{name}!$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) name \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get the name of the recovery item.
+
+\begin{DoxyReturn}{Returns}
+A string containing the name of the item. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_recovery_item-p_a002c38d75c5de5bc150c71f79ba69353}\label{protocol_seaf_recovery_item-p_a002c38d75c5de5bc150c71f79ba69353} 
+\index{$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}!recoverUsing:callback:@{recoverUsing:callback:}}
+\index{recoverUsing:callback:@{recoverUsing:callback:}!$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}}
+\doxysubsubsection{\texorpdfstring{recoverUsing:callback:}{recoverUsing:callback:}}
+{\footnotesize\ttfamily -\/ (void) recover\+Using\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\item[{callback\+:(void(\texorpdfstring{$^\wedge$}{\string^})(BOOL success))}]{callback }\end{DoxyParamCaption}}
+
+Recovers items using the specified Seafile connection.
+
+This method initiates the recovery process using the provided Seafile connection. Upon completion, the success status is communicated through the provided callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seafile connection to be used for recovery. \\
+\hline
+{\em callback} & A block to be executed upon the completion of the recovery operation. The block takes a single parameter, {\ttfamily success}, indicating whether the recovery was successful or not. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_recovery_item-p_a518faeb29c84978d2b557a5ee5a863ff}\label{protocol_seaf_recovery_item-p_a518faeb29c84978d2b557a5ee5a863ff} 
+\index{$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}!revertRecoveryUsing:@{revertRecoveryUsing:}}
+\index{revertRecoveryUsing:@{revertRecoveryUsing:}!$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}}
+\doxysubsubsection{\texorpdfstring{revertRecoveryUsing:}{revertRecoveryUsing:}}
+{\footnotesize\ttfamily -\/ (void) revert\+Recovery\+Using\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+Reverts the recovery operation using the specified Seafile connection.
+
+This method sends a DELETE request to revert the recovery operation for the associated repository using the provided Seafile connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seafile connection to be used for reverting the recovery operation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_recovery_item-p_a77480a16be78f882134a10ecad2f97e9}\label{protocol_seaf_recovery_item-p_a77480a16be78f882134a10ecad2f97e9} 
+\index{$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}!sizeInBytes@{sizeInBytes}}
+\index{sizeInBytes@{sizeInBytes}!$<$SeafRecoveryItem$>$@{$<$SeafRecoveryItem$>$}}
+\doxysubsubsection{\texorpdfstring{sizeInBytes}{sizeInBytes}}
+{\footnotesize\ttfamily -\/ (NSInteger) size\+In\+Bytes \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get the size of the recovery item in bytes.
+
+\begin{DoxyReturn}{Returns}
+The size of the item in bytes. 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Recovery/\mbox{\hyperlink{_seaf_recovery_item_8h}{Seaf\+Recovery\+Item.\+h}}\end{DoxyCompactItemize}

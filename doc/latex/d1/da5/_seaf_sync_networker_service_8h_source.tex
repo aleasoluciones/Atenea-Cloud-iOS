@@ -1,0 +1,37 @@
+\doxysection{Seaf\+Sync\+Networker\+Service.\+h}
+\hypertarget{_seaf_sync_networker_service_8h_source}{}\label{_seaf_sync_networker_service_8h_source}\index{Pod/Classes/SeafSync/NetworkStatus/SeafSyncNetworkerService.h@{Pod/Classes/SeafSync/NetworkStatus/SeafSyncNetworkerService.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncNetworkerService.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 4/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncNetworkerServiceObserverDelegate.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_enums_8h}{SeafSyncEnums.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_networker_service}{SeafSyncNetworkerService}}\ :\ NSObject}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ +\ (instancetype)sharedInstanceFor:(SeafConnection\ *)connection;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ -\/\ (BOOL)\mbox{\hyperlink{interface_seaf_sync_networker_service_afbe68d087de260eaae4720c0a8eec68f}{hasConnection}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ -\/\ (BOOL)\mbox{\hyperlink{interface_seaf_sync_networker_service_ae64262b79c33ca1c2ceddfbf3289eb5f}{wifiConnectionAvailable}};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ -\/\ (SeafSyncNetworkState)\mbox{\hyperlink{interface_seaf_sync_networker_service_ae1f5d52baaaa23aab7b5f42e740389d9}{networkState}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ -\/\ (void)subscribe:(\textcolor{keywordtype}{id}<SeafSyncNetworkerServiceObserverDelegate>)observer;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ -\/\ (void)unSubscribe:(\textcolor{keywordtype}{id}<SeafSyncNetworkerServiceObserverDelegate>)observer;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

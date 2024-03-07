@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['savetree_3a_0',['saveTree:',['../d9/d83/interface_seaf_sync_tree_service.html#a31a9d2d1f4a71ae707b906142e22ead7',1,'SeafSyncTreeService']]],
+  ['setfullhash_3a_1',['setFullHash:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#ac0968cf9a89cadc23fb8559a04ae0f2f',1,'SeafSyncTreeProtocol-p']]],
+  ['setid_3a_2',['setId:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#a36d4af2199bf0e8d2ecd02c87d8ab5b9',1,'SeafSyncTreeProtocol-p']]],
+  ['setlastruntime_3a_3',['setLastRunTime:',['../d0/d73/interface_seaf_sync_settings_service.html#ab813854a810ed25826c0ffcd5e0b181e',1,'SeafSyncSettingsService']]],
+  ['setrelativehash_3a_4',['setRelativeHash:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#a03419c7e9507a6d10d19a45eeab22425',1,'SeafSyncTreeProtocol-p']]],
+  ['setsizeinbytes_3a_5',['setSizeInBytes:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#a661fc1dcf7cac4505a9dd724f61571b4',1,'SeafSyncTreeProtocol-p']]],
+  ['setsyncsettingid_3a_6',['setSyncSettingId:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#a9633bb424648c9b20068e63320483d12',1,'SeafSyncTreeProtocol-p']]],
+  ['settings_7',['settings',['../d0/d31/interface_seaf_syncronizer.html#a7777d6c81145e2675c320cf007b76344',1,'SeafSyncronizer']]],
+  ['settype_3a_8',['setType:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#af843e947bb69bacc5c80a83874c1b038',1,'SeafSyncTreeProtocol-p']]],
+  ['seturl_3a_9',['setURL:',['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#a6abf0f6f9ce392c421084dedc83800ad',1,'SeafSyncTreeProtocol-p']]],
+  ['sharedinstance_10',['sharedinstance',['../d8/ded/interface_seaf_background_tasks_manager.html#aebf32bb004f41940335c566b7ce90c39',1,'SeafBackgroundTasksManager::sharedInstance()'],['../dc/d87/interface_seaf_sync_expiration_manager.html#accafde2bfd0b5a26e8fa62d08fbcef7e',1,'SeafSyncExpirationManager::sharedInstance()'],['../df/dfb/interface_seaf_u_i_bridge.html#a3e484eb23f8135327d5b0316ba8e6d26',1,'SeafUIBridge::sharedInstance()']]],
+  ['sharedinstancefor_3a_11',['sharedInstanceFor:',['../d6/d1f/interface_seaf_sync_networker_service.html#a1c968348b8449de0c1800fd8d6389093',1,'SeafSyncNetworkerService']]],
+  ['sizeinbytes_12',['sizeinbytes',['../da/db6/protocol_seaf_recovery_item-p.html#a77480a16be78f882134a10ecad2f97e9',1,'SeafRecoveryItem-p::sizeInBytes()'],['../dd/dfd/protocol_seaf_sync_tree_protocol-p.html#ada3d1a780779b21536ccc018ae101a9d',1,'SeafSyncTreeProtocol-p::sizeInBytes()']]],
+  ['start_3a_13',['start:',['../da/d1c/interface_seaf_sync_folder_observer.html#ac01f1599088ab92a5512f8f881f09765',1,'SeafSyncFolderObserver::start:()'],['../de/d08/protocol_seaf_sync_observer_protocol-p.html#a16ebb0074a88fd01a29e7c98d0aba88c',1,'SeafSyncObserverProtocol-p::start:()']]],
+  ['startsyncforsetting_3a_14',['startSyncForSetting:',['../d0/d31/interface_seaf_syncronizer.html#abdabd87d59ea4577571d05f2ed8f733a',1,'SeafSyncronizer']]],
+  ['stop_15',['stop',['../da/d1c/interface_seaf_sync_folder_observer.html#a69add6c7a7b7ad5c2fa0a6dff705fec9',1,'SeafSyncFolderObserver::stop()'],['../de/d08/protocol_seaf_sync_observer_protocol-p.html#aaa049155bc2c03890583d6a3f2e46fa7',1,'SeafSyncObserverProtocol-p::stop()']]],
+  ['submitbackgroundalltasks_16',['submitBackgroundAllTasks',['../d8/ded/interface_seaf_background_tasks_manager.html#a3339d07485c4bb4d2a095d1fd5983161',1,'SeafBackgroundTasksManager']]],
+  ['submitbackgroundtask_3a_17',['submitBackgroundTask:',['../d8/ded/interface_seaf_background_tasks_manager.html#af3d7334a0845fe1692ba1e7698c2d395',1,'SeafBackgroundTasksManager']]],
+  ['subscribe_3a_18',['subscribe:',['../d6/d1f/interface_seaf_sync_networker_service.html#a2d54135ab19a7f03aea85cb961664ce5',1,'SeafSyncNetworkerService']]],
+  ['sync_19',['sync',['../d0/d31/interface_seaf_syncronizer.html#a640e89abedba8421a396d6de58599497',1,'SeafSyncronizer']]]
+];

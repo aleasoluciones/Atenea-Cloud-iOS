@@ -1,0 +1,130 @@
+\doxysection{Seaf\+Sync\+Utils Class Reference}
+\hypertarget{interface_seaf_sync_utils}{}\label{interface_seaf_sync_utils}\index{SeafSyncUtils@{SeafSyncUtils}}
+
+
+A utility class for various synchronization-\/related functions.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Utils.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Utils\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d38/interface_seaf_sync_utils}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSURL \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_sync_utils_afc0df64181bb842bfd13b927e399a8ec}{url\+From\+Bookmark\+:}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_sync_utils_ae5c1b7c020787f3115eb4283c2582a57}{calculate\+Hash\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_seaf_sync_utils_ad06fb07513884337aceb6e74fc248b4a}{date\+:is\+Older\+Than\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_seaf_sync_utils_a89b78cf398b10a3c96cb3b417b71acae}{date\+:is\+Previous\+Than\+:}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_sync_utils_a9d89b1061bcba64362198d9fc809746c}{get\+Relative\+Path\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for various synchronization-\/related functions. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_utils_ae5c1b7c020787f3115eb4283c2582a57}\label{interface_seaf_sync_utils_ae5c1b7c020787f3115eb4283c2582a57} 
+\index{SeafSyncUtils@{SeafSyncUtils}!calculateHash:@{calculateHash:}}
+\index{calculateHash:@{calculateHash:}!SeafSyncUtils@{SeafSyncUtils}}
+\doxysubsubsection{\texorpdfstring{calculateHash:}{calculateHash:}}
+{\footnotesize\ttfamily + (NSString \texorpdfstring{$\ast$}{*}) calculate\+Hash\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{input\+String }\end{DoxyParamCaption}}
+
+Calculates the hash value for the input string using the MD5 algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+String} & The input string for which the hash needs to be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated hash value as an NSString. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_utils_ad06fb07513884337aceb6e74fc248b4a}\label{interface_seaf_sync_utils_ad06fb07513884337aceb6e74fc248b4a} 
+\index{SeafSyncUtils@{SeafSyncUtils}!date:isOlderThan:@{date:isOlderThan:}}
+\index{date:isOlderThan:@{date:isOlderThan:}!SeafSyncUtils@{SeafSyncUtils}}
+\doxysubsubsection{\texorpdfstring{date:isOlderThan:}{date:isOlderThan:}}
+{\footnotesize\ttfamily + (BOOL) date\+: \begin{DoxyParamCaption}\item[{(NSDate \texorpdfstring{$\ast$}{*})}]{date }\item[{is\+Older\+Than\+:(NSDate \texorpdfstring{$\ast$}{*})}]{date\+To\+Compare }\end{DoxyParamCaption}}
+
+Checks if the provided date is older than another date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to be checked. \\
+\hline
+{\em date\+To\+Compare} & The date to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if the provided date is older; otherwise, NO. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_utils_a89b78cf398b10a3c96cb3b417b71acae}\label{interface_seaf_sync_utils_a89b78cf398b10a3c96cb3b417b71acae} 
+\index{SeafSyncUtils@{SeafSyncUtils}!date:isPreviousThan:@{date:isPreviousThan:}}
+\index{date:isPreviousThan:@{date:isPreviousThan:}!SeafSyncUtils@{SeafSyncUtils}}
+\doxysubsubsection{\texorpdfstring{date:isPreviousThan:}{date:isPreviousThan:}}
+{\footnotesize\ttfamily + (BOOL) date\+: \begin{DoxyParamCaption}\item[{(NSDate \texorpdfstring{$\ast$}{*})}]{date }\item[{is\+Previous\+Than\+:(NSDate \texorpdfstring{$\ast$}{*})}]{date\+To\+Compare }\end{DoxyParamCaption}}
+
+Checks if the provided date is earlier than another date.
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to be checked. \\
+\hline
+{\em date\+To\+Compare} & The date to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if the provided date is earlier; otherwise, NO. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_utils_a9d89b1061bcba64362198d9fc809746c}\label{interface_seaf_sync_utils_a9d89b1061bcba64362198d9fc809746c} 
+\index{SeafSyncUtils@{SeafSyncUtils}!getRelativePath:@{getRelativePath:}}
+\index{getRelativePath:@{getRelativePath:}!SeafSyncUtils@{SeafSyncUtils}}
+\doxysubsubsection{\texorpdfstring{getRelativePath:}{getRelativePath:}}
+{\footnotesize\ttfamily + (NSString \texorpdfstring{$\ast$}{*}) get\+Relative\+Path\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{url }\end{DoxyParamCaption}}
+
+Gets the relative path from the provided URL.
+
+This method takes a URL as input and returns the relative path component of that URL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The NSURL for which to determine the relative path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representing the relative path of the provided URL.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned string may be empty if the URL does not have a relative path. 
+\end{DoxyNote}
+\Hypertarget{interface_seaf_sync_utils_afc0df64181bb842bfd13b927e399a8ec}\label{interface_seaf_sync_utils_afc0df64181bb842bfd13b927e399a8ec} 
+\index{SeafSyncUtils@{SeafSyncUtils}!urlFromBookmark:@{urlFromBookmark:}}
+\index{urlFromBookmark:@{urlFromBookmark:}!SeafSyncUtils@{SeafSyncUtils}}
+\doxysubsubsection{\texorpdfstring{urlFromBookmark:}{urlFromBookmark:}}
+{\footnotesize\ttfamily + (NSURL \texorpdfstring{$\ast$}{*}) url\+From\+Bookmark\+: \begin{DoxyParamCaption}\item[{(NSData \texorpdfstring{$\ast$}{*})}]{bookmark }\end{DoxyParamCaption}}
+
+Creates an NSURL from the provided bookmark data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bookmark} & The NSData representing the bookmark data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An NSURL created from the bookmark data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Common/Seaf\+Sync\+Utils.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\doxysection{Seaf\+Sync\+Dir\+Selector\+View\+Controller.\+h}
+\hypertarget{_seaf_sync_dir_selector_view_controller_8h_source}{}\label{_seaf_sync_dir_selector_view_controller_8h_source}\index{Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.h@{Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncDirSelectorViewController.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 6/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafDir.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}SeafPreView.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#import\ "{}SeafRepos.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{@protocol\ }SeafSyncDirSelectorViewControllerDelegate}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ -\/\ (void)\ onSelectDirecory:(SeafDir\ *)\ directory;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{@optional}}
+\DoxyCodeLine{00022\ -\/\ (SeafConnection\ *)\ onNeedsConnection;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_dir_selector_view_controller}{SeafSyncDirSelectorViewController}}\ :\ UIViewController<UITableViewDelegate,\ UITableViewDataSource,SeafDentryDelegate>}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ -\/(id)\ initWithConnection:(SeafConnection\ *)\ connection;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ -\/(id)\ initWithConnection:(SeafConnection\ *)\ connection\ andRepo:(SeafRepo\ *)\ repository;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ -\/(id)\ initWithConnection:(SeafConnection\ *)\ connection\ \ andRepo:(SeafRepo\ *)\ repository\ andDir:(SeafDir\ *)\ initialDirectory;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ -\/(void)\ setDelegate:(\textcolor{keywordtype}{id}<SeafSyncDirSelectorViewControllerDelegate>)\ delegate;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

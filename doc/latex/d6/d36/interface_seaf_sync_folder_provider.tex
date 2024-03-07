@@ -1,0 +1,75 @@
+\doxysection{Seaf\+Sync\+Folder\+Provider Class Reference}
+\hypertarget{interface_seaf_sync_folder_provider}{}\label{interface_seaf_sync_folder_provider}\index{SeafSyncFolderProvider@{SeafSyncFolderProvider}}
+
+
+Represents a folder provider for Seafile synchronization.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Folder\+Provider.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Folder\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/d36/interface_seaf_sync_folder_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_folder_provider_a53658c040fdff05fa5c4ddb2307c0110}{init\+With\+Folder\+URL\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the folder provider with the specified folder URL. \end{DoxyCompactList}\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_folder_provider_a3c60e775dcd058d9806dc5fd938b94c3}{get\+Files\+:}}
+\begin{DoxyCompactList}\small\item\em Retrieves the list of files from the folder provider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a folder provider for Seafile synchronization. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_folder_provider_a3c60e775dcd058d9806dc5fd938b94c3}\label{interface_seaf_sync_folder_provider_a3c60e775dcd058d9806dc5fd938b94c3} 
+\index{SeafSyncFolderProvider@{SeafSyncFolderProvider}!getFiles:@{getFiles:}}
+\index{getFiles:@{getFiles:}!SeafSyncFolderProvider@{SeafSyncFolderProvider}}
+\doxysubsubsection{\texorpdfstring{getFiles:}{getFiles:}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Files\+: \begin{DoxyParamCaption}\item[{(NSError \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})}]{on\+Error }\end{DoxyParamCaption}}
+
+
+
+Retrieves the list of files from the folder provider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Error} & An optional error parameter to capture any errors that occur during the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of items conforming to the \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}{$<$\+Seaf\+Sync\+Provider\+Protocol$>$}}.
+
+\Hypertarget{interface_seaf_sync_folder_provider_a53658c040fdff05fa5c4ddb2307c0110}\label{interface_seaf_sync_folder_provider_a53658c040fdff05fa5c4ddb2307c0110} 
+\index{SeafSyncFolderProvider@{SeafSyncFolderProvider}!initWithFolderURL:@{initWithFolderURL:}}
+\index{initWithFolderURL:@{initWithFolderURL:}!SeafSyncFolderProvider@{SeafSyncFolderProvider}}
+\doxysubsubsection{\texorpdfstring{initWithFolderURL:}{initWithFolderURL:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Folder\+URL\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{folder\+URL }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the folder provider with the specified folder URL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder\+URL} & The URL of the folder to be synchronized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of the folder provider. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Providers/Seaf\+Sync\+Folder\+Provider.\+h\end{DoxyCompactItemize}

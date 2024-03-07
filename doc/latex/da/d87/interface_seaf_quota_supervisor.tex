@@ -1,0 +1,90 @@
+\doxysection{Seaf\+Quota\+Supervisor Class Reference}
+\hypertarget{interface_seaf_quota_supervisor}{}\label{interface_seaf_quota_supervisor}\index{SeafQuotaSupervisor@{SeafQuotaSupervisor}}
+
+
+\doxylink{interface_seaf_quota_supervisor}{Seaf\+Quota\+Supervisor} class to manage quota and space-\/related operations.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Quota\+Supervisor.\+h$>$}
+
+Inheritance diagram for Seaf\+Quota\+Supervisor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d87/interface_seaf_quota_supervisor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_seaf_quota_supervisor_a72c48fd3d3cd661bdbe04c0551737beb}{is\+Enough\+Space\+To\+Upload\+:}}
+\begin{DoxyCompactList}\small\item\em Checks if there is enough space to upload the specified number of bytes. \end{DoxyCompactList}\item 
+(long long) -\/ \mbox{\hyperlink{interface_seaf_quota_supervisor_acdb9c9407d82a09fcde5d2af98a4e104}{get\+Available\+Space}}
+\begin{DoxyCompactList}\small\item\em Gets the available space for the associated Seaf\+Connection. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_quota_supervisor_a9f1636f14aab1e82bf3b9cf57c410acb}\label{interface_seaf_quota_supervisor_a9f1636f14aab1e82bf3b9cf57c410acb} 
+(void) -\/ {\bfseries get\+Fresh\+Available\+Space\+:}
+\begin{DoxyCompactList}\small\item\em Gets the available space for the associated Seaf\+Connectio calling directly to API. \end{DoxyCompactList}\item 
+(long long) -\/ \mbox{\hyperlink{interface_seaf_quota_supervisor_a34739e470fcf9980988640fc493ac676}{get\+Upload\+Queue\+Size}}
+\begin{DoxyCompactList}\small\item\em Gets the total size of files in the upload queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_seaf_quota_supervisor_a72499679bbe54df2bfe28907125c3b80}\label{interface_seaf_quota_supervisor_a72499679bbe54df2bfe28907125c3b80} 
+(instancetype) + {\bfseries shared\+Instance\+For\+:}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{interface_seaf_quota_supervisor}{Seaf\+Quota\+Supervisor} class to manage quota and space-\/related operations. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_quota_supervisor_acdb9c9407d82a09fcde5d2af98a4e104}\label{interface_seaf_quota_supervisor_acdb9c9407d82a09fcde5d2af98a4e104} 
+\index{SeafQuotaSupervisor@{SeafQuotaSupervisor}!getAvailableSpace@{getAvailableSpace}}
+\index{getAvailableSpace@{getAvailableSpace}!SeafQuotaSupervisor@{SeafQuotaSupervisor}}
+\doxysubsubsection{\texorpdfstring{getAvailableSpace}{getAvailableSpace}}
+{\footnotesize\ttfamily -\/ (long long) get\+Available\+Space \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets the available space for the associated Seaf\+Connection. 
+
+\begin{DoxyReturn}{Returns}
+The available space. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_quota_supervisor_a34739e470fcf9980988640fc493ac676}\label{interface_seaf_quota_supervisor_a34739e470fcf9980988640fc493ac676} 
+\index{SeafQuotaSupervisor@{SeafQuotaSupervisor}!getUploadQueueSize@{getUploadQueueSize}}
+\index{getUploadQueueSize@{getUploadQueueSize}!SeafQuotaSupervisor@{SeafQuotaSupervisor}}
+\doxysubsubsection{\texorpdfstring{getUploadQueueSize}{getUploadQueueSize}}
+{\footnotesize\ttfamily -\/ (long long) get\+Upload\+Queue\+Size \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets the total size of files in the upload queue. 
+
+\begin{DoxyReturn}{Returns}
+The total size of files in the upload queue. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_quota_supervisor_a72c48fd3d3cd661bdbe04c0551737beb}\label{interface_seaf_quota_supervisor_a72c48fd3d3cd661bdbe04c0551737beb} 
+\index{SeafQuotaSupervisor@{SeafQuotaSupervisor}!isEnoughSpaceToUpload:@{isEnoughSpaceToUpload:}}
+\index{isEnoughSpaceToUpload:@{isEnoughSpaceToUpload:}!SeafQuotaSupervisor@{SeafQuotaSupervisor}}
+\doxysubsubsection{\texorpdfstring{isEnoughSpaceToUpload:}{isEnoughSpaceToUpload:}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Enough\+Space\+To\+Upload\+: \begin{DoxyParamCaption}\item[{(long long)}]{size\+In\+Bytes }\end{DoxyParamCaption}}
+
+
+
+Checks if there is enough space to upload the specified number of bytes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+In\+Bytes} & The number of bytes to check for available space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether there is enough space. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Quota/Seaf\+Quota\+Supervisor.\+h\end{DoxyCompactItemize}

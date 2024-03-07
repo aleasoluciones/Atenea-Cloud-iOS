@@ -1,0 +1,84 @@
+\doxysection{Seaf\+Background\+Tasks\+Manager Class Reference}
+\hypertarget{interface_seaf_background_tasks_manager}{}\label{interface_seaf_background_tasks_manager}\index{SeafBackgroundTasksManager@{SeafBackgroundTasksManager}}
+
+
+\doxylink{interface_seaf_background_tasks_manager}{Seaf\+Background\+Tasks\+Manager} class responsible for managing background tasks.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Background\+Tasks\+Manager.\+h$>$}
+
+Inheritance diagram for Seaf\+Background\+Tasks\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/ded/interface_seaf_background_tasks_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p}{Seaf\+Background\+Task\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_background_tasks_manager_adbbab8b1dcf8b700b75f33bde2255887}{get\+Tasks}}
+\begin{DoxyCompactList}\small\item\em Gets the array of background tasks. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_background_tasks_manager_a3339d07485c4bb4d2a095d1fd5983161}\label{interface_seaf_background_tasks_manager_a3339d07485c4bb4d2a095d1fd5983161} 
+(void) -\/ {\bfseries submit\+Background\+All\+Tasks}
+\begin{DoxyCompactList}\small\item\em Submits all background tasks to the background task scheduler. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_background_tasks_manager_af3d7334a0845fe1692ba1e7698c2d395}{submit\+Background\+Task\+:}}
+\begin{DoxyCompactList}\small\item\em Submits a specific background task to the background task scheduler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_seaf_background_tasks_manager_aebf32bb004f41940335c566b7ce90c39}{shared\+Instance}}
+\begin{DoxyCompactList}\small\item\em Singleton instance of \doxylink{interface_seaf_background_tasks_manager}{Seaf\+Background\+Tasks\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{interface_seaf_background_tasks_manager}{Seaf\+Background\+Tasks\+Manager} class responsible for managing background tasks. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_background_tasks_manager_adbbab8b1dcf8b700b75f33bde2255887}\label{interface_seaf_background_tasks_manager_adbbab8b1dcf8b700b75f33bde2255887} 
+\index{SeafBackgroundTasksManager@{SeafBackgroundTasksManager}!getTasks@{getTasks}}
+\index{getTasks@{getTasks}!SeafBackgroundTasksManager@{SeafBackgroundTasksManager}}
+\doxysubsubsection{\texorpdfstring{getTasks}{getTasks}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p}{Seaf\+Background\+Task\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Tasks \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets the array of background tasks. 
+
+\begin{DoxyReturn}{Returns}
+An array of background tasks. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_background_tasks_manager_aebf32bb004f41940335c566b7ce90c39}\label{interface_seaf_background_tasks_manager_aebf32bb004f41940335c566b7ce90c39} 
+\index{SeafBackgroundTasksManager@{SeafBackgroundTasksManager}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!SeafBackgroundTasksManager@{SeafBackgroundTasksManager}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Singleton instance of \doxylink{interface_seaf_background_tasks_manager}{Seaf\+Background\+Tasks\+Manager}. 
+
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_background_tasks_manager}{Seaf\+Background\+Tasks\+Manager}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_background_tasks_manager_af3d7334a0845fe1692ba1e7698c2d395}\label{interface_seaf_background_tasks_manager_af3d7334a0845fe1692ba1e7698c2d395} 
+\index{SeafBackgroundTasksManager@{SeafBackgroundTasksManager}!submitBackgroundTask:@{submitBackgroundTask:}}
+\index{submitBackgroundTask:@{submitBackgroundTask:}!SeafBackgroundTasksManager@{SeafBackgroundTasksManager}}
+\doxysubsubsection{\texorpdfstring{submitBackgroundTask:}{submitBackgroundTask:}}
+{\footnotesize\ttfamily -\/ (void) submit\+Background\+Task\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p}{Seaf\+Background\+Task\+Protocol}} $>$)}]{task }\end{DoxyParamCaption}}
+
+
+
+Submits a specific background task to the background task scheduler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & The background task to be submitted. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Background\+Tasks/\mbox{\hyperlink{_seaf_background_tasks_manager_8h}{Seaf\+Background\+Tasks\+Manager.\+h}}\end{DoxyCompactItemize}

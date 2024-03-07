@@ -1,0 +1,92 @@
+\doxysection{Seaf\+UIBridge Class Reference}
+\hypertarget{interface_seaf_u_i_bridge}{}\label{interface_seaf_u_i_bridge}\index{SeafUIBridge@{SeafUIBridge}}
+
+
+{\ttfamily \#include $<$Seaf\+UIBridge.\+h$>$}
+
+Inheritance diagram for Seaf\+UIBridge\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/dfb/interface_seaf_u_i_bridge}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(UIView\+Controller \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_u_i_bridge_a214b527a10ea8df6643ddd7026212031}{view\+Controller}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_u_i_bridge_aecea42a8cca7dd818d8793625794c962}{present\+View\+Controller\+:animated\+:completion\+:}}
+\item 
+\Hypertarget{interface_seaf_u_i_bridge_a66589a03648b8f2c49ceef72dbaccb50}\label{interface_seaf_u_i_bridge_a66589a03648b8f2c49ceef72dbaccb50} 
+(void) -\/ {\bfseries alert\+:message\+:}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_seaf_u_i_bridge_a1a6ba7e2178a87147e5b62d3f2e87f9c}{initialize\+With\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_seaf_u_i_bridge_a3e484eb23f8135327d5b0316ba8e6d26}{shared\+Instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{interface_seaf_u_i_bridge}{Seaf\+UIBridge}} class serves as a bridge for UI-\/related operations, allowing easy integration with the Seafile app. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_u_i_bridge_a1a6ba7e2178a87147e5b62d3f2e87f9c}\label{interface_seaf_u_i_bridge_a1a6ba7e2178a87147e5b62d3f2e87f9c} 
+\index{SeafUIBridge@{SeafUIBridge}!initializeWith:@{initializeWith:}}
+\index{initializeWith:@{initializeWith:}!SeafUIBridge@{SeafUIBridge}}
+\doxysubsubsection{\texorpdfstring{initializeWith:}{initializeWith:}}
+{\footnotesize\ttfamily + (void) initialize\+With\+: \begin{DoxyParamCaption}\item[{(UIWindow \texorpdfstring{$\ast$}{*})}]{window }\end{DoxyParamCaption}}
+
+Initializes the {\ttfamily \doxylink{interface_seaf_u_i_bridge}{Seaf\+UIBridge}} with the specified view controller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & The UIWindowto initialize the bridge with. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_u_i_bridge_aecea42a8cca7dd818d8793625794c962}\label{interface_seaf_u_i_bridge_aecea42a8cca7dd818d8793625794c962} 
+\index{SeafUIBridge@{SeafUIBridge}!presentViewController:animated:completion:@{presentViewController:animated:completion:}}
+\index{presentViewController:animated:completion:@{presentViewController:animated:completion:}!SeafUIBridge@{SeafUIBridge}}
+\doxysubsubsection{\texorpdfstring{presentViewController:animated:completion:}{presentViewController:animated:completion:}}
+{\footnotesize\ttfamily -\/ (void) present\+View\+Controller\+: \begin{DoxyParamCaption}\item[{(UIView\+Controller \texorpdfstring{$\ast$}{*})}]{view\+Controller\+To\+Present }\item[{animated\+:(BOOL)}]{flag }\item[{completion\+:(void(\texorpdfstring{$^\wedge$}{\string^})(void))}]{completion }\end{DoxyParamCaption}}
+
+Presents a view controller modally.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Controller\+To\+Present} & The view controller to be presented. \\
+\hline
+{\em flag} & A flag indicating whether the presentation should be animated. \\
+\hline
+{\em completion} & A block to be executed after the presentation animation completes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_u_i_bridge_a3e484eb23f8135327d5b0316ba8e6d26}\label{interface_seaf_u_i_bridge_a3e484eb23f8135327d5b0316ba8e6d26} 
+\index{SeafUIBridge@{SeafUIBridge}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!SeafUIBridge@{SeafUIBridge}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the shared instance of the {\ttfamily \doxylink{interface_seaf_u_i_bridge}{Seaf\+UIBridge}}.
+
+\begin{DoxyReturn}{Returns}
+The shared instance of the {\ttfamily \doxylink{interface_seaf_u_i_bridge}{Seaf\+UIBridge}}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_u_i_bridge_a214b527a10ea8df6643ddd7026212031}\label{interface_seaf_u_i_bridge_a214b527a10ea8df6643ddd7026212031} 
+\index{SeafUIBridge@{SeafUIBridge}!viewController@{viewController}}
+\index{viewController@{viewController}!SeafUIBridge@{SeafUIBridge}}
+\doxysubsubsection{\texorpdfstring{viewController}{viewController}}
+{\footnotesize\ttfamily -\/ (UIView\+Controller \texorpdfstring{$\ast$}{*}) view\+Controller \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the shared instance of the {\ttfamily UIView\+Controller}.
+
+\begin{DoxyReturn}{Returns}
+The shared instance of the {\ttfamily UIView\+Controller}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+UIBridge/Seaf\+UIBridge.\+h\end{DoxyCompactItemize}

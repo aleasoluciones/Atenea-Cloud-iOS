@@ -1,0 +1,34 @@
+\doxysection{Seaf\+Sync\+Device\+Folder\+Cell.\+h}
+\hypertarget{_seaf_sync_device_folder_cell_8h_source}{}\label{_seaf_sync_device_folder_cell_8h_source}\index{Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.h@{Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncDeviceFolderCell.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 6/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncBaseUITableViewCell.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ void\ (\string^SeafSyncDeviceFolderCellCallback)(NSData\ *bookmark);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_device_folder_cell}{SeafSyncDeviceFolderCell}}\ :\ \mbox{\hyperlink{interface_seaf_sync_base_u_i_table_view_cell}{SeafSyncBaseUITableViewCell}}<UIDocumentPickerDelegate>}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ -\/\ (void)\ onFolderSelected:(SeafSyncDeviceFolderCellCallback)\ callback;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ -\/\ (void)\ setTitle:(NSString\ *)\ title;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ -\/\ (void)\ setFolderURL:(NSURL\ *)\ folderURL;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

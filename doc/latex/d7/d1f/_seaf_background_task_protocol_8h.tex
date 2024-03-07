@@ -1,0 +1,43 @@
+\doxysection{Pod/\+Classes/\+Seaf\+Sync/\+Background\+Tasks/\+Seaf\+Background\+Task\+Protocol.h File Reference}
+\hypertarget{_seaf_background_task_protocol_8h}{}\label{_seaf_background_task_protocol_8h}\index{Pod/Classes/SeafSync/BackgroundTasks/SeafBackgroundTaskProtocol.h@{Pod/Classes/SeafSync/BackgroundTasks/SeafBackgroundTaskProtocol.h}}
+
+
+Declaration of \doxylink{protocol_seaf_background_task_protocol-p}{Seaf\+Background\+Task\+Protocol}.  
+
+
+{\ttfamily import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily import $<$UIKit/\+UIKit.\+h$>$}\newline
+{\ttfamily import $<$Background\+Tasks/\+Background\+Tasks.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_seaf_background_task_protocol-p}{$<$\+Seaf\+Background\+Task\+Protocol$>$}}
+\begin{DoxyCompactList}\small\item\em A protocol for defining background tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef void(\texorpdfstring{$^\wedge$}{\string^} \mbox{\hyperlink{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e}{Seaf\+Background\+Task\+Completed}} )(BOOL success)
+\begin{DoxyCompactList}\small\item\em Block type for completion handling of background tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaration of \doxylink{protocol_seaf_background_task_protocol-p}{Seaf\+Background\+Task\+Protocol}. 
+
+Created by Javier Godoy (\href{mailto:javigodoy@meytel.net}{\texttt{ javigodoy@meytel.\+net}}) on 24/10/23. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e}\label{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e} 
+\index{SeafBackgroundTaskProtocol.h@{SeafBackgroundTaskProtocol.h}!SeafBackgroundTaskCompleted@{SeafBackgroundTaskCompleted}}
+\index{SeafBackgroundTaskCompleted@{SeafBackgroundTaskCompleted}!SeafBackgroundTaskProtocol.h@{SeafBackgroundTaskProtocol.h}}
+\doxysubsubsection{\texorpdfstring{SeafBackgroundTaskCompleted}{SeafBackgroundTaskCompleted}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef void(\texorpdfstring{$^\wedge$}{\string^} Seaf\+Background\+Task\+Completed) (BOOL success) (\begin{DoxyParamCaption}\item[{BOOL}]{success }\end{DoxyParamCaption})}
+
+
+
+Block type for completion handling of background tasks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & A boolean indicating the success of the background task. \\
+\hline
+\end{DoxyParams}

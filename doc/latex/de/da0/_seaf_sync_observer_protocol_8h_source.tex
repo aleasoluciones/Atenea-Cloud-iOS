@@ -1,0 +1,30 @@
+\doxysection{Seaf\+Sync\+Observer\+Protocol.\+h}
+\hypertarget{_seaf_sync_observer_protocol_8h_source}{}\label{_seaf_sync_observer_protocol_8h_source}\index{Pod/Classes/SeafSync/Observers/SeafSyncObserverProtocol.h@{Pod/Classes/SeafSync/Observers/SeafSyncObserverProtocol.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncObserverProtocol.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 27/9/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ void\ (\string^SeafSyncObserverProtocolCallback)(\textcolor{keywordtype}{id}\ object);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{@protocol\ }SeafSyncObserverProtocol\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ -\/\ (id)observerIdentifier;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ -\/\ (void)start:(nullable\ SeafSyncObserverProtocolCallback)callback;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ -\/\ (void)stop;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,36 @@
+\doxysection{Seaf\+Sync\+Selector\+Cell.\+h}
+\hypertarget{_seaf_sync_selector_cell_8h_source}{}\label{_seaf_sync_selector_cell_8h_source}\index{Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.h@{Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncSelectorCell.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 14/11/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncSelectorCellDataItemProtocol.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafSyncBaseUITableViewCell.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ void\ (\string^SeafSyncSelectorCellCallback)(NSArray<id<SeafSyncSelectorCellDataItemProtocol>>*\ value);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_selector_cell}{SeafSyncSelectorCell}}\ :\ \mbox{\hyperlink{interface_seaf_sync_base_u_i_table_view_cell}{SeafSyncBaseUITableViewCell}}<UIPickerViewDelegate,\ UIPickerViewDataSource>}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ -\/\ (void)\ onValueChange:(SeafSyncSelectorCellCallback)\ callback;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ -\/\ (void)\ setTitle:(NSString\ *)\ title;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ -\/\ (void)setValues:(NSArray<NSArray<\textcolor{keywordtype}{id}<SeafSyncSelectorCellDataItemProtocol>>\ *>\ *)values\ ;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ -\/\ (void)selectedItems:(NSArray<\textcolor{keywordtype}{id}<SeafSyncSelectorCellDataItemProtocol>>\ *)items\ ;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

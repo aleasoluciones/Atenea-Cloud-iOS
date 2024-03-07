@@ -1,0 +1,137 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Log\+Repository\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_log_repository-p}{}\label{protocol_seaf_sync_log_repository-p}\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+
+
+The \doxylink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository} protocol defines methods for managing synchronization log entries.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Log\+Repository.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Log\+Repository\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{de/d46/protocol_seaf_sync_log_repository-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_a452ca7c8e4473383789951711d8123e9}{all}}
+\begin{DoxyCompactList}\small\item\em Returns all synchronization log entries. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_ad2efd150d46b482db210f6420a122e08}{insert\+:}}
+\begin{DoxyCompactList}\small\item\em Inserts a new synchronization log entry. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_add0f92d3728703d68108cad8ca18a726}{update\+:}}
+\begin{DoxyCompactList}\small\item\em Updates an existing synchronization log entry. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_a09a2d873a141ff7f4519c8fafa5a79a8}{remove\+:}}
+\begin{DoxyCompactList}\small\item\em Removes an existing synchronization log entry. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_ac8360f9edc21d7e06d4cecd5da892453}{remove\+With\+:}}
+\begin{DoxyCompactList}\small\item\em Removes existing synchronizations using predicate. \end{DoxyCompactList}\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p_a547f3f6af9a5c5691bd2010c2da4cc90}{find\+:}}
+\begin{DoxyCompactList}\small\item\em Filters synchronization log entries based on a predicate. \end{DoxyCompactList}\item 
+\Hypertarget{protocol_seaf_sync_log_repository-p_ad868d4519cddcb7b5cde2db9df6cea19}\label{protocol_seaf_sync_log_repository-p_ad868d4519cddcb7b5cde2db9df6cea19} 
+(void) -\/ {\bfseries clear}
+\begin{DoxyCompactList}\small\item\em Removes all existing synchronization log entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository} protocol defines methods for managing synchronization log entries. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_log_repository-p_a452ca7c8e4473383789951711d8123e9}\label{protocol_seaf_sync_log_repository-p_a452ca7c8e4473383789951711d8123e9} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!all@{all}}
+\index{all@{all}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) all \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns all synchronization log entries. 
+
+\begin{DoxyReturn}{Returns}
+An array containing all synchronization log entries. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_log_repository-p_a547f3f6af9a5c5691bd2010c2da4cc90}\label{protocol_seaf_sync_log_repository-p_a547f3f6af9a5c5691bd2010c2da4cc90} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!find:@{find:}}
+\index{find:@{find:}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{find:}{find:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) find\+: \begin{DoxyParamCaption}\item[{(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+
+
+Filters synchronization log entries based on a predicate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The NSPredicate used for filtering log entries. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array containing synchronization log entries that match the predicate. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_log_repository-p_ad2efd150d46b482db210f6420a122e08}\label{protocol_seaf_sync_log_repository-p_ad2efd150d46b482db210f6420a122e08} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!insert:@{insert:}}
+\index{insert:@{insert:}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{insert:}{insert:}}
+{\footnotesize\ttfamily -\/ (void) insert\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+
+
+Inserts a new synchronization log entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object representing the synchronization log entry to be inserted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_log_repository-p_a09a2d873a141ff7f4519c8fafa5a79a8}\label{protocol_seaf_sync_log_repository-p_a09a2d873a141ff7f4519c8fafa5a79a8} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!remove:@{remove:}}
+\index{remove:@{remove:}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{remove:}{remove:}}
+{\footnotesize\ttfamily -\/ (void) remove\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+
+
+Removes an existing synchronization log entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object representing the synchronization log entry to be removed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_log_repository-p_ac8360f9edc21d7e06d4cecd5da892453}\label{protocol_seaf_sync_log_repository-p_ac8360f9edc21d7e06d4cecd5da892453} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!removeWith:@{removeWith:}}
+\index{removeWith:@{removeWith:}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{removeWith:}{removeWith:}}
+{\footnotesize\ttfamily -\/ (void) remove\+With\+: \begin{DoxyParamCaption}\item[{(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+
+
+Removes existing synchronizations using predicate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The NSPredicate object used to filter \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_log_repository-p_add0f92d3728703d68108cad8ca18a726}\label{protocol_seaf_sync_log_repository-p_add0f92d3728703d68108cad8ca18a726} 
+\index{$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}!update:@{update:}}
+\index{update:@{update:}!$<$SeafSyncLogRepository$>$@{$<$SeafSyncLogRepository$>$}}
+\doxysubsubsection{\texorpdfstring{update:}{update:}}
+{\footnotesize\ttfamily -\/ (void) update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+
+
+Updates an existing synchronization log entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object representing the synchronization log entry to be updated. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Log/\+Repository/\mbox{\hyperlink{_seaf_sync_log_repository_8h}{Seaf\+Sync\+Log\+Repository.\+h}}\end{DoxyCompactItemize}

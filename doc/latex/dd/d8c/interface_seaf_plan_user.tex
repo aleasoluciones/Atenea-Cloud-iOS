@@ -1,0 +1,83 @@
+\doxysection{Seaf\+Plan\+User Class Reference}
+\hypertarget{interface_seaf_plan_user}{}\label{interface_seaf_plan_user}\index{SeafPlanUser@{SeafPlanUser}}
+
+
+Base class representing a user\textquotesingle{}s plan.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Plan\+User.\+h$>$}
+
+Inheritance diagram for Seaf\+Plan\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{dd/d8c/interface_seaf_plan_user}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_plan_user_a50a66ae64cc60c3df2334d1772cd7f06}{init\+With\+Plan\+Name\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes an instance of \doxylink{interface_seaf_plan_user}{Seaf\+Plan\+User} with the given plan\+Name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_seaf_plan_user_af6e5dc1452534c086472d4f57112a5a1}\label{interface_seaf_plan_user_af6e5dc1452534c086472d4f57112a5a1} 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries plan\+Name}
+\begin{DoxyCompactList}\small\item\em The name of the plan. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_plan_user_a7b4d685714d19d738cace7b928aeeda6}\label{interface_seaf_plan_user_a7b4d685714d19d738cace7b928aeeda6} 
+NSArray$<$ NSString \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} {\bfseries dont\+Allowed\+Extensions}
+\begin{DoxyCompactList}\small\item\em An array of allowed file extensions for the plan. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_plan_user_a6b099e51efb86c594558d6df30c0cd56}\label{interface_seaf_plan_user_a6b099e51efb86c594558d6df30c0cd56} 
+BOOL {\bfseries support4k}
+\begin{DoxyCompactList}\small\item\em Property that indicates whether the plan supports 4K content. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_plan_user_a75d50e37e47ac370ac5a188567696a6e}\label{interface_seaf_plan_user_a75d50e37e47ac370ac5a188567696a6e} 
+double {\bfseries upload\+Max\+Packet\+Size\+In\+Bytes}
+\begin{DoxyCompactList}\small\item\em Property that specifies the upload speed for the enterprise plan. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_plan_user_a3a85485acc05f4a6db750ae144414230}\label{interface_seaf_plan_user_a3a85485acc05f4a6db750ae144414230} 
+double {\bfseries upload\+Delay\+In\+Seconds}
+\begin{DoxyCompactList}\small\item\em Property that specifies the upload speed for the enterprise plan. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_plan_user_a2f0b32ca2fa997545d90ccbd5a6f14fc}\label{interface_seaf_plan_user_a2f0b32ca2fa997545d90ccbd5a6f14fc} 
+BOOL {\bfseries customizable\+Backup}
+\begin{DoxyCompactList}\small\item\em Property that indicates whether custom backup is allowed. \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{interface_seaf_plan_user_aed2b402b54e5cd1ed83f13ce2e99b10b}{max\+Upload\+Size\+File\+In\+Bytes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class representing a user\textquotesingle{}s plan. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_plan_user_a50a66ae64cc60c3df2334d1772cd7f06}\label{interface_seaf_plan_user_a50a66ae64cc60c3df2334d1772cd7f06} 
+\index{SeafPlanUser@{SeafPlanUser}!initWithPlanName:@{initWithPlanName:}}
+\index{initWithPlanName:@{initWithPlanName:}!SeafPlanUser@{SeafPlanUser}}
+\doxysubsubsection{\texorpdfstring{initWithPlanName:}{initWithPlanName:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Plan\+Name\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{plan\+Name }\end{DoxyParamCaption}}
+
+
+
+Initializes an instance of \doxylink{interface_seaf_plan_user}{Seaf\+Plan\+User} with the given plan\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plan\+Name} & The name of the plan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of \doxylink{interface_seaf_plan_user}{Seaf\+Plan\+User}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_seaf_plan_user_aed2b402b54e5cd1ed83f13ce2e99b10b}\label{interface_seaf_plan_user_aed2b402b54e5cd1ed83f13ce2e99b10b} 
+\index{SeafPlanUser@{SeafPlanUser}!maxUploadSizeFileInBytes@{maxUploadSizeFileInBytes}}
+\index{maxUploadSizeFileInBytes@{maxUploadSizeFileInBytes}!SeafPlanUser@{SeafPlanUser}}
+\doxysubsubsection{\texorpdfstring{maxUploadSizeFileInBytes}{maxUploadSizeFileInBytes}}
+{\footnotesize\ttfamily -\/ (long long) max\+Upload\+Size\+File\+In\+Bytes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Account\+Plan/\+Seaf\+Account\+Plan/Seaf\+Plan\+User.\+h\end{DoxyCompactItemize}

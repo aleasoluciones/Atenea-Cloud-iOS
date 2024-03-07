@@ -1,0 +1,60 @@
+\doxysection{Seaf\+Sync\+Tree\+Protocol.\+h}
+\hypertarget{_seaf_sync_tree_protocol_8h_source}{}\label{_seaf_sync_tree_protocol_8h_source}\index{Pod/Classes/SeafSync/Tree/SeafSyncTreeProtocol.h@{Pod/Classes/SeafSync/Tree/SeafSyncTreeProtocol.h}}
+\mbox{\hyperlink{_seaf_sync_tree_protocol_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_enums_8h}{SeafSyncEnums.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{@protocol\ }SeafSyncTreeProtocol}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ -\/(NSString\ *)getId;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ -\/(void)setId:(NSString\ *)\ identifier;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ -\/(NSString\ *)getSyncSettingId;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ -\/(void)setSyncSettingId:(NSString\ *)\ syncSettingId;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ -\/(SyncTreeType)getType;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ -\/(void)setType:(SyncTreeType)\ type;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ -\/(NSURL\ *)getURL;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ -\/(void)setURL:(NSURL\ *)\ url;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ -\/(void)\ addChildren:(\textcolor{keywordtype}{id}<SeafSyncTreeProtocol>)\ children;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ -\/(NSMutableArray<id<SeafSyncTreeProtocol>>\ *)\ getChildrens;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ -\/(void)\ clearChildrens;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00097\ -\/(NSArray<id<SeafSyncTreeProtocol>>\ *)\ getAllChildrensOfType:(SyncTreeType)\ treeType;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00105\ -\/(NSArray<id<SeafSyncTreeProtocol>>\ *)\ getChildrensOfType:(SyncTreeType)\ treeType;}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00114\ -\/(NSArray<id<SeafSyncTreeProtocol>>\ *)\ getChildrensFrom:(\textcolor{keywordtype}{id}<SeafSyncTreeProtocol>)\ parent\ withPredicate:(NSPredicate\ *)\ predicate;}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ -\/(NSString\ *)getFullHash;}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00128\ -\/(void)setFullHash:(NSString\ *)\ hash;}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00135\ -\/(NSString\ *)getRelativeHash;}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00142\ -\/(void)setRelativeHash:(NSString\ *)\ hash;}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00150\ -\/(void)setSizeInBytes:(\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long})\ size;}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00158\ -\/(\textcolor{keywordtype}{long}\ long)sizeInBytes;}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00163\ }
+
+\end{DoxyCode}

@@ -1,0 +1,79 @@
+\doxysection{Seaf\+Plan\+Enterprise Class Reference}
+\hypertarget{interface_seaf_plan_enterprise}{}\label{interface_seaf_plan_enterprise}\index{SeafPlanEnterprise@{SeafPlanEnterprise}}
+
+
+Class representing an enterprise plan, which inherits from \doxylink{interface_seaf_plan_standard}{Seaf\+Plan\+Standard}.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Plan\+Enterprise.\+h$>$}
+
+Inheritance diagram for Seaf\+Plan\+Enterprise\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{d5/d0d/interface_seaf_plan_enterprise}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_plan_enterprise_a2956411d2c7ea2ed8e1e8cf312d8bd31}{init}}
+\begin{DoxyCompactList}\small\item\em Initializes an instance of \doxylink{interface_seaf_plan_enterprise}{Seaf\+Plan\+Enterprise}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{interface_seaf_plan_user}{Seaf\+Plan\+User}}}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_plan_user_a50a66ae64cc60c3df2334d1772cd7f06}{init\+With\+Plan\+Name\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes an instance of \doxylink{interface_seaf_plan_user}{Seaf\+Plan\+User} with the given plan\+Name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_seaf_plan_user}{Seaf\+Plan\+User}}}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries plan\+Name}
+\begin{DoxyCompactList}\small\item\em The name of the plan. \end{DoxyCompactList}\item 
+NSArray$<$ NSString \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*} {\bfseries dont\+Allowed\+Extensions}
+\begin{DoxyCompactList}\small\item\em An array of allowed file extensions for the plan. \end{DoxyCompactList}\item 
+BOOL {\bfseries support4k}
+\begin{DoxyCompactList}\small\item\em Property that indicates whether the plan supports 4K content. \end{DoxyCompactList}\item 
+double {\bfseries upload\+Max\+Packet\+Size\+In\+Bytes}
+\begin{DoxyCompactList}\small\item\em Property that specifies the upload speed for the enterprise plan. \end{DoxyCompactList}\item 
+double {\bfseries upload\+Delay\+In\+Seconds}
+\begin{DoxyCompactList}\small\item\em Property that specifies the upload speed for the enterprise plan. \end{DoxyCompactList}\item 
+BOOL {\bfseries customizable\+Backup}
+\begin{DoxyCompactList}\small\item\em Property that indicates whether custom backup is allowed. \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{interface_seaf_plan_user_aed2b402b54e5cd1ed83f13ce2e99b10b}{max\+Upload\+Size\+File\+In\+Bytes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing an enterprise plan, which inherits from \doxylink{interface_seaf_plan_standard}{Seaf\+Plan\+Standard}. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_plan_enterprise_a2956411d2c7ea2ed8e1e8cf312d8bd31}\label{interface_seaf_plan_enterprise_a2956411d2c7ea2ed8e1e8cf312d8bd31} 
+\index{SeafPlanEnterprise@{SeafPlanEnterprise}!init@{init}}
+\index{init@{init}!SeafPlanEnterprise@{SeafPlanEnterprise}}
+\doxysubsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily -\/ (instancetype) init \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Initializes an instance of \doxylink{interface_seaf_plan_enterprise}{Seaf\+Plan\+Enterprise}. 
+
+This method sets the upload\+Speed to an initial value.
+
+\begin{DoxyReturn}{Returns}
+An initialized instance of \doxylink{interface_seaf_plan_enterprise}{Seaf\+Plan\+Enterprise}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{interface_seaf_plan_standard_a5f05ef2e2b1d6ec8cbc327635bc1a389}{Seaf\+Plan\+Standard}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{interface_seaf_plan_platinum_a8d2e542bf88af1a2163971e4adb76f73}{Seaf\+Plan\+Platinum}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Account\+Plan/\+Seaf\+Account\+Plan/Seaf\+Plan\+Enterprise.\+h\end{DoxyCompactItemize}

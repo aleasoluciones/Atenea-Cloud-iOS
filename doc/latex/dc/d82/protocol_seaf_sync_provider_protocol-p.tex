@@ -1,0 +1,51 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Provider\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_provider_protocol-p}{}\label{protocol_seaf_sync_provider_protocol-p}\index{$<$SeafSyncProviderProtocol$>$@{$<$SeafSyncProviderProtocol$>$}}
+
+
+A protocol for providing synchronization items.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Provider\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Provider\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.513514cm]{dc/d82/protocol_seaf_sync_provider_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}{get\+Files\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A protocol for providing synchronization items. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}\label{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd} 
+\index{$<$SeafSyncProviderProtocol$>$@{$<$SeafSyncProviderProtocol$>$}!getFiles:@{getFiles:}}
+\index{getFiles:@{getFiles:}!$<$SeafSyncProviderProtocol$>$@{$<$SeafSyncProviderProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getFiles:}{getFiles:}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Files\+: \begin{DoxyParamCaption}\item[{(NSError \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})}]{on\+Error }\end{DoxyParamCaption}}
+
+Gets the list of synchronization items. 
+\begin{DoxyParams}{Parameters}
+{\em on\+Error} & An optional error pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of objects conforming to the \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol} representing the synchronization items. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{interface_seaf_sync_assets_list_provider_a614e47851da909a8d737c28944535aba}{Seaf\+Sync\+Assets\+List\+Provider}}, \mbox{\hyperlink{interface_seaf_sync_folder_provider_a3c60e775dcd058d9806dc5fd938b94c3}{Seaf\+Sync\+Folder\+Provider}}, and \mbox{\hyperlink{interface_seaf_sync_gallery_provider_a2bcca53f740bf0087f2e93c1d29ac69c}{Seaf\+Sync\+Gallery\+Provider}}.
+
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/Seaf\+Sync\+Provider\+Protocol.\+h\end{DoxyCompactItemize}

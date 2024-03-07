@@ -1,0 +1,65 @@
+\doxysection{Seaf\+Sync\+Settings.\+h}
+\hypertarget{_seaf_sync_settings_8h_source}{}\label{_seaf_sync_settings_8h_source}\index{Pod/Classes/SeafSync/Settings/SeafSyncSettings.h@{Pod/Classes/SeafSync/Settings/SeafSyncSettings.h}}
+\mbox{\hyperlink{_seaf_sync_settings_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_enums_8h}{SeafSyncEnums.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ :\ NSObject\ <NSCoding>}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{interface_seaf_sync_settings_a02560fe95bfbafbd49147968d2b7059d}{active}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{@property}\ NSString\ *\mbox{\hyperlink{interface_seaf_sync_settings_adea8dc61121fcbc84f039eb595e3abef}{accountId}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{id}\ \mbox{\hyperlink{interface_seaf_sync_settings_aa8ffacbb0a2e2ef60ac49b6b245ba9dc}{identifier}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{@property}\ NSDate\ *\mbox{\hyperlink{interface_seaf_sync_settings_a693266c8923600370639eff1333c1161}{creationDate}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{@property}\ NSDate\ *\mbox{\hyperlink{interface_seaf_sync_settings_ae40748734bb771f7beb2d397a33a2938}{availableUntilDate}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{@property}\ NSInteger\ \mbox{\hyperlink{interface_seaf_sync_settings_a0ef80d8d0742c077b6c4a3c8e9b427e2}{durationOfBackupFilesOnCloudInDays}};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{id}\ \mbox{\hyperlink{interface_seaf_sync_settings_ab2916715ae777136631af6fb66a5d771}{resourceId}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{@property}\ NSString\ *\mbox{\hyperlink{interface_seaf_sync_settings_af41f86fc1ac4dd35ebbe4469d8d4f06c}{targetId}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{@property}\ NSString\ *\mbox{\hyperlink{interface_seaf_sync_settings_a677393ac78eda173dff9a70857592d33}{repoId}};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{@property}\ SeafSyncType\ \mbox{\hyperlink{interface_seaf_sync_settings_acf9df9fdc0a6236e9915dcb6fc4948c2}{sourceType}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{@property}\ SeafSyncMode\ \mbox{\hyperlink{interface_seaf_sync_settings_a634fb8abc0933c3a01008a7f879fd8f3}{mode}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{@property}\ SeafSyncLifetimeType\ \mbox{\hyperlink{interface_seaf_sync_settings_a35f5f31de1661d7cd4a18b1d8d36e40b}{lifeTime}};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{@property}\ NSDate\ *\mbox{\hyperlink{interface_seaf_sync_settings_ab6e97cd0597fc0b2debf174639d48a0c}{lastRunTime}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{@property}\ (nonatomic)\ SeafSyncState\ \mbox{\hyperlink{interface_seaf_sync_settings_a02040225e5659987c1a1ccb4d546956d}{state}};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{interface_seaf_sync_settings_a76e9a11603d622f9500c686097d2150a}{uploadOnlyOverWifi}};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{interface_seaf_sync_settings_a69f5aa149ba04c2f05ae16125c065f87}{uploadVideos}};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{@property}\ SeafConnection\ *\mbox{\hyperlink{interface_seaf_sync_settings_a6a55e75ca5b4b27a7c15499917980f36}{connection}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \textcolor{keyword}{@property}\ SeafSyncError\ \mbox{\hyperlink{interface_seaf_sync_settings_ac594cb9d79a5e71559cf06e676b8aa39}{lastRunError}};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \textcolor{keyword}{@property}\ NSString\ *\mbox{\hyperlink{interface_seaf_sync_settings_a17e7b5e3547d159ec7b9409dba6273d7}{fullSourceURL}};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{@property}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{interface_seaf_sync_settings_aba48cc4c21e4195ca46af98dfa0665e9}{deleteFilesOnExpire}};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,38 @@
+\doxysection{Seaf\+Enqueuer\+Protocol.\+h}
+\hypertarget{_seaf_enqueuer_protocol_8h_source}{}\label{_seaf_enqueuer_protocol_8h_source}\index{Pod/Classes/SeafSync/Enqueuers/SeafEnqueuerProtocol.h@{Pod/Classes/SeafSync/Enqueuers/SeafEnqueuerProtocol.h}}
+\mbox{\hyperlink{_seaf_enqueuer_protocol_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafPhotoAsset.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}SeafUploadFile.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_settings_8h}{SeafSyncSettings.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_logs_service_8h}{SeafSyncLogsService.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ void\ (\string^EnqueueCompletionBlock)(BOOL\ success);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{@protocol\ }SeafEnqueuerProtocol}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ -\/\ (id)init:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)settings\ connection:(SeafConnection\ *)connection;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ -\/\ (void)enqueue;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00052\ -\/(\textcolor{keywordtype}{long}\ long)\ estimatedUploadSizeInBytes;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ -\/(void)\ onEnqueueCompleted:(EnqueueCompletionBlock)handler;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00063\ }
+
+\end{DoxyCode}

@@ -1,0 +1,77 @@
+\doxysection{Seaf\+Sync\+Enums.\+h}
+\hypertarget{_seaf_sync_enums_8h_source}{}\label{_seaf_sync_enums_8h_source}\index{Pod/Classes/SeafSync/Common/SeafSyncEnums.h@{Pod/Classes/SeafSync/Common/SeafSyncEnums.h}}
+\mbox{\hyperlink{_seaf_sync_enums_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncEnums.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 23/9/18.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncType)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ Folder,}
+\DoxyCodeLine{00027\ \ \ \ \ Album,}
+\DoxyCodeLine{00028\ \ \ \ \ Gallery}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncMode)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ Full,}
+\DoxyCodeLine{00040\ \ \ \ \ Incremental}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncLifetimeType)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ SeafSyncLifetimeTypeTemporal,}
+\DoxyCodeLine{00053\ \ \ \ \ SeafSyncLifetimeTypePermanent}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncState)\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ SeafSyncStatePending,}
+\DoxyCodeLine{00070\ \ \ \ \ SeafSyncStateRunning,}
+\DoxyCodeLine{00071\ \ \ \ \ SeafSyncStateError,}
+\DoxyCodeLine{00072\ \ \ \ \ SeafSyncStateExpired,}
+\DoxyCodeLine{00073\ \ \ \ \ SeafSyncStateCompleted,}
+\DoxyCodeLine{00074\ \ \ \ \ SeafSyncStateUploading,}
+\DoxyCodeLine{00075\ \ \ \ \ SeafSyncStateCancelled,}
+\DoxyCodeLine{00076\ \ \ \ \ SeafSyncStateInactive,}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SyncTreeType)\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ TreeRoot,}
+\DoxyCodeLine{00089\ \ \ \ \ TreeFolder,}
+\DoxyCodeLine{00090\ \ \ \ \ TreeFile}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SyncUploadFileState)\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ SyncUploadFileStateUnknow,}
+\DoxyCodeLine{00104\ \ \ \ \ SyncUploadFileStateInQueue,}
+\DoxyCodeLine{00105\ \ \ \ \ SyncUploadFileStateUploaded,}
+\DoxyCodeLine{00106\ \ \ \ \ SyncUploadFileStateErrored}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00117\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncNetworkState)\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ SeafSyncNetworkStateWifi,}
+\DoxyCodeLine{00119\ \ \ \ \ SeafSyncNetworkState3G,}
+\DoxyCodeLine{00120\ \ \ \ \ SeafSyncNetworkStateUnknow}
+\DoxyCodeLine{00121\ \};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncError)\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ SeafSyncErrorFolderNotFound,}
+\DoxyCodeLine{00126\ \ \ \ \ SeafSyncErrorTargetNotFound,}
+\DoxyCodeLine{00127\ \ \ \ \ SeafSyncErrorQuotaExceeded,}
+\DoxyCodeLine{00128\ \ \ \ \ SeafSyncErrorNoError}
+\DoxyCodeLine{00129\ \};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00132\ }
+
+\end{DoxyCode}

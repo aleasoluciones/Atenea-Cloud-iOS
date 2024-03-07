@@ -1,0 +1,92 @@
+\doxysection{Seaf\+Sync\+File\+Item Class Reference}
+\hypertarget{interface_seaf_sync_file_item}{}\label{interface_seaf_sync_file_item}\index{SeafSyncFileItem@{SeafSyncFileItem}}
+
+
+Represents a file item for Seafile synchronization.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+File\+Item.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+File\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d9/d3c/interface_seaf_sync_file_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_file_item_a910482d1fe232d548444c37aad197998}{init\+With\+Path\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the file item with the specified file URL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{$<$\+Seaf\+Sync\+Item\+Protocol$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+id \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_aef79d42ca9b3b00cda8fd64e4a65e924}{identifier}}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_ab1347f7374b43a77f4ccfcafc07f9ce1}{creation\+Date}}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a083645787f3e8deb11c7b631e0db57d7}{added\+To\+Directory\+Date}}
+\item 
+BOOL \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_af86ad9b980141745cdc06a49f266ebee}{is\+Directory}}
+\item 
+long long \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a1de77fb71637079cc6f0b9d0b2e1240e}{size\+In\+Bytes}}
+\item 
+Seaf\+Sync\+Item\+Type \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a96ad319c7c32655333ef03dad1a1a63c}{item\+Type}}
+\item 
+NSURL \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a03a037c4b543326c269bddd4c50b88bb}{path}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a916c89826129b2fbbd46d46b40d8ee0e}{file\+Hash}}
+\item 
+Seaf\+Sync\+Item\+File\+Type \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a10baf0076ef1d3b97b5745a82e59a3c6}{file\+Type}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_a79a5fa7eb414112222581a3cc512de5b}{extension}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p_ae7574364144bce0b7e2c78e65b26f8cd}{file\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{protocol_seaf_file_protocol-p}{$<$\+Seaf\+File\+Protocol$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+id {\bfseries identifier}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} {\bfseries creation\+Date}
+\item 
+long long {\bfseries size\+In\+Bytes}
+\item 
+NSURL \texorpdfstring{$\ast$}{*} {\bfseries path}
+\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries extension}
+\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries file\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a file item for Seafile synchronization. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_file_item_a910482d1fe232d548444c37aad197998}\label{interface_seaf_sync_file_item_a910482d1fe232d548444c37aad197998} 
+\index{SeafSyncFileItem@{SeafSyncFileItem}!initWithPath:@{initWithPath:}}
+\index{initWithPath:@{initWithPath:}!SeafSyncFileItem@{SeafSyncFileItem}}
+\doxysubsubsection{\texorpdfstring{initWithPath:}{initWithPath:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Path\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{url }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the file item with the specified file URL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The URL of the file to be represented by the item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of the file item. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Sync\+Items/Seaf\+Sync\+File\+Item.\+h\end{DoxyCompactItemize}

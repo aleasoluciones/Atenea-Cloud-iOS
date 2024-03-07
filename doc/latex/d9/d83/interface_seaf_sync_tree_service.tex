@@ -1,0 +1,72 @@
+\doxysection{Seaf\+Sync\+Tree\+Service Class Reference}
+\hypertarget{interface_seaf_sync_tree_service}{}\label{interface_seaf_sync_tree_service}\index{SeafSyncTreeService@{SeafSyncTreeService}}
+Inheritance diagram for Seaf\+Sync\+Tree\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d83/interface_seaf_sync_tree_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_tree_service_aa1105ccf2468b39b7e1243b9aa510ff9}{build\+From\+:settings\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_tree_service_a31a9d2d1f4a71ae707b906142e22ead7}{save\+Tree\+:}}
+\item 
+(\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_tree_service_ae3775ecefadde59e9308b4ec08889b44}{changes\+Since\+Last\+Sync\+For\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_tree_service_aa1105ccf2468b39b7e1243b9aa510ff9}\label{interface_seaf_sync_tree_service_aa1105ccf2468b39b7e1243b9aa510ff9} 
+\index{SeafSyncTreeService@{SeafSyncTreeService}!buildFrom:settings:@{buildFrom:settings:}}
+\index{buildFrom:settings:@{buildFrom:settings:}!SeafSyncTreeService@{SeafSyncTreeService}}
+\doxysubsubsection{\texorpdfstring{buildFrom:settings:}{buildFrom:settings:}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*}) build\+From\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{url }\item[{settings\+:(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+Builds a synchronization tree from a URL and settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The URL for the tree structure. \\
+\hline
+{\em settings} & The synchronization settings to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree} object representing the synchronization tree. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_tree_service_ae3775ecefadde59e9308b4ec08889b44}\label{interface_seaf_sync_tree_service_ae3775ecefadde59e9308b4ec08889b44} 
+\index{SeafSyncTreeService@{SeafSyncTreeService}!changesSinceLastSyncFor:@{changesSinceLastSyncFor:}}
+\index{changesSinceLastSyncFor:@{changesSinceLastSyncFor:}!SeafSyncTreeService@{SeafSyncTreeService}}
+\doxysubsubsection{\texorpdfstring{changesSinceLastSyncFor:}{changesSinceLastSyncFor:}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*}) changes\+Since\+Last\+Sync\+For\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*})}]{tree }\end{DoxyParamCaption}}
+
+Gets the changes in a synchronization tree since the last synchronization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The synchronization tree to check for changes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree} object representing the changes since the last synchronization. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_tree_service_a31a9d2d1f4a71ae707b906142e22ead7}\label{interface_seaf_sync_tree_service_a31a9d2d1f4a71ae707b906142e22ead7} 
+\index{SeafSyncTreeService@{SeafSyncTreeService}!saveTree:@{saveTree:}}
+\index{saveTree:@{saveTree:}!SeafSyncTreeService@{SeafSyncTreeService}}
+\doxysubsubsection{\texorpdfstring{saveTree:}{saveTree:}}
+{\footnotesize\ttfamily -\/ (void) save\+Tree\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_tree}{Seaf\+Sync\+Tree}} \texorpdfstring{$\ast$}{*})}]{tree }\end{DoxyParamCaption}}
+
+Saves a synchronization tree.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & The synchronization tree to save. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Tree/\+Services/\mbox{\hyperlink{_seaf_sync_tree_service_8h}{Seaf\+Sync\+Tree\+Service.\+h}}\end{DoxyCompactItemize}

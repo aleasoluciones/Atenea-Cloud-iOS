@@ -1,0 +1,181 @@
+\doxysection{Seaf\+Syncronizer Class Reference}
+\hypertarget{interface_seaf_syncronizer}{}\label{interface_seaf_syncronizer}\index{SeafSyncronizer@{SeafSyncronizer}}
+
+
+The \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} class serves as a central synchronization manager.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Syncronizer.\+h$>$}
+
+Inheritance diagram for Seaf\+Syncronizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.898305cm]{d0/d31/interface_seaf_syncronizer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_ae32900c1360d4b0637c6efd7408509d2}{init\+With\+Connection\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} with a Seaf\+Connection instance and the default \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} implementation. \end{DoxyCompactList}\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a3a4dafe452e15d3066f2f7330f51c00f}{init\+With\+Connection\+:settings\+Service\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} with a Seaf\+Connection instance and a custom \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service}. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_syncronizer_a640e89abedba8421a396d6de58599497}\label{interface_seaf_syncronizer_a640e89abedba8421a396d6de58599497} 
+(void) -\/ {\bfseries sync}
+\begin{DoxyCompactList}\small\item\em Starts synchronization for all configured settings. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_abdabd87d59ea4577571d05f2ed8f733a}{start\+Sync\+For\+Setting\+:}}
+\begin{DoxyCompactList}\small\item\em Starts synchronization for a specific synchronization setting. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a0eb87d3532571542a8f663b14b9524fb}{add\+:}}
+\begin{DoxyCompactList}\small\item\em Adds a new synchronization setting. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a30f40a4fd639a75e652b74f5d3e7c557}{remove\+:}}
+\begin{DoxyCompactList}\small\item\em Removes a synchronization setting. \end{DoxyCompactList}\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a7777d6c81145e2675c320cf007b76344}{settings}}
+\begin{DoxyCompactList}\small\item\em Gets all settings in this syncronizer. \end{DoxyCompactList}\item 
+(Seaf\+Connection \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a59d42e29ccbf66fce09ee97ddd335c5f}{get\+Connection\+In\+Use}}
+\begin{DoxyCompactList}\small\item\em Returns the current Seaf\+Connection for this syncronizer. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_syncronizer_a8a47783c3ddd257d2d18c7f931a6d942}{notify\+Errors\+If\+Needed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_sync_networker_service_observer_delegate-p}{$<$\+Seaf\+Sync\+Networker\+Service\+Observer\+Delegate$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_networker_service_observer_delegate-p_a1aae087f0103faa0a1f3e4a841c5d59b}{on\+Seaf\+Sync\+Network\+Status\+Change\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_seaf_syncronizer_aff57830b3fe355ab4d75ee0e0f3be385}\label{interface_seaf_syncronizer_aff57830b3fe355ab4d75ee0e0f3be385} 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_syncronizer}{Seaf\+Syncronizer}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) + {\bfseries all\+Instances}
+\item 
+\Hypertarget{interface_seaf_syncronizer_a92b4af40806b68ee85822dadb0f37fed}\label{interface_seaf_syncronizer_a92b4af40806b68ee85822dadb0f37fed} 
+(instancetype) + {\bfseries shared\+Instance\+For\+:}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} class serves as a central synchronization manager. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_syncronizer_a0eb87d3532571542a8f663b14b9524fb}\label{interface_seaf_syncronizer_a0eb87d3532571542a8f663b14b9524fb} 
+\index{SeafSyncronizer@{SeafSyncronizer}!add:@{add:}}
+\index{add:@{add:}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{add:}{add:}}
+{\footnotesize\ttfamily -\/ (void) add\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+
+
+Adds a new synchronization setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object representing the synchronization settings to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_syncronizer_a59d42e29ccbf66fce09ee97ddd335c5f}\label{interface_seaf_syncronizer_a59d42e29ccbf66fce09ee97ddd335c5f} 
+\index{SeafSyncronizer@{SeafSyncronizer}!getConnectionInUse@{getConnectionInUse}}
+\index{getConnectionInUse@{getConnectionInUse}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{getConnectionInUse}{getConnectionInUse}}
+{\footnotesize\ttfamily -\/ (Seaf\+Connection \texorpdfstring{$\ast$}{*}) get\+Connection\+In\+Use \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns the current Seaf\+Connection for this syncronizer. 
+
+\begin{DoxyReturn}{Returns}
+An instance of Seaf\+Connection. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_syncronizer_ae32900c1360d4b0637c6efd7408509d2}\label{interface_seaf_syncronizer_ae32900c1360d4b0637c6efd7408509d2} 
+\index{SeafSyncronizer@{SeafSyncronizer}!initWithConnection:@{initWithConnection:}}
+\index{initWithConnection:@{initWithConnection:}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{initWithConnection:}{initWithConnection:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Connection\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} with a Seaf\+Connection instance and the default \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} implementation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seaf\+Connection instance to be used for synchronization. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_syncronizer_a3a4dafe452e15d3066f2f7330f51c00f}\label{interface_seaf_syncronizer_a3a4dafe452e15d3066f2f7330f51c00f} 
+\index{SeafSyncronizer@{SeafSyncronizer}!initWithConnection:settingsService:@{initWithConnection:settingsService:}}
+\index{initWithConnection:settingsService:@{initWithConnection:settingsService:}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{initWithConnection:settingsService:}{initWithConnection:settingsService:}}
+{\footnotesize\ttfamily -\/ (id) \mbox{\hyperlink{interface_seaf_syncronizer_ae32900c1360d4b0637c6efd7408509d2}{init\+With\+Connection\+:}} \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\item[{settings\+Service\+:(\mbox{\hyperlink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service}} \texorpdfstring{$\ast$}{*})}]{settings\+Service }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer} with a Seaf\+Connection instance and a custom \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seaf\+Connection instance to be used for synchronization. \\
+\hline
+{\em settings\+Service} & The custom \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} to manage synchronization settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_syncronizer}{Seaf\+Syncronizer}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_syncronizer_a8a47783c3ddd257d2d18c7f931a6d942}\label{interface_seaf_syncronizer_a8a47783c3ddd257d2d18c7f931a6d942} 
+\index{SeafSyncronizer@{SeafSyncronizer}!notifyErrorsIfNeeded@{notifyErrorsIfNeeded}}
+\index{notifyErrorsIfNeeded@{notifyErrorsIfNeeded}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{notifyErrorsIfNeeded}{notifyErrorsIfNeeded}}
+{\footnotesize\ttfamily -\/ (void) notify\+Errors\+If\+Needed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Notifies errors if needed.
+
+This method checks for errors and notifies if any errors are present. \Hypertarget{interface_seaf_syncronizer_a30f40a4fd639a75e652b74f5d3e7c557}\label{interface_seaf_syncronizer_a30f40a4fd639a75e652b74f5d3e7c557} 
+\index{SeafSyncronizer@{SeafSyncronizer}!remove:@{remove:}}
+\index{remove:@{remove:}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{remove:}{remove:}}
+{\footnotesize\ttfamily -\/ (void) remove\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+
+
+Removes a synchronization setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object representing the synchronization settings to be removed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_syncronizer_a7777d6c81145e2675c320cf007b76344}\label{interface_seaf_syncronizer_a7777d6c81145e2675c320cf007b76344} 
+\index{SeafSyncronizer@{SeafSyncronizer}!settings@{settings}}
+\index{settings@{settings}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) settings \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets all settings in this syncronizer. 
+
+\begin{DoxyReturn}{Returns}
+An array of \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_syncronizer_abdabd87d59ea4577571d05f2ed8f733a}\label{interface_seaf_syncronizer_abdabd87d59ea4577571d05f2ed8f733a} 
+\index{SeafSyncronizer@{SeafSyncronizer}!startSyncForSetting:@{startSyncForSetting:}}
+\index{startSyncForSetting:@{startSyncForSetting:}!SeafSyncronizer@{SeafSyncronizer}}
+\doxysubsubsection{\texorpdfstring{startSyncForSetting:}{startSyncForSetting:}}
+{\footnotesize\ttfamily -\/ (void) start\+Sync\+For\+Setting\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+
+
+Starts synchronization for a specific synchronization setting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object representing the synchronization settings. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\mbox{\hyperlink{_seaf_syncronizer_8h}{Seaf\+Syncronizer.\+h}}\end{DoxyCompactItemize}

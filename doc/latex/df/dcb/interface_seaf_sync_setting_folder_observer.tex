@@ -1,0 +1,71 @@
+\doxysection{Seaf\+Sync\+Setting\+Folder\+Observer Class Reference}
+\hypertarget{interface_seaf_sync_setting_folder_observer}{}\label{interface_seaf_sync_setting_folder_observer}\index{SeafSyncSettingFolderObserver@{SeafSyncSettingFolderObserver}}
+
+
+Folder observer for synchronization settings.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Setting\+Folder\+Observer.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Setting\+Folder\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{df/dcb/interface_seaf_sync_setting_folder_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_setting_folder_observer_ac0076968ff8c0970fe041ef87b85dc26}{init\+With\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of {\ttfamily \doxylink{interface_seaf_sync_setting_folder_observer}{Seaf\+Sync\+Setting\+Folder\+Observer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{interface_seaf_sync_folder_observer}{Seaf\+Sync\+Folder\+Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ {\bfseries init\+With\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_folder_observer_ac01f1599088ab92a5512f8f881f09765}{start\+:}}
+\begin{DoxyCompactList}\small\item\em Starts observing a folder at the specified path and sets a callback function to be called when changes occur. \end{DoxyCompactList}\item 
+(void) -\/ {\bfseries stop}
+\begin{DoxyCompactList}\small\item\em Stops observing the folder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p}{$<$\+Seaf\+Sync\+Observer\+Protocol$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_a45b58d618960d3b0b27ab0e09d1c4d22}{observer\+Identifier}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_a16ebb0074a88fd01a29e7c98d0aba88c}{start\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_observer_protocol-p_aaa049155bc2c03890583d6a3f2e46fa7}{stop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Folder observer for synchronization settings. 
+
+The class {\ttfamily \doxylink{interface_seaf_sync_setting_folder_observer}{Seaf\+Sync\+Setting\+Folder\+Observer}} inherits from {\ttfamily \doxylink{interface_seaf_sync_folder_observer}{Seaf\+Sync\+Folder\+Observer}} and implements the {\ttfamily \doxylink{protocol_seaf_sync_observer_protocol-p}{Seaf\+Sync\+Observer\+Protocol}}. This class is used to observe changes in folders related to synchronization settings. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_setting_folder_observer_ac0076968ff8c0970fe041ef87b85dc26}\label{interface_seaf_sync_setting_folder_observer_ac0076968ff8c0970fe041ef87b85dc26} 
+\index{SeafSyncSettingFolderObserver@{SeafSyncSettingFolderObserver}!initWith:@{initWith:}}
+\index{initWith:@{initWith:}!SeafSyncSettingFolderObserver@{SeafSyncSettingFolderObserver}}
+\doxysubsubsection{\texorpdfstring{initWith:}{initWith:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of {\ttfamily \doxylink{interface_seaf_sync_setting_folder_observer}{Seaf\+Sync\+Setting\+Folder\+Observer}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization settings associated with the observer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of {\ttfamily \doxylink{interface_seaf_sync_setting_folder_observer}{Seaf\+Sync\+Setting\+Folder\+Observer}}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Observers/\+Impl/Seaf\+Sync\+Setting\+Folder\+Observer.\+h\end{DoxyCompactItemize}

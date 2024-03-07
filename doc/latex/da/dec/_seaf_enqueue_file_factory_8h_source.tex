@@ -1,0 +1,28 @@
+\doxysection{Seaf\+Enqueue\+File\+Factory.\+h}
+\hypertarget{_seaf_enqueue_file_factory_8h_source}{}\label{_seaf_enqueue_file_factory_8h_source}\index{Pod/Classes/SeafSync/Enqueuers/SeafEnqueueFileFactory.h@{Pod/Classes/SeafSync/Enqueuers/SeafEnqueueFileFactory.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafEnqueueFileFactory.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 3/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncItemProtocol.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafUploadFile.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_enqueue_file_factory}{SeafEnqueueFileFactory}}\ :\ NSObject}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ +\ (SeafUploadFile\ *)createFrom:(\textcolor{keywordtype}{id}<SeafSyncItemProtocol>)seafSyncItem;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ +\ (SeafUploadFile\ *)createFromURL:(NSURL\ *)fileURL;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

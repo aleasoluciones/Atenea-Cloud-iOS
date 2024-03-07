@@ -1,0 +1,168 @@
+\doxysection{Seaf\+Deleted\+Repo\+Item Class Reference}
+\hypertarget{interface_seaf_deleted_repo_item}{}\label{interface_seaf_deleted_repo_item}\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+
+
+Represents a deleted repository item in Seafile.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Deleted\+Repo\+Item.\+h$>$}
+
+Inheritance diagram for Seaf\+Deleted\+Repo\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/ded/interface_seaf_deleted_repo_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_deleted_repo_item_ae261ea4a8f3268fa162b086721e34c20}{init\+With\+Dictionary\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_recovery_item-p}{$<$\+Seaf\+Recovery\+Item$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_ac8cf561553a9a3bb6b85bf429b3acb2f}{name}}
+\item 
+(NSInteger) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a77480a16be78f882134a10ecad2f97e9}{size\+In\+Bytes}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a002c38d75c5de5bc150c71f79ba69353}{recover\+Using\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_recovery_item-p_a518faeb29c84978d2b557a5ee5a863ff}{revert\+Recovery\+Using\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_deleted_repo_item_aaa62e51498a330c9a3bd96d11faf36a1}{from\+Array\+Dictionary\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a67a28e0965b93d2c75047d971b38a47d}{del\+Time}}
+\item 
+NSInteger \mbox{\hyperlink{interface_seaf_deleted_repo_item_a83b04b529ee803f7238890ab8e66c75d}{encrypted}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a64bd61a728917f74e0ad3f4160839bff}{head\+Commit\+Id}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a21fa6b58a826376a24f82fe7d0a62b72}{org\+Id}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_ac3dd767127bdd305ded82f276f3c2cfa}{owner\+Contact\+Email}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a251a2005e03f02383fed65d4525afff5}{owner\+Email}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a288b671ee7963916de536866f9832620}{owner\+Name}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_acb44be623b5af3a0bb12b0abb6465389}{repo\+Id}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_deleted_repo_item_a944fb87c9b7935a974e0fb969b085540}{repo\+Name}}
+\item 
+NSInteger \mbox{\hyperlink{interface_seaf_deleted_repo_item_a045f934c5b7941512c32645fbbbf3120}{size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a deleted repository item in Seafile. 
+
+\begin{DoxyNote}{Note}
+This class conforms to the \doxylink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item} protocol. 
+\end{DoxyNote}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_deleted_repo_item_aaa62e51498a330c9a3bd96d11faf36a1}\label{interface_seaf_deleted_repo_item_aaa62e51498a330c9a3bd96d11faf36a1} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!fromArrayDictionary:@{fromArrayDictionary:}}
+\index{fromArrayDictionary:@{fromArrayDictionary:}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{fromArrayDictionary:}{fromArrayDictionary:}}
+{\footnotesize\ttfamily + (NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) from\+Array\+Dictionary\+: \begin{DoxyParamCaption}\item[{(NSArray$<$ NSDictionary \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*})}]{array }\end{DoxyParamCaption}}
+
+Converts an array of dictionaries into an array of \doxylink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item} objects. 
+\begin{DoxyParams}{Parameters}
+{\em array} & An array of dictionaries containing information about deleted repositories. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of \doxylink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item} objects. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_deleted_repo_item_ae261ea4a8f3268fa162b086721e34c20}\label{interface_seaf_deleted_repo_item_ae261ea4a8f3268fa162b086721e34c20} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!initWithDictionary:@{initWithDictionary:}}
+\index{initWithDictionary:@{initWithDictionary:}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{initWithDictionary:}{initWithDictionary:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Dictionary\+: \begin{DoxyParamCaption}\item[{(NSDictionary \texorpdfstring{$\ast$}{*})}]{dictionary }\end{DoxyParamCaption}}
+
+Initializes a new instance of \doxylink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item} with the provided dictionary. 
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & The dictionary containing information about the deleted repository. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized \doxylink{interface_seaf_deleted_repo_item}{Seaf\+Deleted\+Repo\+Item} object. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_seaf_deleted_repo_item_a67a28e0965b93d2c75047d971b38a47d}\label{interface_seaf_deleted_repo_item_a67a28e0965b93d2c75047d971b38a47d} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!delTime@{delTime}}
+\index{delTime@{delTime}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{delTime}{delTime}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) del\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The timestamp indicating when the repository was deleted. \Hypertarget{interface_seaf_deleted_repo_item_a83b04b529ee803f7238890ab8e66c75d}\label{interface_seaf_deleted_repo_item_a83b04b529ee803f7238890ab8e66c75d} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!encrypted@{encrypted}}
+\index{encrypted@{encrypted}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{encrypted}{encrypted}}
+{\footnotesize\ttfamily -\/ (NSInteger) encrypted\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+An integer value indicating whether the repository is encrypted. \Hypertarget{interface_seaf_deleted_repo_item_a64bd61a728917f74e0ad3f4160839bff}\label{interface_seaf_deleted_repo_item_a64bd61a728917f74e0ad3f4160839bff} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!headCommitId@{headCommitId}}
+\index{headCommitId@{headCommitId}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{headCommitId}{headCommitId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) head\+Commit\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The head commit ID associated with the repository. \Hypertarget{interface_seaf_deleted_repo_item_a21fa6b58a826376a24f82fe7d0a62b72}\label{interface_seaf_deleted_repo_item_a21fa6b58a826376a24f82fe7d0a62b72} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!orgId@{orgId}}
+\index{orgId@{orgId}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{orgId}{orgId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) org\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The organization ID associated with the repository. \Hypertarget{interface_seaf_deleted_repo_item_ac3dd767127bdd305ded82f276f3c2cfa}\label{interface_seaf_deleted_repo_item_ac3dd767127bdd305ded82f276f3c2cfa} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!ownerContactEmail@{ownerContactEmail}}
+\index{ownerContactEmail@{ownerContactEmail}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{ownerContactEmail}{ownerContactEmail}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) owner\+Contact\+Email\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The contact email of the owner of the repository. \Hypertarget{interface_seaf_deleted_repo_item_a251a2005e03f02383fed65d4525afff5}\label{interface_seaf_deleted_repo_item_a251a2005e03f02383fed65d4525afff5} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!ownerEmail@{ownerEmail}}
+\index{ownerEmail@{ownerEmail}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{ownerEmail}{ownerEmail}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) owner\+Email\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The email of the owner of the repository. \Hypertarget{interface_seaf_deleted_repo_item_a288b671ee7963916de536866f9832620}\label{interface_seaf_deleted_repo_item_a288b671ee7963916de536866f9832620} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!ownerName@{ownerName}}
+\index{ownerName@{ownerName}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{ownerName}{ownerName}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) owner\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The name of the owner of the repository. \Hypertarget{interface_seaf_deleted_repo_item_acb44be623b5af3a0bb12b0abb6465389}\label{interface_seaf_deleted_repo_item_acb44be623b5af3a0bb12b0abb6465389} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!repoId@{repoId}}
+\index{repoId@{repoId}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{repoId}{repoId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) repo\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The repository ID associated with the repository. \Hypertarget{interface_seaf_deleted_repo_item_a944fb87c9b7935a974e0fb969b085540}\label{interface_seaf_deleted_repo_item_a944fb87c9b7935a974e0fb969b085540} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!repoName@{repoName}}
+\index{repoName@{repoName}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{repoName}{repoName}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) repo\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+The name of the repository. \Hypertarget{interface_seaf_deleted_repo_item_a045f934c5b7941512c32645fbbbf3120}\label{interface_seaf_deleted_repo_item_a045f934c5b7941512c32645fbbbf3120} 
+\index{SeafDeletedRepoItem@{SeafDeletedRepoItem}!size@{size}}
+\index{size@{size}!SeafDeletedRepoItem@{SeafDeletedRepoItem}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily -\/ (NSInteger) size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The size of the repository in bytes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Recovery/\+Recovery\+Items/Seaf\+Deleted\+Repo\+Item.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{Seaf\+Deleted\+File\+Folder\+Item.\+h}
+\hypertarget{_seaf_deleted_file_folder_item_8h_source}{}\label{_seaf_deleted_file_folder_item_8h_source}\index{Pod/Classes/SeafRecovery/RecoveryItems/SeafDeletedFileFolderItem.h@{Pod/Classes/SeafRecovery/RecoveryItems/SeafDeletedFileFolderItem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafDeletedFileFolderItem.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 30/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_recovery_item_8h}{SeafRecoveryItem.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_deleted_file_folder_item}{SeafDeletedFileFolderItem}}\ :\ NSObject<\mbox{\hyperlink{protocol_seaf_recovery_item-p}{SeafRecoveryItem}}>}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a4f6127f1212e4557e40fcfd9ea125129}{commitId}};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a032a40ff46685e3448f74c9bf34b365c}{deletedTime}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{@property}\ (nonatomic,\ assign)\ BOOL\ \mbox{\hyperlink{interface_seaf_deleted_file_folder_item_af81ca7f9bdfc8ff60d20f31429e733f0}{isDir}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a372fda7b7bd5ca3378b08a83b9b1a8aa}{objId}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a4753cdd68890957ff7526f8f5f1bb00b}{objName}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_adbfdc74da41ac45c85f6a664ba50b9e9}{parentDir}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a90a01065201478551040824d56a2482b}{scanStat}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{@property}\ (nonatomic,\ assign)\ NSInteger\ \mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a471a9539d9a007b49e6b6db5ee620208}{size}};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *\mbox{\hyperlink{interface_seaf_deleted_file_folder_item_a42a9e70af043c8572775e811f2c8bd76}{repoId}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ -\/\ (instancetype)initWithDictionary:(NSDictionary\ *)dictionary\ andRepo:(NSString\ *)repoId;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00079\ +\ (NSMutableArray<\mbox{\hyperlink{interface_seaf_deleted_file_folder_item}{SeafDeletedFileFolderItem}}\ *>\ *)fromArrayDictionary:(NSArray<NSDictionary\ *>\ *)array\ andRepo:(NSString\ *)repoId;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

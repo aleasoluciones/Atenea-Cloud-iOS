@@ -1,0 +1,54 @@
+\doxysection{Seaf\+Sync\+Folder\+Observer Class Reference}
+\hypertarget{interface_seaf_sync_folder_observer}{}\label{interface_seaf_sync_folder_observer}\index{SeafSyncFolderObserver@{SeafSyncFolderObserver}}
+
+
+The \doxylink{interface_seaf_sync_folder_observer}{Seaf\+Sync\+Folder\+Observer} class is responsible for observing changes in a folder and invoking a callback when changes occur.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Folder\+Observer.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Folder\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{da/d1c/interface_seaf_sync_folder_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_seaf_sync_folder_observer_a9cce2313063feb389dba21d88a95c259}\label{interface_seaf_sync_folder_observer_a9cce2313063feb389dba21d88a95c259} 
+(id) -\/ {\bfseries init\+With\+:}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_folder_observer_ac01f1599088ab92a5512f8f881f09765}{start\+:}}
+\begin{DoxyCompactList}\small\item\em Starts observing a folder at the specified path and sets a callback function to be called when changes occur. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_sync_folder_observer_a69add6c7a7b7ad5c2fa0a6dff705fec9}\label{interface_seaf_sync_folder_observer_a69add6c7a7b7ad5c2fa0a6dff705fec9} 
+(void) -\/ {\bfseries stop}
+\begin{DoxyCompactList}\small\item\em Stops observing the folder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_seaf_sync_folder_observer}{Seaf\+Sync\+Folder\+Observer} class is responsible for observing changes in a folder and invoking a callback when changes occur. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_folder_observer_ac01f1599088ab92a5512f8f881f09765}\label{interface_seaf_sync_folder_observer_ac01f1599088ab92a5512f8f881f09765} 
+\index{SeafSyncFolderObserver@{SeafSyncFolderObserver}!start:@{start:}}
+\index{start:@{start:}!SeafSyncFolderObserver@{SeafSyncFolderObserver}}
+\doxysubsubsection{\texorpdfstring{start:}{start:}}
+{\footnotesize\ttfamily -\/ (void) start\+: \begin{DoxyParamCaption}\item[{(nullable Seaf\+Sync\+Observer\+Protocol\+Callback)}]{callback }\end{DoxyParamCaption}}
+
+
+
+Starts observing a folder at the specified path and sets a callback function to be called when changes occur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The callback function to invoke when changes occur. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Observers/\+Impl/\mbox{\hyperlink{_seaf_sync_folder_observer_8h}{Seaf\+Sync\+Folder\+Observer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\doxysection{Seaf\+Sync\+Expirator\+Factory Class Reference}
+\hypertarget{interface_seaf_sync_expirator_factory}{}\label{interface_seaf_sync_expirator_factory}\index{SeafSyncExpiratorFactory@{SeafSyncExpiratorFactory}}
+
+
+Factory for creating synchronization expirators.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Expirator\+Factory.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Expirator\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/dfd/interface_seaf_sync_expirator_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_seaf_sync_expirator_protocol-p}{Seaf\+Sync\+Expirator\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_seaf_sync_expirator_factory_a57b79d58425c44308f070a413eaab2e5}{get\+Expirator\+For\+:}}
+\begin{DoxyCompactList}\small\item\em Gets the expirator for the given synchronization settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory for creating synchronization expirators. 
+
+The \doxylink{interface_seaf_sync_expirator_factory}{Seaf\+Sync\+Expirator\+Factory} class is responsible for creating instances of classes conforming to the \doxylink{protocol_seaf_sync_expirator_protocol-p}{Seaf\+Sync\+Expirator\+Protocol}. It provides a method to get the appropriate expirator based on the provided synchronization settings. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_expirator_factory_a57b79d58425c44308f070a413eaab2e5}\label{interface_seaf_sync_expirator_factory_a57b79d58425c44308f070a413eaab2e5} 
+\index{SeafSyncExpiratorFactory@{SeafSyncExpiratorFactory}!getExpiratorFor:@{getExpiratorFor:}}
+\index{getExpiratorFor:@{getExpiratorFor:}!SeafSyncExpiratorFactory@{SeafSyncExpiratorFactory}}
+\doxysubsubsection{\texorpdfstring{getExpiratorFor:}{getExpiratorFor:}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_seaf_sync_expirator_protocol-p}{Seaf\+Sync\+Expirator\+Protocol}} $>$) get\+Expirator\+For\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+
+
+Gets the expirator for the given synchronization settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization settings for which to obtain the expirator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An object conforming to the \doxylink{protocol_seaf_sync_expirator_protocol-p}{Seaf\+Sync\+Expirator\+Protocol}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Expiration/\mbox{\hyperlink{_seaf_sync_expirator_factory_8h}{Seaf\+Sync\+Expirator\+Factory.\+h}}\end{DoxyCompactItemize}

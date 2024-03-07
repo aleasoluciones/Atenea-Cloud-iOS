@@ -1,0 +1,81 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Background\+Task\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_background_task_protocol-p}{}\label{protocol_seaf_background_task_protocol-p}\index{$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}}
+
+
+A protocol for defining background tasks.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Background\+Task\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Background\+Task\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.602289cm]{db/d7b/protocol_seaf_background_task_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(ios(13.\+0) -\/ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p_a1a8648bca1162aa2c74c8bdccffaf816}{API\+\_\+\+AVAILABLE}}
+\begin{DoxyCompactList}\small\item\em Gets the background task request. \end{DoxyCompactList}\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p_a3a2e998a14892f7fd318c50a2e195e34}{identifier}}
+\begin{DoxyCompactList}\small\item\em Gets the unique identifier for the background task. \end{DoxyCompactList}\item 
+\Hypertarget{protocol_seaf_background_task_protocol-p_aeae10f8bc2d0398c441b0bc3144f9da5}\label{protocol_seaf_background_task_protocol-p_aeae10f8bc2d0398c441b0bc3144f9da5} 
+(void) -\/ {\bfseries run}
+\begin{DoxyCompactList}\small\item\em Runs the background task. @discussion This method is available on i\+OS 13.\+0 and later. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_background_task_protocol-p_a7ecd74b481b4a8a07977814b1c4dedc8}{on\+Complete\+:}}
+\begin{DoxyCompactList}\small\item\em Handles completion of the background task. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A protocol for defining background tasks. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_background_task_protocol-p_a1a8648bca1162aa2c74c8bdccffaf816}\label{protocol_seaf_background_task_protocol-p_a1a8648bca1162aa2c74c8bdccffaf816} 
+\index{$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (ios(13.\+0) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets the background task request. 
+
+\begin{DoxyReturn}{Returns}
+The background task request. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_background_task_protocol-p_a3a2e998a14892f7fd318c50a2e195e34}\label{protocol_seaf_background_task_protocol-p_a3a2e998a14892f7fd318c50a2e195e34} 
+\index{$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}!identifier@{identifier}}
+\index{identifier@{identifier}!$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) identifier \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Gets the unique identifier for the background task. 
+
+\begin{DoxyReturn}{Returns}
+The unique identifier for the background task. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_background_task_protocol-p_a7ecd74b481b4a8a07977814b1c4dedc8}\label{protocol_seaf_background_task_protocol-p_a7ecd74b481b4a8a07977814b1c4dedc8} 
+\index{$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}!onComplete:@{onComplete:}}
+\index{onComplete:@{onComplete:}!$<$SeafBackgroundTaskProtocol$>$@{$<$SeafBackgroundTaskProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{onComplete:}{onComplete:}}
+{\footnotesize\ttfamily -\/ (void) on\+Complete\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e}{Seaf\+Background\+Task\+Completed}})}]{on\+Complete }\end{DoxyParamCaption}}
+
+
+
+Handles completion of the background task. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Complete} & A block to be executed upon task completion. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Background\+Tasks/\mbox{\hyperlink{_seaf_background_task_protocol_8h}{Seaf\+Background\+Task\+Protocol.\+h}}\end{DoxyCompactItemize}

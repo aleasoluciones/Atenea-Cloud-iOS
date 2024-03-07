@@ -1,0 +1,191 @@
+\doxysection{Seaf\+Sync\+Settings Class Reference}
+\hypertarget{interface_seaf_sync_settings}{}\label{interface_seaf_sync_settings}\index{SeafSyncSettings@{SeafSyncSettings}}
+
+
+The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} class represents synchronization settings for syncing files from a source folder to a target folder in the user\textquotesingle{}s cloud storage.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Settings.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Settings\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/dd7/interface_seaf_sync_settings}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_seaf_sync_settings_a02560fe95bfbafbd49147968d2b7059d}{active}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_adea8dc61121fcbc84f039eb595e3abef}{account\+Id}}
+\item 
+id \mbox{\hyperlink{interface_seaf_sync_settings_aa8ffacbb0a2e2ef60ac49b6b245ba9dc}{identifier}}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_a693266c8923600370639eff1333c1161}{creation\+Date}}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_ae40748734bb771f7beb2d397a33a2938}{available\+Until\+Date}}
+\item 
+NSInteger \mbox{\hyperlink{interface_seaf_sync_settings_a0ef80d8d0742c077b6c4a3c8e9b427e2}{duration\+Of\+Backup\+Files\+On\+Cloud\+In\+Days}}
+\item 
+id \mbox{\hyperlink{interface_seaf_sync_settings_ab2916715ae777136631af6fb66a5d771}{resource\+Id}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_af41f86fc1ac4dd35ebbe4469d8d4f06c}{target\+Id}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_a677393ac78eda173dff9a70857592d33}{repo\+Id}}
+\item 
+Seaf\+Sync\+Type \mbox{\hyperlink{interface_seaf_sync_settings_acf9df9fdc0a6236e9915dcb6fc4948c2}{source\+Type}}
+\item 
+Seaf\+Sync\+Mode \mbox{\hyperlink{interface_seaf_sync_settings_a634fb8abc0933c3a01008a7f879fd8f3}{mode}}
+\item 
+Seaf\+Sync\+Lifetime\+Type \mbox{\hyperlink{interface_seaf_sync_settings_a35f5f31de1661d7cd4a18b1d8d36e40b}{life\+Time}}
+\item 
+NSDate \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_ab6e97cd0597fc0b2debf174639d48a0c}{last\+Run\+Time}}
+\item 
+Seaf\+Sync\+State \mbox{\hyperlink{interface_seaf_sync_settings_a02040225e5659987c1a1ccb4d546956d}{state}}
+\item 
+bool \mbox{\hyperlink{interface_seaf_sync_settings_a76e9a11603d622f9500c686097d2150a}{upload\+Only\+Over\+Wifi}}
+\item 
+bool \mbox{\hyperlink{interface_seaf_sync_settings_a69f5aa149ba04c2f05ae16125c065f87}{upload\+Videos}}
+\item 
+Seaf\+Connection \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_a6a55e75ca5b4b27a7c15499917980f36}{connection}}
+\item 
+Seaf\+Sync\+Error \mbox{\hyperlink{interface_seaf_sync_settings_ac594cb9d79a5e71559cf06e676b8aa39}{last\+Run\+Error}}
+\item 
+NSString \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{interface_seaf_sync_settings_a17e7b5e3547d159ec7b9409dba6273d7}{full\+Source\+URL}}
+\item 
+bool \mbox{\hyperlink{interface_seaf_sync_settings_aba48cc4c21e4195ca46af98dfa0665e9}{delete\+Files\+On\+Expire}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} class represents synchronization settings for syncing files from a source folder to a target folder in the user\textquotesingle{}s cloud storage. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_seaf_sync_settings_adea8dc61121fcbc84f039eb595e3abef}\label{interface_seaf_sync_settings_adea8dc61121fcbc84f039eb595e3abef} 
+\index{SeafSyncSettings@{SeafSyncSettings}!accountId@{accountId}}
+\index{accountId@{accountId}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{accountId}{accountId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) account\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The unique identifier associated with the user account. \Hypertarget{interface_seaf_sync_settings_a02560fe95bfbafbd49147968d2b7059d}\label{interface_seaf_sync_settings_a02560fe95bfbafbd49147968d2b7059d} 
+\index{SeafSyncSettings@{SeafSyncSettings}!active@{active}}
+\index{active@{active}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily -\/ (bool) active\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+A flag indicating whether setting is active or not \Hypertarget{interface_seaf_sync_settings_ae40748734bb771f7beb2d397a33a2938}\label{interface_seaf_sync_settings_ae40748734bb771f7beb2d397a33a2938} 
+\index{SeafSyncSettings@{SeafSyncSettings}!availableUntilDate@{availableUntilDate}}
+\index{availableUntilDate@{availableUntilDate}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{availableUntilDate}{availableUntilDate}}
+{\footnotesize\ttfamily -\/ (NSDate\texorpdfstring{$\ast$}{*}) available\+Until\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The date until which the sync settings are available. \Hypertarget{interface_seaf_sync_settings_a6a55e75ca5b4b27a7c15499917980f36}\label{interface_seaf_sync_settings_a6a55e75ca5b4b27a7c15499917980f36} 
+\index{SeafSyncSettings@{SeafSyncSettings}!connection@{connection}}
+\index{connection@{connection}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily -\/ (Seaf\+Connection\texorpdfstring{$\ast$}{*}) connection\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The connection associated with the synchronization settings. \Hypertarget{interface_seaf_sync_settings_a693266c8923600370639eff1333c1161}\label{interface_seaf_sync_settings_a693266c8923600370639eff1333c1161} 
+\index{SeafSyncSettings@{SeafSyncSettings}!creationDate@{creationDate}}
+\index{creationDate@{creationDate}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{creationDate}{creationDate}}
+{\footnotesize\ttfamily -\/ (NSDate\texorpdfstring{$\ast$}{*}) creation\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The date when the sync settings were created. \Hypertarget{interface_seaf_sync_settings_aba48cc4c21e4195ca46af98dfa0665e9}\label{interface_seaf_sync_settings_aba48cc4c21e4195ca46af98dfa0665e9} 
+\index{SeafSyncSettings@{SeafSyncSettings}!deleteFilesOnExpire@{deleteFilesOnExpire}}
+\index{deleteFilesOnExpire@{deleteFilesOnExpire}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{deleteFilesOnExpire}{deleteFilesOnExpire}}
+{\footnotesize\ttfamily -\/ (bool) delete\+Files\+On\+Expire\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+A flag indicating if files must be removed from cloud when this setting expires \Hypertarget{interface_seaf_sync_settings_a0ef80d8d0742c077b6c4a3c8e9b427e2}\label{interface_seaf_sync_settings_a0ef80d8d0742c077b6c4a3c8e9b427e2} 
+\index{SeafSyncSettings@{SeafSyncSettings}!durationOfBackupFilesOnCloudInDays@{durationOfBackupFilesOnCloudInDays}}
+\index{durationOfBackupFilesOnCloudInDays@{durationOfBackupFilesOnCloudInDays}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{durationOfBackupFilesOnCloudInDays}{durationOfBackupFilesOnCloudInDays}}
+{\footnotesize\ttfamily -\/ (NSInteger) duration\+Of\+Backup\+Files\+On\+Cloud\+In\+Days\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The duration date for make available files on cloud \Hypertarget{interface_seaf_sync_settings_a17e7b5e3547d159ec7b9409dba6273d7}\label{interface_seaf_sync_settings_a17e7b5e3547d159ec7b9409dba6273d7} 
+\index{SeafSyncSettings@{SeafSyncSettings}!fullSourceURL@{fullSourceURL}}
+\index{fullSourceURL@{fullSourceURL}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{fullSourceURL}{fullSourceURL}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) full\+Source\+URL\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The source URL. \Hypertarget{interface_seaf_sync_settings_aa8ffacbb0a2e2ef60ac49b6b245ba9dc}\label{interface_seaf_sync_settings_aa8ffacbb0a2e2ef60ac49b6b245ba9dc} 
+\index{SeafSyncSettings@{SeafSyncSettings}!identifier@{identifier}}
+\index{identifier@{identifier}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily -\/ (id) identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The identifier of the sync settings. \Hypertarget{interface_seaf_sync_settings_ac594cb9d79a5e71559cf06e676b8aa39}\label{interface_seaf_sync_settings_ac594cb9d79a5e71559cf06e676b8aa39} 
+\index{SeafSyncSettings@{SeafSyncSettings}!lastRunError@{lastRunError}}
+\index{lastRunError@{lastRunError}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{lastRunError}{lastRunError}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+Error) last\+Run\+Error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The last error that occurred during a synchronization run. \Hypertarget{interface_seaf_sync_settings_ab6e97cd0597fc0b2debf174639d48a0c}\label{interface_seaf_sync_settings_ab6e97cd0597fc0b2debf174639d48a0c} 
+\index{SeafSyncSettings@{SeafSyncSettings}!lastRunTime@{lastRunTime}}
+\index{lastRunTime@{lastRunTime}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{lastRunTime}{lastRunTime}}
+{\footnotesize\ttfamily -\/ (NSDate\texorpdfstring{$\ast$}{*}) last\+Run\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The date and time of the last synchronization run. \Hypertarget{interface_seaf_sync_settings_a35f5f31de1661d7cd4a18b1d8d36e40b}\label{interface_seaf_sync_settings_a35f5f31de1661d7cd4a18b1d8d36e40b} 
+\index{SeafSyncSettings@{SeafSyncSettings}!lifeTime@{lifeTime}}
+\index{lifeTime@{lifeTime}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{lifeTime}{lifeTime}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+Lifetime\+Type) life\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The synchronization lifetime mode (Permanent / Temporal) \Hypertarget{interface_seaf_sync_settings_a634fb8abc0933c3a01008a7f879fd8f3}\label{interface_seaf_sync_settings_a634fb8abc0933c3a01008a7f879fd8f3} 
+\index{SeafSyncSettings@{SeafSyncSettings}!mode@{mode}}
+\index{mode@{mode}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+Mode) mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The synchronization mode (Full / Incremental) \Hypertarget{interface_seaf_sync_settings_a677393ac78eda173dff9a70857592d33}\label{interface_seaf_sync_settings_a677393ac78eda173dff9a70857592d33} 
+\index{SeafSyncSettings@{SeafSyncSettings}!repoId@{repoId}}
+\index{repoId@{repoId}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{repoId}{repoId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) repo\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The identifier of the repository. \Hypertarget{interface_seaf_sync_settings_ab2916715ae777136631af6fb66a5d771}\label{interface_seaf_sync_settings_ab2916715ae777136631af6fb66a5d771} 
+\index{SeafSyncSettings@{SeafSyncSettings}!resourceId@{resourceId}}
+\index{resourceId@{resourceId}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{resourceId}{resourceId}}
+{\footnotesize\ttfamily -\/ (id) resource\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The identifier of the resource. \Hypertarget{interface_seaf_sync_settings_acf9df9fdc0a6236e9915dcb6fc4948c2}\label{interface_seaf_sync_settings_acf9df9fdc0a6236e9915dcb6fc4948c2} 
+\index{SeafSyncSettings@{SeafSyncSettings}!sourceType@{sourceType}}
+\index{sourceType@{sourceType}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{sourceType}{sourceType}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+Type) source\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The type of the source for synchronization. \Hypertarget{interface_seaf_sync_settings_a02040225e5659987c1a1ccb4d546956d}\label{interface_seaf_sync_settings_a02040225e5659987c1a1ccb4d546956d} 
+\index{SeafSyncSettings@{SeafSyncSettings}!state@{state}}
+\index{state@{state}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (Seaf\+Sync\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The current state of synchronization. \Hypertarget{interface_seaf_sync_settings_af41f86fc1ac4dd35ebbe4469d8d4f06c}\label{interface_seaf_sync_settings_af41f86fc1ac4dd35ebbe4469d8d4f06c} 
+\index{SeafSyncSettings@{SeafSyncSettings}!targetId@{targetId}}
+\index{targetId@{targetId}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{targetId}{targetId}}
+{\footnotesize\ttfamily -\/ (NSString\texorpdfstring{$\ast$}{*}) target\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+The identifier of the target folder. \Hypertarget{interface_seaf_sync_settings_a76e9a11603d622f9500c686097d2150a}\label{interface_seaf_sync_settings_a76e9a11603d622f9500c686097d2150a} 
+\index{SeafSyncSettings@{SeafSyncSettings}!uploadOnlyOverWifi@{uploadOnlyOverWifi}}
+\index{uploadOnlyOverWifi@{uploadOnlyOverWifi}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{uploadOnlyOverWifi}{uploadOnlyOverWifi}}
+{\footnotesize\ttfamily -\/ (bool) upload\+Only\+Over\+Wifi\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+A flag indicating whether to upload files only over Wi-\/\+Fi. \Hypertarget{interface_seaf_sync_settings_a69f5aa149ba04c2f05ae16125c065f87}\label{interface_seaf_sync_settings_a69f5aa149ba04c2f05ae16125c065f87} 
+\index{SeafSyncSettings@{SeafSyncSettings}!uploadVideos@{uploadVideos}}
+\index{uploadVideos@{uploadVideos}!SeafSyncSettings@{SeafSyncSettings}}
+\doxysubsubsection{\texorpdfstring{uploadVideos}{uploadVideos}}
+{\footnotesize\ttfamily -\/ (bool) upload\+Videos\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}}
+
+A flag indicating whether to upload videos during synchronization. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Settings/\mbox{\hyperlink{_seaf_sync_settings_8h}{Seaf\+Sync\+Settings.\+h}}\end{DoxyCompactItemize}

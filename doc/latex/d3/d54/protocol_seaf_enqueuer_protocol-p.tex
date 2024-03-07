@@ -1,0 +1,87 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Enqueuer\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_enqueuer_protocol-p}{}\label{protocol_seaf_enqueuer_protocol-p}\index{$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}}
+
+
+The \doxylink{protocol_seaf_enqueuer_protocol-p}{Seaf\+Enqueuer\+Protocol} protocol defines methods for a file uploader in the Seafile application.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Enqueuer\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Enqueuer\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/d54/protocol_seaf_enqueuer_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_aa0f3bb11c772051b36ef127a9e4cfc4c}{init\+:connection\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the uploader with specified synchronization settings and connection. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_ae9f971d086066830044c05cec6fd796a}{enqueue}}
+\begin{DoxyCompactList}\small\item\em Starts the upload process. \end{DoxyCompactList}\item 
+(long long) -\/ \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_a318f6bb0f9716b3bffffccf31b275372}{estimated\+Upload\+Size\+In\+Bytes}}
+\item 
+\Hypertarget{protocol_seaf_enqueuer_protocol-p_a08ca30ee5faf36d5fab33d698fc99f62}\label{protocol_seaf_enqueuer_protocol-p_a08ca30ee5faf36d5fab33d698fc99f62} 
+(void) -\/ {\bfseries on\+Enqueue\+Completed\+:}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{protocol_seaf_enqueuer_protocol-p}{Seaf\+Enqueuer\+Protocol} protocol defines methods for a file uploader in the Seafile application. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_enqueuer_protocol-p_ae9f971d086066830044c05cec6fd796a}\label{protocol_seaf_enqueuer_protocol-p_ae9f971d086066830044c05cec6fd796a} 
+\index{$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{enqueue}{enqueue}}
+{\footnotesize\ttfamily -\/ (void) enqueue \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Starts the upload process. 
+
+This method initiates the file upload according to the implemented logic in the uploader. \Hypertarget{protocol_seaf_enqueuer_protocol-p_a318f6bb0f9716b3bffffccf31b275372}\label{protocol_seaf_enqueuer_protocol-p_a318f6bb0f9716b3bffffccf31b275372} 
+\index{$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}!estimatedUploadSizeInBytes@{estimatedUploadSizeInBytes}}
+\index{estimatedUploadSizeInBytes@{estimatedUploadSizeInBytes}!$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{estimatedUploadSizeInBytes}{estimatedUploadSizeInBytes}}
+{\footnotesize\ttfamily -\/ (long long) estimated\+Upload\+Size\+In\+Bytes \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Calculate the estimated upload size in bytes for the current sync operation.
+
+This method calculates the estimated upload size in bytes by summing up the sizes of all files that have changed since the last synchronization in the specified source folder.
+
+\begin{DoxyReturn}{Returns}
+The estimated upload size in bytes. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_enqueuer_protocol-p_aa0f3bb11c772051b36ef127a9e4cfc4c}\label{protocol_seaf_enqueuer_protocol-p_aa0f3bb11c772051b36ef127a9e4cfc4c} 
+\index{$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}!init:connection:@{init:connection:}}
+\index{init:connection:@{init:connection:}!$<$SeafEnqueuerProtocol$>$@{$<$SeafEnqueuerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{init:connection:}{init:connection:}}
+{\footnotesize\ttfamily -\/ (id) init\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\item[{connection\+:(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the uploader with specified synchronization settings and connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object representing the synchronization settings for the uploader. \\
+\hline
+{\em connection} & The Seaf\+Connection instance to be used for the upload. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance conforming to the \doxylink{protocol_seaf_enqueuer_protocol-p}{Seaf\+Enqueuer\+Protocol}. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{interface_seaf_sync_gallery_enqueuer_a1c3e9cbc2e96bf0d38fa0315fac3d884}{Seaf\+Sync\+Gallery\+Enqueuer}}.
+
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Enqueuers/\mbox{\hyperlink{_seaf_enqueuer_protocol_8h}{Seaf\+Enqueuer\+Protocol.\+h}}\end{DoxyCompactItemize}

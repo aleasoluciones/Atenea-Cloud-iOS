@@ -1,0 +1,63 @@
+\doxysection{Seaf\+Enqueue\+File\+Factory Class Reference}
+\hypertarget{interface_seaf_enqueue_file_factory}{}\label{interface_seaf_enqueue_file_factory}\index{SeafEnqueueFileFactory@{SeafEnqueueFileFactory}}
+
+
+Factory class for creating Seaf\+Upload\+File instances.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Enqueue\+File\+Factory.\+h$>$}
+
+Inheritance diagram for Seaf\+Enqueue\+File\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d70/interface_seaf_enqueue_file_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(Seaf\+Upload\+File \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_enqueue_file_factory_abdc0b595444019a790d24a8d2e31220d}{create\+From\+:}}
+\item 
+(Seaf\+Upload\+File \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_enqueue_file_factory_aa2153cf6fc6459b99d19ff3fbd8cc20b}{create\+From\+URL\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class for creating Seaf\+Upload\+File instances. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_enqueue_file_factory_abdc0b595444019a790d24a8d2e31220d}\label{interface_seaf_enqueue_file_factory_abdc0b595444019a790d24a8d2e31220d} 
+\index{SeafEnqueueFileFactory@{SeafEnqueueFileFactory}!createFrom:@{createFrom:}}
+\index{createFrom:@{createFrom:}!SeafEnqueueFileFactory@{SeafEnqueueFileFactory}}
+\doxysubsubsection{\texorpdfstring{createFrom:}{createFrom:}}
+{\footnotesize\ttfamily + (Seaf\+Upload\+File \texorpdfstring{$\ast$}{*}) create\+From\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$)}]{seaf\+Sync\+Item }\end{DoxyParamCaption}}
+
+Creates a Seaf\+Upload\+File instance from a \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}. 
+\begin{DoxyParams}{Parameters}
+{\em seaf\+Sync\+Item} & The \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Seaf\+Upload\+File instance. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_enqueue_file_factory_aa2153cf6fc6459b99d19ff3fbd8cc20b}\label{interface_seaf_enqueue_file_factory_aa2153cf6fc6459b99d19ff3fbd8cc20b} 
+\index{SeafEnqueueFileFactory@{SeafEnqueueFileFactory}!createFromURL:@{createFromURL:}}
+\index{createFromURL:@{createFromURL:}!SeafEnqueueFileFactory@{SeafEnqueueFileFactory}}
+\doxysubsubsection{\texorpdfstring{createFromURL:}{createFromURL:}}
+{\footnotesize\ttfamily + (Seaf\+Upload\+File \texorpdfstring{$\ast$}{*}) create\+From\+URL\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{file\+URL }\end{DoxyParamCaption}}
+
+Creates a Seaf\+Upload\+File instance from a file URL. 
+\begin{DoxyParams}{Parameters}
+{\em file\+URL} & The URL of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Seaf\+Upload\+File instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Enqueuers/Seaf\+Enqueue\+File\+Factory.\+h\end{DoxyCompactItemize}

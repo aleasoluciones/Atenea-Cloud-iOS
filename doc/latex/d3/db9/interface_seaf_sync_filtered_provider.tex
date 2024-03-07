@@ -1,0 +1,58 @@
+\doxysection{Seaf\+Sync\+Filtered\+Provider Class Reference}
+\hypertarget{interface_seaf_sync_filtered_provider}{}\label{interface_seaf_sync_filtered_provider}\index{SeafSyncFilteredProvider@{SeafSyncFilteredProvider}}
+
+
+Represents a filtered synchronization provider for Seafile.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Filtered\+Provider.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Filtered\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/db9/interface_seaf_sync_filtered_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_filtered_provider_a7ba186d16a851ecf97a607558f8a0e44}{init\+With\+Provider\+:and\+Filters\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the filtered synchronization provider with the specified base provider and filters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{$<$\+Seaf\+Sync\+Provider\+Protocol$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}{get\+Files\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a filtered synchronization provider for Seafile. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_filtered_provider_a7ba186d16a851ecf97a607558f8a0e44}\label{interface_seaf_sync_filtered_provider_a7ba186d16a851ecf97a607558f8a0e44} 
+\index{SeafSyncFilteredProvider@{SeafSyncFilteredProvider}!initWithProvider:andFilters:@{initWithProvider:andFilters:}}
+\index{initWithProvider:andFilters:@{initWithProvider:andFilters:}!SeafSyncFilteredProvider@{SeafSyncFilteredProvider}}
+\doxysubsubsection{\texorpdfstring{initWithProvider:andFilters:}{initWithProvider:andFilters:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Provider\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$)}]{provider }\item[{and\+Filters\+:(nullable NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p}{Seaf\+Sync\+File\+Provider\+Filter\+Strategy}} $>$ $>$ \texorpdfstring{$\ast$}{*})}]{filters }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the filtered synchronization provider with the specified base provider and filters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & The base provider to retrieve files from. \\
+\hline
+{\em filters} & An optional array of filter strategies to apply to the files retrieved from the base provider. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of the filtered synchronization provider. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Providers/Seaf\+Sync\+Filtered\+Provider.\+h\end{DoxyCompactItemize}

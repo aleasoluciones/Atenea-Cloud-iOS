@@ -1,0 +1,211 @@
+\doxysection{Seaf\+Sync\+Settings\+Service Class Reference}
+\hypertarget{interface_seaf_sync_settings_service}{}\label{interface_seaf_sync_settings_service}\index{SeafSyncSettingsService@{SeafSyncSettingsService}}
+
+
+A service for managing synchronization settings.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Settings\+Service.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Settings\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/d73/interface_seaf_sync_settings_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a177a58db4aae8c108c8298f140228d29}{init\+With\+Connection\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a7144a0d82bc192fd970f6ef7881ce57c}{init\+With\+:and\+Connection\+:}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a57d856cc033aa6a6038662c048e94193}{get\+Settings}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a4c812f442bcc82010b08c1b8b9049491}{active\+Settings}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_add388a6bd786aa38e2f2ba1047ce0003}{add\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a265d811b409707927a9898ef22c6ae6d}{remove\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a3212c833850480d4e0c6bf903a59d1f7}{clear}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a18013ec91472b44d667dfcbc7c94b5df}{all}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a845f1a2a66e1a9721a563f0ef36ae991}{update\+State\+:to\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_ab813854a810ed25826c0ffcd5e0b181e}{set\+Last\+Run\+Time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a0f34140f0ae7ae2f2f73fdabf7a56387}{register\+Error\+In\+:with\+Error\+:}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_settings_service_a6a2874c3743b640b46261b4ff5ad2836}{find\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A service for managing synchronization settings. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_settings_service_a4c812f442bcc82010b08c1b8b9049491}\label{interface_seaf_sync_settings_service_a4c812f442bcc82010b08c1b8b9049491} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!activeSettings@{activeSettings}}
+\index{activeSettings@{activeSettings}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{activeSettings}{activeSettings}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) active\+Settings \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Retrieves all synchronization active settings.
+
+\begin{DoxyReturn}{Returns}
+An array containing all active synchronization settings. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_settings_service_add388a6bd786aa38e2f2ba1047ce0003}\label{interface_seaf_sync_settings_service_add388a6bd786aa38e2f2ba1047ce0003} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!add:@{add:}}
+\index{add:@{add:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{add:}{add:}}
+{\footnotesize\ttfamily -\/ (void) add\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Adds a synchronization setting to the service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_settings_service_a18013ec91472b44d667dfcbc7c94b5df}\label{interface_seaf_sync_settings_service_a18013ec91472b44d667dfcbc7c94b5df} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!all@{all}}
+\index{all@{all}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) all \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Retrieves all synchronization settings from the repository.
+
+\begin{DoxyReturn}{Returns}
+An array containing all synchronization settings. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_settings_service_a3212c833850480d4e0c6bf903a59d1f7}\label{interface_seaf_sync_settings_service_a3212c833850480d4e0c6bf903a59d1f7} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!clear@{clear}}
+\index{clear@{clear}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily -\/ (void) clear \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Clears all synchronization settings from the service. \Hypertarget{interface_seaf_sync_settings_service_a6a2874c3743b640b46261b4ff5ad2836}\label{interface_seaf_sync_settings_service_a6a2874c3743b640b46261b4ff5ad2836} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!find:@{find:}}
+\index{find:@{find:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{find:}{find:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) find\+: \begin{DoxyParamCaption}\item[{(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+Finds and returns an array of \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} objects based on the specified predicate.
+
+This method searches for \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} objects in the collection that satisfy the given predicate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The predicate to use for filtering the results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} objects that match the specified predicate.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The returned array may be empty if no matching objects are found. 
+\end{DoxyNote}
+\Hypertarget{interface_seaf_sync_settings_service_a57d856cc033aa6a6038662c048e94193}\label{interface_seaf_sync_settings_service_a57d856cc033aa6a6038662c048e94193} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!getSettings@{getSettings}}
+\index{getSettings@{getSettings}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{getSettings}{getSettings}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) get\+Settings \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Retrieves all synchronization settings.
+
+\begin{DoxyReturn}{Returns}
+An array containing all synchronization settings. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_settings_service_a7144a0d82bc192fd970f6ef7881ce57c}\label{interface_seaf_sync_settings_service_a7144a0d82bc192fd970f6ef7881ce57c} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!initWith:andConnection:@{initWith:andConnection:}}
+\index{initWith:andConnection:@{initWith:andConnection:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{initWith:andConnection:}{initWith:andConnection:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_settings_repository-p}{Seaf\+Sync\+Settings\+Repository}} $>$)}]{repository }\item[{and\+Connection\+:(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+Initializes a \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} with a custom settings repository.
+
+
+\begin{DoxyParams}{Parameters}
+{\em repository} & The custom settings repository to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} with the provided settings repository. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_settings_service_a177a58db4aae8c108c8298f140228d29}\label{interface_seaf_sync_settings_service_a177a58db4aae8c108c8298f140228d29} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!initWithConnection:@{initWithConnection:}}
+\index{initWithConnection:@{initWithConnection:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{initWithConnection:}{initWithConnection:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Connection\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+Initializes a \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} with default settings repository.
+
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_sync_settings_service}{Seaf\+Sync\+Settings\+Service} with a default settings repository. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_settings_service_a0f34140f0ae7ae2f2f73fdabf7a56387}\label{interface_seaf_sync_settings_service_a0f34140f0ae7ae2f2f73fdabf7a56387} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!registerErrorIn:withError:@{registerErrorIn:withError:}}
+\index{registerErrorIn:withError:@{registerErrorIn:withError:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{registerErrorIn:withError:}{registerErrorIn:withError:}}
+{\footnotesize\ttfamily -\/ (void) register\+Error\+In\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\item[{with\+Error\+:(NSError \texorpdfstring{$\ast$}{*})}]{error }\end{DoxyParamCaption}}
+
+Register an error for the specified \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} with the given error description.
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object to register the error for. \\
+\hline
+{\em error} & The error to be registered. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_settings_service_a265d811b409707927a9898ef22c6ae6d}\label{interface_seaf_sync_settings_service_a265d811b409707927a9898ef22c6ae6d} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!remove:@{remove:}}
+\index{remove:@{remove:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{remove:}{remove:}}
+{\footnotesize\ttfamily -\/ (void) remove\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Removes a synchronization setting from the service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to remove. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_settings_service_ab813854a810ed25826c0ffcd5e0b181e}\label{interface_seaf_sync_settings_service_ab813854a810ed25826c0ffcd5e0b181e} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!setLastRunTime:@{setLastRunTime:}}
+\index{setLastRunTime:@{setLastRunTime:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{setLastRunTime:}{setLastRunTime:}}
+{\footnotesize\ttfamily -\/ (void) set\+Last\+Run\+Time\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Sets the last run time for a synchronization setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting for which to set the last run time. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_settings_service_a845f1a2a66e1a9721a563f0ef36ae991}\label{interface_seaf_sync_settings_service_a845f1a2a66e1a9721a563f0ef36ae991} 
+\index{SeafSyncSettingsService@{SeafSyncSettingsService}!updateState:to:@{updateState:to:}}
+\index{updateState:to:@{updateState:to:}!SeafSyncSettingsService@{SeafSyncSettingsService}}
+\doxysubsubsection{\texorpdfstring{updateState:to:}{updateState:to:}}
+{\footnotesize\ttfamily -\/ (void) update\+State\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\item[{to\+:(Seaf\+Sync\+State)}]{state }\end{DoxyParamCaption}}
+
+Updates the state of a synchronization setting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization setting to update. \\
+\hline
+{\em state} & The new state for the synchronization setting. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Settings/\+Services/\mbox{\hyperlink{_seaf_sync_settings_service_8h}{Seaf\+Sync\+Settings\+Service.\+h}}\end{DoxyCompactItemize}

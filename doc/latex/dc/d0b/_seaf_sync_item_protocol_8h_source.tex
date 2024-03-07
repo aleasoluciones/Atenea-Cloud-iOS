@@ -1,0 +1,59 @@
+\doxysection{Seaf\+Sync\+Item\+Protocol.\+h}
+\hypertarget{_seaf_sync_item_protocol_8h_source}{}\label{_seaf_sync_item_protocol_8h_source}\index{Pod/Classes/SeafSync/FIleProvider/SeafSyncItemProtocol.h@{Pod/Classes/SeafSync/FIleProvider/SeafSyncItemProtocol.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncItemProtocol.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 3/10/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafFileProtocol.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncItemType)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ SeafSyncItemTypeFile,\ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ SeafSyncItemTypeFolder,\ \ }
+\DoxyCodeLine{00019\ \ \ \ \ SeafSyncItemTypeAsset\ \ \ \ }
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ NS\_ENUM(NSInteger,\ SeafSyncItemFileType)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ SeafSyncItemFileTypeImage,\ \ }
+\DoxyCodeLine{00027\ \ \ \ \ SeafSyncItemFileTypeVideo,\ \ }
+\DoxyCodeLine{00028\ \ \ \ \ SeafSyncItemFileTypeAudio,\ \ }
+\DoxyCodeLine{00029\ \ \ \ \ SeafSyncItemFileTypeOther\ \ \ }
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{@protocol\ }SeafSyncItemProtocol\ <SeafFileProtocol>}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ \textcolor{keywordtype}{id}\ identifier;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSDate\ *creationDate;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSDate\ *addedToDirectoryDate;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{@property}\ (nonatomic)\ BOOL\ isDirectory;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{@property}\ (nonatomic)\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ sizeInBytes;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{@property}\ (nonatomic)\ SeafSyncItemType\ itemType;}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSURL\ *path;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *fileHash;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{@property}\ (nonatomic)\ SeafSyncItemFileType\ fileType;}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *extension;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{@property}\ (nonatomic,\ strong)\ NSString\ *fileName;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00096\ }
+
+\end{DoxyCode}

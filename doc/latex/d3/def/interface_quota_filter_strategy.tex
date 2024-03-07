@@ -1,0 +1,56 @@
+\doxysection{Quota\+Filter\+Strategy Class Reference}
+\hypertarget{interface_quota_filter_strategy}{}\label{interface_quota_filter_strategy}\index{QuotaFilterStrategy@{QuotaFilterStrategy}}
+
+
+Represents a filter strategy based on quota for Seafile synchronization.  
+
+
+
+
+{\ttfamily \#include $<$Quota\+Filter\+Strategy.\+h$>$}
+
+Inheritance diagram for Quota\+Filter\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/def/interface_quota_filter_strategy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_quota_filter_strategy_a04dcd4073605df2ee436dce27a6270de}{init\+With\+Settings\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the filter strategy with the specified synchronization settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p}{$<$\+Seaf\+Sync\+File\+Provider\+Filter\+Strategy$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p_a56a1dbd8808e7b10e0a93430f8643b71}{meets\+Condition\+:}}
+\begin{DoxyCompactList}\small\item\em Determines whether the provided item meets the specified condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a filter strategy based on quota for Seafile synchronization. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_quota_filter_strategy_a04dcd4073605df2ee436dce27a6270de}\label{interface_quota_filter_strategy_a04dcd4073605df2ee436dce27a6270de} 
+\index{QuotaFilterStrategy@{QuotaFilterStrategy}!initWithSettings:@{initWithSettings:}}
+\index{initWithSettings:@{initWithSettings:}!QuotaFilterStrategy@{QuotaFilterStrategy}}
+\doxysubsubsection{\texorpdfstring{initWithSettings:}{initWithSettings:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Settings\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the filter strategy with the specified synchronization settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The synchronization settings to be used by the filter strategy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of the filter strategy. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Filter\+Strategies/\+Impl/Quota\+Filter\+Strategy.\+h\end{DoxyCompactItemize}

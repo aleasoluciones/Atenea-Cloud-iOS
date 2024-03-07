@@ -1,0 +1,105 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Tree\+Folder\+State\+Repository\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_tree_folder_state_repository-p}{}\label{protocol_seaf_sync_tree_folder_state_repository-p}\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+
+
+The \doxylink{protocol_seaf_sync_tree_folder_state_repository-p}{Seaf\+Sync\+Tree\+Folder\+State\+Repository} protocol defines methods for managing synchronization tree states.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Tree\+Folder\+State\+Repository.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Tree\+Folder\+State\+Repository\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/d4d/protocol_seaf_sync_tree_folder_state_repository-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_ac82569ad0c9f4780ad3566e5f04d4760}{all}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_a70581696964c22676365e8ad17083771}{insert\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_a6441e9b344a2e5175db4567171395921}{update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_ae9e82bb308cb05d84cb8dca7437f73ac}{remove\+:}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_a7b3bf14c187cdfb85414744456fe36f3}{find\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_folder_state_repository-p_a4f4507fe8ea5bf3d2aabcf5fa248fa6a}{clear}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{protocol_seaf_sync_tree_folder_state_repository-p}{Seaf\+Sync\+Tree\+Folder\+State\+Repository} protocol defines methods for managing synchronization tree states. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_ac82569ad0c9f4780ad3566e5f04d4760}\label{protocol_seaf_sync_tree_folder_state_repository-p_ac82569ad0c9f4780ad3566e5f04d4760} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!all@{all}}
+\index{all@{all}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ \mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) all \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Retrieves all synchronization tree states. \begin{DoxyReturn}{Returns}
+An array of \doxylink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State} objects representing all synchronization tree states. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_a4f4507fe8ea5bf3d2aabcf5fa248fa6a}\label{protocol_seaf_sync_tree_folder_state_repository-p_a4f4507fe8ea5bf3d2aabcf5fa248fa6a} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!clear@{clear}}
+\index{clear@{clear}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily -\/ (void) clear \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Removes all existing synchronization tree states. \Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_a7b3bf14c187cdfb85414744456fe36f3}\label{protocol_seaf_sync_tree_folder_state_repository-p_a7b3bf14c187cdfb85414744456fe36f3} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!find:@{find:}}
+\index{find:@{find:}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{find:}{find:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) find\+: \begin{DoxyParamCaption}\item[{(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+Filters synchronization tree states based on a predicate. 
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The NSPredicate to filter results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of \doxylink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State} objects that match the predicate. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_a70581696964c22676365e8ad17083771}\label{protocol_seaf_sync_tree_folder_state_repository-p_a70581696964c22676365e8ad17083771} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!insert:@{insert:}}
+\index{insert:@{insert:}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{insert:}{insert:}}
+{\footnotesize\ttfamily -\/ (void) insert\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*})}]{state }\end{DoxyParamCaption}}
+
+Inserts a new synchronization tree state. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The \doxylink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State} object to insert. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_ae9e82bb308cb05d84cb8dca7437f73ac}\label{protocol_seaf_sync_tree_folder_state_repository-p_ae9e82bb308cb05d84cb8dca7437f73ac} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!remove:@{remove:}}
+\index{remove:@{remove:}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{remove:}{remove:}}
+{\footnotesize\ttfamily -\/ (void) remove\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*})}]{state }\end{DoxyParamCaption}}
+
+Removes an existing synchronization tree state. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The \doxylink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State} object to remove. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_folder_state_repository-p_a6441e9b344a2e5175db4567171395921}\label{protocol_seaf_sync_tree_folder_state_repository-p_a6441e9b344a2e5175db4567171395921} 
+\index{$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}!update:@{update:}}
+\index{update:@{update:}!$<$SeafSyncTreeFolderStateRepository$>$@{$<$SeafSyncTreeFolderStateRepository$>$}}
+\doxysubsubsection{\texorpdfstring{update:}{update:}}
+{\footnotesize\ttfamily -\/ (void) update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State}} \texorpdfstring{$\ast$}{*})}]{state }\end{DoxyParamCaption}}
+
+Updates an existing synchronization tree state. 
+\begin{DoxyParams}{Parameters}
+{\em state} & The \doxylink{interface_seaf_sync_tree_state}{Seaf\+Sync\+Tree\+State} object to update. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Tree/\+Tree\+Folder\+State/\+Repository/Seaf\+Sync\+Tree\+Folder\+State\+Repository.\+h\end{DoxyCompactItemize}

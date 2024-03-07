@@ -1,0 +1,95 @@
+\doxysection{Seaf\+Sync\+Log\+Upload\+File\+Adapter Class Reference}
+\hypertarget{interface_seaf_sync_log_upload_file_adapter}{}\label{interface_seaf_sync_log_upload_file_adapter}\index{SeafSyncLogUploadFileAdapter@{SeafSyncLogUploadFileAdapter}}
+
+
+Adapter class for adapting Seaf\+Upload\+File to \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log}.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Log\+Upload\+File\+Adapter.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Log\+Upload\+File\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d1/daf/interface_seaf_sync_log_upload_file_adapter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_log_upload_file_adapter_adce0eea52d87c2a14b6be22d9ec81ffe}{init\+With\+:and\+Account\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_log_upload_file_adapter_a2d20c00d5bf420ed5d4d3aa133e9e672}{init\+With\+:and\+OID\+:and\+Account\+:}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}}}
+\begin{DoxyCompactItemize}
+\item 
+id {\bfseries account\+Id}
+\begin{DoxyCompactList}\small\item\em The identifier (e.\+g., folder Id or album Id) from where files must be loaded. \end{DoxyCompactList}\item 
+NSDate \texorpdfstring{$\ast$}{*} {\bfseries uploaded\+Date}
+\begin{DoxyCompactList}\small\item\em The date of creation of this sync log. \end{DoxyCompactList}\item 
+id {\bfseries resource\+Id}
+\begin{DoxyCompactList}\small\item\em The identifier (e.\+g., folder Id or album Id) from where files must be loaded. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries target\+Id}
+\begin{DoxyCompactList}\small\item\em The folder\+Id in the user\textquotesingle{}s cloud where files are synchronized to. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries resource\+Hash}
+\begin{DoxyCompactList}\small\item\em The resource\+Hash in local file system. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries sync\+Setting\+Id}
+\begin{DoxyCompactList}\small\item\em The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} Id. \end{DoxyCompactList}\item 
+Sync\+Upload\+File\+State {\bfseries upload\+State}
+\begin{DoxyCompactList}\small\item\em The resource\+Hash in local file system. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries remote\+Identifier}
+\begin{DoxyCompactList}\small\item\em The file remote\+Identifier. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries remote\+Name}
+\begin{DoxyCompactList}\small\item\em The file remote\+Name. \end{DoxyCompactList}\item 
+NSString \texorpdfstring{$\ast$}{*} {\bfseries remote\+Path}
+\begin{DoxyCompactList}\small\item\em The file remote\+Path. \end{DoxyCompactList}\item 
+NSDate \texorpdfstring{$\ast$}{*} {\bfseries expiration\+Ran\+On}
+\begin{DoxyCompactList}\small\item\em flag to check if the expiration (detetion from repo) has been done \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adapter class for adapting Seaf\+Upload\+File to \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log}. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_log_upload_file_adapter_adce0eea52d87c2a14b6be22d9ec81ffe}\label{interface_seaf_sync_log_upload_file_adapter_adce0eea52d87c2a14b6be22d9ec81ffe} 
+\index{SeafSyncLogUploadFileAdapter@{SeafSyncLogUploadFileAdapter}!initWith:andAccount:@{initWith:andAccount:}}
+\index{initWith:andAccount:@{initWith:andAccount:}!SeafSyncLogUploadFileAdapter@{SeafSyncLogUploadFileAdapter}}
+\doxysubsubsection{\texorpdfstring{initWith:andAccount:}{initWith:andAccount:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+: \begin{DoxyParamCaption}\item[{(Seaf\+Upload\+File \texorpdfstring{$\ast$}{*})}]{upload\+File }\item[{and\+Account\+:(NSString \texorpdfstring{$\ast$}{*})}]{account\+Name }\end{DoxyParamCaption}}
+
+Initializes a new instance of \doxylink{interface_seaf_sync_log_upload_file_adapter}{Seaf\+Sync\+Log\+Upload\+File\+Adapter} with the provided Seaf\+Upload\+File and account name. 
+\begin{DoxyParams}{Parameters}
+{\em upload\+File} & The Seaf\+Upload\+File to be adapted. \\
+\hline
+{\em account\+Name} & The account name associated with the upload file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized \doxylink{interface_seaf_sync_log_upload_file_adapter}{Seaf\+Sync\+Log\+Upload\+File\+Adapter} object. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_log_upload_file_adapter_a2d20c00d5bf420ed5d4d3aa133e9e672}\label{interface_seaf_sync_log_upload_file_adapter_a2d20c00d5bf420ed5d4d3aa133e9e672} 
+\index{SeafSyncLogUploadFileAdapter@{SeafSyncLogUploadFileAdapter}!initWith:andOID:andAccount:@{initWith:andOID:andAccount:}}
+\index{initWith:andOID:andAccount:@{initWith:andOID:andAccount:}!SeafSyncLogUploadFileAdapter@{SeafSyncLogUploadFileAdapter}}
+\doxysubsubsection{\texorpdfstring{initWith:andOID:andAccount:}{initWith:andOID:andAccount:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+: \begin{DoxyParamCaption}\item[{(Seaf\+Upload\+File \texorpdfstring{$\ast$}{*})}]{upload\+File }\item[{and\+OID\+:(NSString \texorpdfstring{$\ast$}{*})}]{oid }\item[{and\+Account\+:(NSString \texorpdfstring{$\ast$}{*})}]{account\+Name }\end{DoxyParamCaption}}
+
+Initializes a new instance of \doxylink{interface_seaf_sync_log_upload_file_adapter}{Seaf\+Sync\+Log\+Upload\+File\+Adapter} with the provided Seaf\+Upload\+File, object ID, and account name. 
+\begin{DoxyParams}{Parameters}
+{\em upload\+File} & The Seaf\+Upload\+File to be adapted. \\
+\hline
+{\em oid} & The object ID associated with the upload file. \\
+\hline
+{\em account\+Name} & The account name associated with the upload file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized \doxylink{interface_seaf_sync_log_upload_file_adapter}{Seaf\+Sync\+Log\+Upload\+File\+Adapter} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Log/\+Adapters/Seaf\+Sync\+Log\+Upload\+File\+Adapter.\+h\end{DoxyCompactItemize}

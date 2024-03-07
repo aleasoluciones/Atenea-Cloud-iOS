@@ -1,0 +1,45 @@
+\doxysection{Seaf\+Syncronizer.\+h}
+\hypertarget{_seaf_syncronizer_8h_source}{}\label{_seaf_syncronizer_8h_source}\index{Pod/Classes/SeafSync/SeafSyncronizer.h@{Pod/Classes/SeafSync/SeafSyncronizer.h}}
+\mbox{\hyperlink{_seaf_syncronizer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_sync_settings_service_8h}{SeafSyncSettingsService.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#import\ "{}SeafSyncNetworkerService.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_syncronizer}{SeafSyncronizer}}\ :\ NSObject<\mbox{\hyperlink{protocol_seaf_sync_networker_service_observer_delegate-p}{SeafSyncNetworkerServiceObserverDelegate}}>}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ +(NSArray<\mbox{\hyperlink{interface_seaf_syncronizer}{SeafSyncronizer}}\ *>\ *)allInstances;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ +(instancetype)sharedInstanceFor:(SeafConnection\ *)connection;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ -\/\ (id)initWithConnection:(SeafConnection\ *)connection;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ -\/\ (id)initWithConnection:(SeafConnection\ *)connection\ settingsService:(\mbox{\hyperlink{interface_seaf_sync_settings_service}{SeafSyncSettingsService}}\ *)settingsService;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ -\/\ (void)\mbox{\hyperlink{interface_seaf_syncronizer_a640e89abedba8421a396d6de58599497}{sync}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ -\/\ (void)startSyncForSetting:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)setting;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ -\/\ (void)add:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)settings;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ -\/\ (void)remove:(\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *)settings;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ -\/\ (NSArray<\mbox{\hyperlink{interface_seaf_sync_settings}{SeafSyncSettings}}\ *\ >\ *)\mbox{\hyperlink{interface_seaf_syncronizer_a7777d6c81145e2675c320cf007b76344}{settings}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ -\/\ (SeafConnection\ *)\mbox{\hyperlink{interface_seaf_syncronizer_a59d42e29ccbf66fce09ee97ddd335c5f}{getConnectionInUse}};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ -\/(void)\ \mbox{\hyperlink{interface_seaf_syncronizer_a8a47783c3ddd257d2d18c7f931a6d942}{notifyErrorsIfNeeded}};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{00095\ }
+
+\end{DoxyCode}

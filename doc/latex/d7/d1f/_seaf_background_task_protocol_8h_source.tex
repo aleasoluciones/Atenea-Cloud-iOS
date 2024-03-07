@@ -1,0 +1,28 @@
+\doxysection{Seaf\+Background\+Task\+Protocol.\+h}
+\hypertarget{_seaf_background_task_protocol_8h_source}{}\label{_seaf_background_task_protocol_8h_source}\index{Pod/Classes/SeafSync/BackgroundTasks/SeafBackgroundTaskProtocol.h@{Pod/Classes/SeafSync/BackgroundTasks/SeafBackgroundTaskProtocol.h}}
+\mbox{\hyperlink{_seaf_background_task_protocol_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ <BackgroundTasks/BackgroundTasks.h>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ void\ (\string^\mbox{\hyperlink{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e}{SeafBackgroundTaskCompleted}})(BOOL\ success);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{@protocol\ }SeafBackgroundTaskProtocol}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ -\/\ (BGTaskRequest\ *)taskRequest\ API\_AVAILABLE(ios(13.0));}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ -\/\ (NSString\ *)identifier;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ -\/\ (void)run;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ -\/\ (void)onComplete:(\mbox{\hyperlink{_seaf_background_task_protocol_8h_a9d10eb8d2d6e5532086f3f5aae42aa9e}{SeafBackgroundTaskCompleted}})onComplete;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

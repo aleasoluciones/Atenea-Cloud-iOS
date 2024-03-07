@@ -1,0 +1,128 @@
+\doxysection{Seaf\+Trash\+Recoverer Class Reference}
+\hypertarget{interface_seaf_trash_recoverer}{}\label{interface_seaf_trash_recoverer}\index{SeafTrashRecoverer@{SeafTrashRecoverer}}
+
+
+{\ttfamily \#include $<$Seaf\+Trash\+Recoverer.\+h$>$}
+
+Inheritance diagram for Seaf\+Trash\+Recoverer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d6/dba/interface_seaf_trash_recoverer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_a89ee71af64370df8bf3587a8abaf538d}{init\+Wit\+Connection\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_a8c19589739cb5435076a195d50358cf9}{quota\+Available\+Space\+For\+Items\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_a51c95555409c52caf6600662793520b5}{recover\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_a1baa03aafe4df76c729309ec7c100698}{get\+Deleted\+Repositories\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_a9ae85c864e7446f227da2c966f8442df}{get\+Deleted\+Files\+And\+Folders\+From\+:folder\+Path\+:on\+Completed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_trash_recoverer_ad64312e0b02103bd39cb548e1b50608c}{refresh\+Quota\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the recovery of deleted items from Seafile repositories. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_trash_recoverer_a9ae85c864e7446f227da2c966f8442df}\label{interface_seaf_trash_recoverer_a9ae85c864e7446f227da2c966f8442df} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!getDeletedFilesAndFoldersFrom:folderPath:onCompleted:@{getDeletedFilesAndFoldersFrom:folderPath:onCompleted:}}
+\index{getDeletedFilesAndFoldersFrom:folderPath:onCompleted:@{getDeletedFilesAndFoldersFrom:folderPath:onCompleted:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{getDeletedFilesAndFoldersFrom:folderPath:onCompleted:}{getDeletedFilesAndFoldersFrom:folderPath:onCompleted:}}
+{\footnotesize\ttfamily -\/ (void) get\+Deleted\+Files\+And\+Folders\+From\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*}\+\_\+\+Nullable)}]{repo\+Id }\item[{folder\+Path\+:(NSString \texorpdfstring{$\ast$}{*}\+\_\+\+Nullable)}]{path }\item[{on\+Completed\+:(void(\texorpdfstring{$^\wedge$}{\string^})(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item}} $>$ $>$ \texorpdfstring{$\ast$}{*}\+\_\+\+Nullable items))}]{on\+Completed }\end{DoxyParamCaption}}
+
+Retrieves deleted items from a specific repository folder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Id} & The ID of the repository. \\
+\hline
+{\em path} & The path to the folder within the repository. \\
+\hline
+{\em on\+Completed} & A completion block that receives an array of objects or nil on error. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_trash_recoverer_a1baa03aafe4df76c729309ec7c100698}\label{interface_seaf_trash_recoverer_a1baa03aafe4df76c729309ec7c100698} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!getDeletedRepositories:@{getDeletedRepositories:}}
+\index{getDeletedRepositories:@{getDeletedRepositories:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{getDeletedRepositories:}{getDeletedRepositories:}}
+{\footnotesize\ttfamily -\/ (void) get\+Deleted\+Repositories\+: \begin{DoxyParamCaption}\item[{(void(\texorpdfstring{$^\wedge$}{\string^})(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item}} $>$ $>$ \texorpdfstring{$\ast$}{*}\+\_\+\+Nullable items))}]{on\+Completed }\end{DoxyParamCaption}}
+
+Retrieves a list of deleted repositories.
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Completed} & A completion block that receives an array of \doxylink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item} objects on success, or nil on error. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_trash_recoverer_a89ee71af64370df8bf3587a8abaf538d}\label{interface_seaf_trash_recoverer_a89ee71af64370df8bf3587a8abaf538d} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!initWitConnection:@{initWitConnection:}}
+\index{initWitConnection:@{initWitConnection:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{initWitConnection:}{initWitConnection:}}
+{\footnotesize\ttfamily -\/ (id) init\+Wit\+Connection\+: \begin{DoxyParamCaption}\item[{(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+Initializes a \doxylink{interface_seaf_trash_recoverer}{Seaf\+Trash\+Recoverer} object with a connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The Seaf\+Connection object associated with the recoverer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \doxylink{interface_seaf_trash_recoverer}{Seaf\+Trash\+Recoverer} object. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_trash_recoverer_a8c19589739cb5435076a195d50358cf9}\label{interface_seaf_trash_recoverer_a8c19589739cb5435076a195d50358cf9} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!quotaAvailableSpaceForItems:@{quotaAvailableSpaceForItems:}}
+\index{quotaAvailableSpaceForItems:@{quotaAvailableSpaceForItems:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{quotaAvailableSpaceForItems:}{quotaAvailableSpaceForItems:}}
+{\footnotesize\ttfamily -\/ (BOOL) quota\+Available\+Space\+For\+Items\+: \begin{DoxyParamCaption}\item[{(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item}} $>$ $>$ \texorpdfstring{$\ast$}{*})}]{recovery\+Items }\end{DoxyParamCaption}}
+
+Checks if there is enough quota space available for a recovery item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em recovery\+Items} & The recovery items array to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if there is enough space, NO otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_trash_recoverer_a51c95555409c52caf6600662793520b5}\label{interface_seaf_trash_recoverer_a51c95555409c52caf6600662793520b5} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!recover:callback:@{recover:callback:}}
+\index{recover:callback:@{recover:callback:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{recover:callback:}{recover:callback:}}
+{\footnotesize\ttfamily -\/ (void) recover\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_recovery_item-p}{Seaf\+Recovery\+Item}} $>$)}]{recovery\+Item }\item[{callback\+:(void(\texorpdfstring{$^\wedge$}{\string^})(Seaf\+Recovery\+Result result))}]{callback }\end{DoxyParamCaption}}
+
+Recovers a recovery item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em recovery\+Item} & The recovery item to recover. \\
+\hline
+{\em callback} & A callback block to handle the recovery result. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_trash_recoverer_ad64312e0b02103bd39cb548e1b50608c}\label{interface_seaf_trash_recoverer_ad64312e0b02103bd39cb548e1b50608c} 
+\index{SeafTrashRecoverer@{SeafTrashRecoverer}!refreshQuota:@{refreshQuota:}}
+\index{refreshQuota:@{refreshQuota:}!SeafTrashRecoverer@{SeafTrashRecoverer}}
+\doxysubsubsection{\texorpdfstring{refreshQuota:}{refreshQuota:}}
+{\footnotesize\ttfamily -\/ (void) refresh\+Quota\+: \begin{DoxyParamCaption}\item[{(void(\texorpdfstring{$^\wedge$}{\string^})(void))}]{callback }\end{DoxyParamCaption}}
+
+Refreshes the user\textquotesingle{}s quota by fetching fresh available space from the quota supervisor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & A block to be executed after the quota is refreshed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Recovery/\mbox{\hyperlink{_seaf_trash_recoverer_8h}{Seaf\+Trash\+Recoverer.\+h}}\end{DoxyCompactItemize}

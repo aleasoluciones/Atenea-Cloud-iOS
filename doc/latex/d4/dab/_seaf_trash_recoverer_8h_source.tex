@@ -1,0 +1,39 @@
+\doxysection{Seaf\+Trash\+Recoverer.\+h}
+\hypertarget{_seaf_trash_recoverer_8h_source}{}\label{_seaf_trash_recoverer_8h_source}\index{Pod/Classes/SeafRecovery/SeafTrashRecoverer.h@{Pod/Classes/SeafRecovery/SeafTrashRecoverer.h}}
+\mbox{\hyperlink{_seaf_trash_recoverer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}\mbox{\hyperlink{_seaf_recovery_item_8h}{SeafRecoveryItem.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_seaf_trash_recoverer_8h_a397e8825c74ca77863d67da149c283ec}{NS\_ENUM}}(NSInteger,\ SeafRecoveryResult)\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ SeafRecoveryResultSuccess,\ }
+\DoxyCodeLine{00020\ \ \ \ \ SeafRecoveryResultError,\ }
+\DoxyCodeLine{00021\ \ \ \ \ SeafRecoveryResultErrorQuota\ }
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_trash_recoverer}{SeafTrashRecoverer}}\ :\ NSObject}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00037\ -\/\ (id)\ initWitConnection:(SeafConnection\ *)\ connection;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00046\ -\/(BOOL)\ quotaAvailableSpaceForItems:(NSArray<\textcolor{keywordtype}{id}<SeafRecoveryItem>>\ *)\ recoveryItems;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ -\/\ (void)recover:(\textcolor{keywordtype}{id}<SeafRecoveryItem>)recoveryItem\ callback:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(SeafRecoveryResult\ result))callback;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ -\/(void)\ getDeletedRepositories:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(NSArray<\textcolor{keywordtype}{id}<SeafRecoveryItem>>\ *\ \_Nullable\ items))onCompleted;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ -\/(void)\ getDeletedFilesAndFoldersFrom:(NSString\ *\_Nullable)\ repoId\ folderPath:(NSString\ *\_Nullable)\ path\ onCompleted:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(NSArray<\textcolor{keywordtype}{id}<SeafRecoveryItem>>\ *\ \_Nullable\ items))onCompleted;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ -\/(void)\ refreshQuota:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(\textcolor{keywordtype}{void}))callback;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

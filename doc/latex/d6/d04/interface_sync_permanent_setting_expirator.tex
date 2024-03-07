@@ -1,0 +1,78 @@
+\doxysection{Sync\+Permanent\+Setting\+Expirator Class Reference}
+\hypertarget{interface_sync_permanent_setting_expirator}{}\label{interface_sync_permanent_setting_expirator}\index{SyncPermanentSettingExpirator@{SyncPermanentSettingExpirator}}
+
+
+Expirator for handling permanent synchronization settings.  
+
+
+
+
+{\ttfamily \#include $<$Sync\+Permanent\+Setting\+Expirator.\+h$>$}
+
+Inheritance diagram for Sync\+Permanent\+Setting\+Expirator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d6/d04/interface_sync_permanent_setting_expirator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_sync_permanent_setting_expirator_ad8010484b1da9a3e51fba023741a6e20}{init\+With\+Settings\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{interface_sync_permanent_setting_expirator}{Sync\+Permanent\+Setting\+Expirator} class with the specified settings. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_sync_permanent_setting_expirator_a03889074e93bb0856d0e6f6047bbad56}{run}}
+\begin{DoxyCompactList}\small\item\em Initiates the process of removing expired synchronization logs from the cloud repository. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{interface_sync_setting_base_expirator}{Sync\+Setting\+Base\+Expirator}}}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_sync_setting_base_expirator_ac096376d9f3488fd159338c6889dc228}{remove\+File\+From\+Cloud\+Using\+:}}
+\begin{DoxyCompactList}\small\item\em Removes a synchronization log from the cloud repository using the specified log information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expirator for handling permanent synchronization settings. 
+
+The \doxylink{interface_sync_permanent_setting_expirator}{Sync\+Permanent\+Setting\+Expirator} class is responsible for handling expiration logic based on permanent synchronization settings. It inherits from \doxylink{interface_sync_setting_base_expirator}{Sync\+Setting\+Base\+Expirator} and conforms to the \doxylink{protocol_seaf_sync_expirator_protocol-p}{Seaf\+Sync\+Expirator\+Protocol}. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_sync_permanent_setting_expirator_ad8010484b1da9a3e51fba023741a6e20}\label{interface_sync_permanent_setting_expirator_ad8010484b1da9a3e51fba023741a6e20} 
+\index{SyncPermanentSettingExpirator@{SyncPermanentSettingExpirator}!initWithSettings:@{initWithSettings:}}
+\index{initWithSettings:@{initWithSettings:}!SyncPermanentSettingExpirator@{SyncPermanentSettingExpirator}}
+\doxysubsubsection{\texorpdfstring{initWithSettings:}{initWithSettings:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Settings\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of the \doxylink{interface_sync_permanent_setting_expirator}{Sync\+Permanent\+Setting\+Expirator} class with the specified settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting} & The synchronization settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of \doxylink{interface_sync_permanent_setting_expirator}{Sync\+Permanent\+Setting\+Expirator}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_sync_setting_base_expirator}{Sync\+Setting\+Base\+Expirator}}.
+
+\Hypertarget{interface_sync_permanent_setting_expirator_a03889074e93bb0856d0e6f6047bbad56}\label{interface_sync_permanent_setting_expirator_a03889074e93bb0856d0e6f6047bbad56} 
+\index{SyncPermanentSettingExpirator@{SyncPermanentSettingExpirator}!run@{run}}
+\index{run@{run}!SyncPermanentSettingExpirator@{SyncPermanentSettingExpirator}}
+\doxysubsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily -\/ (void) run \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Initiates the process of removing expired synchronization logs from the cloud repository. 
+
+
+
+Reimplemented from \mbox{\hyperlink{protocol_seaf_sync_expirator_protocol-p_a16fea684d0e2e77e7b9056422ba2bda4}{$<$\+Seaf\+Sync\+Expirator\+Protocol$>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Expiration/\+Expirators/\+Impl/\mbox{\hyperlink{_sync_permanent_setting_expirator_8h}{Sync\+Permanent\+Setting\+Expirator.\+h}}\end{DoxyCompactItemize}

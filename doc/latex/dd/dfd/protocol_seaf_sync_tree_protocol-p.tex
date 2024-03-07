@@ -1,0 +1,307 @@
+\doxysection{\texorpdfstring{$<$}{<}Seaf\+Sync\+Tree\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\hypertarget{protocol_seaf_sync_tree_protocol-p}{}\label{protocol_seaf_sync_tree_protocol-p}\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+Inheritance diagram for \texorpdfstring{$<$}{<}Seaf\+Sync\+Tree\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dd/dfd/protocol_seaf_sync_tree_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_adb08067066df9120e429c6e195c97fda}{get\+Id}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a36d4af2199bf0e8d2ecd02c87d8ab5b9}{set\+Id\+:}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a3d8df300b764d8086165e868bb39c5f3}{get\+Sync\+Setting\+Id}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a9633bb424648c9b20068e63320483d12}{set\+Sync\+Setting\+Id\+:}}
+\item 
+(Sync\+Tree\+Type) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a1945df15cf8abadda4f03809f17c1660}{get\+Type}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_af843e947bb69bacc5c80a83874c1b038}{set\+Type\+:}}
+\item 
+(NSURL \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_aa20a63bc098d224e32a44d84da8f4445}{get\+URL}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a6abf0f6f9ce392c421084dedc83800ad}{set\+URL\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a97ac1c7cf7efc10ce618a5b65eb7aa3f}{add\+Children\+:}}
+\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_ae6de37f87ee1e2a749338d41cad99692}{get\+Childrens}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a9178b3ff143af109dc0ce5fa53b9eb67}{clear\+Childrens}}
+\item 
+(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a960cc93f81bf94671d91df49c32d9c0d}{get\+All\+Childrens\+Of\+Type\+:}}
+\item 
+(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a1a3f385a493350043d7896d5d39319a5}{get\+Childrens\+Of\+Type\+:}}
+\item 
+(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_ab546f7311ab037ca92b4cc585e4bb91b}{get\+Childrens\+From\+:with\+Predicate\+:}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_af6f5b00480707d3ff6c7e7f9260126d5}{get\+Full\+Hash}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_ac0968cf9a89cadc23fb8559a04ae0f2f}{set\+Full\+Hash\+:}}
+\item 
+(NSString \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a841abe820483b93e23ecab58a28c2d34}{get\+Relative\+Hash}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a03419c7e9507a6d10d19a45eeab22425}{set\+Relative\+Hash\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_a661fc1dcf7cac4505a9dd724f61571b4}{set\+Size\+In\+Bytes\+:}}
+\item 
+(long long) -\/ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p_ada3d1a780779b21536ccc018ae101a9d}{size\+In\+Bytes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a97ac1c7cf7efc10ce618a5b65eb7aa3f}\label{protocol_seaf_sync_tree_protocol-p_a97ac1c7cf7efc10ce618a5b65eb7aa3f} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!addChildren:@{addChildren:}}
+\index{addChildren:@{addChildren:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{addChildren:}{addChildren:}}
+{\footnotesize\ttfamily -\/ (void) add\+Children\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$)}]{children }\end{DoxyParamCaption}}
+
+Adds children to this item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em children} & The children to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a9178b3ff143af109dc0ce5fa53b9eb67}\label{protocol_seaf_sync_tree_protocol-p_a9178b3ff143af109dc0ce5fa53b9eb67} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!clearChildrens@{clearChildrens}}
+\index{clearChildrens@{clearChildrens}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{clearChildrens}{clearChildrens}}
+{\footnotesize\ttfamily -\/ (void) clear\+Childrens \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Clears children. \Hypertarget{protocol_seaf_sync_tree_protocol-p_a960cc93f81bf94671d91df49c32d9c0d}\label{protocol_seaf_sync_tree_protocol-p_a960cc93f81bf94671d91df49c32d9c0d} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getAllChildrensOfType:@{getAllChildrensOfType:}}
+\index{getAllChildrensOfType:@{getAllChildrensOfType:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getAllChildrensOfType:}{getAllChildrensOfType:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+All\+Childrens\+Of\+Type\+: \begin{DoxyParamCaption}\item[{(Sync\+Tree\+Type)}]{tree\+Type }\end{DoxyParamCaption}}
+
+Gets all children filtered by type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+Type} & The type of children to filter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of children of the specified type. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_ae6de37f87ee1e2a749338d41cad99692}\label{protocol_seaf_sync_tree_protocol-p_ae6de37f87ee1e2a749338d41cad99692} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getChildrens@{getChildrens}}
+\index{getChildrens@{getChildrens}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getChildrens}{getChildrens}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Childrens \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Gets children.
+
+\begin{DoxyReturn}{Returns}
+An array of id$<$\+Seaf\+Sync\+Tree\+Protocol$>$ objects representing the children. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_ab546f7311ab037ca92b4cc585e4bb91b}\label{protocol_seaf_sync_tree_protocol-p_ab546f7311ab037ca92b4cc585e4bb91b} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getChildrensFrom:withPredicate:@{getChildrensFrom:withPredicate:}}
+\index{getChildrensFrom:withPredicate:@{getChildrensFrom:withPredicate:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getChildrensFrom:withPredicate:}{getChildrensFrom:withPredicate:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Childrens\+From\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$)}]{parent }\item[{with\+Predicate\+:(NSPredicate \texorpdfstring{$\ast$}{*})}]{predicate }\end{DoxyParamCaption}}
+
+Filters tree items by predicate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent tree. \\
+\hline
+{\em predicate} & The predicate to filter by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of id$<$\+Seaf\+Sync\+Tree\+Protocol$>$ objects filtered by the specified predicate. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a1a3f385a493350043d7896d5d39319a5}\label{protocol_seaf_sync_tree_protocol-p_a1a3f385a493350043d7896d5d39319a5} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getChildrensOfType:@{getChildrensOfType:}}
+\index{getChildrensOfType:@{getChildrensOfType:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getChildrensOfType:}{getChildrensOfType:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_tree_protocol-p}{Seaf\+Sync\+Tree\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Childrens\+Of\+Type\+: \begin{DoxyParamCaption}\item[{(Sync\+Tree\+Type)}]{tree\+Type }\end{DoxyParamCaption}}
+
+Gets children filtered by type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree\+Type} & The type of children to filter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of children of the specified type. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_af6f5b00480707d3ff6c7e7f9260126d5}\label{protocol_seaf_sync_tree_protocol-p_af6f5b00480707d3ff6c7e7f9260126d5} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getFullHash@{getFullHash}}
+\index{getFullHash@{getFullHash}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getFullHash}{getFullHash}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) get\+Full\+Hash \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the complete tree hash.
+
+\begin{DoxyReturn}{Returns}
+The complete tree hash as a string. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_adb08067066df9120e429c6e195c97fda}\label{protocol_seaf_sync_tree_protocol-p_adb08067066df9120e429c6e195c97fda} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getId@{getId}}
+\index{getId@{getId}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getId}{getId}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) get\+Id \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the tree node Id.
+
+\begin{DoxyReturn}{Returns}
+The tree node Id as a string. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a841abe820483b93e23ecab58a28c2d34}\label{protocol_seaf_sync_tree_protocol-p_a841abe820483b93e23ecab58a28c2d34} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getRelativeHash@{getRelativeHash}}
+\index{getRelativeHash@{getRelativeHash}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getRelativeHash}{getRelativeHash}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) get\+Relative\+Hash \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the relative hash.
+
+\begin{DoxyReturn}{Returns}
+The relative hash as a string. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a3d8df300b764d8086165e868bb39c5f3}\label{protocol_seaf_sync_tree_protocol-p_a3d8df300b764d8086165e868bb39c5f3} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getSyncSettingId@{getSyncSettingId}}
+\index{getSyncSettingId@{getSyncSettingId}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getSyncSettingId}{getSyncSettingId}}
+{\footnotesize\ttfamily -\/ (NSString \texorpdfstring{$\ast$}{*}) get\+Sync\+Setting\+Id \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the associated sync ID.
+
+\begin{DoxyReturn}{Returns}
+The associated sync ID as a string. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a1945df15cf8abadda4f03809f17c1660}\label{protocol_seaf_sync_tree_protocol-p_a1945df15cf8abadda4f03809f17c1660} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getType@{getType}}
+\index{getType@{getType}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getType}{getType}}
+{\footnotesize\ttfamily -\/ (Sync\+Tree\+Type) get\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the tree node type.
+
+\begin{DoxyReturn}{Returns}
+The tree node type as a Sync\+Tree\+Type enum. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_aa20a63bc098d224e32a44d84da8f4445}\label{protocol_seaf_sync_tree_protocol-p_aa20a63bc098d224e32a44d84da8f4445} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!getURL@{getURL}}
+\index{getURL@{getURL}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getURL}{getURL}}
+{\footnotesize\ttfamily -\/ (NSURL \texorpdfstring{$\ast$}{*}) get\+URL \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns the nested data URL.
+
+\begin{DoxyReturn}{Returns}
+The nested data URL as an NSURL. 
+\end{DoxyReturn}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_ac0968cf9a89cadc23fb8559a04ae0f2f}\label{protocol_seaf_sync_tree_protocol-p_ac0968cf9a89cadc23fb8559a04ae0f2f} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setFullHash:@{setFullHash:}}
+\index{setFullHash:@{setFullHash:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setFullHash:}{setFullHash:}}
+{\footnotesize\ttfamily -\/ (void) set\+Full\+Hash\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{hash }\end{DoxyParamCaption}}
+
+Sets the complete tree hash.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & The complete tree hash to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a36d4af2199bf0e8d2ecd02c87d8ab5b9}\label{protocol_seaf_sync_tree_protocol-p_a36d4af2199bf0e8d2ecd02c87d8ab5b9} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setId:@{setId:}}
+\index{setId:@{setId:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setId:}{setId:}}
+{\footnotesize\ttfamily -\/ (void) set\+Id\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{identifier }\end{DoxyParamCaption}}
+
+Sets the tree node Id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em identifier} & The tree node Id to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a03419c7e9507a6d10d19a45eeab22425}\label{protocol_seaf_sync_tree_protocol-p_a03419c7e9507a6d10d19a45eeab22425} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setRelativeHash:@{setRelativeHash:}}
+\index{setRelativeHash:@{setRelativeHash:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setRelativeHash:}{setRelativeHash:}}
+{\footnotesize\ttfamily -\/ (void) set\+Relative\+Hash\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{hash }\end{DoxyParamCaption}}
+
+Sets the relative hash.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & The relative hash to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a661fc1dcf7cac4505a9dd724f61571b4}\label{protocol_seaf_sync_tree_protocol-p_a661fc1dcf7cac4505a9dd724f61571b4} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setSizeInBytes:@{setSizeInBytes:}}
+\index{setSizeInBytes:@{setSizeInBytes:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setSizeInBytes:}{setSizeInBytes:}}
+{\footnotesize\ttfamily -\/ (void) set\+Size\+In\+Bytes\+: \begin{DoxyParamCaption}\item[{(long long)}]{size }\end{DoxyParamCaption}}
+
+Sets the size
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & the size in bytes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a9633bb424648c9b20068e63320483d12}\label{protocol_seaf_sync_tree_protocol-p_a9633bb424648c9b20068e63320483d12} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setSyncSettingId:@{setSyncSettingId:}}
+\index{setSyncSettingId:@{setSyncSettingId:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setSyncSettingId:}{setSyncSettingId:}}
+{\footnotesize\ttfamily -\/ (void) set\+Sync\+Setting\+Id\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{sync\+Setting\+Id }\end{DoxyParamCaption}}
+
+Sets the associated sync ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sync\+Setting\+Id} & The associated sync ID to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_af843e947bb69bacc5c80a83874c1b038}\label{protocol_seaf_sync_tree_protocol-p_af843e947bb69bacc5c80a83874c1b038} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setType:@{setType:}}
+\index{setType:@{setType:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setType:}{setType:}}
+{\footnotesize\ttfamily -\/ (void) set\+Type\+: \begin{DoxyParamCaption}\item[{(Sync\+Tree\+Type)}]{type }\end{DoxyParamCaption}}
+
+Sets the tree node type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The tree node type to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_a6abf0f6f9ce392c421084dedc83800ad}\label{protocol_seaf_sync_tree_protocol-p_a6abf0f6f9ce392c421084dedc83800ad} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!setURL:@{setURL:}}
+\index{setURL:@{setURL:}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setURL:}{setURL:}}
+{\footnotesize\ttfamily -\/ (void) set\+URL\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{url }\end{DoxyParamCaption}}
+
+Sets the nested data URL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The nested data URL to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{protocol_seaf_sync_tree_protocol-p_ada3d1a780779b21536ccc018ae101a9d}\label{protocol_seaf_sync_tree_protocol-p_ada3d1a780779b21536ccc018ae101a9d} 
+\index{$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}!sizeInBytes@{sizeInBytes}}
+\index{sizeInBytes@{sizeInBytes}!$<$SeafSyncTreeProtocol$>$@{$<$SeafSyncTreeProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sizeInBytes}{sizeInBytes}}
+{\footnotesize\ttfamily -\/ (long long) size\+In\+Bytes \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns node size
+
+\begin{DoxyReturn}{Returns}
+The tree node size 
+\end{DoxyReturn}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Tree/\mbox{\hyperlink{_seaf_sync_tree_protocol_8h}{Seaf\+Sync\+Tree\+Protocol.\+h}}\end{DoxyCompactItemize}

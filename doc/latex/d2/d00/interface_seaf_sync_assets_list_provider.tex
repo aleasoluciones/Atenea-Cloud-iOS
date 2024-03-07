@@ -1,0 +1,55 @@
+\doxysection{Seaf\+Sync\+Assets\+List\+Provider Class Reference}
+\hypertarget{interface_seaf_sync_assets_list_provider}{}\label{interface_seaf_sync_assets_list_provider}\index{SeafSyncAssetsListProvider@{SeafSyncAssetsListProvider}}
+Inheritance diagram for Seaf\+Sync\+Assets\+List\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/d00/interface_seaf_sync_assets_list_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_assets_list_provider_ae15f779e386a70ee1a3d70a342a8be25}{init\+With\+PHAssets\+:}}
+\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_assets_list_provider_a614e47851da909a8d737c28944535aba}{get\+Files\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_assets_list_provider_a614e47851da909a8d737c28944535aba}\label{interface_seaf_sync_assets_list_provider_a614e47851da909a8d737c28944535aba} 
+\index{SeafSyncAssetsListProvider@{SeafSyncAssetsListProvider}!getFiles:@{getFiles:}}
+\index{getFiles:@{getFiles:}!SeafSyncAssetsListProvider@{SeafSyncAssetsListProvider}}
+\doxysubsubsection{\texorpdfstring{getFiles:}{getFiles:}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Files\+: \begin{DoxyParamCaption}\item[{(NSError \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})}]{on\+Error }\end{DoxyParamCaption}}
+
+Gets the list of items in the synchronized gallery or album. 
+\begin{DoxyParams}{Parameters}
+{\em on\+Error} & An optional error pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of objects conforming to the \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol} representing the items in the gallery or album. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}{$<$\+Seaf\+Sync\+Provider\+Protocol$>$}}.
+
+\Hypertarget{interface_seaf_sync_assets_list_provider_ae15f779e386a70ee1a3d70a342a8be25}\label{interface_seaf_sync_assets_list_provider_ae15f779e386a70ee1a3d70a342a8be25} 
+\index{SeafSyncAssetsListProvider@{SeafSyncAssetsListProvider}!initWithPHAssets:@{initWithPHAssets:}}
+\index{initWithPHAssets:@{initWithPHAssets:}!SeafSyncAssetsListProvider@{SeafSyncAssetsListProvider}}
+\doxysubsubsection{\texorpdfstring{initWithPHAssets:}{initWithPHAssets:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+PHAssets\+: \begin{DoxyParamCaption}\item[{(NSArray$<$ PHAsset \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*})}]{assets }\end{DoxyParamCaption}}
+
+Initializes a new instance of \doxylink{interface_seaf_sync_gallery_provider}{Seaf\+Sync\+Gallery\+Provider} with the specified album name. 
+\begin{DoxyParams}{Parameters}
+{\em assets} & The assets array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of \doxylink{interface_seaf_sync_gallery_provider}{Seaf\+Sync\+Gallery\+Provider}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Providers/Seaf\+Sync\+Assets\+List\+Provider.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,148 @@
+\doxysection{Seaf\+Sync\+Logs\+Service Class Reference}
+\hypertarget{interface_seaf_sync_logs_service}{}\label{interface_seaf_sync_logs_service}\index{SeafSyncLogsService@{SeafSyncLogsService}}
+
+
+The \doxylink{interface_seaf_sync_logs_service}{Seaf\+Sync\+Logs\+Service} class provides methods for checking and logging the upload status of files.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Logs\+Service.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Logs\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/d77/interface_seaf_sync_logs_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_seaf_sync_logs_service_acd84932f97bd3ee0954987b22f513823}\label{interface_seaf_sync_logs_service_acd84932f97bd3ee0954987b22f513823} 
+(instancetype) -\/ {\bfseries init\+With\+Connection\+:}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_ac7b6c64f093622dc9f2c16d92d7a0e7f}{init\+With\+Repository\+:and\+Connection\+:}}
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of \doxylink{interface_seaf_sync_logs_service}{Seaf\+Sync\+Logs\+Service} with a custom \doxylink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository} implementation. \end{DoxyCompactList}\item 
+(bool) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_a7326fcefd299f03c6e5c4544c78a8306}{log\+:}}
+\begin{DoxyCompactList}\small\item\em Logs the upload status of a file. \end{DoxyCompactList}\item 
+(bool) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_af82e9420629e112cd182131330afad64}{is\+Already\+Logged\+:}}
+\item 
+(bool) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_aaf232f1ec5812216b3d940a6a9982925}{update\+:}}
+\begin{DoxyCompactList}\small\item\em Updates the repository with the information from the provided sync log. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_sync_logs_service_a3043ef06d20016f03d053eb3fb94acdc}\label{interface_seaf_sync_logs_service_a3043ef06d20016f03d053eb3fb94acdc} 
+(void) -\/ {\bfseries clear}
+\begin{DoxyCompactList}\small\item\em Clears all logs. \end{DoxyCompactList}\item 
+\Hypertarget{interface_seaf_sync_logs_service_a7d621c0ef937e913b42e5d1399aeb5da}\label{interface_seaf_sync_logs_service_a7d621c0ef937e913b42e5d1399aeb5da} 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ {\bfseries all}
+\begin{DoxyCompactList}\small\item\em Gets all logs. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_a74a7132848b628fd7b8a1b434659f89d}{remove\+From\+Setting\+:}}
+\item 
+(NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_logs_service_a92a6a6c6ddc87211cae1905ea1b07cb3}{get\+Logs\+From\+Setting\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{interface_seaf_sync_logs_service}{Seaf\+Sync\+Logs\+Service} class provides methods for checking and logging the upload status of files. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_logs_service_a92a6a6c6ddc87211cae1905ea1b07cb3}\label{interface_seaf_sync_logs_service_a92a6a6c6ddc87211cae1905ea1b07cb3} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!getLogsFromSetting:@{getLogsFromSetting:}}
+\index{getLogsFromSetting:@{getLogsFromSetting:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{getLogsFromSetting:}{getLogsFromSetting:}}
+{\footnotesize\ttfamily -\/ (NSArray$<$ \mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*} $>$ \texorpdfstring{$\ast$}{*}) get\+Logs\+From\+Setting\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Get logs from setting 
+\begin{DoxyParams}{Parameters}
+{\em setting} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} to gets logs from \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_logs_service_ac7b6c64f093622dc9f2c16d92d7a0e7f}\label{interface_seaf_sync_logs_service_ac7b6c64f093622dc9f2c16d92d7a0e7f} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!initWithRepository:andConnection:@{initWithRepository:andConnection:}}
+\index{initWithRepository:andConnection:@{initWithRepository:andConnection:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{initWithRepository:andConnection:}{initWithRepository:andConnection:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Repository\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository}} $>$)}]{repository }\item[{and\+Connection\+:(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+
+
+Initializes a new instance of \doxylink{interface_seaf_sync_logs_service}{Seaf\+Sync\+Logs\+Service} with a custom \doxylink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository} implementation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repository} & The custom \doxylink{protocol_seaf_sync_log_repository-p}{Seaf\+Sync\+Log\+Repository} implementation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_sync_logs_service}{Seaf\+Sync\+Logs\+Service}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_logs_service_af82e9420629e112cd182131330afad64}\label{interface_seaf_sync_logs_service_af82e9420629e112cd182131330afad64} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!isAlreadyLogged:@{isAlreadyLogged:}}
+\index{isAlreadyLogged:@{isAlreadyLogged:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{isAlreadyLogged:}{isAlreadyLogged:}}
+{\footnotesize\ttfamily -\/ (bool) is\+Already\+Logged\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+Checks whether a sync log entry is already logged.
+
+This method determines whether a given sync log entry is already present in the log.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The sync log entry to check for existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if the sync log entry is already present, NO otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_logs_service_a7326fcefd299f03c6e5c4544c78a8306}\label{interface_seaf_sync_logs_service_a7326fcefd299f03c6e5c4544c78a8306} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!log:@{log:}}
+\index{log:@{log:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{log:}{log:}}
+{\footnotesize\ttfamily -\/ (bool) log\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+
+
+Logs the upload status of a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & The \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object representing the file to log. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+YES if the file was successfully logged, otherwise NO. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_logs_service_a74a7132848b628fd7b8a1b434659f89d}\label{interface_seaf_sync_logs_service_a74a7132848b628fd7b8a1b434659f89d} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!removeFromSetting:@{removeFromSetting:}}
+\index{removeFromSetting:@{removeFromSetting:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{removeFromSetting:}{removeFromSetting:}}
+{\footnotesize\ttfamily -\/ (void) remove\+From\+Setting\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{setting }\end{DoxyParamCaption}}
+
+Remove logs from setting 
+\begin{DoxyParams}{Parameters}
+{\em setting} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} to remove logs from \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_seaf_sync_logs_service_aaf232f1ec5812216b3d940a6a9982925}\label{interface_seaf_sync_logs_service_aaf232f1ec5812216b3d940a6a9982925} 
+\index{SeafSyncLogsService@{SeafSyncLogsService}!update:@{update:}}
+\index{update:@{update:}!SeafSyncLogsService@{SeafSyncLogsService}}
+\doxysubsubsection{\texorpdfstring{update:}{update:}}
+{\footnotesize\ttfamily -\/ (bool) update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_log}{Seaf\+Sync\+Log}} \texorpdfstring{$\ast$}{*})}]{log }\end{DoxyParamCaption}}
+
+
+
+Updates the repository with the information from the provided sync log. 
+
+This method takes a \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object and updates the repository with the information contained in the log. If the provided log is nil, the method returns false, indicating that no update was performed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & A \doxylink{interface_seaf_sync_log}{Seaf\+Sync\+Log} object containing synchronization information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the update was successful, false if the provided log is nil. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Log/\+Services/\mbox{\hyperlink{_seaf_sync_logs_service_8h}{Seaf\+Sync\+Logs\+Service.\+h}}\end{DoxyCompactItemize}

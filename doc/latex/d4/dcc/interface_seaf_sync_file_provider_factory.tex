@@ -1,0 +1,87 @@
+\doxysection{Seaf\+Sync\+File\+Provider\+Factory Class Reference}
+\hypertarget{interface_seaf_sync_file_provider_factory}{}\label{interface_seaf_sync_file_provider_factory}\index{SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}}
+
+
+A factory class for creating \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol} instances.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+File\+Provider\+Factory.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+File\+Provider\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/dcc/interface_seaf_sync_file_provider_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$) + \mbox{\hyperlink{interface_seaf_sync_file_provider_factory_a675596d81e9356e85814a7da1100f2a6}{get\+Provider\+For\+:}}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$) + \mbox{\hyperlink{interface_seaf_sync_file_provider_factory_a0a8d51beccef35bfd97cb3b7450908da}{get\+Provider\+For\+URL\+:with\+Settings\+:}}
+\item 
+(NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p}{Seaf\+Sync\+File\+Provider\+Filter\+Strategy}} $>$ $>$ \texorpdfstring{$\ast$}{*}) + \mbox{\hyperlink{interface_seaf_sync_file_provider_factory_a2a9589323ab6dad5070687b2cc72d82b}{get\+Default\+Filters\+With\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for creating \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol} instances. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_file_provider_factory_a2a9589323ab6dad5070687b2cc72d82b}\label{interface_seaf_sync_file_provider_factory_a2a9589323ab6dad5070687b2cc72d82b} 
+\index{SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}!getDefaultFiltersWith:@{getDefaultFiltersWith:}}
+\index{getDefaultFiltersWith:@{getDefaultFiltersWith:}!SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}}
+\doxysubsubsection{\texorpdfstring{getDefaultFiltersWith:}{getDefaultFiltersWith:}}
+{\footnotesize\ttfamily + (NSArray$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_file_provider_filter_strategy-p}{Seaf\+Sync\+File\+Provider\+Filter\+Strategy}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Default\+Filters\+With\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+Returns an array of default file provider filter strategies based on the provided sync settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The synchronization settings used to determine the default filters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of objects conforming to the \doxylink{protocol_seaf_sync_file_provider_filter_strategy-p}{Seaf\+Sync\+File\+Provider\+Filter\+Strategy} protocol. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_file_provider_factory_a675596d81e9356e85814a7da1100f2a6}\label{interface_seaf_sync_file_provider_factory_a675596d81e9356e85814a7da1100f2a6} 
+\index{SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}!getProviderFor:@{getProviderFor:}}
+\index{getProviderFor:@{getProviderFor:}!SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}}
+\doxysubsubsection{\texorpdfstring{getProviderFor:}{getProviderFor:}}
+{\footnotesize\ttfamily + (id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$) get\+Provider\+For\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+Creates an instance of \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol} based on the provided \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object containing synchronization settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}. 
+\end{DoxyReturn}
+\Hypertarget{interface_seaf_sync_file_provider_factory_a0a8d51beccef35bfd97cb3b7450908da}\label{interface_seaf_sync_file_provider_factory_a0a8d51beccef35bfd97cb3b7450908da} 
+\index{SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}!getProviderForURL:withSettings:@{getProviderForURL:withSettings:}}
+\index{getProviderForURL:withSettings:@{getProviderForURL:withSettings:}!SeafSyncFileProviderFactory@{SeafSyncFileProviderFactory}}
+\doxysubsubsection{\texorpdfstring{getProviderForURL:withSettings:}{getProviderForURL:withSettings:}}
+{\footnotesize\ttfamily + (id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$) get\+Provider\+For\+URL\+: \begin{DoxyParamCaption}\item[{(NSURL \texorpdfstring{$\ast$}{*})}]{folder\+URL }\item[{with\+Settings\+:(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\end{DoxyParamCaption}}
+
+Creates an instance of \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol} for a specific folder URL and settings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder\+URL} & The NSURL representing the folder\textquotesingle{}s URL. \\
+\hline
+{\em settings} & The \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings} object containing synchronization settings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/Seaf\+Sync\+File\+Provider\+Factory.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['recover_3acallback_3a_0',['recover:callback:',['../d6/dba/interface_seaf_trash_recoverer.html#a51c95555409c52caf6600662793520b5',1,'SeafTrashRecoverer']]],
+  ['recoverusing_3acallback_3a_1',['recoverUsing:callback:',['../da/db6/protocol_seaf_recovery_item-p.html#a002c38d75c5de5bc150c71f79ba69353',1,'SeafRecoveryItem-p']]],
+  ['refreshquota_3a_2',['refreshQuota:',['../d6/dba/interface_seaf_trash_recoverer.html#ad64312e0b02103bd39cb548e1b50608c',1,'SeafTrashRecoverer']]],
+  ['registererrorin_3awitherror_3a_3',['registerErrorIn:withError:',['../d0/d73/interface_seaf_sync_settings_service.html#a0f34140f0ae7ae2f2f73fdabf7a56387',1,'SeafSyncSettingsService']]],
+  ['remoteidentifier_4',['remoteIdentifier',['../d2/df8/interface_seaf_sync_log.html#ae7757a9ceef4c365aadca886bfef7b4d',1,'SeafSyncLog']]],
+  ['remotename_5',['remoteName',['../d2/df8/interface_seaf_sync_log.html#a9417e7f6e45b25ba69a706a38aa5e7ae',1,'SeafSyncLog']]],
+  ['remotepath_6',['remotePath',['../d2/df8/interface_seaf_sync_log.html#aeb3b38cde709bb4c482fe9e86b2b71fe',1,'SeafSyncLog']]],
+  ['remove_3a_7',['remove:',['../de/d46/protocol_seaf_sync_log_repository-p.html#a09a2d873a141ff7f4519c8fafa5a79a8',1,'SeafSyncLogRepository-p::remove:()'],['../d0/d31/interface_seaf_syncronizer.html#a30f40a4fd639a75e652b74f5d3e7c557',1,'SeafSyncronizer::remove:()'],['../d2/de0/interface_default_seaf_sync_settings_repository.html#a319d4f256f5c0ddfc5c794b1852a738b',1,'DefaultSeafSyncSettingsRepository::remove:()'],['../d3/d02/protocol_seaf_sync_settings_repository-p.html#af278dee4d0d3449420cd4a034a6d1999',1,'SeafSyncSettingsRepository-p::remove:()'],['../d0/d73/interface_seaf_sync_settings_service.html#a265d811b409707927a9898ef22c6ae6d',1,'SeafSyncSettingsService::remove:()'],['../da/d4d/protocol_seaf_sync_tree_folder_state_repository-p.html#ae9e82bb308cb05d84cb8dca7437f73ac',1,'SeafSyncTreeFolderStateRepository-p::remove:()'],['../d4/d20/interface_seaf_sync_folder_state_service.html#adab9e5eeecd46c9fffcafefbb5e9b589',1,'SeafSyncFolderStateService::remove:()']]],
+  ['removefilefromcloudusing_3a_8',['removeFileFromCloudUsing:',['../dd/d7c/interface_sync_setting_base_expirator.html#ac096376d9f3488fd159338c6889dc228',1,'SyncSettingBaseExpirator']]],
+  ['removefromsetting_3a_9',['removeFromSetting:',['../d1/d77/interface_seaf_sync_logs_service.html#a74a7132848b628fd7b8a1b434659f89d',1,'SeafSyncLogsService']]],
+  ['removewith_3a_10',['removeWith:',['../de/d46/protocol_seaf_sync_log_repository-p.html#ac8360f9edc21d7e06d4cecd5da892453',1,'SeafSyncLogRepository-p']]],
+  ['repoid_11',['repoid',['../d2/d5a/interface_seaf_deleted_file_folder_item.html#a42a9e70af043c8572775e811f2c8bd76',1,'SeafDeletedFileFolderItem::repoId'],['../d0/ded/interface_seaf_deleted_repo_item.html#acb44be623b5af3a0bb12b0abb6465389',1,'SeafDeletedRepoItem::repoId'],['../d9/dd7/interface_seaf_sync_settings.html#a677393ac78eda173dff9a70857592d33',1,'SeafSyncSettings::repoId']]],
+  ['reponame_12',['repoName',['../d0/ded/interface_seaf_deleted_repo_item.html#a944fb87c9b7935a974e0fb969b085540',1,'SeafDeletedRepoItem']]],
+  ['resourcehash_13',['resourceHash',['../d2/df8/interface_seaf_sync_log.html#a34b8c1cc368528919acae15ad3504cb8',1,'SeafSyncLog']]],
+  ['resourceid_14',['resourceid',['../d2/df8/interface_seaf_sync_log.html#a875210975427fc13a3ecc058a362ed8f',1,'SeafSyncLog::resourceId'],['../d9/dd7/interface_seaf_sync_settings.html#ab2916715ae777136631af6fb66a5d771',1,'SeafSyncSettings::resourceId']]],
+  ['revertrecoveryusing_3a_15',['revertRecoveryUsing:',['../da/db6/protocol_seaf_recovery_item-p.html#a518faeb29c84978d2b557a5ee5a863ff',1,'SeafRecoveryItem-p']]],
+  ['run_16',['run',['../db/d7b/protocol_seaf_background_task_protocol-p.html#aeae10f8bc2d0398c441b0bc3144f9da5',1,'SeafBackgroundTaskProtocol-p::run()'],['../d6/d04/interface_sync_permanent_setting_expirator.html#a03889074e93bb0856d0e6f6047bbad56',1,'SyncPermanentSettingExpirator::run()'],['../db/d19/interface_sync_temporal_setting_expirator.html#ab17cf81135549ffe7ca3f99ef0fca622',1,'SyncTemporalSettingExpirator::run()'],['../d7/d3f/protocol_seaf_sync_expirator_protocol-p.html#a16fea684d0e2e77e7b9056422ba2bda4',1,'SeafSyncExpiratorProtocol-p::run()']]],
+  ['run_3a_17',['run:',['../dc/d87/interface_seaf_sync_expiration_manager.html#a3a47a0c9a8af544bea43a8954860fa3e',1,'SeafSyncExpirationManager']]]
+];

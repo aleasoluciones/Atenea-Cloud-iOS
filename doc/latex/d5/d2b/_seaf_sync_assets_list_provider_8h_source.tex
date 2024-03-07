@@ -1,0 +1,29 @@
+\doxysection{Seaf\+Sync\+Assets\+List\+Provider.\+h}
+\hypertarget{_seaf_sync_assets_list_provider_8h_source}{}\label{_seaf_sync_assets_list_provider_8h_source}\index{Pod/Classes/SeafSync/FIleProvider/Providers/SeafSyncAssetsListProvider.h@{Pod/Classes/SeafSync/FIleProvider/Providers/SeafSyncAssetsListProvider.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncAssetsListProvider.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 16/11/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafSyncItemProtocol.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#import\ "{}SeafSyncProviderProtocol.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#import\ <Photos/Photos.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_assets_list_provider}{SeafSyncAssetsListProvider}}\ :\ NSObject<\mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{SeafSyncProviderProtocol}}>}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ -\/\ (id)initWithPHAssets:(NSArray<PHAsset\ *>\ *)assets;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ -\/\ (NSMutableArray<id<SeafSyncItemProtocol>>\ *)getFiles:(NSError\ **)onError;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

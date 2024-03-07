@@ -1,0 +1,78 @@
+\doxysection{Seaf\+Sync\+Gallery\+Enqueuer Class Reference}
+\hypertarget{interface_seaf_sync_gallery_enqueuer}{}\label{interface_seaf_sync_gallery_enqueuer}\index{SeafSyncGalleryEnqueuer@{SeafSyncGalleryEnqueuer}}
+Inheritance diagram for Seaf\+Sync\+Gallery\+Enqueuer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/dce/interface_seaf_sync_gallery_enqueuer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_gallery_enqueuer_a1c3e9cbc2e96bf0d38fa0315fac3d884}{init\+:connection\+:}}
+\begin{DoxyCompactList}\small\item\em Custom initializer for \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}. \end{DoxyCompactList}\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_gallery_enqueuer_a4c6c5ce226e3df2bfc72b4a264b2a184}{init\+:connection\+:and\+File\+Provider\+:}}
+\begin{DoxyCompactList}\small\item\em Custom initializer for \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}. instance with the specified synchronization settings, connection, and file provider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods inherited from \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p}{$<$\+Seaf\+Enqueuer\+Protocol$>$}}}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_ae9f971d086066830044c05cec6fd796a}{enqueue}}
+\begin{DoxyCompactList}\small\item\em Starts the upload process. \end{DoxyCompactList}\item 
+(long long) -\/ \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_a318f6bb0f9716b3bffffccf31b275372}{estimated\+Upload\+Size\+In\+Bytes}}
+\item 
+(void) -\/ {\bfseries on\+Enqueue\+Completed\+:}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_gallery_enqueuer_a1c3e9cbc2e96bf0d38fa0315fac3d884}\label{interface_seaf_sync_gallery_enqueuer_a1c3e9cbc2e96bf0d38fa0315fac3d884} 
+\index{SeafSyncGalleryEnqueuer@{SeafSyncGalleryEnqueuer}!init:connection:@{init:connection:}}
+\index{init:connection:@{init:connection:}!SeafSyncGalleryEnqueuer@{SeafSyncGalleryEnqueuer}}
+\doxysubsubsection{\texorpdfstring{init:connection:}{init:connection:}}
+{\footnotesize\ttfamily -\/ (id) init\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\item[{connection\+:(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\end{DoxyParamCaption}}
+
+
+
+Custom initializer for \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & The synchronization settings. \\
+\hline
+{\em connection} & The connection object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance of \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{protocol_seaf_enqueuer_protocol-p_aa0f3bb11c772051b36ef127a9e4cfc4c}{$<$\+Seaf\+Enqueuer\+Protocol$>$}}.
+
+\Hypertarget{interface_seaf_sync_gallery_enqueuer_a4c6c5ce226e3df2bfc72b4a264b2a184}\label{interface_seaf_sync_gallery_enqueuer_a4c6c5ce226e3df2bfc72b4a264b2a184} 
+\index{SeafSyncGalleryEnqueuer@{SeafSyncGalleryEnqueuer}!init:connection:andFileProvider:@{init:connection:andFileProvider:}}
+\index{init:connection:andFileProvider:@{init:connection:andFileProvider:}!SeafSyncGalleryEnqueuer@{SeafSyncGalleryEnqueuer}}
+\doxysubsubsection{\texorpdfstring{init:connection:andFileProvider:}{init:connection:andFileProvider:}}
+{\footnotesize\ttfamily -\/ (id) init\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} \texorpdfstring{$\ast$}{*})}]{settings }\item[{connection\+:(Seaf\+Connection \texorpdfstring{$\ast$}{*})}]{connection }\item[{and\+File\+Provider\+:(id$<$ \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} $>$)}]{file\+Provider }\end{DoxyParamCaption}}
+
+
+
+Custom initializer for \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}. instance with the specified synchronization settings, connection, and file provider. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em settings} & A {\ttfamily \doxylink{interface_seaf_sync_settings}{Seaf\+Sync\+Settings}} object representing the synchronization settings. \\
+\hline
+{\em connection} & A {\ttfamily Seaf\+Connection} object representing the connection to the Seafile server. \\
+\hline
+{\em file\+Provider} & An object conforming to the {\ttfamily \doxylink{protocol_seaf_sync_provider_protocol-p}{Seaf\+Sync\+Provider\+Protocol}} representing the file provider for synchronization.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized {\ttfamily \doxylink{interface_seaf_sync_gallery_enqueuer}{Seaf\+Sync\+Gallery\+Enqueuer}} instance. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+Enqueuers/\+Impl/Seaf\+Sync\+Gallery\+Enqueuer.\+h\end{DoxyCompactItemize}

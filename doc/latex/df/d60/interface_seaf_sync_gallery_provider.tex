@@ -1,0 +1,67 @@
+\doxysection{Seaf\+Sync\+Gallery\+Provider Class Reference}
+\hypertarget{interface_seaf_sync_gallery_provider}{}\label{interface_seaf_sync_gallery_provider}\index{SeafSyncGalleryProvider@{SeafSyncGalleryProvider}}
+
+
+A class representing a provider for synchronizing items from a gallery or album.  
+
+
+
+
+{\ttfamily \#include $<$Seaf\+Sync\+Gallery\+Provider.\+h$>$}
+
+Inheritance diagram for Seaf\+Sync\+Gallery\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/d60/interface_seaf_sync_gallery_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_seaf_sync_gallery_provider_a43b7a9be2fefe1e834f09c970dce87d4}{init\+With\+Album\+Name\+:}}
+\item 
+(NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) -\/ \mbox{\hyperlink{interface_seaf_sync_gallery_provider_a2bcca53f740bf0087f2e93c1d29ac69c}{get\+Files\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a provider for synchronizing items from a gallery or album. 
+
+\doxysubsection{Method Documentation}
+\Hypertarget{interface_seaf_sync_gallery_provider_a2bcca53f740bf0087f2e93c1d29ac69c}\label{interface_seaf_sync_gallery_provider_a2bcca53f740bf0087f2e93c1d29ac69c} 
+\index{SeafSyncGalleryProvider@{SeafSyncGalleryProvider}!getFiles:@{getFiles:}}
+\index{getFiles:@{getFiles:}!SeafSyncGalleryProvider@{SeafSyncGalleryProvider}}
+\doxysubsubsection{\texorpdfstring{getFiles:}{getFiles:}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array$<$ id$<$ \mbox{\hyperlink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol}} $>$ $>$ \texorpdfstring{$\ast$}{*}) get\+Files\+: \begin{DoxyParamCaption}\item[{(NSError \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*})}]{on\+Error }\end{DoxyParamCaption}}
+
+Gets the list of items in the synchronized gallery or album. 
+\begin{DoxyParams}{Parameters}
+{\em on\+Error} & An optional error pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array of objects conforming to the \doxylink{protocol_seaf_sync_item_protocol-p}{Seaf\+Sync\+Item\+Protocol} representing the items in the gallery or album. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{protocol_seaf_sync_provider_protocol-p_aac9c553be9e52bf1ec20a9b620ec40cd}{$<$\+Seaf\+Sync\+Provider\+Protocol$>$}}.
+
+\Hypertarget{interface_seaf_sync_gallery_provider_a43b7a9be2fefe1e834f09c970dce87d4}\label{interface_seaf_sync_gallery_provider_a43b7a9be2fefe1e834f09c970dce87d4} 
+\index{SeafSyncGalleryProvider@{SeafSyncGalleryProvider}!initWithAlbumName:@{initWithAlbumName:}}
+\index{initWithAlbumName:@{initWithAlbumName:}!SeafSyncGalleryProvider@{SeafSyncGalleryProvider}}
+\doxysubsubsection{\texorpdfstring{initWithAlbumName:}{initWithAlbumName:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Album\+Name\+: \begin{DoxyParamCaption}\item[{(NSString \texorpdfstring{$\ast$}{*})}]{album\+Name }\end{DoxyParamCaption}}
+
+Initializes a new instance of \doxylink{interface_seaf_sync_gallery_provider}{Seaf\+Sync\+Gallery\+Provider} with the specified album name. 
+\begin{DoxyParams}{Parameters}
+{\em album\+Name} & The name of the gallery or album to synchronize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An initialized instance of \doxylink{interface_seaf_sync_gallery_provider}{Seaf\+Sync\+Gallery\+Provider}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pod/\+Classes/\+Seaf\+Sync/\+FIle\+Provider/\+Providers/Seaf\+Sync\+Gallery\+Provider.\+h\end{DoxyCompactItemize}

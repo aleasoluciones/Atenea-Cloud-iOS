@@ -1,0 +1,35 @@
+\doxysection{Seaf\+Sync\+Utils.\+h}
+\hypertarget{_seaf_sync_utils_8h_source}{}\label{_seaf_sync_utils_8h_source}\index{Pod/Classes/SeafSync/Common/SeafSyncUtils.h@{Pod/Classes/SeafSync/Common/SeafSyncUtils.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ SeafSyncUtils.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ Seafile}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Javier\ Godoy\ (javigodoy@meytel.net)\ on\ 24/9/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ <CommonCrypto/CommonDigest.h>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{@interface\ }\mbox{\hyperlink{interface_seaf_sync_utils}{SeafSyncUtils}}\ :\ NSObject}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ +\ (NSURL*)urlFromBookmark:(NSData*)bookmark;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ +(NSString\ *)calculateHash:(NSString\ *)inputString;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ +(BOOL)\ date:(NSDate\ *)\ date\ isOlderThan:(NSDate\ *)\ dateToCompare;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ +(BOOL)\ date:(NSDate\ *)\ date\ isPreviousThan:(NSDate\ *)\ dateToCompare;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00065\ +\ (NSString\ *)getRelativePath:(NSURL\ *)url;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

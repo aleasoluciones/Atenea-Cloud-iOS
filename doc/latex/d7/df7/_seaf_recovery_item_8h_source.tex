@@ -1,0 +1,34 @@
+\doxysection{Seaf\+Recovery\+Item.\+h}
+\hypertarget{_seaf_recovery_item_8h_source}{}\label{_seaf_recovery_item_8h_source}\index{Pod/Classes/SeafRecovery/SeafRecoveryItem.h@{Pod/Classes/SeafRecovery/SeafRecoveryItem.h}}
+\mbox{\hyperlink{_seaf_recovery_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#import\ "{}SeafConnection.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{_seaf_recovery_item_8h_a774a995297abc6d9e7472d5beffd5a1f}{NS\_ENUM}}(NSInteger,\ SeafRecoveryItemType)\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ SeafRecoveryItemTypeRepository,\ }
+\DoxyCodeLine{00019\ \ \ \ \ SeafRecoveryItemTypeFolder,\ }
+\DoxyCodeLine{00020\ \ \ \ \ SeafRecoveryItemTypeFile\ }
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{@protocol\ }SeafRecoveryItem}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ -\/(NSString\ *)name;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ -\/(NSInteger)\ sizeInBytes;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00054\ -\/\ (void)recoverUsing:(SeafConnection\ *)connection\ callback:(\textcolor{keywordtype}{void}\ (\string^\ \_Nullable)(BOOL\ success))callback;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00065\ -\/(void)\ revertRecoveryUsing:(SeafConnection\ *)\ connection;}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{@end}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}
