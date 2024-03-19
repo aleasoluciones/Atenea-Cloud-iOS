@@ -1,17 +1,14 @@
 {
   "images" : [
     {
-      "filename" : "Default-Landscape.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Default-Landscape 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Default-Landscape 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
