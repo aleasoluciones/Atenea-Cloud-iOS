@@ -305,12 +305,11 @@ didFinishDownloadingToURL:(NSURL *)location
         if (self.downloadFileURL) {
             NSError *fileManagerError = nil;
 
-            /*
             if (![[NSFileManager defaultManager] moveItemAtURL:location toURL:self.downloadFileURL error:&fileManagerError]) {
                 [[NSNotificationCenter defaultCenter] postNotificationName:AFURLSessionDownloadTaskDidFailToMoveFileNotification object:downloadTask userInfo:fileManagerError.userInfo];
             } else {
                 [[NSNotificationCenter defaultCenter] postNotificationName:AFURLSessionDownloadTaskDidMoveFileSuccessfullyNotification object:downloadTask userInfo:nil];
-            }*/
+            }
         }
     }
 }

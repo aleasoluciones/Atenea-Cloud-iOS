@@ -18,7 +18,7 @@
 #import "Debug.h"
 #import <openssl/x509.h>
 #import "SeafPrivacyPolicyViewController.h"
-
+#import "AlertPrivacyPolicy.h"
 
 #define HTTP @"http://"
 #define HTTPS @"https://"
@@ -126,7 +126,7 @@
         return;
     }
 
-    NSString *url = [NSString stringWithFormat:@"%@%@",self.prefixLabel.text,serverTextField.text];
+    __block NSString *url = [NSString stringWithFormat:@"%@%@",self.prefixLabel.text,serverTextField.text];
     if (![url hasPrefix:HTTP] && ![url hasPrefix:HTTPS]) {
         [self alertWithTitle:NSLocalizedString(@"Invalid Server", @"Seafile")];
         return;
@@ -139,18 +139,24 @@
         [self alertWithTitle:NSLocalizedString(@"Password required", @"Seafile")];
         return;
     }
-    if ([url hasSuffix:@"/"])
-        url = [url substringToIndex:url.length-1];
-    if (!self.connection)
-        connection = [[SeafConnection alloc] initWithUrl:url cacheProvider:SeafGlobal.sharedObject.cacheProvider];
-    if (![url isEqualToString:connection.address]) {
-        connection = nil;
-        connection = [[SeafConnection alloc] initWithUrl:url cacheProvider:SeafGlobal.sharedObject.cacheProvider];
-    }
-    connection.loginDelegate = self;
-    connection.delegate = (SeafAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [connection loginWithUsername:username password:password];
-    [SVProgressHUD showWithStatus:NSLocalizedString(@"Connecting to server", @"Seafile")];
+
+           if ([url hasSuffix:@"/"]) {
+               url = [url substringToIndex:url.length-1];
+           }
+           if (!self.connection) {
+               self.connection = [[SeafConnection alloc] initWithUrl:url cacheProvider:SeafGlobal.sharedObject.cacheProvider];
+           }
+           if (![url isEqualToString:self.connection.address]) {
+               self.connection = nil;
+               self.connection = [[SeafConnection alloc] initWithUrl:url cacheProvider:SeafGlobal.sharedObject.cacheProvider];
+           }
+           self.connection.loginDelegate = self;
+           self.connection.delegate = (SeafAppDelegate *)[[UIApplication sharedApplication] delegate];
+ 
+           // Lógica de conexión aquí
+           [self.connection loginWithUsername:username password:password];
+           [SVProgressHUD showWithStatus:NSLocalizedString(@"Connecting to server", @"Seafile")];
+    
 }
 
 - (CGSize)getSizeForText:(NSString *)text maxWidth:(CGFloat)width font:(UIFont*)font  {
@@ -346,14 +352,46 @@
         connection.loginDelegate = nil;
         BOOL ret = [startController saveAccount:connection];
         if (ret) {
-            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-            [startController checkSelectAccount:connection];
+            BOOL policyAccepted = [self isPrivacyPolicyAccepted];
+
+            if (!policyAccepted) {
+                [AlertPrivacyPolicy showPrivacyPolicyAlertFromViewController:self accepted:^{
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey: [self createUniqueKeyPrivacy]];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                    [startController checkSelectAccount:connection];
+                }];
+            } else {
+                [startController checkSelectAccount:connection];
+            }
+
         } else {
             Warning("Failed to save account.");
             [self alertWithTitle:NSLocalizedString(@"Failed to save account", @"Seafile")];
         }
     }];
 }
+
+- (NSString *)createUniqueKeyPrivacy {
+    NSString *uniqueKey = [self.connection.username stringByAppendingString:self.connection.address];
+ //   Debug("UNIQUE KEYY %@", uniqueKey);
+    return uniqueKey;
+}
+- (BOOL)isPrivacyPolicyAccepted {
+    NSString *uniqueKey = [self createUniqueKeyPrivacy];
+
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:uniqueKey] == nil) {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:uniqueKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        return NO;
+    }
+    
+    BOOL policyAccepted = [[NSUserDefaults standardUserDefaults] boolForKey:uniqueKey];
+  //  NSLog(@"policyAccepted: %@", policyAccepted ? @"YES" : @"NO");
+    return policyAccepted;
+}
+
+
+
 
 - (void)twoStepVerification
 {

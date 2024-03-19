@@ -1278,3 +1278,7 @@
 
 "Enter password" = "Şifreyi girin";
 "Confirm password" = "Şifreyi onayla";
+
+"policy_privacy" = "Gizlilik Politikası";
+"accept" = "Kabul et";
+"url_privacy" = "https://google.com";

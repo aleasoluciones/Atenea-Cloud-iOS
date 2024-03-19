@@ -1138,3 +1138,7 @@
 
 "Enter password" = "Slá inn lykilorð";
 "Confirm password" = "Staðfesta lykilorð";
+
+"policy_privacy" = "Persónuverndarstefna";
+"accept" = "Samþykkja";
+"url_privacy" = "https://google.com";

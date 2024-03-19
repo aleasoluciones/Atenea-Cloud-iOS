@@ -1278,3 +1278,7 @@
 
 "Enter password" = "Entrez le mot de passe";
 "Confirm password" = "Confirmer le mot de passe";
+
+"policy_privacy" = "Politique de confidentialité";
+"accept" = "Accepter";
+"url_privacy" ="https://google.com";

@@ -1284,3 +1284,7 @@ Mode de sincronització";
 
 "Enter password" = "Introduïu la contrasenya";
 "Confirm password" = "Confirma la contrasenya";
+
+"policy_privacy" = "Política de privacitat";
+"accept" = "Acceptar";
+"url_privacy" = "https://google.com";

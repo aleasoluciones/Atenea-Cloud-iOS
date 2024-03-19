@@ -1238,3 +1238,8 @@
 "Enter password" = "输入密码";
 
 "Confirm password" = "确认密码";
+
+"policy_privacy" = "隐私政策";
+"accept" = "接受";
+
+"url_privacy" = "https://google.com";

@@ -1274,3 +1274,7 @@
 "Enter password" = "パスワードを入力してください";
 
 "Confirm password" = "パスワードを確認してください";
+
+"policy_privacy" = "プライバシーポリシー";
+"accept" = "承諾する";
+"url_privacy" = "https://google.com";

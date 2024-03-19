@@ -1139,3 +1139,7 @@
 
 "Enter password" = "Skriv inn passord";
 "Confirm password" = "Bekreft passord";
+
+"policy_privacy" = "Personvernerklæring";
+"accept" = "Godta";
+"url_privacy" = "https://google.com";

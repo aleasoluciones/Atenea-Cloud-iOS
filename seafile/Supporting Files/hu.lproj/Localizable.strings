@@ -1138,3 +1138,7 @@
 
 "Enter password" = "Írja be a jelszót";
 "Confirm password" = "Jelszó megerősítése";
+
+"policy_privacy" = "Adatvédelmi irányelvek";
+"accept" = "Elfogad";
+"url_privacy" = "https://google.com";

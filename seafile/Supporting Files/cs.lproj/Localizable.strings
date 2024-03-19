@@ -1279,3 +1279,7 @@
 
 "Enter password" = "Zadejte heslo";
 "Confirm password" = "Potvrďte heslo";
+
+"policy_privacy" = "Zásady ochrany osobních údajů";
+"accept" = "Přijmout";
+"url_privacy" = "https://google.com";

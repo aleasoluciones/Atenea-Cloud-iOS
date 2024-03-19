@@ -67,6 +67,8 @@
 
 - (BOOL)selectAccount:(SeafConnection *)conn
 {
+    
+    
     conn.delegate = self;
     BOOL updated = ([[SeafGlobal sharedObject] connection] != conn);
     @synchronized(self) {
@@ -91,6 +93,9 @@
 
 - (void)enterAccount:(SeafConnection *)conn
 {
+    
+
+    
     BOOL updated = [self selectAccount:conn];
     if (self.window.rootViewController == self.tabbarController)
         return;

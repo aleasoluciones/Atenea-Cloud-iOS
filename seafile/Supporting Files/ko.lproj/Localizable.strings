@@ -1278,3 +1278,7 @@
 
 "Enter password" = "비밀번호 입력";
 "Confirm password" = "비밀번호 확인";
+
+"policy_privacy" = "개인정보 보호 정책";
+"accept" = "수락";
+"url_privacy" = "https://google.com";

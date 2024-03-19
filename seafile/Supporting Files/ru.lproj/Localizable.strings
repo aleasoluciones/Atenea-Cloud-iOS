@@ -1138,3 +1138,7 @@
 
 "Enter password" = "Введите пароль";
 "Confirm password" = "Подтвердите пароль";
+
+"policy_privacy" = "Политика конфиденциальности";
+"accept" = "Принять";
+"url_privacy" = "https://google.com";
