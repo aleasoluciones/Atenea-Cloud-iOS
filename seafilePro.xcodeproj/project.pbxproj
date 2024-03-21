@@ -2850,7 +2850,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = seafile/seafile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DAUVLSYP57;
 				ENABLE_BITCODE = NO;
@@ -2860,7 +2860,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.23;
+				MARKETING_VERSION = 2.9.24;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meytel.seafileDev;
 				PRODUCT_NAME = "Cloud Drive";
 				PROVISIONING_PROFILE = "";
@@ -2884,7 +2884,7 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = seafile/seafile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DAUVLSYP57;
 				ENABLE_BITCODE = NO;
@@ -2894,7 +2894,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.23;
+				MARKETING_VERSION = 2.9.24;
 				PRODUCT_BUNDLE_IDENTIFIER = com.meytel.seafileDev;
 				PRODUCT_NAME = "Cloud Drive";
 				PROVISIONING_PROFILE = "";
