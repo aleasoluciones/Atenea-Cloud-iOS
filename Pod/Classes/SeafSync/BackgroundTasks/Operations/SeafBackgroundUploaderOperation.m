@@ -79,24 +79,26 @@
         
         NSLog(@"#BACKGROUND_TASKS:: SeafBackgroundUploaderOperation UPLOADING: %@",uploadFile.name);
         
+        __weak typeof(self) weakSelf = self;
+        
         [uploadFile run:^(id<SeafTask>  _Nonnull task, BOOL result) {
             
             // We do not check for same object´s callback.
             // We just check the number of callbacks remaining so we just remove last object from
             // pendingCallbacks array on each callback unitl the array is empty
             NSLog(@"#BACKGROUND_TASKS:: SeafBackgroundUploaderOperation CALLBACKfor NAME: %@ RECEIVED with RESULT: %d",uploadFile.name, result);
-            [self.pendingCallbacks removeLastObject];
-            [[self getQueueForUploadFile:(SeafUploadFile *)task] getInternalQueueTaskCompleteBlock](task, result);
+            [weakSelf.pendingCallbacks removeLastObject];
+            [[weakSelf getQueueForUploadFile:(SeafUploadFile *)task] getInternalQueueTaskCompleteBlock](task, result);
             
             if(result){
                 [self removeUploadFileFromManagerEnqueue:(SeafUploadFile *)task];
             }
             
             
-            if(self.pendingCallbacks.count == 0){
+            if(weakSelf.pendingCallbacks.count == 0){
                 NSLog(@"#BACKGROUND_TASKS:: SeafBackgroundUploaderOperation ##ALL CALLBACKS RECEIVED##");
-                if(self.completionBlock){
-                    self.completionBlock();
+                if(weakSelf.completionBlock){
+                    weakSelf.completionBlock();
                 }
                 return;
             }

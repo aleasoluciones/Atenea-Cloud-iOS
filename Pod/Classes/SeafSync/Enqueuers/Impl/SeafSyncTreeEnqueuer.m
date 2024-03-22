@@ -384,10 +384,11 @@ typedef void (^SeafSyncSeafDirCreatedCallback)(SeafDir *directory);
     NSLog(@"SYNC: addToUploadQueueTask %@",fileToUpload.name);
     
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [SeafDataTaskManager.sharedObject addUploadTask:fileToUpload];
-    });
+    //});
 }
+
 
 
 /**

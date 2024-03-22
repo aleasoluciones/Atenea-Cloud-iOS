@@ -169,9 +169,9 @@
  * @param fileToUpload The file to be added to the upload queue.
  */
 - (void)addToUploadQueueTask:(SeafUploadFile *)fileToUpload {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    // dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [SeafDataTaskManager.sharedObject addUploadTask:fileToUpload];
-    });
+    //});
 }
 
 /**

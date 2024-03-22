@@ -340,36 +340,44 @@
     return ret;
 }
 
-- (void)loginSuccess:(SeafConnection *)conn
-{
-    if (conn != connection)
-        return;
+
+- (void)loginSuccess:(SeafConnection *)conn {
+    if (conn != connection) return;
 
     Debug("login success");
     [conn getServerInfo:^(bool result) {
         Debug("Get server info result: %d", result);
         [SVProgressHUD dismiss];
         connection.loginDelegate = nil;
-        BOOL ret = [startController saveAccount:connection];
+        
+        [self handlePolicyAndAccount:connection];
+    }];
+}
+
+- (void)handlePolicyAndAccount:(SeafConnection *)conn {
+    BOOL policyAccepted = [self isPrivacyPolicyAccepted];
+    
+    void (^saveAndCheckAccount)(void) = ^{
+        BOOL ret = [startController saveAccount:conn];
         if (ret) {
-            BOOL policyAccepted = [self isPrivacyPolicyAccepted];
-
-            if (!policyAccepted) {
-                [AlertPrivacyPolicy showPrivacyPolicyAlertFromViewController:self accepted:^{
-                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey: [self createUniqueKeyPrivacy]];
-                    [[NSUserDefaults standardUserDefaults] synchronize];
-                    [startController checkSelectAccount:connection];
-                }];
-            } else {
-                [startController checkSelectAccount:connection];
-            }
-
+            [startController checkSelectAccount:conn];
         } else {
             Warning("Failed to save account.");
             [self alertWithTitle:NSLocalizedString(@"Failed to save account", @"Seafile")];
         }
-    }];
+    };
+    
+    if (!policyAccepted) {
+        [AlertPrivacyPolicy showPrivacyPolicyAlertFromViewController:self accepted:^{
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[self createUniqueKeyPrivacy]];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            saveAndCheckAccount();
+        }];
+    } else {
+        saveAndCheckAccount();
+    }
 }
+
 
 - (NSString *)createUniqueKeyPrivacy {
     NSString *uniqueKey = [self.connection.username stringByAppendingString:self.connection.address];
