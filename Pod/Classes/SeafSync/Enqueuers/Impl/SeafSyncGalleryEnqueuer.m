@@ -95,7 +95,7 @@
     [dir loadContentSuccess:^(SeafDir *dir) {
         self.targetDirectory = dir;
         
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self startUploadProcess];
         });
         
@@ -135,6 +135,8 @@
         uploadFile.syncId = self.settings.identifier;
         uploadFile.syncFileId = [syncItem identifier];
         uploadFile.filesize = syncItem.sizeInBytes;
+        uploadFile.retryable = true;
+
         uploadFile.onlyWifi = self.settings.uploadOnlyOverWifi;
         [uploadFile setCompletionBlock:^(SeafUploadFile *file, NSString *oid, NSError *error) {
             if (error == nil) {

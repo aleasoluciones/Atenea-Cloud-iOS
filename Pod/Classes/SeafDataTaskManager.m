@@ -11,6 +11,8 @@
 #import "Debug.h"
 #import "SeafFile.h"
 #import "SeafStorage.h"
+#import "SeafPhotoAsset.h"
+#import "SeafSyncSettingsService.h"
 
 #define KEY_UPLOAD @"allUploadingTasks"
 #define KEY_DOWNLOAD @"allDownloadingTasks"
@@ -291,7 +293,8 @@
         [Utils dict:dict setObject:[NSNumber numberWithLongLong:ufile.filesize] forKey:@"filesize"];
         [Utils dict:dict setObject:[NSNumber numberWithBool:ufile.removeSourceAfterUpload] forKey:@"removeSourceAfterUpload"];
         [Utils dict:dict setObject:[NSNumber numberWithBool:ufile.onlyWifi] forKey:@"onlyWifi"];
-        
+        [Utils dict:dict setObject:ufile.assetIdentifier forKey:@"assetIdentifier"];
+
     }
     return dict;
 }
@@ -312,45 +315,76 @@
 
 
 -(void) loadUploadingStoredTasksFrom:(SeafConnection *)connection{
-    
-    NSString *uploadKey = [self uploadStorageKey:connection.accountIdentifier];
-    NSMutableDictionary *uploadTasks = [NSMutableDictionary dictionaryWithDictionary: [SeafStorage.sharedObject objectForKey:uploadKey]];
-    NSMutableArray *toDelete = [NSMutableArray new];
-    for (NSString *key in uploadTasks) {
-        NSDictionary *dict = [uploadTasks objectForKey:key];
-        NSString *lpath = [dict objectForKey:@"lpath"];
-        if (![Utils fileExistsAtPath:lpath]) {
-            [toDelete addObject:key];
-            continue;
-        }
-        SeafUploadFile *ufile = [[SeafUploadFile alloc] initWithPath:lpath];
-        if ([[dict objectForKey:@"uploaded"] boolValue]) {
-            [ufile cleanup];
-            [toDelete addObject:key];
-            continue;
-        }
-        
-        //Sync fields
-        ufile.syncId = [[dict objectForKey:@"syncId"] stringValue];
-        ufile.syncFileId = [[dict objectForKey:@"syncFileId"] stringValue];
-        ufile.removeSourceAfterUpload = [[dict objectForKey:@"removeSourceAfterUpload"] boolValue];
-        ufile.onlyWifi = [[dict objectForKey:@"onlyWifi"] boolValue];
-        ufile.filesize = [[dict objectForKey:@"filesize"] longLongValue];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         
-        ufile.overwrite = [[dict objectForKey:@"overwrite"] boolValue];
-        SeafDir *udir = [[SeafDir alloc] initWithConnection:connection oid:[dict objectForKey:@"oid"] repoId:[dict objectForKey:@"repoId"] perm:[dict objectForKey:@"perm"] name:[dict objectForKey:@"name"] path:[dict objectForKey:@"path"] mime:[dict objectForKey:@"mime"]];
-        ufile.udir = udir;
-        [self addUploadTask:ufile];
-    }
-    
-    
-    if (toDelete.count > 0) {
-        for (NSString *key in toDelete) {
-            [uploadTasks removeObjectForKey:key];
+        SeafSyncSettingsService *settingsService = [[SeafSyncSettingsService alloc] initWithConnection:connection];
+        
+        NSString *uploadKey = [self uploadStorageKey:connection.accountIdentifier];
+        NSMutableDictionary *uploadTasks = [NSMutableDictionary dictionaryWithDictionary: [SeafStorage.sharedObject objectForKey:uploadKey]];
+        NSMutableArray *toDelete = [NSMutableArray new];
+        for (NSString *key in uploadTasks) {
+            NSDictionary *dict = [uploadTasks objectForKey:key];
+            NSString *lpath = [dict objectForKey:@"lpath"];
+            
+            
+            //If this settings not exists, exclude from queue
+            NSArray<SeafSyncSettings *> *settingsFounded = [settingsService find:[NSPredicate predicateWithBlock:^BOOL(SeafSyncSettings  *setting, NSDictionary<NSString *,id> * _Nullable bindings) {
+                return [setting.identifier isEqualToString:[[dict objectForKey:@"syncId"] stringValue]];
+            }]];
+            
+            if(settingsFounded.count == 0){
+                [toDelete addObject:key];
+                continue;
+            }
+            
+            
+            //Get identifier
+            NSString *assetIdentifier = [dict objectForKey:@"assetIdentifier"];
+            if (![Utils fileExistsAtPath:lpath] && ! [Utils existsAssetByIdentifier:assetIdentifier]) {
+                [toDelete addObject:key];
+                continue;
+            }
+            SeafUploadFile *ufile = [[SeafUploadFile alloc] initWithPath:lpath];
+            if ([[dict objectForKey:@"uploaded"] boolValue]) {
+                [ufile cleanup];
+                [toDelete addObject:key];
+                continue;
+            }
+            
+            //Sync fields
+            ufile.syncId = [[dict objectForKey:@"syncId"] stringValue];
+            ufile.syncFileId = [[dict objectForKey:@"syncFileId"] stringValue];
+            ufile.removeSourceAfterUpload = [[dict objectForKey:@"removeSourceAfterUpload"] boolValue];
+            ufile.onlyWifi = [[dict objectForKey:@"onlyWifi"] boolValue];
+            ufile.filesize = [[dict objectForKey:@"filesize"] longLongValue];
+            
+            //If is assets upload
+            if(assetIdentifier.length > 0){
+                PHAsset *asset = [Utils getAssetByIdentifier:assetIdentifier];
+                if(asset){
+                    SeafPhotoAsset *photoAsset = [[SeafPhotoAsset alloc] initWithAsset:asset];
+                    [ufile setPHAsset:asset url:photoAsset.ALAssetURL];
+                }
+            }
+            
+            
+            
+            ufile.overwrite = [[dict objectForKey:@"overwrite"] boolValue];
+            SeafDir *udir = [[SeafDir alloc] initWithConnection:connection oid:[dict objectForKey:@"oid"] repoId:[dict objectForKey:@"repoId"] perm:[dict objectForKey:@"perm"] name:[dict objectForKey:@"name"] path:[dict objectForKey:@"path"] mime:[dict objectForKey:@"mime"]];
+            ufile.udir = udir;
+            
+            [self addUploadTask:ufile];
         }
-        [SeafStorage.sharedObject setObject:uploadTasks forKey:uploadKey];
-    }
+        
+        
+        if (toDelete.count > 0) {
+            for (NSString *key in toDelete) {
+                [uploadTasks removeObjectForKey:key];
+            }
+            [SeafStorage.sharedObject setObject:uploadTasks forKey:uploadKey];
+        }
+    });
 }
 
 - (void)startLastTimeUnfinshTaskWithConnection:(SeafConnection *)conn {

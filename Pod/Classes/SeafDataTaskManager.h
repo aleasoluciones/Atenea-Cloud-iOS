@@ -48,6 +48,8 @@ typedef void(^DownLoadFinshBlock)(id<SeafTask>  _Nonnull task);
 
 - (SeafAccountTaskQueue * _Nonnull)accountQueueForConnection:(SeafConnection * _Nonnull)connection;
 
+- (NSString*_Nullable)uploadStorageKey:(NSString*_Nonnull)accountIdentifier;
+
 @end
 
 @interface SeafAccountTaskQueue : NSObject

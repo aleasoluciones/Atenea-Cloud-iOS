@@ -57,7 +57,7 @@
 		<key>MyFileAccessService</key>
 		<dict>
 			<key>NSFileProviderDomainIdentifier</key>
-			<string>com.meytel.seafileDev</string>
+			<string>com.cloud.atenea</string>
 			<key>NSFileProviderMode</key>
 			<array>
 				<string>UIDocumentPickerModeImport</string>

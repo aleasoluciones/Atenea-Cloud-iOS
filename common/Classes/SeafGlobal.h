@@ -16,8 +16,8 @@
 
 
 #define SEAFILE_SUITE_NAME @"group.com.meytel.seafileDev"
-#define APP_ID @"com.meytel.seafileDev"
-#define SEAF_FILE_PROVIDER @"com.meytel.seafileDev.fileprovider"
+#define APP_ID @"com.cloud.atenea"
+#define SEAF_FILE_PROVIDER @"com.cloud.atenea.fileprovider"
 
 @protocol SeafBackgroundMonitor <NSObject>
 - (void)enterBackground;

@@ -8,7 +8,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.meytel.seafileDev.SeafAction</string>
+		<string>$(AppIdentifierPrefix)com.cloud.atenea.SeafAction</string>
 	</array>
 </dict>
 </plist>

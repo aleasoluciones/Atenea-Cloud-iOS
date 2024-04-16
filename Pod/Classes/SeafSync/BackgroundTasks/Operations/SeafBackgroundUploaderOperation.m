@@ -30,8 +30,8 @@
 
 @implementation SeafBackgroundUploaderOperation
 
-#define NUMBER_OF_FILES_TO_UPLOAD 30
-#define NUMBER_OF_SECONDS_TO_WAIT_BERFORE_COMPLETE 600
+#define NUMBER_OF_FILES_TO_UPLOAD 100
+#define NUMBER_OF_SECONDS_TO_WAIT_BERFORE_COMPLETE 300
 /**
  * Initializes an instance of SeafBackgroundUploaderOperation with the given synchronization settings and session.
  *

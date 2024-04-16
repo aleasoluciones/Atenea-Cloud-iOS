@@ -117,6 +117,10 @@
     if (self.connection != nil && [self filesFromThisSettingInQueue]) {
         return SeafSyncStateUploading;
     }
+    
+    if (self.connection != nil && [self filesFromThisSettingInQueue] == NO && self.lastRunTime != nil) {
+        return SeafSyncStateCompleted;
+    }
 
     return  _state;
 }

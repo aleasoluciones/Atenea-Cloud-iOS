@@ -21,7 +21,8 @@
 #import "SeafAlertChangePlan.h"
 #import <SafariServices/SafariServices.h>
 #import "SeafConnection+UserPlan.h"
-
+#import "SeafAssetFileAdapter.h"
+#import "SeafPhotoAsset.h"
 
 #import "SeafConnection.h"
 #import "SeafUploadSize.h"
@@ -88,7 +89,14 @@
 - (long long)filesize
 {
     if (!_filesize || _filesize == 0) {
-        _filesize = [Utils fileSizeAtPath1:self.lpath] ;
+        
+        if(self.asset){
+            SeafAssetFileAdapter *adapter = [[SeafAssetFileAdapter alloc] initWithPhotoAsset:[[SeafSyncAssetItem alloc] initWithPHAsset:[Utils getAssetByIdentifier:self.asset.localIdentifier]]];
+            _filesize = adapter.sizeInBytes;
+        }
+        else{
+            _filesize = [Utils fileSizeAtPath1:self.lpath] ;
+        }
     }
     return _filesize;
 }
@@ -231,7 +239,7 @@
             [Utils linkFileAtPath:self.lpath to:[SeafStorage.sharedObject documentPath:oid] error:nil];
             // files.app menory limit 15MB, reSizeImage will use more than 15MB
             // resize thumb while reaching memory limit in share extension
-            if ([[Utils currentBundleIdentifier] isEqualToString:@"com.meytel.seafileDev"]) {
+            if ([[Utils currentBundleIdentifier] isEqualToString:@"com.cloud.atenea"]) {
                 [self saveThumbToLocal:oid];
             }
             
@@ -571,7 +579,7 @@
 {
     if (!_udir) return false;
     [self checkAsset];
-    if (![Utils fileExistsAtPath:self.lpath]) return false;
+    if (![Utils fileExistsAtPath:self.lpath] && ![Utils existsAssetByIdentifier:_asset.localIdentifier]) return false;
     if (self.onlyWifi)
         return [[AFNetworkReachabilityManager sharedManager] isReachableViaWiFi];
     else
@@ -580,6 +588,19 @@
 
 - (void)run:(TaskCompleteBlock _Nullable)completeBlock
 {
+    
+    if([self.lpath containsString:@"mp4"] || [self.lpath containsString:@"MP4"] ){
+        bool kk = true;
+    }
+    
+    if(self.assetIdentifier && self.asset == nil){
+        PHAsset *asset = [Utils getAssetByIdentifier:self.assetIdentifier];
+        SeafPhotoAsset *photoAsset = [[SeafPhotoAsset alloc] initWithAsset:asset];
+        if(asset){
+            [self setPHAsset:asset url:photoAsset.ALAssetURL];
+        }
+    }
+    
     [self checkAsset];
     self.taskCompleteBlock = completeBlock;
     if (!completeBlock) {

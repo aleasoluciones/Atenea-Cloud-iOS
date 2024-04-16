@@ -65,4 +65,7 @@
 
 + (NSString *)creatNewFileName:(NSString *)fileName;
 
++ (BOOL) existsAssetByIdentifier:(NSString * )localAssetIdentifier;
++ (PHAsset *) getAssetByIdentifier:(NSString * )localAssetIdentifier;
+
 @end

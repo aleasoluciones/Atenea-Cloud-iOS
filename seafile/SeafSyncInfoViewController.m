@@ -81,10 +81,18 @@ static NSString *cellIdentifier = @"SeafSyncInfoCell";
     WS(weakSelf);
     SeafDataTaskManager.sharedObject.trySyncBlock = ^(id<SeafTask> _Nullable task) {
         if (![task.accountIdentifier isEqualToString:self.connection.accountIdentifier]) return;
-        if ([weakSelf.ongongingTasks containsObject:task]) return;
+        
         @synchronized (weakSelf.ongongingTasks) {
-            [weakSelf.ongongingTasks addObject:task];
+            if ([weakSelf.ongongingTasks containsObject:task]) return;
+            
+            //Only add UploadFile when we are in upload view
+            if([task isKindOfClass:[SeafUploadFile class]] && self.detailType != UPLOAD_DETAIL) return;
+            
+            @synchronized (weakSelf.ongongingTasks) {
+                [weakSelf.ongongingTasks addObject:task];
+            }
         }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [weakSelf.tableView reloadData];
         });

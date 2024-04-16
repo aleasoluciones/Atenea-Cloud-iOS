@@ -32,6 +32,7 @@
 + (BOOL)checkMakeDir:(NSString *)path
 {
     NSError *error;
+    NSError *errorCreate;
     BOOL isDirectory = NO;
     if (![[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory] || !isDirectory) {
         //Does directory already exist?
@@ -41,8 +42,8 @@
         if (![[NSFileManager defaultManager] createDirectoryAtPath:path
                                        withIntermediateDirectories:YES
                                                         attributes:nil
-                                                             error:&error]) {
-            Warning("Failed to create directory %@:%@\n", path, error);
+                                                             error:&errorCreate]) {
+            Warning("Failed to create directory %@:%@ , %@\n", path, error, errorCreate);
             return NO;
         }
     }
@@ -58,7 +59,7 @@
         Warning("unable to get the contents of directory: %@, error: %@", path, error);
         return;
     }
-
+    
     for (NSString *entry in dirContents) {
         [[NSFileManager defaultManager] removeItemAtPath:[path stringByAppendingPathComponent:entry] error:nil];
     }
@@ -89,6 +90,21 @@
 }
 
 + (BOOL)copyFile:(NSURL *)from to:(NSURL *)to
+{
+    NSError *error = nil;
+    NSFileManager* fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:to.path]){
+        return true;
+        
+    }
+    if (![[NSFileManager defaultManager] copyItemAtURL:from toURL:to error:&error]) {
+        Warning("Failed to copy file from %@ to %@: %@\n", from, to, error);
+        return false;
+    }
+    return true;
+}
+
++ (BOOL)copyFile_v1:(NSURL *)from to:(NSURL *)to
 {
     NSError *error = nil;
     NSFileManager* fm = [NSFileManager defaultManager];
@@ -184,7 +200,7 @@
                                         (child->d_name[0] == '.' && child->d_name[1] == 0) ||
                                         (child->d_name[0] == '.' && child->d_name[1] == '.' && child->d_name[2] == 0)
                                         )) continue;
-
+        
         long folderPathLength = strlen(folderPath);
         char childPath[1024];
         stpcpy(childPath, folderPath);
@@ -282,7 +298,7 @@
         };
         while (encodes[i]) {
             encodeContent = [NSString stringWithContentsOfFile:path encoding:encodes[i] error:nil];
-             if (encodeContent) {
+            if (encodeContent) {
                 Debug("use encoding %d, %ld\n", i, (unsigned long)encodes[i]);
                 break;
             }
@@ -315,7 +331,7 @@
 {
     if (!ext || ext.length == 0)
         return false;
-
+    
     for (int i = 0; exts[i]; ++i) {
         if ([exts[i] isEqualToString:ext])
             return true;
@@ -375,14 +391,14 @@
 {
     CGFloat maxWidth = width;
     CGFloat maxHeight = 1000;
-
+    
     CGRect stringRect = [txt boundingRectWithSize:CGSizeMake(maxWidth, maxHeight)
                                           options:NSStringDrawingUsesLineFragmentOrigin
                                        attributes:@{ NSFontAttributeName : font }
                                           context:nil];
-
+    
     CGSize stringSize = CGRectIntegral(stringRect).size;
-
+    
     return CGSizeMake(roundf(stringSize.width), roundf(stringSize.height));
 }
 
@@ -395,7 +411,7 @@
     UIAlertAction *noAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"NO", @"Seafile") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         if (no) no();
     }];
-
+    
     [alert addAction:noAction];
     [alert addAction:yesAction];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -433,11 +449,11 @@
         }
         textField.autocorrectionType = UITextAutocorrectionTypeNo;
         textField.secureTextEntry = secure;
-
+        
     }];
     [alert addAction:cancelAction];
     [alert addAction:okAction];
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         [c presentViewController:alert animated:true completion:nil];
     });
@@ -466,19 +482,19 @@
         CGImageSourceRef imageSource = CGImageSourceCreateWithData((CFDataRef)imgData, NULL);
         if (!imageSource)
             return nil;
-
+        
         CFDictionaryRef options = (__bridge CFDictionaryRef)[NSDictionary dictionaryWithObjectsAndKeys:
-                                                     (id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailWithTransform,
-                                                     (id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailFromImageIfAbsent,
-                                                    (id)[NSNumber numberWithFloat:length], (id)kCGImageSourceThumbnailMaxPixelSize,
-                                                     nil];
+                                                             (id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailWithTransform,
+                                                             (id)kCFBooleanTrue, (id)kCGImageSourceCreateThumbnailFromImageIfAbsent,
+                                                             (id)[NSNumber numberWithFloat:length], (id)kCGImageSourceThumbnailMaxPixelSize,
+                                                             nil];
         CGImageRef imgRef = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, options);
-
+        
         UIImage *reSizeImage = [UIImage imageWithCGImage:imgRef];
-         
+        
         CGImageRelease(imgRef);
         CFRelease(imageSource);
-
+        
         return reSizeImage;
     }
 }
@@ -513,7 +529,7 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:cachePath]) {
         return [UIImage imageWithContentsOfFile:cachePath];
     }
-
+    
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
         UIImage *image = [UIImage imageWithContentsOfFile:path];
         if (image.size.width > MAX_SIZE || image.size.height > MAX_SIZE) {
@@ -542,7 +558,7 @@
     if (path) {
         [ms appendFormat:@"_%@", [path stringByAddingPercentEncodingWithAllowedCharacters:allowedSet]];
     }
-
+    
     return ms;
 }
 
@@ -554,7 +570,7 @@
     *username = nil;
     *repoId = nil;
     *path = nil;
-
+    
     if (arr.count >= 2) {
         *server = [[arr objectAtIndex:0] stringByRemovingPercentEncoding];
         *username = [[arr objectAtIndex:1] stringByRemovingPercentEncoding];
@@ -570,14 +586,43 @@
 + (NSError *)defaultError
 {
     NSDictionary *userInfo = @{
-                               NSLocalizedDescriptionKey: NSLocalizedString(@"Operation was unsuccessful.", nil),
-                               NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"The operation failed.", nil),
-                               };
+        NSLocalizedDescriptionKey: NSLocalizedString(@"Operation was unsuccessful.", nil),
+        NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"The operation failed.", nil),
+    };
     NSError *error = [NSError errorWithDomain:@"Seafile" code:-1 userInfo:userInfo];
     return error;
 }
 
 
+
++(BOOL) existsAssetByIdentifier:(NSString * )localAssetIdentifier{
+    
+    if ([localAssetIdentifier length] == 0){
+        return FALSE;
+    }
+    
+    PHFetchResult *fetchResult = [PHAsset fetchAssetsWithLocalIdentifiers:@[localAssetIdentifier] options:nil];
+    
+    // Si la cantidad de resultados de la búsqueda es mayor a cero, significa que el asset existe
+    if (fetchResult.count > 0) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+
++(PHAsset *) getAssetByIdentifier:(NSString * )localAssetIdentifier{
+    
+    PHFetchResult *fetchResult = [PHAsset fetchAssetsWithLocalIdentifiers:@[localAssetIdentifier] options:nil];
+    
+    // Si la cantidad de resultados de la búsqueda es mayor a cero, significa que el asset existe
+    if (fetchResult.count > 0) {
+        return [fetchResult objectAtIndex:0];
+    } else {
+        return nil;
+    }
+}
 
 + (NSString *)convertToALAssetUrl:(NSString *)fileURL andIdentifier:(NSString *)identifier {
     NSString *name = [identifier componentsSeparatedByString:@"/"].firstObject;

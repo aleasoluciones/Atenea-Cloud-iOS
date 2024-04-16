@@ -40,7 +40,7 @@ static NSManagedObjectContext *_managedObjectContext;
     if (self) {
         self.modelName = @"Model";
         self.settingsModel = @"SyncSettings";
-       // [self initializePersistentContainer];
+        // [self initializePersistentContainer];
     }
     return self;
 }
@@ -66,12 +66,12 @@ static NSManagedObjectContext *_managedObjectContext;
  * @return An array containing all synchronization setting entries.
  */
 - (nonnull NSMutableArray<SeafSyncSettings *> *)all {
-  
+    
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:self.settingsModel];
-
+    
     NSError *fetchError = nil;
     NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&fetchError];
-
+    
     if (fetchError) {
         NSLog(@"Error al recuperar datos de CoreData: %@", fetchError);
     } else {
@@ -87,11 +87,11 @@ static NSManagedObjectContext *_managedObjectContext;
  */
 - (void)clear {
     
-     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:self.settingsModel];
-
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:self.settingsModel];
+    
     NSError *fetchError = nil;
     NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&fetchError];
-
+    
     if (!fetchError) {
         for (NSManagedObject *object in results) {
             [self.managedObjectContext deleteObject:object];
@@ -108,7 +108,7 @@ static NSManagedObjectContext *_managedObjectContext;
     
     [self remove:setting];
     
-
+    
     NSManagedObject *coreDatasettingItem = [NSEntityDescription insertNewObjectForEntityForName:self.settingsModel inManagedObjectContext:self.managedObjectContext];
     [coreDatasettingItem setValue:@(setting.active) forKey:@"active"];
     [coreDatasettingItem setValue:setting.identifier forKey:@"identifier"];
@@ -141,13 +141,13 @@ static NSManagedObjectContext *_managedObjectContext;
  * @param setting The SeafSyncSettings object representing the synchronization setting entry to be removed.
  */
 - (void)remove:(nonnull SeafSyncSettings *)setting {
-  
+    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:self.settingsModel];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"identifier == %@",setting.identifier]];
-
+    
     NSError *error;
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-
+    
     if (!error && result.count > 0) {
         [self.managedObjectContext deleteObject:[result firstObject]];
         [self saveContext:self.managedObjectContext];
@@ -161,19 +161,19 @@ static NSManagedObjectContext *_managedObjectContext;
  * @param predicate The NSPredicate object representing the synchronization setting entry to be removed.
  */
 - (void)removeWith:(NSPredicate *)predicate {
-   
+    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:self.settingsModel];
     [fetchRequest setPredicate:predicate];
-
+    
     NSError *error;
     NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-
+    
     if (!error && results.count > 0) {
         
         for (NSManagedObject *settingToDelete in results) {
             [self.managedObjectContext deleteObject:settingToDelete];
         }
-
+        
         [self saveContext:self.managedObjectContext];
     }
 }
@@ -184,38 +184,39 @@ static NSManagedObjectContext *_managedObjectContext;
  * @param setting The SeafSyncSettings object representing the synchronization setting entry to be updated.
  */
 - (void)update:(nonnull SeafSyncSettings *)setting {
-
+    
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:self.settingsModel];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"identifier == %@",setting.identifier]];
-
+    
     NSError *error;
-    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-
-    if (!error && result.count > 0) {
+    @synchronized(self.managedObjectContext) {
+        NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
         
-        NSManagedObject *coreDatasettingItem = [result firstObject];
-        [coreDatasettingItem setValue:@(setting.active) forKey:@"active"];
-        [coreDatasettingItem setValue:@(setting.state) forKey:@"state"];
-        [coreDatasettingItem setValue:@(setting.mode) forKey:@"mode"];
-        [coreDatasettingItem setValue:@(setting.sourceType) forKey:@"sourceType"];
-        [coreDatasettingItem setValue:setting.repoId forKey:@"repoId"];
-        [coreDatasettingItem setValue:setting.accountId forKey:@"accountId"];
-        [coreDatasettingItem setValue:setting.availableUntilDate forKey:@"availableUntilDate"];
-        [coreDatasettingItem setValue:@(setting.durationOfBackupFilesOnCloudInDays) forKey:@"durationOfBackupFilesOnCloudInDays"];
-        [coreDatasettingItem setValue:setting.creationDate forKey:@"creationDate"];
-        [coreDatasettingItem setValue:setting.lastRunTime forKey:@"lastRunTime"];
-        [coreDatasettingItem setValue:@(setting.lastRunError) forKey:@"lastRunError"];
-        [coreDatasettingItem setValue:setting.resourceId forKey:@"resourceId"];
-        [coreDatasettingItem setValue:setting.targetId forKey:@"targetId"];
-        [coreDatasettingItem setValue:@(setting.uploadVideos) forKey:@"uploadVideos"];
-        [coreDatasettingItem setValue:@(setting.uploadOnlyOverWifi) forKey:@"uploadOnlyOverWifi"];
-        [coreDatasettingItem setValue:setting.fullSourceURL forKey:@"fullSourceURL"];
-        [coreDatasettingItem setValue:@(setting.deleteFilesOnExpire) forKey:@"deleteFilesOnExpire"];
-        [coreDatasettingItem setValue:@(setting.lifeTime) forKey:@"lifeTime"];
-
-        [self saveContext:self.managedObjectContext];
-
+        if (!error && result.count > 0) {
+            
+            NSManagedObject *coreDatasettingItem = [result firstObject];
+            [coreDatasettingItem setValue:@(setting.active) forKey:@"active"];
+            [coreDatasettingItem setValue:@(setting.state) forKey:@"state"];
+            [coreDatasettingItem setValue:@(setting.mode) forKey:@"mode"];
+            [coreDatasettingItem setValue:@(setting.sourceType) forKey:@"sourceType"];
+            [coreDatasettingItem setValue:setting.repoId forKey:@"repoId"];
+            [coreDatasettingItem setValue:setting.accountId forKey:@"accountId"];
+            [coreDatasettingItem setValue:setting.availableUntilDate forKey:@"availableUntilDate"];
+            [coreDatasettingItem setValue:@(setting.durationOfBackupFilesOnCloudInDays) forKey:@"durationOfBackupFilesOnCloudInDays"];
+            [coreDatasettingItem setValue:setting.creationDate forKey:@"creationDate"];
+            [coreDatasettingItem setValue:setting.lastRunTime forKey:@"lastRunTime"];
+            [coreDatasettingItem setValue:@(setting.lastRunError) forKey:@"lastRunError"];
+            [coreDatasettingItem setValue:setting.resourceId forKey:@"resourceId"];
+            [coreDatasettingItem setValue:setting.targetId forKey:@"targetId"];
+            [coreDatasettingItem setValue:@(setting.uploadVideos) forKey:@"uploadVideos"];
+            [coreDatasettingItem setValue:@(setting.uploadOnlyOverWifi) forKey:@"uploadOnlyOverWifi"];
+            [coreDatasettingItem setValue:setting.fullSourceURL forKey:@"fullSourceURL"];
+            [coreDatasettingItem setValue:@(setting.deleteFilesOnExpire) forKey:@"deleteFilesOnExpire"];
+            [coreDatasettingItem setValue:@(setting.lifeTime) forKey:@"lifeTime"];
+            
+            [self saveContext:self.managedObjectContext];
+        }
     }
 }
 
@@ -226,11 +227,11 @@ static NSManagedObjectContext *_managedObjectContext;
  * @return An array containing synchronization setting entries that match the predicate.
  */
 - (NSArray<SeafSyncSettings *> *)filter:(NSPredicate *)predicate {
-
+    
     NSArray<SeafSyncSettings *> *settings = [self all];
-
+    
     return [settings filteredArrayUsingPredicate:predicate];
-
+    
 }
 
 /**
@@ -239,9 +240,12 @@ static NSManagedObjectContext *_managedObjectContext;
  */
 - (void)saveContext:(NSManagedObjectContext *)context {
     NSError *saveError = nil;
-    if (![context save:&saveError]) {
-        NSLog(@"Error al guardar en CoreData: %@", saveError);
+    @synchronized (context) {
+        if (![context save:&saveError]) {
+            NSLog(@"Error al guardar en CoreData: %@", saveError);
+        }
     }
+    
 }
 
 

@@ -392,8 +392,19 @@ enum {
     _enableTouchIDSwitch.on = _connection.touchIdEnabled;
 
     Debug("Account : %@, %lld, quota: %lld", _connection.username, _connection.usage, _connection.quota);
-    long long cacheSize = [SeafStorage.sharedObject cacheSize];
-    Debug("Total cache: %lld", cacheSize);
+   /* long long cacheSize = [SeafStorage.sharedObject cacheSize];
+    Debug("Total cache: %lld", cacheSize);*/
+    
+    // Obtengo cache en segundo plano
+     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+         long long cacheSize = [SeafStorage.sharedObject cacheSize];
+      
+         //se actualiza en el hilo principal la celda del ui
+         dispatch_async(dispatch_get_main_queue(), ^{
+             _cacheCell.detailTextLabel.text = [FileSizeFormatter stringFromLongLong:cacheSize];
+         });
+     });
+    
     if (_connection.quota <= 0) {
         if (_connection.usage < 0)
             _usedspaceCell.detailTextLabel.text = @"Unknown";
@@ -418,7 +429,7 @@ enum {
     SeafRepo *cameraRepo = [_connection getRepo:_connection.autoSyncRepo];
     _syncRepoCell.detailTextLabel.text = cameraRepo ? cameraRepo.name : nil;
 */
-    _cacheCell.detailTextLabel.text = [FileSizeFormatter stringFromLongLong:cacheSize];
+    //_cacheCell.detailTextLabel.text = [FileSizeFormatter stringFromLongLong:cacheSize];
 
     _autoClearPasswdSwitch.on = _connection.autoClearRepoPasswd;
     _localDecrySwitch.on = _connection.localDecryptionEnabled;

@@ -16,6 +16,8 @@
 #import "QuotaFilterStrategy.h"
 #import "AlreadyUploadedFilterStrategy.h"
 #import "PlanFilterStrategy.h"
+#import "iCloudAvailableAssetFilterStrategy.h"
+
 
 /**
  * SeafSyncFileProviderFactory
@@ -79,7 +81,9 @@
     
     PlanFilterStrategy *planStrategy = [[PlanFilterStrategy alloc] initWithSettings:settings];
     
-    return @[settingsFilter,quotaStrategy, alreadyUploaded, planStrategy];
+    iCloudAvailableAssetFilterStrategy *icloudLocalAvailable = [[iCloudAvailableAssetFilterStrategy alloc] initWithSettings:settings];
+    
+    return @[settingsFilter,quotaStrategy, alreadyUploaded, planStrategy,icloudLocalAvailable];
 }
 
 

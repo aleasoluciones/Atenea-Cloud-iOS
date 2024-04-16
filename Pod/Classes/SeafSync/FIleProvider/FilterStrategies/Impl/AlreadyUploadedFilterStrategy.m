@@ -10,6 +10,7 @@
 #import "SeafSyncUtils.h"
 #import "SeafDataTaskManager.h"
 #import "SeafUploadFile.h"
+#import "SeafStorage.h"
 
 @interface AlreadyUploadedFilterStrategy()
 
@@ -54,19 +55,57 @@
 }
 
 /**
- * @brief Gets the total size of files in the upload queue.
+ * @brief Check if this file is in the queue
  *
- * @return The total size of files in the upload queue.
+ * @return return true is file is already in the queue
  */
 -(BOOL) fileInUploadQueue:(id<SeafSyncItemProtocol>) syncItem{
     
-    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(SeafUploadFile *uploadFile, NSDictionary<NSString *,id> * _Nullable bindings) {
+    //Instead of read from self.taskQueue.uploadQueue, we read from the storage source because often the uploadQueue is still not loaded and sometime the filter says this file is not in queue, but is already in queue.
+    
+    NSString *uploadKey = [self.taskManager uploadStorageKey:self.settings.connection.accountIdentifier];
+    NSMutableDictionary *uploadTasks = [NSMutableDictionary dictionaryWithDictionary: [SeafStorage.sharedObject objectForKey:uploadKey]];
+    
+    BOOL existsInQueue = FALSE;
+    
+    for (NSString *key in uploadTasks) {
+        NSDictionary *dict = [uploadTasks objectForKey:key];
+        NSString *syncId = [[dict objectForKey:@"syncId"] stringValue];
+        NSString *syncFileId = [[dict objectForKey:@"syncFileId"] stringValue];
+        
+        if([syncId isEqualToString: self.settings.identifier] && [syncFileId  isEqualToString:syncItem.identifier]){
+            existsInQueue = TRUE;
+            break;
+        }
+        
+    }
+    
+    return existsInQueue;
+
+}
+
+/**
+ *
+ * This function is no longer in use: Last time used 08/04/2024.
+ *
+ *
+ * @brief Check if this file is in the queue
+ *
+ * @return return true is file is already in the queue
+ */
+-(BOOL) fileInUploadQueue_V1:(id<SeafSyncItemProtocol>) syncItem{
+    
+   NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(SeafUploadFile *uploadFile, NSDictionary<NSString *,id> * _Nullable bindings) {
         return [uploadFile.syncId isEqualToString: self.settings.identifier] && [uploadFile.syncFileId isEqualToString:syncItem.identifier];
     }];
     
     NSArray *result = [[self.taskQueue.uploadQueue allTasks] filteredArrayUsingPredicate:predicate];
     return [result count] > 0 ;
+
 }
+
+
+
 
 
 

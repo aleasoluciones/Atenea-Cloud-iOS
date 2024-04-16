@@ -21,12 +21,13 @@
 
     [attributedText addAttribute:NSLinkAttributeName value:NSLocalizedString(@"url_privacy", @"Seafile") range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
     [attributedText addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
+
     [attributedText addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
-    [attributedText removeAttribute:NSLinkAttributeName range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
+
     textView.attributedText = attributedText;
+    textView.editable = NO;
+    textView.dataDetectorTypes = UIDataDetectorTypeLink;
     textView.textColor = [UIColor blackColor];
-
-
     [alertController.view addSubview:textView];
 
    // CGFloat textWidth = textView.bounds.size.width;
@@ -45,8 +46,8 @@
     [checkboxButton addTarget:self action:@selector(checkboxTapped:) forControlEvents:UIControlEventTouchUpInside];
     [alertController.view addSubview:checkboxButton];
 
-   
-    acceptAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"accept",@"Seafile") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+  acceptAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"accept",@"Seafile") style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+
         if (acceptedCallback) {
             acceptedCallback();
         }
@@ -61,10 +62,8 @@
     [alertController addAction:cancelAction];
 
     [viewController presentViewController:alertController animated:YES completion:nil];
-    
-    
-}
 
+}
 
 
 + (void)checkboxTapped:(UIButton *)sender {

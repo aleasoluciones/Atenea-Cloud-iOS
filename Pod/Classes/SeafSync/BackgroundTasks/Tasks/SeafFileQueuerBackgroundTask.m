@@ -27,7 +27,7 @@
 
 //TASK ID
 #define TASK_IDENTIFIER @"enqueuer_background_task"
-#define NOT_RUN_BEFORE_NUM_MINUTES 60
+#define NOT_RUN_BEFORE_NUM_MINUTES 10
 
 
 - (BGTaskRequest *) taskRequest API_AVAILABLE(ios(13.0)){

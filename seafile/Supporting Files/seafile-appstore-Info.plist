@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).enqueuer_background_task</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).uploader_background_task</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).expirator_background_task</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -86,6 +92,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -95,8 +103,31 @@
 	<string> </string>
 	<key>NSContactsUsageDescription</key>
 	<string>This lets you backup contacts to Seafile</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>Sincronizar documentos</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Sincronizar documentos</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>Sincronizar documentos</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>This lets you use Face ID</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>Sincronizar documentos</string>
+	<key>NSFileProviderService</key>
+	<dict>
+		<key>MyFileAccessService</key>
+		<dict>
+			<key>NSFileProviderDomainIdentifier</key>
+			<string>com.cloud.atenea</string>
+			<key>NSFileProviderMode</key>
+			<array>
+				<string>UIDocumentPickerModeImport</string>
+				<string>UIDocumentPickerModeExportToService</string>
+			</array>
+			<key>NSFileProviderUsageDescription</key>
+			<string>Store: Necesitamos acceso a tus archivos para guardar y cargar documentos en la aplicación.</string>
+		</dict>
+	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Choose always allow Seafile can periodically start Camera Upload when your location changes</string>
 	<key>NSLocationAlwaysUsageDescription</key>
@@ -113,6 +144,8 @@
 		<string>processing</string>
 		<string>location</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreeniPhone</string>
 	<key>UILaunchStoryboardName~ipad</key>
@@ -161,38 +194,5 @@
 	<true/>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
-	<key>NSFileProviderDomainUsageDescription</key>
-	<string>Sincronizar documentos</string>
-	<key>NSDownloadsFolderUsageDescription</key>
-	<string>Sincronizar documentos</string>
-	<key>NSDocumentsFolderUsageDescription</key>
-	<string>Sincronizar documentos</string>
-	<key>NSDesktopFolderUsageDescription</key>
-	<string>Sincronizar documentos</string>
-	<key>NSFileProviderService</key>
-	<dict>
-		<key>MyFileAccessService</key>
-		<dict>
-			<key>NSFileProviderDomainIdentifier</key>
-			<string>com.meytel.seafileDev</string>
-			<key>NSFileProviderMode</key>
-			<array>
-				<string>UIDocumentPickerModeImport</string>
-				<string>UIDocumentPickerModeExportToService</string>
-			</array>
-			<key>NSFileProviderUsageDescription</key>
-			<string>Store: Necesitamos acceso a tus archivos para guardar y cargar documentos en la aplicación.</string>
-		</dict>
-	</dict>
-	<key>LSSupportsOpeningDocumentsInPlace</key>
-	<true/>
-	<key>UIFileSharingEnabled</key>
-	<true/>
-	<key>BGTaskSchedulerPermittedIdentifiers</key>
-	<array>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER).enqueuer_background_task</string>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER).uploader_background_task</string>
-		<string>$(PRODUCT_BUNDLE_IDENTIFIER).expirator_background_task</string>
-	</array>
 </dict>
 </plist>

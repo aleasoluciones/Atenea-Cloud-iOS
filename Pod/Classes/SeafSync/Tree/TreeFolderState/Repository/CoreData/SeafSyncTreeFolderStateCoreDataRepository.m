@@ -188,12 +188,15 @@
  */
 -(void) saveContext {
     NSError *saveError = nil;
-    if([self.context hasChanges]){
-        [self.context save:&saveError];
-        if(saveError != nil){
-            NSLog(@"Error saving to CoreData: %@", saveError);
+    @synchronized (self.context) {
+        if([self.context hasChanges]){
+            [self.context save:&saveError];
+            if(saveError != nil){
+                NSLog(@"Error saving to CoreData: %@", saveError);
+            }
         }
     }
+    
     //Open semaphore
     dispatch_semaphore_signal(self.main_semaphore);
 }

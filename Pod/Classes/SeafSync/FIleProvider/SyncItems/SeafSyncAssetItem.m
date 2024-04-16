@@ -70,8 +70,8 @@
     self.itemType = SeafSyncItemTypeAsset;
     self.fileHash = self.asset.localIdentifier;
     [self setFileType];
-    [self setAssetNameAndExtension];
-    [self setAssetSize];
+    [self setAssetNameAndExtensionAndSize];
+    //[self setAssetSize];
 }
 
 /**
@@ -101,10 +101,11 @@
 /**
  * @brief Sets the file extension based on the original filename of the asset.
  */
-- (void)setAssetNameAndExtension {
+- (void)setAssetNameAndExtensionAndSize {
     PHAssetResource *assetResource = [[PHAssetResource assetResourcesForAsset:self.asset] firstObject];
     self.extension = [assetResource.originalFilename.pathExtension lowercaseString];
     self.fileName = assetResource.originalFilename;
+    self.sizeInBytes = [[assetResource valueForKey:@"fileSize"] longLongValue];
 
 }
 
@@ -129,6 +130,7 @@
 - (void)setImageAssetSize {
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     options.synchronous = YES; // Set to NO for asynchronous requests
+    options.networkAccessAllowed = YES;
 
     [[PHImageManager defaultManager] requestImageDataForAsset:self.asset
                                                       options:options

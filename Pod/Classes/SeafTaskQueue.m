@@ -73,11 +73,13 @@
 
 - (void)addTask:(id<SeafTask>)task {
     @synchronized (self.tasks) {
-        if (![self.tasks containsObject:task] && ![self.ongoingTasks containsObject:task]) {
-            task.lastFinishTimestamp = 0;
-            task.retryCount = 0;
-            [self.tasks addObject:task];
-            Debug("Added task %@: %ld", task.name, (unsigned long)self.tasks.count);
+        @synchronized (self.ongoingTasks) {
+            if (![self.tasks containsObject:task] && ![self.ongoingTasks containsObject:task]) {
+                task.lastFinishTimestamp = 0;
+                task.retryCount = 0;
+                [self.tasks addObject:task];
+                Debug("Added task %@: %ld", task.name, (unsigned long)self.tasks.count);
+            }
         }
     }
     [self tick];
@@ -151,7 +153,7 @@
     @synchronized (self.completedTasks) {
         for (id<SeafTask> task in self.completedTasks) {
             //remove task finished more than 3 min
-            if ([[NSDate date] timeIntervalSince1970] - task.lastFinishTimestamp > DEFAULT_COMPLELE_INTERVAL) {
+            if ([task respondsToSelector:@selector(lastFinishTimestamp)] &&  [[NSDate date] timeIntervalSince1970] - task.lastFinishTimestamp > DEFAULT_COMPLELE_INTERVAL) {
                 [tempArray addObject:task];
                 if ([task respondsToSelector:@selector(cleanup)]) {
                     [task cleanup];

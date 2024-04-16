@@ -30,12 +30,10 @@
     self.settings = [self loadSettings];
     if(self.settings.count > 0){
         
-        
-        
         [self enqueueFilesForSetting:[self.settings objectAtIndex:0]];
         
         // Semaphore will be signaled in enqueueFilesForSetting function when all settings are enqueued
-        dispatch_semaphore_wait(self.main_semaphore, dispatch_time(DISPATCH_TIME_NOW, 60 * NSEC_PER_SEC));
+        dispatch_semaphore_wait(self.main_semaphore, dispatch_time(DISPATCH_TIME_NOW, 600 * NSEC_PER_SEC));
     }
 
     if(self.completionBlock){

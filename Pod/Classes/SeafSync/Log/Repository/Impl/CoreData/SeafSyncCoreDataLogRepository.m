@@ -202,8 +202,10 @@
  */
 - (void)saveContext:(NSManagedObjectContext *)context {
     NSError *saveError = nil;
-    if (![context save:&saveError]) {
-        NSLog(@"Error al guardar en CoreData: %@", saveError);
+    @synchronized(context) {
+        if (![context save:&saveError]) {
+            NSLog(@"Error al guardar en CoreData: %@", saveError);
+        }
     }
 }
 
