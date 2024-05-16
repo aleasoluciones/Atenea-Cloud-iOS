@@ -1242,3 +1242,5 @@
 "policy_privacy" = "隐私政策";
 "accept" = "接受";
 "url_privacy" = "https://www.ateneacloud.com/privacidad.html";
+
+"url_contact" = "https://www.ateneacloud.com/contacto.html";

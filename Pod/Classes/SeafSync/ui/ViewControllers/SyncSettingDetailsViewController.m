@@ -28,6 +28,8 @@
 #import "SeafSyncSelectorCellDataItemProtocol.h"
 #import "SeafSyncBaseUITableViewCell.h"
 #import <CoreLocation/CoreLocation.h>
+#import <SafariServices/SafariServices.h>
+
 
 @class SeafEnqueuerProtocol;
 
@@ -318,7 +320,9 @@
     UIAlertAction *plansAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Upgrade plan", @"Seafile")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction *action) {
-        // Handle the action to view plans
+        NSURL *url = [NSURL URLWithString:NSLocalizedString(@"url_contact", @"Seafile")];
+        SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
+        [self presentViewController:safariViewController animated:YES completion:nil];
     }];
     
     UIAlertAction *continueAction = [UIAlertAction actionWithTitle:@"Continue anyway"

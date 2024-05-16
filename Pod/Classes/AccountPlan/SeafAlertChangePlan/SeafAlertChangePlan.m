@@ -59,7 +59,7 @@
     UIAlertAction *changePlanAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Change plan", @"Seafile")
                                                              style:UIAlertActionStyleDefault
                                                            handler:^(UIAlertAction *action) {
-                                                                NSURL *url = [NSURL URLWithString:@"https://ateneacloud.com/contacto"];
+                                                                NSURL *url = [NSURL URLWithString:NSLocalizedString(@"url_contact", @"Seafile")];
                                                                 SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:url];
                                                                 [viewController presentViewController:safariViewController animated:YES completion:nil];
                                                            }];

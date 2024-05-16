@@ -9,6 +9,14 @@
          contextName = "-[Support4kPreview playVideoWithURL:]:Support4kPreview.m">
       </ContextState>
       <ContextState
+         contextName = "-[SeafFileViewController initSeafPhotos]:SeafFileViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.allItems">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[SeafSyncSettingsViewController tableView:didSelectRowAtIndexPath:]:SeafSyncSettingsViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -50,6 +58,12 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[SeafConnection sendRequestAsync:method:form:success:failure:]:SeafConnection.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[SeafFileFilterFactory getPreviewFiltersWith:repoId:]:SeafFileFilterFactory.m">
+      </ContextState>
+      <ContextState
          contextName = "__63-[SeafConnection sendRequestAsync:method:form:success:failure:]_block_invoke_3:SeafConnection.m">
          <PersistentStrings>
             <PersistentString
@@ -58,10 +72,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "+[SeafFileFilterFactory getPreviewFiltersWith:repoId:]:SeafFileFilterFactory.m">
-      </ContextState>
-      <ContextState
-         contextName = "-[SeafConnection sendRequestAsync:method:form:success:failure:]:SeafConnection.m">
+         contextName = "-[SeafAppDelegate selectAccount:]:SeafAppDelegate.m">
       </ContextState>
       <ContextState
          contextName = "-[SeafBase getShareLink:]:SeafBase.m">
@@ -76,18 +87,18 @@
          contextName = "-[Support4kPreview isVideo4K:]:Support4kPreview.m">
       </ContextState>
       <ContextState
-         contextName = "__25-[SeafBase getShareLink:]_block_invoke:SeafBase.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "url">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "-[SeafFileViewController downloadDir:]:SeafFileViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "dir.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__25-[SeafBase getShareLink:]_block_invoke:SeafBase.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
