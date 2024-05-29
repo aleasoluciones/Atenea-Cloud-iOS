@@ -524,11 +524,19 @@
 
 - (void)upload:(SeafConnection *)connection repo:(NSString *)repoId path:(NSString *)uploadpath
 {
-    if (![Utils fileExistsAtPath:self.lpath]) {
-        Warning("File %@ no existed", self.lpath);
-        self.retryable = false;
-        return [self uploadComplete:nil error:[Utils defaultError]];
-    }
+    //** error subida de video se cancela porque no llega a hacer la comprobacion
+    //Comprobacion asincrona de la existenacia del archivo para que no se bloquee el hilo principal
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        BOOL fileExists = [Utils fileExistsAtPath:self.lpath];
+        //se vuelve sincrona para comprobar y se vuelve al hilo principal
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!fileExists) {
+                Warning("File %@ no existed", self.lpath);
+                self.retryable = false;
+                return [self uploadComplete:nil error:[Utils defaultError]];
+            }
+         });
+    });
     SeafRepo *repo = [connection getRepo:repoId];
     if (!repo) {
         Warning("Repo %@ does not exist", repoId);
