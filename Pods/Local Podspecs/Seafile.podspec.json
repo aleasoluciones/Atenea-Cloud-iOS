@@ -1,6 +1,6 @@
 {
   "name": "Seafile",
-  "version": "2.9.12",
+  "version": "3.0.2",
   "summary": "iOS client for seafile.",
   "homepage": "https://github.com/haiwen/seafile-iOS",
   "license": "MIT",
@@ -8,31 +8,28 @@
     "wei.wang": "poetwang@gmail.com"
   },
   "source": {
-    "git": ""
+    "git": "https://github.com/haiwen/seafile-iOS.git",
+    "tag": "3.0.2"
   },
   "social_media_url": "https://twitter.com/Seafile",
-  "source_files": "Pod/Classes/**/*.{h,m,xcdatamodeld,xcdatamodel,xib}",
+  "source_files": "Pod/Classes/**/*.{h,m}",
   "resource_bundles": {
     "Seafile": "Pod/Resources/*"
   },
-  "resources": [
-    "Pod/Resources/Model.xcdatamodeld",
-    "Pod/Classes/**/*.xib"
-  ],
   "platforms": {
-    "ios": "11.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
-  "frameworks": [
-    "AssetsLibrary",
-    "CoreData"
-  ],
+  "frameworks": "AssetsLibrary",
   "dependencies": {
     "AFNetworking": [
       "~> 4.0.0"
     ],
     "OpenSSL-Universal": [
       "~> 1.0.1.p"
+    ],
+    "Realm": [
+      "~> 10.45.0"
     ]
   },
   "pod_target_xcconfig": {

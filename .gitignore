@@ -1,0 +1,13 @@
+seafilePro.xcodeproj/project.xcworkspace
+seafilePro.xcodeproj/xcuserdata
+seafilePro.xcodeproj/xcshareddata
+*~
+*.bak
+.DS_Store
+.*.DS_Store
+seafilePro.xcworkspace/
+*.ipa
+TODO
+common/*.lproj
+SeafProvider/*.lproj
+SeafAction/*.lproj

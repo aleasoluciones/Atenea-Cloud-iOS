@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1234A1AA0526579332B5E703 /* libPods-SeafShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA126D224400B6A8E752C31 /* libPods-SeafShare.a */; };
+		2FEC880895535C4E3DA1DBDB /* libPods-SeafFileProviderUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9356E62ACA55C4C9C3CF35 /* libPods-SeafFileProviderUI.a */; };
+		43DA5103CF021CC81FAE555B /* libPods-SeafShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864CF4A8C08E3DD2555ED7F4 /* libPods-SeafShare.a */; };
 		4A5E88CF22AD3102008146BA /* SeafActivitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E88CD22AD3102008146BA /* SeafActivitiesCell.m */; };
 		4A5E88D022AD3102008146BA /* SeafActivitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A5E88CE22AD3102008146BA /* SeafActivitiesCell.xib */; };
+		4C42976D9B524515A5859EF5 /* libPods-seafileApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F4663E59CC974CC2656573 /* libPods-seafileApp.a */; };
 		5704C6D31753A1380028F4FE /* IntelligentSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5704C6D11753A1380028F4FE /* IntelligentSplitViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		570DFAC716A15D0100ADD5F2 /* SeafAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570DFAC416A15D0100ADD5F2 /* SeafAccountViewController.m */; };
 		571617B91BE39FBD00792316 /* SeafPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 571617B81BE39FBD00792316 /* SeafPhoto.m */; };
@@ -84,10 +86,7 @@
 		58D40A7A1E9AF84C00A68BEF /* seafile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D40A6C1E9AF7A400A68BEF /* seafile.xcdatamodeld */; };
 		58D40A7B1E9AF85100A68BEF /* seafile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D40A6C1E9AF7A400A68BEF /* seafile.xcdatamodeld */; };
 		58D40A7E1E9AF86D00A68BEF /* SeafData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D40A7C1E9AF86D00A68BEF /* SeafData.m */; };
-		7354777D2C3444E394BB2F31 /* libPods-SeafAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E0D2A7419F67E532A240F /* libPods-SeafAction.a */; };
-		D9BE2094AD9B16A02584A3C2 /* libPods-seafileApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D78ABE0B0673E422054A82 /* libPods-seafileApp.a */; };
-		DE940CA1A2BA2DD43C20EA2C /* libPods-SeafFileProviderUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15EFA735E2957F22E301E23A /* libPods-SeafFileProviderUI.a */; };
-		E0FED1E93CBE02FB9B335ADB /* libPods-SeafFileProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583928919818364B46034EA /* libPods-SeafFileProvider.a */; };
+		D91519FD2DEF8999202CBDF8 /* libPods-SeafAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E63FA65242FF607104B845 /* libPods-SeafAction.a */; };
 		E70661FA2AE7CFE8009ABE85 /* BackgroundTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70661F92AE7CFE8009ABE85 /* BackgroundTasks.framework */; };
 		E71820012AA06A6900F95F78 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57814AF71AA8B55000D1D5D8 /* Photos.framework */; };
 		E71820022AA06A7A00F95F78 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57814AF71AA8B55000D1D5D8 /* Photos.framework */; };
@@ -621,6 +620,7 @@
 		F5DF76D924FE8728004CAB1E /* seafile-appstore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5DF76D824FE8728004CAB1E /* seafile-appstore-Info.plist */; };
 		F5E621EF20D16666001EDA7A /* NSError+SeafFileProvierError.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E621EE20D16666001EDA7A /* NSError+SeafFileProvierError.m */; };
 		F5EAAE93218419120068BFE3 /* SeafPrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EAAE92218419120068BFE3 /* SeafPrivacyPolicyViewController.m */; };
+		F9BDE9DCFADB6D31A88D8F9F /* libPods-SeafFileProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BDDAEE16940D009A52416D /* libPods-SeafFileProvider.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -694,14 +694,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		159E0D2A7419F67E532A240F /* libPods-SeafAction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafAction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15EFA735E2957F22E301E23A /* libPods-SeafFileProviderUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProviderUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3583928919818364B46034EA /* libPods-SeafFileProvider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		492C6C1B7591DFE8AF317708 /* Pods-SeafShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeafShare/Pods-SeafShare.release.xcconfig"; sourceTree = "<group>"; };
+		08FBD6D491F04703C00CCB51 /* Pods-SeafAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.debug.xcconfig"; path = "Target Support Files/Pods-SeafAction/Pods-SeafAction.debug.xcconfig"; sourceTree = "<group>"; };
+		0A4380824916A38029556D9A /* Pods-SeafShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.release.xcconfig"; path = "Target Support Files/Pods-SeafShare/Pods-SeafShare.release.xcconfig"; sourceTree = "<group>"; };
+		0BCA81BAEAF55DB331DD049F /* Pods-SeafAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.release.xcconfig"; path = "Target Support Files/Pods-SeafAction/Pods-SeafAction.release.xcconfig"; sourceTree = "<group>"; };
+		20F4663E59CC974CC2656573 /* libPods-seafileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-seafileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E7594720C25CD4C72B5020 /* Pods-seafileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seafileApp.release.xcconfig"; path = "Target Support Files/Pods-seafileApp/Pods-seafileApp.release.xcconfig"; sourceTree = "<group>"; };
+		36CF9D160161E351D7FBC6A5 /* Pods-seafileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seafileApp.debug.xcconfig"; path = "Target Support Files/Pods-seafileApp/Pods-seafileApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4A5E88CC22AD3102008146BA /* SeafActivitiesCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeafActivitiesCell.h; sourceTree = "<group>"; };
 		4A5E88CD22AD3102008146BA /* SeafActivitiesCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeafActivitiesCell.m; sourceTree = "<group>"; };
 		4A5E88CE22AD3102008146BA /* SeafActivitiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeafActivitiesCell.xib; sourceTree = "<group>"; };
-		4B157E719E6CB55B7A11A45F /* Pods-SeafShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeafShare/Pods-SeafShare.debug.xcconfig"; sourceTree = "<group>"; };
 		5704C6D01753A1380028F4FE /* IntelligentSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelligentSplitViewController.h; sourceTree = "<group>"; };
 		5704C6D11753A1380028F4FE /* IntelligentSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelligentSplitViewController.m; sourceTree = "<group>"; };
 		570DFAC316A15D0100ADD5F2 /* SeafAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeafAccountViewController.h; sourceTree = "<group>"; };
@@ -798,15 +799,15 @@
 		58D40A6D1E9AF7A400A68BEF /* seafile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = seafile.xcdatamodel; sourceTree = "<group>"; };
 		58D40A7C1E9AF86D00A68BEF /* SeafData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeafData.m; path = common/Classes/SeafData.m; sourceTree = "<group>"; };
 		58D40A7D1E9AF86D00A68BEF /* SeafData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeafData.h; path = common/Classes/SeafData.h; sourceTree = "<group>"; };
-		5DA126D224400B6A8E752C31 /* libPods-SeafShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		61E5C5D580570C70D8130145 /* Pods-SeafFileProviderUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProviderUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI.release.xcconfig"; sourceTree = "<group>"; };
-		66A0A85ED1C1808578E903C2 /* Pods-SeafFileProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.debug.xcconfig"; sourceTree = "<group>"; };
-		71B308DC2DFEC09F58232B49 /* Pods-SeafFileProviderUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProviderUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI.debug.xcconfig"; sourceTree = "<group>"; };
-		948B9BFC1AD5D795756A9E90 /* Pods-SeafFileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.release.xcconfig"; sourceTree = "<group>"; };
-		9AF30EE6039454E8B0967C09 /* Pods-SeafAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeafAction/Pods-SeafAction.release.xcconfig"; sourceTree = "<group>"; };
-		B3D78ABE0B0673E422054A82 /* libPods-seafileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-seafileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C7801D49498095B24DB644 /* Pods-seafileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seafileApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-seafileApp/Pods-seafileApp.release.xcconfig"; sourceTree = "<group>"; };
-		DBDEFA043CD6CF7650726549 /* Pods-seafileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seafileApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-seafileApp/Pods-seafileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		59E63FA65242FF607104B845 /* libPods-SeafAction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafAction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BDDAEE16940D009A52416D /* libPods-SeafFileProvider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		777F141EBD651D5D7B25E164 /* Pods-SeafFileProviderUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProviderUI.debug.xcconfig"; path = "Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9356E62ACA55C4C9C3CF35 /* libPods-SeafFileProviderUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProviderUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8040939D81D016303D726FEF /* Pods-SeafFileProviderUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProviderUI.release.xcconfig"; path = "Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI.release.xcconfig"; sourceTree = "<group>"; };
+		864CF4A8C08E3DD2555ED7F4 /* libPods-SeafShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C3D27B3B69553357824068 /* Pods-SeafFileProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.debug.xcconfig"; path = "Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		CCAC884A11C8021646B7FBDB /* Pods-SeafShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.debug.xcconfig"; path = "Target Support Files/Pods-SeafShare/Pods-SeafShare.debug.xcconfig"; sourceTree = "<group>"; };
+		D44FCEDEC6B2E85A944340F1 /* Pods-SeafFileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.release.xcconfig"; path = "Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.release.xcconfig"; sourceTree = "<group>"; };
 		E70661F92AE7CFE8009ABE85 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
 		E74EA3C32B03785C00C22042 /* plus_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_blue.png; sourceTree = "<group>"; };
 		E74EA3CA2B037B5B00C22042 /* ellipsis2_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipsis2_blue.png; sourceTree = "<group>"; };
@@ -817,7 +818,6 @@
 		E75746F12ABB12A300883385 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		E7A3658D2B10D968000DF771 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		E7B5E2742BCE9924008C7CE5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		EE1E1FA7502D3F04292B11CB /* Pods-SeafAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeafAction/Pods-SeafAction.debug.xcconfig"; sourceTree = "<group>"; };
 		F515E4B421AC3DBB00A62F64 /* SeafActionsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeafActionsManager.h; sourceTree = "<group>"; };
 		F515E4B521AC3DBB00A62F64 /* SeafActionsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeafActionsManager.m; sourceTree = "<group>"; };
 		F515E4D021B6D24E00A62F64 /* SeafSearchResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeafSearchResultViewController.h; sourceTree = "<group>"; };
@@ -994,8 +994,8 @@
 				571D8CE21677881400F1A22C /* Foundation.framework in Frameworks */,
 				571D8CE31677881400F1A22C /* CoreGraphics.framework in Frameworks */,
 				571D8CE41677881400F1A22C /* CoreData.framework in Frameworks */,
-				D9BE2094AD9B16A02584A3C2 /* libPods-seafileApp.a in Frameworks */,
 				E71820022AA06A7A00F95F78 /* Photos.framework in Frameworks */,
+				4C42976D9B524515A5859EF5 /* libPods-seafileApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,7 +1003,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE940CA1A2BA2DD43C20EA2C /* libPods-SeafFileProviderUI.a in Frameworks */,
+				2FEC880895535C4E3DA1DBDB /* libPods-SeafFileProviderUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,8 +1011,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0FED1E93CBE02FB9B335ADB /* libPods-SeafFileProvider.a in Frameworks */,
 				F5D753B1288E4B0B00A6CAD6 /* FileProvider.framework in Frameworks */,
+				F9BDE9DCFADB6D31A88D8F9F /* libPods-SeafFileProvider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,7 +1020,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7354777D2C3444E394BB2F31 /* libPods-SeafAction.a in Frameworks */,
+				D91519FD2DEF8999202CBDF8 /* libPods-SeafAction.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,28 +1035,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1234A1AA0526579332B5E703 /* libPods-SeafShare.a in Frameworks */,
+				43DA5103CF021CC81FAE555B /* libPods-SeafShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		356B8B1C9F847DA37F0EFE1E /* Pods */ = {
+		00F9813408F002DDB2AD568F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E1FA7502D3F04292B11CB /* Pods-SeafAction.debug.xcconfig */,
-				9AF30EE6039454E8B0967C09 /* Pods-SeafAction.release.xcconfig */,
-				66A0A85ED1C1808578E903C2 /* Pods-SeafFileProvider.debug.xcconfig */,
-				948B9BFC1AD5D795756A9E90 /* Pods-SeafFileProvider.release.xcconfig */,
-				71B308DC2DFEC09F58232B49 /* Pods-SeafFileProviderUI.debug.xcconfig */,
-				61E5C5D580570C70D8130145 /* Pods-SeafFileProviderUI.release.xcconfig */,
-				DBDEFA043CD6CF7650726549 /* Pods-seafileApp.debug.xcconfig */,
-				B6C7801D49498095B24DB644 /* Pods-seafileApp.release.xcconfig */,
-				4B157E719E6CB55B7A11A45F /* Pods-SeafShare.debug.xcconfig */,
-				492C6C1B7591DFE8AF317708 /* Pods-SeafShare.release.xcconfig */,
+				08FBD6D491F04703C00CCB51 /* Pods-SeafAction.debug.xcconfig */,
+				0BCA81BAEAF55DB331DD049F /* Pods-SeafAction.release.xcconfig */,
+				B2C3D27B3B69553357824068 /* Pods-SeafFileProvider.debug.xcconfig */,
+				D44FCEDEC6B2E85A944340F1 /* Pods-SeafFileProvider.release.xcconfig */,
+				777F141EBD651D5D7B25E164 /* Pods-SeafFileProviderUI.debug.xcconfig */,
+				8040939D81D016303D726FEF /* Pods-SeafFileProviderUI.release.xcconfig */,
+				CCAC884A11C8021646B7FBDB /* Pods-SeafShare.debug.xcconfig */,
+				0A4380824916A38029556D9A /* Pods-SeafShare.release.xcconfig */,
+				36CF9D160161E351D7FBC6A5 /* Pods-seafileApp.debug.xcconfig */,
+				32E7594720C25CD4C72B5020 /* Pods-seafileApp.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		5704C6CF1753A07E0028F4FE /* thirdpart */ = {
@@ -1206,12 +1206,12 @@
 				F5C648F7210A0B4E00842687 /* SeafShare */,
 				57DB827015A833FA00097CEC /* Frameworks */,
 				57D189CE182E0A380029A797 /* Images.xcassets */,
-				356B8B1C9F847DA37F0EFE1E /* Pods */,
 				57DB826E15A833FA00097CEC /* Products */,
 				57DB827915A833FA00097CEC /* seafile */,
 				57A029601A16F8AC009C9D7B /* SeafFileProviderUI */,
 				57A0296E1A16F8AD009C9D7B /* SeafFileProvider */,
 				F5AD6ADC24C42D140067F9AF /* SeafFileProviderActionsUI */,
+				00F9813408F002DDB2AD568F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1250,11 +1250,11 @@
 				5725186117AE7D000078CD12 /* Security.framework */,
 				57335CF8160DA00000018AE8 /* SystemConfiguration.framework */,
 				57DB827115A833FA00097CEC /* UIKit.framework */,
-				159E0D2A7419F67E532A240F /* libPods-SeafAction.a */,
-				3583928919818364B46034EA /* libPods-SeafFileProvider.a */,
-				15EFA735E2957F22E301E23A /* libPods-SeafFileProviderUI.a */,
-				B3D78ABE0B0673E422054A82 /* libPods-seafileApp.a */,
-				5DA126D224400B6A8E752C31 /* libPods-SeafShare.a */,
+				59E63FA65242FF607104B845 /* libPods-SeafAction.a */,
+				71BDDAEE16940D009A52416D /* libPods-SeafFileProvider.a */,
+				7A9356E62ACA55C4C9C3CF35 /* libPods-SeafFileProviderUI.a */,
+				864CF4A8C08E3DD2555ED7F4 /* libPods-SeafShare.a */,
+				20F4663E59CC974CC2656573 /* libPods-seafileApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1459,12 +1459,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 571D8DB71677881400F1A22C /* Build configuration list for PBXNativeTarget "seafileApp" */;
 			buildPhases = (
-				3AD17BEEB9F4EF2ADD5DFDB6 /* [CP] Check Pods Manifest.lock */,
+				08145F3A0974BC6C4E68C926 /* [CP] Check Pods Manifest.lock */,
 				571D8CAA1677881400F1A22C /* Sources */,
 				571D8CDC1677881400F1A22C /* Frameworks */,
 				571D8CE51677881400F1A22C /* Resources */,
 				57E228E51A0F4EE700C92330 /* Embed App Extensions */,
-				DBA7E67946E92470596B2A9A /* [CP] Copy Pods Resources */,
+				F581B1623D2269F3C0CF40A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 				57E22B341A126D6A00C92330 /* PBXBuildRule */,
@@ -1485,12 +1485,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A0297E1A16F8AD009C9D7B /* Build configuration list for PBXNativeTarget "SeafFileProviderUI" */;
 			buildPhases = (
-				E8C55D49FB459D43BDFE937B /* [CP] Check Pods Manifest.lock */,
+				8E0894DBDBFA6EAEAAC0B175 /* [CP] Check Pods Manifest.lock */,
 				57A0295B1A16F8AC009C9D7B /* Sources */,
 				57A0295C1A16F8AC009C9D7B /* Frameworks */,
 				57A0295D1A16F8AC009C9D7B /* Resources */,
-				A61BB71E2E0642962D9F33F2 /* [CP] Copy Pods Resources */,
 				571617B61BE2695A00792316 /* ShellScript */,
+				326E75FDAC4F0446132D8A57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1505,12 +1505,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A0297B1A16F8AD009C9D7B /* Build configuration list for PBXNativeTarget "SeafFileProvider" */;
 			buildPhases = (
-				692521AF382DFE63965818C2 /* [CP] Check Pods Manifest.lock */,
+				8A4C7E3553BAB0722B14C855 /* [CP] Check Pods Manifest.lock */,
 				57A029691A16F8AD009C9D7B /* Sources */,
 				57A0296A1A16F8AD009C9D7B /* Frameworks */,
 				57A0296B1A16F8AD009C9D7B /* Resources */,
-				BF77F73BB58D4586C699D417 /* [CP] Copy Pods Resources */,
 				571617B71BE2696800792316 /* ShellScript */,
+				0F75343C8B86958F17635148 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1525,12 +1525,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57B14B781DF5325B0045112E /* Build configuration list for PBXNativeTarget "SeafAction" */;
 			buildPhases = (
-				8C4F472736EA3B11C9C44670 /* [CP] Check Pods Manifest.lock */,
+				7F301DCEC818DAB8FE7C05E0 /* [CP] Check Pods Manifest.lock */,
 				57B14B661DF5325A0045112E /* Sources */,
 				57B14B671DF5325A0045112E /* Frameworks */,
 				57B14B681DF5325A0045112E /* Resources */,
-				B517FD8CB748C1F6D38B961A /* [CP] Copy Pods Resources */,
 				57A81C031E01138A0084AF99 /* ShellScript */,
+				2005CDCE8914DCA4B699BD3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1562,11 +1562,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5C64902210A0B4E00842687 /* Build configuration list for PBXNativeTarget "SeafShare" */;
 			buildPhases = (
-				4669C8C87B9AFA50436AF10D /* [CP] Check Pods Manifest.lock */,
+				A1F6D04AAC197F37E34B7E13 /* [CP] Check Pods Manifest.lock */,
 				F5C648F2210A0B4E00842687 /* Sources */,
 				F5C648F3210A0B4E00842687 /* Frameworks */,
 				F5C648F4210A0B4E00842687 /* Resources */,
-				B10A3EF5B4CB6B4474FC92D2 /* [CP] Copy Pods Resources */,
+				01835751F97CEE22C4C49F7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1588,8 +1588,8 @@
 				ORGANIZATIONNAME = Seafile;
 				TargetAttributes = {
 					571D8CA91677881400F1A22C = {
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1607,8 +1607,8 @@
 					};
 					57A0295E1A16F8AC009C9D7B = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -1617,8 +1617,8 @@
 					};
 					57A0296C1A16F8AD009C9D7B = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -1627,8 +1627,8 @@
 					};
 					57B14B691DF5325A0045112E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -1640,13 +1640,13 @@
 					};
 					F5AD6ADA24C42D140067F9AF = {
 						CreatedOnToolsVersion = 11.5;
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 					};
 					F5C648F5210A0B4E00842687 = {
 						CreatedOnToolsVersion = 9.4;
-						DevelopmentTeam = DAUVLSYP57;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VJ7X43U99X;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -2252,16 +2252,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3AD17BEEB9F4EF2ADD5DFDB6 /* [CP] Check Pods Manifest.lock */ = {
+		01835751F97CEE22C4C49F7D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeafShare/Pods-SeafShare-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafShare/Pods-SeafShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08145F3A0974BC6C4E68C926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-seafileApp-checkManifestLockResult.txt",
 			);
@@ -2270,22 +2292,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4669C8C87B9AFA50436AF10D /* [CP] Check Pods Manifest.lock */ = {
+		0F75343C8B86958F17635148 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeafShare-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2005CDCE8914DCA4B699BD3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeafAction/Pods-SeafAction-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafAction/Pods-SeafAction-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		326E75FDAC4F0446132D8A57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		571617B61BE2695A00792316 /* ShellScript */ = {
@@ -2327,34 +2385,20 @@
 			shellPath = /bin/sh;
 			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
-		692521AF382DFE63965818C2 /* [CP] Check Pods Manifest.lock */ = {
+		7F301DCEC818DAB8FE7C05E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeafFileProvider-checkManifestLockResult.txt",
+			outputFileListPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C4F472736EA3B11C9C44670 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SeafAction-checkManifestLockResult.txt",
 			);
@@ -2363,191 +2407,73 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A61BB71E2E0642962D9F33F2 /* [CP] Copy Pods Resources */ = {
+		8A4C7E3553BAB0722B14C855 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI-resources.sh",
-				"${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld",
-				"${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafRecoverySelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncCheckBoxCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDateCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDeviceFolderCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSegmentedCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SyncSettingDetailsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-SeafFileProvider-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafFileProviderUI/Pods-SeafFileProviderUI-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B10A3EF5B4CB6B4474FC92D2 /* [CP] Copy Pods Resources */ = {
+		8E0894DBDBFA6EAEAAC0B175 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeafShare/Pods-SeafShare-resources.sh",
-				"${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld",
-				"${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafRecoverySelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncCheckBoxCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDateCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDeviceFolderCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSegmentedCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SyncSettingDetailsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-SeafFileProviderUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafShare/Pods-SeafShare-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B517FD8CB748C1F6D38B961A /* [CP] Copy Pods Resources */ = {
+		A1F6D04AAC197F37E34B7E13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeafAction/Pods-SeafAction-resources.sh",
-				"${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld",
-				"${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafRecoverySelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncCheckBoxCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDateCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDeviceFolderCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSegmentedCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SyncSettingDetailsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
+				"$(DERIVED_FILE_DIR)/Pods-SeafShare-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafAction/Pods-SeafAction-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF77F73BB58D4586C699D417 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider-resources.sh",
-				"${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld",
-				"${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafRecoverySelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncCheckBoxCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDateCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDeviceFolderCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSegmentedCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SyncSettingDetailsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBA7E67946E92470596B2A9A /* [CP] Copy Pods Resources */ = {
+		F581B1623D2269F3C0CF40A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2557,20 +2483,6 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/QBImagePickerController/QBImagePicker.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-				"${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld",
-				"${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib",
-				"${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -2578,43 +2490,11 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafRecoverySelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncCheckBoxCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDateCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDeviceFolderCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSegmentedCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSelectorCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingCell.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncAlbumSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncDirSelectorViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SeafSyncSettingsViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SyncSettingDetailsViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Seafile.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-seafileApp/Pods-seafileApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8C55D49FB459D43BDFE937B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeafFileProviderUI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2844,7 +2724,7 @@
 /* Begin XCBuildConfiguration section */
 		571D8DB81677881400F1A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBDEFA043CD6CF7650726549 /* Pods-seafileApp.debug.xcconfig */;
+			baseConfigurationReference = 36CF9D160161E351D7FBC6A5 /* Pods-seafileApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2853,23 +2733,27 @@
 				CODE_SIGN_ENTITLEMENTS = seafile/seafile.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = seafile/seafile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "seafile/seafile-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea;
+				MARKETING_VERSION = 2.9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Cloud Drive";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafFileApp-App-Store-Alea";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -2878,7 +2762,7 @@
 		};
 		571D8DB91677881400F1A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C7801D49498095B24DB644 /* Pods-seafileApp.release.xcconfig */;
+			baseConfigurationReference = 32E7594720C25CD4C72B5020 /* Pods-seafileApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2887,23 +2771,27 @@
 				CODE_SIGN_ENTITLEMENTS = seafile/seafile.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = seafile/seafile.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "seafile/seafile-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea;
+				MARKETING_VERSION = 2.9.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Cloud Drive";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafFileApp-App-Store-Alea";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -2912,7 +2800,7 @@
 		};
 		57A0297C1A16F8AD009C9D7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66A0A85ED1C1808578E903C2 /* Pods-SeafFileProvider.debug.xcconfig */;
+			baseConfigurationReference = B2C3D27B3B69553357824068 /* Pods-SeafFileProvider.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2923,13 +2811,15 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = SeafFileProvider/SeafFileProvider.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2942,17 +2832,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafFileProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafFileProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudSeafFileProvider-ProvProf";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		57A0297D1A16F8AD009C9D7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 948B9BFC1AD5D795756A9E90 /* Pods-SeafFileProvider.release.xcconfig */;
+			baseConfigurationReference = D44FCEDEC6B2E85A944340F1 /* Pods-SeafFileProvider.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2963,14 +2854,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = SeafFileProvider/SeafFileProvider.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
@@ -2979,18 +2872,19 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafFileProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafFileProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudSeafFileProvider-ProvProf";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		57A0297F1A16F8AD009C9D7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71B308DC2DFEC09F58232B49 /* Pods-SeafFileProviderUI.debug.xcconfig */;
+			baseConfigurationReference = 777F141EBD651D5D7B25E164 /* Pods-SeafFileProviderUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3001,13 +2895,15 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = SeafFileProviderUI/SeafFileProviderUI.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -3021,19 +2917,19 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cloud.atenea.--PRODUCT-NAME-rfc1034identifier-";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.cloud.atenea.SeafFileProviderUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafFileProviderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudSeafFileProviderUI-ProvProf";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		57A029801A16F8AD009C9D7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61E5C5D580570C70D8130145 /* Pods-SeafFileProviderUI.release.xcconfig */;
+			baseConfigurationReference = 8040939D81D016303D726FEF /* Pods-SeafFileProviderUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3044,14 +2940,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = SeafFileProviderUI/SeafFileProviderUI.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
@@ -3061,17 +2959,18 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafFileProviderUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafFileProviderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudSeafFileProviderUI-ProvProf";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		57B14B761DF5325B0045112E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE1E1FA7502D3F04292B11CB /* Pods-SeafAction.debug.xcconfig */;
+			baseConfigurationReference = 08FBD6D491F04703C00CCB51 /* Pods-SeafAction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ExtActionIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -3084,12 +2983,15 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_ENTITLEMENTS = SeafAction/SeafAction.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = "$(inherited)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -3101,15 +3003,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafAction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafAction-App-Store-Alea";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		57B14B771DF5325B0045112E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AF30EE6039454E8B0967C09 /* Pods-SeafAction.release.xcconfig */;
+			baseConfigurationReference = 0BCA81BAEAF55DB331DD049F /* Pods-SeafAction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ExtActionIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -3122,14 +3026,17 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_ENTITLEMENTS = SeafAction/SeafAction.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = "$(inherited)";
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafAction/Info.plist;
@@ -3137,8 +3044,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafAction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafAction-App-Store-Alea";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -3261,12 +3170,14 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -3280,8 +3191,10 @@
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.FileProviderActionsUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.FileProviderActionsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudFileProviderActionsUI-ProvProf";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3302,14 +3215,16 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -3319,8 +3234,10 @@
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.FileProviderActionsUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.FileProviderActionsUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloudFileProviderActionsUI-ProvProf";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3328,7 +3245,7 @@
 		};
 		F5C64903210A0B4E00842687 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B157E719E6CB55B7A11A45F /* Pods-SeafShare.debug.xcconfig */;
+			baseConfigurationReference = CCAC884A11C8021646B7FBDB /* Pods-SeafShare.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3343,13 +3260,15 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = SeafShare/SeafShare.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -3362,8 +3281,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafShare-App-Store-Alea";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3371,7 +3292,7 @@
 		};
 		F5C64904210A0B4E00842687 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 492C6C1B7591DFE8AF317708 /* Pods-SeafShare.release.xcconfig */;
+			baseConfigurationReference = 0A4380824916A38029556D9A /* Pods-SeafShare.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -3386,15 +3307,17 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = SeafShare/SeafShare.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = DAUVLSYP57;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VJ7X43U99X;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -3403,8 +3326,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cloud.atenea.SeafShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp.SeafShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AteneaCloud-SeafShare-App-Store-Alea";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

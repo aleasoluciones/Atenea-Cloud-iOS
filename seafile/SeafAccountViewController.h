@@ -14,9 +14,9 @@ enum ACCOUNT_TYPE {
     ACCOUNT_OTHER,
 };
 
-#define SERVER_SEACLOUD         @"seacloud.cc"
+#define SERVER_SEACLOUD         @"drive.ateneacloud.com"
 
-#define SERVER_SEACLOUD_NAME    @"SeaCloud.cc"
+#define SERVER_SEACLOUD_NAME    @"Atenea Cloud"
 #define SERVER_SHIB_NAME        NSLocalizedString(@"Single Sign On", @"Seafile")
 
 

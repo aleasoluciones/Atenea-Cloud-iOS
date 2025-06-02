@@ -97,37 +97,9 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../Pod/Resources/Model.xcdatamodeld"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafRecovery/ui/SeafRecoverySelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib"
-  install_resource "${PODS_ROOT}/../Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Seafile/Seafile.bundle"
 fi
 

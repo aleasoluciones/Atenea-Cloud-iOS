@@ -15,7 +15,7 @@
 #import "SeafPreView.h"
 
 
-#define SEAFILE_SUITE_NAME @"group.com.meytel.seafileDev"
+#define SEAFILE_SUITE_NAME @"group.aleasoluciones"
 #define APP_ID @"com.cloud.atenea"
 #define SEAF_FILE_PROVIDER @"com.cloud.atenea.fileprovider"
 
