@@ -218,13 +218,9 @@
             serverTextField.text = SERVER_SEACLOUD;
             break;
         case ACCOUNT_OTHER:{
-#if DEBUG
-            serverTextField.text = @"dev.seafile.com/seahub";
-            usernameTextField.text = @"demo@seafile.com";
+            serverTextField.text = SERVER_SEACLOUD;
+            usernameTextField.text = @"";
             passwordTextField.text = @"";
-#else
-
-#endif
         }
             break;
         case ACCOUNT_SHIBBOLETH:
