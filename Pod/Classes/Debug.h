@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define APP_NAME @"Cloud Drive"
+#define APP_NAME @"Atenea Cloud"
 
 
 #define API_URL  @"/api2"

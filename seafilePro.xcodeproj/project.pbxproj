@@ -710,7 +710,7 @@
 		571617B81BE39FBD00792316 /* SeafPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeafPhoto.m; sourceTree = "<group>"; };
 		571ABF511625DF31005C9B08 /* DownloadingProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingProgressView.h; sourceTree = "<group>"; };
 		571ABF521625DF31005C9B08 /* DownloadingProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DownloadingProgressView.m; sourceTree = "<group>"; };
-		571D8DBA1677881400F1A22C /* Cloud Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloud Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		571D8DBA1677881400F1A22C /* Atenea Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Atenea Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		571F5147168C80380055D69B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5725186117AE7D000078CD12 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		572B0A7515D16C1C00798C6E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
@@ -1218,7 +1218,7 @@
 		57DB826E15A833FA00097CEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				571D8DBA1677881400F1A22C /* Cloud Drive.app */,
+				571D8DBA1677881400F1A22C /* Atenea Cloud.app */,
 				57A0295F1A16F8AC009C9D7B /* SeafFileProviderUI.appex */,
 				57A0296D1A16F8AD009C9D7B /* SeafFileProvider.appex */,
 				57B14B6A1DF5325A0045112E /* SeafAction.appex */,
@@ -1478,7 +1478,7 @@
 			);
 			name = seafileApp;
 			productName = seafile;
-			productReference = 571D8DBA1677881400F1A22C /* Cloud Drive.app */;
+			productReference = 571D8DBA1677881400F1A22C /* Atenea Cloud.app */;
 			productType = "com.apple.product-type.application";
 		};
 		57A0295E1A16F8AC009C9D7B /* SeafFileProviderUI */ = {
@@ -2747,9 +2747,9 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.3m1;
+				MARKETING_VERSION = 2.9.3m2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
-				PRODUCT_NAME = "Cloud Drive";
+				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2785,9 +2785,9 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.3m1;
+				MARKETING_VERSION = 2.9.3m2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
-				PRODUCT_NAME = "Cloud Drive";
+				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
