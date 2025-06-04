@@ -29,6 +29,9 @@
 
 #define REPO_LAST_UPDATE_PASSWORD_TIME @"repoLastPasswordUpdateTsMap"
 
+#define ATENEA_PROXY_URL @"https://drive.ateneacloud.com:8553"
+
+
 enum MSG_TYPE{
     MSG_NONE = 0,
     MSG_GROUP,
@@ -127,7 +130,7 @@ BOOL SeafServerTrustIsValid(SecTrustRef _Nonnull serverTrust);
 - (NSString * _Nonnull)uniqueUploadDir;
 
 - (NSURLRequest * _Nonnull)buildRequest:(NSString * _Nonnull)url method:(NSString * _Nonnull)method form:(NSString *_Nullable)form;
-
+	
 - (void)sendRequest:(NSString * _Nonnull)url
             success:(void (^ _Nullable)(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nonnull response, id _Nonnull JSON))success
             failure:(void (^ _Nullable)(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, id _Nullable JSON, NSError * _Nullable error))failure;
@@ -152,6 +155,9 @@ BOOL SeafServerTrustIsValid(SecTrustRef _Nonnull serverTrust);
 - (void)loginWithUsername:(NSString * _Nonnull)username password:(NSString * _Nonnull)password otp:(NSString * _Nullable)otp rememberDevice:(BOOL)remember;
 
 -(void)setToken:(NSString * _Nonnull)token forUser:(NSString * _Nonnull)username isShib:(BOOL)isshib s2faToken:(NSString*)s2faToken;
+
+- (NSString * _Nonnull)getUrlFromEndpoint:(NSString *)endpoint;
+- (NSString * _Nonnull)getAteneaProxyPolicyURL;
 
 - (void)getAccountInfo:(void (^ _Nullable)(bool result))handler;
 

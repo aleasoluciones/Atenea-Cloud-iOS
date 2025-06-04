@@ -340,6 +340,8 @@
 - (void)loginSuccess:(SeafConnection *)conn {
     if (conn != connection) return;
 
+    [conn getAccountInfo:nil];
+        
     Debug("login success");
     [conn getServerInfo:^(bool result) {
         Debug("Get server info result: %d", result);
@@ -353,6 +355,9 @@
 - (void)handlePolicyAndAccount:(SeafConnection *)conn {
     BOOL policyAccepted = [self isPrivacyPolicyAccepted];
     
+    NSString *termsAndConditionsURL = [conn getAteneaProxyPolicyURL];
+
+    NSLog(@"URL obtenida: %@", termsAndConditionsURL);
     void (^saveAndCheckAccount)(void) = ^{
         BOOL ret = [startController saveAccount:conn];
         if (ret) {
@@ -364,7 +369,7 @@
     };
     
     if (!policyAccepted) {
-        [AlertPrivacyPolicy showPrivacyPolicyAlertFromViewController:self accepted:^{
+        [AlertPrivacyPolicy showPrivacyPolicyAlertFromViewController:self policyUrl:termsAndConditionsURL accepted:^{
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:[self createUniqueKeyPrivacy]];
             [[NSUserDefaults standardUserDefaults] synchronize];
             saveAndCheckAccount();

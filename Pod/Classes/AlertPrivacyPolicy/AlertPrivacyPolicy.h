@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AlertPrivacyPolicy : NSObject
 
-+ (void)showPrivacyPolicyAlertFromViewController:(UIViewController *)viewController  accepted:(void (^)(void))acceptedCallback;
++ (void)showPrivacyPolicyAlertFromViewController:(UIViewController *)viewController  policyUrl:(NSString *)policyUrl accepted:(void (^)(void))acceptedCallback;
 
 @end
 

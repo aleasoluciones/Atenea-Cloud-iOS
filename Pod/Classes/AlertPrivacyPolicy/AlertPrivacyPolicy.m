@@ -6,7 +6,7 @@
 
     UIAlertAction *acceptAction;
 
-+ (void)showPrivacyPolicyAlertFromViewController:(UIViewController *)viewController  accepted:(void (^)(void))acceptedCallback {
++ (void)showPrivacyPolicyAlertFromViewController:(UIViewController *)viewController policyUrl:(NSString *)policyUrl accepted:(void (^)(void))acceptedCallback {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@" " message:@" " preferredStyle:UIAlertControllerStyleAlert];
 
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(20, 30, 200, 40)];
@@ -19,7 +19,7 @@
 
     NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:privacyPolicyText attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14]}];
 
-    [attributedText addAttribute:NSLinkAttributeName value:NSLocalizedString(@"url_privacy", @"Seafile") range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
+    [attributedText addAttribute:NSLinkAttributeName value:policyUrl range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
     [attributedText addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];
 
     [attributedText addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:[privacyPolicyText rangeOfString:NSLocalizedString(@"policy_privacy", @"Seafile")]];

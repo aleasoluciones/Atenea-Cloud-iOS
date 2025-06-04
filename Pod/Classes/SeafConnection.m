@@ -724,6 +724,42 @@ static AFHTTPRequestSerializer <AFURLRequestSerialization> * _requestSerializer;
     [SeafStorage.sharedObject synchronize];
 }
 
+- (NSString *)getUrlFromEndpoint:(NSString *)endpoint {
+    __block NSString *resultUrl = @"www.google.com";
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    manager.completionQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    [manager GET:endpoint
+      parameters:nil
+         headers:nil
+        progress:nil
+         success:^(NSURLSessionDataTask *task, id responseObject) {
+             if ([responseObject isKindOfClass:[NSDictionary class]]) {
+                 resultUrl = responseObject[@"url"];
+             }
+             dispatch_semaphore_signal(semaphore);
+         }
+         failure:^(NSURLSessionDataTask *task, NSError *error) {
+             NSLog(@"❌ Error en GET: %@", error.localizedDescription);
+             dispatch_semaphore_signal(semaphore);
+         }];
+
+    // Espera hasta que termine (simula sincronicidad)
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    
+    return resultUrl;
+}
+
+- (NSString * _Nonnull)getAteneaProxyPolicyURL
+{
+    NSString *termsAndConditionsAPIUrl = [NSString stringWithFormat:@"%@/api/url/%@", ATENEA_PROXY_URL, self.info[@"email"]];
+    NSString *policyURL = [self getUrlFromEndpoint:termsAndConditionsAPIUrl];
+    return policyURL;
+}
+
 - (void)getAccountInfo:(void (^)(bool result))handler
 {
     [self sendRequest:API_URL"/account/info/"
