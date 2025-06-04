@@ -2747,7 +2747,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.3m2;
+				MARKETING_VERSION = 2.99.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
@@ -2785,7 +2785,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.9.3m2;
+				MARKETING_VERSION = 2.99.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
