@@ -540,17 +540,21 @@
     UIViewController *settingsController = [tabs.viewControllers objectAtIndex:TABBED_SETTINGS];
     UIViewController *activityController = [tabs.viewControllers objectAtIndex:TABBED_ACTIVITY];
     UIViewController *accountvc = [tabs.viewControllers objectAtIndex:TABBED_ACCOUNTS];
-
-    fileController.tabBarItem.title = NSLocalizedString(@"Libraries", @"Seafile");
-    fileController.tabBarItem.image = [UIImage imageNamed:@"tab-home.png"];
-    starredController.tabBarItem.title = NSLocalizedString(@"Starred", @"Seafile");
-    starredController.tabBarItem.image = [UIImage imageNamed:@"tab-star.png"];
-    settingsController.tabBarItem.title = NSLocalizedString(@"Settings", @"Seafile");
-    settingsController.tabBarItem.image = [UIImage imageNamed:@"tab-settings.png"];
-    activityController.tabBarItem.title = NSLocalizedString(@"Activity", @"Seafile");
-    activityController.tabBarItem.image = [UIImage imageNamed:@"tab-modify.png"];
-    accountvc.tabBarItem.title = NSLocalizedString(@"Accounts", @"Seafile");
-    accountvc.tabBarItem.image = [UIImage imageNamed:@"tab-account.png"];
+    
+    UITabBarItem *homeItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Libraries", @"Seafile") image:[UIImage imageNamed:@"tab-home.png"] tag:0];
+    fileController.tabBarItem = homeItem;
+    
+    UITabBarItem *starItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Starred", @"Seafile") image:[UIImage imageNamed:@"tab-star.png"] tag:1];
+    starredController.tabBarItem = starItem;
+    
+    UITabBarItem *settingsItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Settings", @"Seafile") image:[UIImage imageNamed:@"tab-settings.png"] tag:2];
+    settingsController.tabBarItem = settingsItem;
+    
+    UITabBarItem *activityItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Activity", @"Seafile") image:[UIImage imageNamed:@"tab-modify.png"] tag:3];
+    activityController.tabBarItem = activityItem;
+    
+    UITabBarItem *accountItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Accounts", @"Seafile") image:[UIImage imageNamed:@"tab-account.png"] tag:3];
+    accountvc.tabBarItem = accountItem;
 
     if (IsIpad()) {
         ((UISplitViewController *)fileController).delegate = (id)[[((UISplitViewController *)fileController).viewControllers lastObject] topViewController];
@@ -559,10 +563,10 @@
     }
     self.viewControllers = [NSArray arrayWithArray:tabs.viewControllers];
     _tabbarController = tabs;
-    _tabbarController.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    _tabbarController.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
     _tabbarController.delegate = self;
-    if (ios7)
-        _tabbarController.view.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:173.0/255.0 blue:239.0/255.0 alpha:1.0];
+    //if (ios7)
+    //    _tabbarController.view.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:173.0/255.0 blue:239.0/255.0 alpha:1.0];
 
 }
 

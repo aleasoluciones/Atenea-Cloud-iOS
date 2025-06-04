@@ -243,8 +243,8 @@ enum {
         self.tableView.sectionHeaderTopPadding = 0;
     }
     
-    self.navigationController.navigationBar.tintColor = BAR_COLOR;
-    [self.navigationController setToolbarHidden:YES animated:NO];
+    //self.navigationController.navigationBar.tintColor = BAR_COLOR;
+    //[self.navigationController setToolbarHidden:YES animated:NO];
     
     __weak typeof(self) weakSelf = self;
     [self.tableView addPullToRefresh:[SVArrowPullToRefreshView class] withActionHandler:^{
