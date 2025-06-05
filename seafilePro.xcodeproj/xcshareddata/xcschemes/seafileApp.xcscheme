@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "571D8CA91677881400F1A22C"
-               BuildableName = "Cloud Drive.app"
+               BuildableName = "Atenea Cloud.app"
                BlueprintName = "seafileApp"
                ReferencedContainer = "container:seafilePro.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "571D8CA91677881400F1A22C"
-            BuildableName = "Cloud Drive.app"
+            BuildableName = "Atenea Cloud.app"
             BlueprintName = "seafileApp"
             ReferencedContainer = "container:seafilePro.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "571D8CA91677881400F1A22C"
-            BuildableName = "Cloud Drive.app"
+            BuildableName = "Atenea Cloud.app"
             BlueprintName = "seafileApp"
             ReferencedContainer = "container:seafilePro.xcodeproj">
          </BuildableReference>
