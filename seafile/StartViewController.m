@@ -49,20 +49,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+        
     if([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     [self setExtraCellLineHidden:self.tableView];
     self.title = NSLocalizedString(@"Accounts", @"Seafile");
-
+    
     self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome", @"Seafile")];
     self.welcomeLabel.textColor = SEAF_COLOR_DARK;
     self.msgLabel.text = NSLocalizedString(@"Choose an account to start", @"Seafile");
-
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.navigationController.navigationBar.tintColor = BAR_COLOR;
-//    self.navigationItem.rightBarButtonItem = [self getBarItemAutoSize:@"ellipsis".navItemImgName action:@selector(editSheet:)];
-
+    //    self.navigationItem.rightBarButtonItem = [self getBarItemAutoSize:@"ellipsis".navItemImgName action:@selector(editSheet:)];
+    
     [self.backButton addTarget:self action:@selector(goToDefaultBtclicked:) forControlEvents:UIControlEventTouchUpInside];
     self.backButton.layer.cornerRadius = 0;
     self.backButton.layer.borderWidth = .5f;

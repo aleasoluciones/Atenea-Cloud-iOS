@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = WechatOpenSDK;
+			productName = WechatOpenSDK;
 		};
 		B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */ = {
 			isa = PBXAggregateTarget;
@@ -24,6 +25,7 @@
 			dependencies = (
 			);
 			name = "OpenSSL-Universal";
+			productName = "OpenSSL-Universal";
 		};
 /* End PBXAggregateTarget section */
 
@@ -972,7 +974,7 @@
 /* Begin PBXFileReference section */
 		0066026B66A4B97F2F1947076694B059 /* SeafSyncSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSelectorCell.h; sourceTree = "<group>"; };
 		00E97571BAA884202BDAD79903760273 /* SyncPermanentSettingExpirator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SyncPermanentSettingExpirator.h; sourceTree = "<group>"; };
-		01232D383B235340CA128EC101ADC769 /* RLMMongoCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMongoCollection.mm; path = Realm/RLMMongoCollection.mm; sourceTree = "<group>"; };
+		01232D383B235340CA128EC101ADC769 /* RLMMongoCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMongoCollection.mm; path = Realm/RLMMongoCollection.mm; sourceTree = "<group>"; };
 		013E81D4CFAA953674951C5F4D10AA80 /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		014C618EEC20023E84347B85617320D9 /* SeafSyncFolderStateService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncFolderStateService.m; sourceTree = "<group>"; };
 		016CD2A785B390CEEFA82D9705124CB6 /* SeafSyncBlindObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncBlindObserver.h; sourceTree = "<group>"; };
@@ -982,7 +984,7 @@
 		02C3479A84682F47BEA93E96BC86BBDE /* SyncSettingBaseExpirator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SyncSettingBaseExpirator.m; sourceTree = "<group>"; };
 		02FEA47FA64870D490241BF214FDC823 /* SeafRecoveryDirentsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafRecoveryDirentsProvider.m; sourceTree = "<group>"; };
 		030B425390452766D198564109E72362 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		034B9A5C56D685AB7BF6E74B9CC19E4F /* RLMDecimal128.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMDecimal128.mm; path = Realm/RLMDecimal128.mm; sourceTree = "<group>"; };
+		034B9A5C56D685AB7BF6E74B9CC19E4F /* RLMDecimal128.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMDecimal128.mm; path = Realm/RLMDecimal128.mm; sourceTree = "<group>"; };
 		0384CE256BED404C0C6131137B43BB8F /* FileSizeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileSizeFormatter.h; path = Pod/Classes/FileSizeFormatter.h; sourceTree = "<group>"; };
 		04D2F3C49A681C5D1F9B89DE8A2C6740 /* SeafSyncTreeFolderStateRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeFolderStateRepository.h; sourceTree = "<group>"; };
 		04E8C7380F22247C079B560870728C39 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
@@ -993,22 +995,22 @@
 		065982F0437F373830CEBC6DF957B75A /* ResourceBundle-Seafile-Seafile-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Seafile-Seafile-Info.plist"; sourceTree = "<group>"; };
 		0665EA13B985278D43C648A4CA8BA9AC /* SeafActivityModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafActivityModel.h; path = Pod/Classes/SeafActivityModel.h; sourceTree = "<group>"; };
 		06711CD57B966BBBE486F3D7C936B8B0 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowser.h; path = Pod/Classes/MWPhotoBrowser.h; sourceTree = "<group>"; };
-		0850D99F138FA19B5181CB24CFBADDF4 /* RLMNetworkTransport.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMNetworkTransport.mm; path = Realm/RLMNetworkTransport.mm; sourceTree = "<group>"; };
+		0850D99F138FA19B5181CB24CFBADDF4 /* RLMNetworkTransport.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMNetworkTransport.mm; path = Realm/RLMNetworkTransport.mm; sourceTree = "<group>"; };
 		098A94F51D77ADFB5AA70FE63F36559A /* SeafSyncDirSelectorCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncDirSelectorCell.h; sourceTree = "<group>"; };
 		09C7D5F158E6FCF9176CF155767895A4 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
-		0A06EB6A3276A3981E81FD080D1122D7 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
+		0A06EB6A3276A3981E81FD080D1122D7 /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
 		0A3F1B3DB42F2198605C3F8C31A97635 /* SeafPlanPlatinum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafPlanPlatinum.h; sourceTree = "<group>"; };
-		0AA24B8CEBE5B5069693FDF45B9F8EBD /* Pods-SeafFileProviderUI */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-SeafFileProviderUI"; path = "libPods-SeafFileProviderUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA24B8CEBE5B5069693FDF45B9F8EBD /* libPods-SeafFileProviderUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProviderUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB09410B1AF71602A2163750BB2CD78 /* QBImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBImagePickerController-prefix.pch"; sourceTree = "<group>"; };
-		0ADB638E000F0F7B7856FD31A0E0D7C1 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = QBImagePicker/de.lproj; sourceTree = "<group>"; };
-		0AF07BC6C4823BF5D845E3585F57BA0F /* RLMSwiftCollectionBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSwiftCollectionBase.mm; path = Realm/RLMSwiftCollectionBase.mm; sourceTree = "<group>"; };
+		0ADB638E000F0F7B7856FD31A0E0D7C1 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = QBImagePicker/de.lproj; sourceTree = "<group>"; };
+		0AF07BC6C4823BF5D845E3585F57BA0F /* RLMSwiftCollectionBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSwiftCollectionBase.mm; path = Realm/RLMSwiftCollectionBase.mm; sourceTree = "<group>"; };
 		0AF17080CBBD61C2300B523EDBB93FCD /* RLMSyncSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSession.h; path = include/RLMSyncSession.h; sourceTree = "<group>"; };
 		0B35A3A13C1C28F739302AA3C741E7AF /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWTapDetectingImageView.m; path = Pod/Classes/MWTapDetectingImageView.m; sourceTree = "<group>"; };
 		0B898F016FF4273BDAE083D4BFABF168 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		0C86C211192CDA73AB37FAC7EDED6857 /* QBAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAssetsViewController.m; path = QBImagePicker/QBAssetsViewController.m; sourceTree = "<group>"; };
 		0C9D86A483C4E17C45C10F7F3924AC7E /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
 		0DD8B1E0F3C200FD2825615837D76344 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
-		0E399E037E12C1360FF2ED170E85FC46 /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
+		0E399E037E12C1360FF2ED170E85FC46 /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
 		0E4A3828EEEBEB61ACB0F72FB3F07959 /* SeafStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafStorage.m; path = Pod/Classes/SeafStorage.m; sourceTree = "<group>"; };
 		0EE49B26496E7B2C43D9F220EB17F8DE /* QBVideoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBVideoIconView.m; path = QBImagePicker/QBVideoIconView.m; sourceTree = "<group>"; };
 		0F274CD400452FE3DA2DAF2A5A03A507 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOff@2x.png"; path = "Pod/Assets/ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
@@ -1018,13 +1020,13 @@
 		113894773DCE61B820E8A1440371ACCB /* SeafSyncTreeState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTreeState.m; sourceTree = "<group>"; };
 		125645764BE5526173CBE0EEEC25DD84 /* SeafUploadQueueBackgroundTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafUploadQueueBackgroundTask.m; sourceTree = "<group>"; };
 		1258B0735EE19C0E43F931055FFB20FD /* SyncSettingDetailsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SyncSettingDetailsViewController.h; sourceTree = "<group>"; };
-		126D9919557A098DADCBC7F6BD82F9D7 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
+		126D9919557A098DADCBC7F6BD82F9D7 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		1381FBC0997C397D270E192FD6A2843E /* SeafSyncFolderProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncFolderProvider.h; sourceTree = "<group>"; };
 		13C46200E31153B503994DD89BAB38C7 /* RLMRealm+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RLMRealm+Sync.h"; path = "include/RLMRealm+Sync.h"; sourceTree = "<group>"; };
 		143113327AA7B27E70CB138E5B3E199E /* SeafSyncTreeEnqueuer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTreeEnqueuer.m; sourceTree = "<group>"; };
 		147E8559716F6FDA4C5CF9DD34F8420B /* Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Pod/Classes/Utils.m; sourceTree = "<group>"; };
-		15A72A7C90B0E1343996E4E8038B3C4F /* Seafile */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Seafile; path = libSeafile.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		163814953C45B52F9F4930AACABB53B5 /* RLMUserAPIKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUserAPIKey.mm; path = Realm/RLMUserAPIKey.mm; sourceTree = "<group>"; };
+		15A72A7C90B0E1343996E4E8038B3C4F /* libSeafile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSeafile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		163814953C45B52F9F4930AACABB53B5 /* RLMUserAPIKey.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUserAPIKey.mm; path = Realm/RLMUserAPIKey.mm; sourceTree = "<group>"; };
 		16C61A280DC51C90B40BAC7552B1912E /* SeafSyncFilteredProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncFilteredProvider.h; sourceTree = "<group>"; };
 		16C7BCC7AEFE3B89F190050688D69981 /* DefaultSeafSyncSettingsRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DefaultSeafSyncSettingsRepository.m; sourceTree = "<group>"; };
 		16DCB5E5D957C319D99C1E41CE0B4F1C /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
@@ -1036,7 +1038,7 @@
 		1981DC9D0BDED91958FA5E9243F294FF /* RLMCollection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection_Private.h; path = include/RLMCollection_Private.h; sourceTree = "<group>"; };
 		1A4107804F0524E1F5604520F2DCFCB3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		1AACCB98D2C5245833882A00C5CB94E4 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		1B413ACA9F99C88959AD8F9D02F4B9A9 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
+		1B413ACA9F99C88959AD8F9D02F4B9A9 /* RLMArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMArray.mm; path = Realm/RLMArray.mm; sourceTree = "<group>"; };
 		1BB04313C9AA7FA744AE4DB056C0A9FE /* SupportExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SupportExtension.h; sourceTree = "<group>"; };
 		1BE021103D09F13235EABE7A33E4F0A2 /* SeafFileFilterBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafFileFilterBuilder.m; sourceTree = "<group>"; };
 		1BF7042B9D7E5B8E937976BBE1EB057A /* SeafEnqueueFileFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafEnqueueFileFactory.m; sourceTree = "<group>"; };
@@ -1046,23 +1048,23 @@
 		1CA602C477286678D130EF80880E5102 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		1CF89049EB5105E71CC7EDC466CB7DD6 /* SeafDeletedFileFolderItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafDeletedFileFolderItem.m; sourceTree = "<group>"; };
 		1D6A7D7997386AD0301A16E7867FD4E7 /* SeafSyncEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncEnums.h; sourceTree = "<group>"; };
-		1E3EC6C0CB0ACC9F859A84CF29B9C67F /* Seafile.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Seafile.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1E3EC6C0CB0ACC9F859A84CF29B9C67F /* Seafile.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Seafile.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F59C7B2E4A14CA8531DD564E4E36748 /* Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Pod/Classes/Utils.h; sourceTree = "<group>"; };
 		1F5B6A12741AF42EE59BF49DC102A17D /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
 		1F9E2033ACAC6FB57BBCDC9AE5A3F3A3 /* Debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Debug.h; path = Pod/Classes/Debug.h; sourceTree = "<group>"; };
 		1FFADC1EA41593F6067B5C36AD67B02C /* SeafSyncSegmentedCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncSegmentedCell.m; sourceTree = "<group>"; };
 		1FFE6819AEC02D62A4F527329B5114EC /* RLMSyncConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration_Private.h; path = include/RLMSyncConfiguration_Private.h; sourceTree = "<group>"; };
-		205F50669AA4A9C63897BA11DDCD9720 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
+		205F50669AA4A9C63897BA11DDCD9720 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
 		209965FDD7E73DC08ADB8680C90F6531 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
 		20CB711C54941ED697E8830E5BFC9FF8 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
 		20D37DB7ADE7DED6AB6B8AF5E8A7B285 /* Seafile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Seafile.debug.xcconfig; sourceTree = "<group>"; };
-		20D73B80DBEDC9935666EB05B502A6E8 /* QBImagePickerController */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = QBImagePickerController; path = libQBImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQBImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2166CF92B61988AEF062DE33ED7D3C13 /* SeafDeletedFileFolderItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafDeletedFileFolderItem.h; sourceTree = "<group>"; };
 		21A4DB7D9CC46FD65E21E3D5B026FDC4 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		21C18E02283EE9BECD13F7E6BC390A5C /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		21E75ABBB6BD0C2B68200E55A177A08E /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
 		221FA4954454ED5FA1349CEDF0BE0D59 /* SeafTaskQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafTaskQueue.h; path = Pod/Classes/SeafTaskQueue.h; sourceTree = "<group>"; };
-		226E1D5D47A42BBF578AA5A31B47293A /* RLMValue.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMValue.mm; path = Realm/RLMValue.mm; sourceTree = "<group>"; };
+		226E1D5D47A42BBF578AA5A31B47293A /* RLMValue.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMValue.mm; path = Realm/RLMValue.mm; sourceTree = "<group>"; };
 		22733736CEBFFE4C7263A459C70D9298 /* RLMRealmConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration_Private.h; path = include/RLMRealmConfiguration_Private.h; sourceTree = "<group>"; };
 		228DB751445A0012FD04C7C412920CAE /* VideoOverlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "VideoOverlay@2x.png"; path = "Pod/Assets/VideoOverlay@2x.png"; sourceTree = "<group>"; };
 		22B880FB1586B793549D902CC5F086E4 /* MWPhotoBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MWPhotoBrowser-dummy.m"; sourceTree = "<group>"; };
@@ -1080,7 +1082,7 @@
 		282755D0A2DF5701355A88927F4F27F0 /* RLMApp_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMApp_Private.h; path = include/RLMApp_Private.h; sourceTree = "<group>"; };
 		282B6E8F6CDBF9C041263587221F1075 /* SeafSyncAlbumSelectorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncAlbumSelectorViewController.h; sourceTree = "<group>"; };
 		28971340D989EE53E46751538D66A304 /* SeafSyncItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncItemProtocol.h; sourceTree = "<group>"; };
-		28DA624838F72520F339DB475590FCCC /* APLRUCache */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = APLRUCache; path = libAPLRUCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DA624838F72520F339DB475590FCCC /* libAPLRUCache.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPLRUCache.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29377F1EFF8F358FD23CE956DE24B9CF /* SeafAlertChangePlan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafAlertChangePlan.m; sourceTree = "<group>"; };
 		2952FB2BA29F22FF1865F2AD1100F457 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		295D84E09AFF1AC40D6EB7A60A1532F9 /* SeafSyncErrorFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncErrorFactory.h; sourceTree = "<group>"; };
@@ -1093,7 +1095,7 @@
 		2C38D524ED9EF367876D7D9F1DA01FB1 /* SeafSyncEnqueuerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncEnqueuerFactory.m; sourceTree = "<group>"; };
 		2CDADB89615820AC573CD9E2FD31B0A0 /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
 		2CF0581C26B5705E383CACB8727D39D2 /* RLMUser_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMUser_Private.h; path = include/RLMUser_Private.h; sourceTree = "<group>"; };
-		2D855CCA927AB2DB94CC59EE8F008112 /* RLMAsymmetricObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAsymmetricObject.mm; path = Realm/RLMAsymmetricObject.mm; sourceTree = "<group>"; };
+		2D855CCA927AB2DB94CC59EE8F008112 /* RLMAsymmetricObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAsymmetricObject.mm; path = Realm/RLMAsymmetricObject.mm; sourceTree = "<group>"; };
 		2DCCD9022F963713816839E27C567275 /* SeafSyncTreeProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeProtocol.h; sourceTree = "<group>"; };
 		2E6887EFE618CE0D88E74209EEADC575 /* APLRUCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLRUCache.release.xcconfig; sourceTree = "<group>"; };
 		2EC5D55F0AE53EB7DB18A3657BE144CC /* MWTapDetectingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWTapDetectingView.m; path = Pod/Classes/MWTapDetectingView.m; sourceTree = "<group>"; };
@@ -1108,7 +1110,7 @@
 		31D409EA60684E2FB1AAB915CDFBDB46 /* SeafSyncFolderProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncFolderProvider.m; sourceTree = "<group>"; };
 		33047B314D4429E872C8C041F529C1C4 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		33F602AC47E3B48F7279D6D38EEB3D30 /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
-		351AA9D0172B7C865FE5770D34BD3D3D /* RLMEmailPasswordAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMEmailPasswordAuth.mm; path = Realm/RLMEmailPasswordAuth.mm; sourceTree = "<group>"; };
+		351AA9D0172B7C865FE5770D34BD3D3D /* RLMEmailPasswordAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMEmailPasswordAuth.mm; path = Realm/RLMEmailPasswordAuth.mm; sourceTree = "<group>"; };
 		352F0FCE91468B150F3B065178B38F22 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
 		35BE26995C22369D4851B8C1EA296FE3 /* PlanFilterStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PlanFilterStrategy.m; sourceTree = "<group>"; };
 		35C9EEA7954C75662CDA979846FAF6B3 /* SeafSyncFilteredProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncFilteredProvider.m; sourceTree = "<group>"; };
@@ -1117,7 +1119,7 @@
 		36BDCF18F33FE251976015EB837713A4 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
 		3751F5D8E92C0A3E668360D4AD3ABAB0 /* SeafSyncDeviceFolderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncDeviceFolderCell.m; sourceTree = "<group>"; };
 		376ACBFF9EEC53AB78A54F9653B4DCA0 /* Pods-SeafShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeafShare.debug.xcconfig"; sourceTree = "<group>"; };
-		37A8BBE31B797C7574F2012F247FC356 /* RLMSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSet.mm; path = Realm/RLMSet.mm; sourceTree = "<group>"; };
+		37A8BBE31B797C7574F2012F247FC356 /* RLMSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSet.mm; path = Realm/RLMSet.mm; sourceTree = "<group>"; };
 		381418A43EE21A2487AAD735A4E2634E /* SDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.debug.xcconfig; sourceTree = "<group>"; };
 		3816B73CABE58196A9C9FA0E67F0F090 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		3838D6F30B8F39C8E18D690AC4AA6FA1 /* SeafPlanBasic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafPlanBasic.h; sourceTree = "<group>"; };
@@ -1126,26 +1128,26 @@
 		3A044BF93BF0CCC941C5461B3EC8EEF9 /* SeafSyncTargetNotFoundError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTargetNotFoundError.m; sourceTree = "<group>"; };
 		3A0D5D910A990290AB961E039052A134 /* QBImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = QBImagePicker.storyboard; path = QBImagePicker/QBImagePicker.storyboard; sourceTree = "<group>"; };
 		3A254E984B066EFD7674FF986CE94ED5 /* SeafSyncSettingFolderObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSettingFolderObserver.h; sourceTree = "<group>"; };
-		3A2CCBC39834B16B0E84E2A60DCCF0CD /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
+		3A2CCBC39834B16B0E84E2A60DCCF0CD /* RLMObjectSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectSchema.mm; path = Realm/RLMObjectSchema.mm; sourceTree = "<group>"; };
 		3A36BDCF0674384DB0BEBAB47D691C13 /* UIBarButtonItemArrowLeft.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIBarButtonItemArrowLeft.png; path = Pod/Assets/UIBarButtonItemArrowLeft.png; sourceTree = "<group>"; };
 		3A5B54E446F80BD05EFBA28D01D99B3D /* SeafRecoveryRepositoryProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafRecoveryRepositoryProvider.m; sourceTree = "<group>"; };
 		3A8F2560BCA4EE8881475D35F0A49FEC /* SeafUIBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafUIBridge.h; sourceTree = "<group>"; };
-		3AACCEB959CE97B1D4B9A49F484C7ED5 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
+		3AACCEB959CE97B1D4B9A49F484C7ED5 /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
 		3B7A5E72F564DF13F80D1F76A25A7AE2 /* RLMLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMLogger.h; path = include/RLMLogger.h; sourceTree = "<group>"; };
 		3B84D07D3D6C53CD6465DC878439FB10 /* SeafRecoveryItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafRecoveryItem.h; sourceTree = "<group>"; };
 		3B8E212F460A069CC4D5BD63B70DF9AC /* RLMCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCredentials.h; path = include/RLMCredentials.h; sourceTree = "<group>"; };
-		3BCE20BDD1D91FD8B64691E4A602A64E /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
+		3BCE20BDD1D91FD8B64691E4A602A64E /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
 		3C1E550CD5CC9215FC416A989CC3A603 /* SecurityUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SecurityUtilities.m; path = Pod/Classes/SecurityUtilities.m; sourceTree = "<group>"; };
-		3C6BF7D7DD403DE8223DAA3056DCCA23 /* realm-monorepo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = "realm-monorepo.xcframework"; path = "core/realm-monorepo.xcframework"; sourceTree = "<group>"; };
+		3C6BF7D7DD403DE8223DAA3056DCCA23 /* realm-monorepo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = "realm-monorepo.xcframework"; path = "core/realm-monorepo.xcframework"; sourceTree = "<group>"; };
 		3CE8C820BD624B8B36149C977470D94C /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
 		3D0196EC6BEA3D3674641D3381F29069 /* SeafSyncGalleryProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncGalleryProvider.h; sourceTree = "<group>"; };
-		3E1A32990D5C30D7C23C66C945CD3EBE /* RLMUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUser.mm; path = Realm/RLMUser.mm; sourceTree = "<group>"; };
+		3E1A32990D5C30D7C23C66C945CD3EBE /* RLMUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUser.mm; path = Realm/RLMUser.mm; sourceTree = "<group>"; };
 		3E283B401C4C22D7D54D04BA7B381B3E /* QBAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAlbumCell.h; path = QBImagePicker/QBAlbumCell.h; sourceTree = "<group>"; };
 		3E72BB46F91B45E141CD05B540DC577A /* SeafSyncUserInterfaceUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncUserInterfaceUtils.h; sourceTree = "<group>"; };
 		3EAAA633F6C371A56481B97705BB6C24 /* SeafSyncAssetsListProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncAssetsListProvider.m; sourceTree = "<group>"; };
-		3F2054B5B5E996C78FAFC15C9421BD83 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = QBImagePicker/ja.lproj; sourceTree = "<group>"; };
+		3F2054B5B5E996C78FAFC15C9421BD83 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = QBImagePicker/ja.lproj; sourceTree = "<group>"; };
 		3F2477373DD888D3365A4CA31C5BFD06 /* SeafRecoverySelectorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafRecoverySelectorViewController.h; sourceTree = "<group>"; };
-		3FF0EB2D2CC52CD20D5CE7521480BBAB /* RLMUpdateResult.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUpdateResult.mm; path = Realm/RLMUpdateResult.mm; sourceTree = "<group>"; };
+		3FF0EB2D2CC52CD20D5CE7521480BBAB /* RLMUpdateResult.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateResult.mm; path = Realm/RLMUpdateResult.mm; sourceTree = "<group>"; };
 		404D3BB12409071113F003352E32436A /* MWPhotoProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoProtocol.h; path = Pod/Classes/MWPhotoProtocol.h; sourceTree = "<group>"; };
 		415C7D727A3A59AA03EFB97512F464FB /* RLMProviderClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProviderClient.h; path = include/RLMProviderClient.h; sourceTree = "<group>"; };
 		420879CB36F248E2B1815C039C8CE9BA /* RLMEmbeddedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMEmbeddedObject.h; path = include/RLMEmbeddedObject.h; sourceTree = "<group>"; };
@@ -1154,7 +1156,7 @@
 		431E20201919E99685273283B79F60A8 /* SeafThumbnailLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafThumbnailLoader.h; sourceTree = "<group>"; };
 		43B8EF8148B58DD4B0AC014B8BB10BFF /* SeafAssetFileAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafAssetFileAdapter.h; sourceTree = "<group>"; };
 		4427D200DE7D15925946D2DBC4D1B477 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		449020A8FB568FB8682D841C692CFBD1 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
+		449020A8FB568FB8682D841C692CFBD1 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
 		44C4BABE87AE47D54E3CD8B35F66A847 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
 		44EBFECD6F4E83C48A20C795158E41E5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		451E5C035F0656FC45F2291C449BB4CB /* MWCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWCommon.h; path = Pod/Classes/MWCommon.h; sourceTree = "<group>"; };
@@ -1168,7 +1170,7 @@
 		47B0E019AE0ADEBC082BF8864BC41EB2 /* SeafQuotaSupervisor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafQuotaSupervisor.m; sourceTree = "<group>"; };
 		47B0EF84F99669B7547BD9CEAD0083BE /* SeafSyncProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncProviderProtocol.h; sourceTree = "<group>"; };
 		47D71350C6A566FBAABBA5A27B80A6B3 /* RLMRealm_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Private.h; path = include/RLMRealm_Private.h; sourceTree = "<group>"; };
-		483D2A5A55DC3B750AEB120E4090D65E /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
+		483D2A5A55DC3B750AEB120E4090D65E /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
 		484060A8FD449190BE02E752F5F2F521 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWTapDetectingImageView.h; path = Pod/Classes/MWTapDetectingImageView.h; sourceTree = "<group>"; };
 		48752832415AD570A9E461E049FED360 /* QBImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBImagePickerController.m; path = QBImagePicker/QBImagePickerController.m; sourceTree = "<group>"; };
 		48B191508C9BD3B56EA41F1DF982A538 /* ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist"; sourceTree = "<group>"; };
@@ -1193,19 +1195,19 @@
 		508B5C62EF2A3327787C9EB165B88FD7 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
 		50C10AD00DD272AD1AE524C7DB06EA7A /* account.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = account.png; path = Pod/Resources/account.png; sourceTree = "<group>"; };
 		50DB04B9D80770E04D6947EF4A068334 /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
-		51347F8FB1BAB7E70C275E45A9516906 /* DACircularProgress */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = DACircularProgress; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		518E5761ADDAE64C4B3336A47D87F9A3 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
+		51347F8FB1BAB7E70C275E45A9516906 /* libDACircularProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDACircularProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		518E5761ADDAE64C4B3336A47D87F9A3 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
 		519E628723E738BD9380FA11CD87D4AC /* SeafSyncTreeFolderStateCoreDataRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTreeFolderStateCoreDataRepository.m; sourceTree = "<group>"; };
 		51A0E7BD65865C104C03B62CAC368080 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		51B88F0A6091B5B26428F2D1E88CE696 /* PlayButtonOverlayLarge@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLarge@3x.png"; path = "Pod/Assets/PlayButtonOverlayLarge@3x.png"; sourceTree = "<group>"; };
-		51D65715DEC94488D8DD25D534BBDA84 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
+		51D65715DEC94488D8DD25D534BBDA84 /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
 		51F086530A54B5A78B340D0C03EA18C1 /* SeafSyncNetworkerServiceObserverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncNetworkerServiceObserverDelegate.h; sourceTree = "<group>"; };
 		51F999530E41D7126AC0DD9E333029A3 /* SeafQuotaSupervisor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafQuotaSupervisor.h; sourceTree = "<group>"; };
 		521B0980A48E524124CE2BC15192B5EF /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		5262FAF6907CBFE20858A1ABB7CAE36C /* RLMEmailPasswordAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMEmailPasswordAuth.h; path = include/RLMEmailPasswordAuth.h; sourceTree = "<group>"; };
 		52C3F90B5D8ACA07E539893C685FBB31 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		536EEB66D1A17DE2C2BDF371708EA7FA /* SeafFileQueuerBackgroundTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafFileQueuerBackgroundTask.h; sourceTree = "<group>"; };
-		5396E7C95F0064B3EF7EC1A57029E910 /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
+		5396E7C95F0064B3EF7EC1A57029E910 /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
 		53A120E42BAE3A1C9C1757E9C1B32D87 /* RLMObjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase.h; path = include/RLMObjectBase.h; sourceTree = "<group>"; };
 		53FF156E5F106D88FFD53BE58912F21C /* SWUtilityButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonView.m; path = SWTableViewCell/PodFiles/SWUtilityButtonView.m; sourceTree = "<group>"; };
 		545CFB39924884815A4C55815F50B77D /* Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.release.xcconfig; sourceTree = "<group>"; };
@@ -1217,7 +1219,7 @@
 		561552450EAFFC4BC1069A732FE09F2B /* MWGridCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWGridCell.m; path = Pod/Classes/MWGridCell.m; sourceTree = "<group>"; };
 		563DF0FC3816D37496697CC221A684A8 /* SWTableViewCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.debug.xcconfig; sourceTree = "<group>"; };
 		56EE34EC41FD5AEDDC3AFBE0B5F945C0 /* Pods-SeafFileProvider-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SeafFileProvider-acknowledgements.plist"; sourceTree = "<group>"; };
-		574F71AAC0698F1D9757AEFE5C238277 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
+		574F71AAC0698F1D9757AEFE5C238277 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
 		579AA6D52767D23D7788ED3F600475AA /* RLMUserAPIKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMUserAPIKey.h; path = include/RLMUserAPIKey.h; sourceTree = "<group>"; };
 		579C3D27296E7CE54789EB1181721A91 /* DACircularProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DACircularProgress-prefix.pch"; sourceTree = "<group>"; };
 		57CDD785C649170186F3735FA1DEE120 /* APLRUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = APLRUCache.h; sourceTree = "<group>"; };
@@ -1229,7 +1231,7 @@
 		5AB3FDA03B7E604201AE517562D87255 /* SeafSyncCheckBoxCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncCheckBoxCell.m; sourceTree = "<group>"; };
 		5ABB18CEBD4262BD30B7FE54AAB77D6F /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWLongPressGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
 		5AE1EBF7E9473A6CECE451AE9CAB07E1 /* RLMSwiftProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSwiftProperty.h; path = include/RLMSwiftProperty.h; sourceTree = "<group>"; };
-		5B3CE35913FB2F2F438FFFF0272EFD9C /* RLMApp.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMApp.mm; path = Realm/RLMApp.mm; sourceTree = "<group>"; };
+		5B3CE35913FB2F2F438FFFF0272EFD9C /* RLMApp.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMApp.mm; path = Realm/RLMApp.mm; sourceTree = "<group>"; };
 		5B5FF113DA2F5A8B436D58863954A9A1 /* SyncPermanentSettingExpirator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SyncPermanentSettingExpirator.m; sourceTree = "<group>"; };
 		5CBEA19513EFE1F3E51C00EF2680AD8C /* SeafConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafConnection.h; path = Pod/Classes/SeafConnection.h; sourceTree = "<group>"; };
 		5D08DB1273B9377EBB5C060226D467C7 /* QBVideoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIconView.h; path = QBImagePicker/QBVideoIconView.h; sourceTree = "<group>"; };
@@ -1256,11 +1258,11 @@
 		6399E7E6720284B7E4446A8611FE4325 /* Pods-seafileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-seafileApp.debug.xcconfig"; sourceTree = "<group>"; };
 		63CDD9D0688D49BE203D0E086C01EEE8 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
 		6431760F88ED068DA5C8CA62413B6A87 /* Pods-seafileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-seafileApp.release.xcconfig"; sourceTree = "<group>"; };
-		6434A1D7AAEC8581BD52F51E8DBB08AB /* RLMAsyncTask.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAsyncTask.mm; path = Realm/RLMAsyncTask.mm; sourceTree = "<group>"; };
+		6434A1D7AAEC8581BD52F51E8DBB08AB /* RLMAsyncTask.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAsyncTask.mm; path = Realm/RLMAsyncTask.mm; sourceTree = "<group>"; };
 		648E67ECE124525929CD68506A423A50 /* SeafSyncAlbumObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncAlbumObserver.h; sourceTree = "<group>"; };
 		64A9EBBF4CA46CBB91A785AE2E50E8E0 /* Version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Version.h; path = Pod/Classes/Version.h; sourceTree = "<group>"; };
 		64AE572CE834F0278E51FA4D8BC55AA4 /* RLMAPIKeyAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAPIKeyAuth.h; path = include/RLMAPIKeyAuth.h; sourceTree = "<group>"; };
-		64D06FE592F71D5857644E7640C46B43 /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
+		64D06FE592F71D5857644E7640C46B43 /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
 		650863D3D464DFD8722FD6DE5CC7B441 /* SeafTrashRecoverer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafTrashRecoverer.m; sourceTree = "<group>"; };
 		652028225C49D106B8703B9BF4990940 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		656C7B7A1D5FC957290B1D98F725C141 /* SeafSyncronizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncronizer.m; sourceTree = "<group>"; };
@@ -1277,7 +1279,7 @@
 		68C24B8608956F061D8FC53B62AEAEDD /* SeafPlanBasic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafPlanBasic.m; sourceTree = "<group>"; };
 		68CB7BC57F64A9B4DB366C3FEBC65674 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
 		68E3BBC1B420D726AA5330F4F803BC0F /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVInfiniteScrolling.m"; path = "SVPullToRefresh/UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
-		68F46A6F54991B54BC818E07EC382762 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
+		68F46A6F54991B54BC818E07EC382762 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
 		697A6EC53026C8DB6E366926952D8620 /* Pods-SeafFileProviderUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SeafFileProviderUI-resources.sh"; sourceTree = "<group>"; };
 		69D7992FDFAED522A34927659B8C8670 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MWPhotoBrowser.h"; path = "Pod/Classes/UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
 		69EE2D12C554FC785B82CA79188FE0FE /* SeafPlanUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafPlanUser.m; sourceTree = "<group>"; };
@@ -1290,7 +1292,7 @@
 		6B9E52F1EEC4E82B107D981FC4F44415 /* SeafBackgroundTasksManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafBackgroundTasksManager.m; sourceTree = "<group>"; };
 		6BB5697B1D3853BD0CAE02FBBA021B8D /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		6BD7AA6E1B2DE523428B69CD09A17B79 /* SeafDeletedRepoItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafDeletedRepoItem.m; sourceTree = "<group>"; };
-		6BDFC9370358C056D1261067DF378980 /* RLMUUID.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUUID.mm; path = Realm/RLMUUID.mm; sourceTree = "<group>"; };
+		6BDFC9370358C056D1261067DF378980 /* RLMUUID.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUUID.mm; path = Realm/RLMUUID.mm; sourceTree = "<group>"; };
 		6BEAF9026A47D602754695240683799D /* RLMSyncSubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSubscription.h; path = include/RLMSyncSubscription.h; sourceTree = "<group>"; };
 		6C2946B9D07115B7E0119E5666AF9CFA /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		6CB3C85834E25F0C4B2E560B95D7A5B5 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
@@ -1307,13 +1309,13 @@
 		70991A85700169E6D6E29CE647A18005 /* MWCaptionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWCaptionView.h; path = Pod/Classes/MWCaptionView.h; sourceTree = "<group>"; };
 		70C52A3085FA16F5FEF0FD40DCA8F9A7 /* Pods-SeafAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeafAction.debug.xcconfig"; sourceTree = "<group>"; };
 		70CE0292B00573B60979CBE1621D4F5B /* UIImage+FileType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+FileType.h"; path = "Pod/Classes/UIImage+FileType.h"; sourceTree = "<group>"; };
-		7113486623047BA5B54451B578676668 /* SVPullToRefresh */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SVPullToRefresh; path = libSVPullToRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7113486623047BA5B54451B578676668 /* libSVPullToRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVPullToRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7251A48EFD2FC940F285DF13E4C97085 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MWPhotoBrowser.m"; path = "Pod/Classes/UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
 		7273751FF89017F206714F06E289164C /* SeafSyncAssetsListProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncAssetsListProvider.h; sourceTree = "<group>"; };
-		72956917C4A2A0EEDD81FFFC8C770DA4 /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
+		72956917C4A2A0EEDD81FFFC8C770DA4 /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
 		72F5393CCCBD108B718CE624B4C501DD /* PlayButtonOverlayLargeTap@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLargeTap@2x.png"; path = "Pod/Assets/PlayButtonOverlayLargeTap@2x.png"; sourceTree = "<group>"; };
 		7348B346D290BDA83620DA5ED9C4B6F7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		742318F65E6A88BC86FFE6B451ED8A72 /* RLMPushClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPushClient.mm; path = Realm/RLMPushClient.mm; sourceTree = "<group>"; };
+		742318F65E6A88BC86FFE6B451ED8A72 /* RLMPushClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMPushClient.mm; path = Realm/RLMPushClient.mm; sourceTree = "<group>"; };
 		74350910A35784ACC338DD8458ADDFF1 /* SeafEnoughQuota.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafEnoughQuota.h; sourceTree = "<group>"; };
 		745BA12FC2D4F693AB052A55F72C6A6D /* SeafSyncAlbumObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncAlbumObserver.m; sourceTree = "<group>"; };
 		7473133B5D9E5C0E94C926CDBDB819BA /* iCloudAvailableAssetFilterStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = iCloudAvailableAssetFilterStrategy.m; sourceTree = "<group>"; };
@@ -1334,24 +1336,24 @@
 		7888CEB89CA09709A9D66316FF860091 /* SeafSyncSelectorCellDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncSelectorCellDataItem.m; sourceTree = "<group>"; };
 		7891D2135FCB115F1C2154624A29BFE6 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWPhotoBrowserPrivate.h; path = Pod/Classes/MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
 		78AB82D634C567F046D2BCBD91CA632E /* MWPhotoBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser-prefix.pch"; sourceTree = "<group>"; };
-		78B2A25CA759F86E4D550C89CE149637 /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
-		78E2C84EF7BBD2C31677CC1C2FAE8555 /* RLMFindOneAndModifyOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMFindOneAndModifyOptions.mm; path = Realm/RLMFindOneAndModifyOptions.mm; sourceTree = "<group>"; };
+		78B2A25CA759F86E4D550C89CE149637 /* RLMUpdateChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUpdateChecker.mm; path = Realm/RLMUpdateChecker.mm; sourceTree = "<group>"; };
+		78E2C84EF7BBD2C31677CC1C2FAE8555 /* RLMFindOneAndModifyOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMFindOneAndModifyOptions.mm; path = Realm/RLMFindOneAndModifyOptions.mm; sourceTree = "<group>"; };
 		7939BB5E7B60C2CCA88D832F854680E7 /* VideoOverlay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = VideoOverlay.png; path = Pod/Assets/VideoOverlay.png; sourceTree = "<group>"; };
 		796CDBE51E30A04049597F26931EA8FE /* PlayButtonOverlayLarge@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "PlayButtonOverlayLarge@2x.png"; path = "Pod/Assets/PlayButtonOverlayLarge@2x.png"; sourceTree = "<group>"; };
 		7A4D4CA00D01FF03CA3894ACEA69BC7C /* QBImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBImagePickerController.h; path = QBImagePicker/QBImagePickerController.h; sourceTree = "<group>"; };
 		7A607C59D1AB6302ECB2C7AA1BE73E54 /* APLRUCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLRUCache.debug.xcconfig; sourceTree = "<group>"; };
 		7A736CE9126EE1A1049D30198161A371 /* iCloudAvailableAssetFilterStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = iCloudAvailableAssetFilterStrategy.h; sourceTree = "<group>"; };
-		7A8E3B826B9D71643E9144541334C9AC /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		7A8E3B826B9D71643E9144541334C9AC /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7ABEE091F9705499E828F6C906438F49 /* SeafSyncSourceNotFoundError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncSourceNotFoundError.m; sourceTree = "<group>"; };
 		7B2A40EF31C9DAB975970AEFBB06340D /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		7BDED0076CED40432B02E3ABD8182839 /* SeafSyncSettingCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSettingCell.h; sourceTree = "<group>"; };
 		7C0ECECC2D2874124070A02E5FECE39A /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
 		7C37670B449FEA103DA1880ADB50EE84 /* SeafSyncExpirationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncExpirationManager.m; sourceTree = "<group>"; };
-		7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser-MWPhotoBrowser */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MWPhotoBrowser-MWPhotoBrowser"; path = MWPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWPhotoBrowser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D273B594BBF3ADA302FBE78C46967E1 /* Pods-SeafFileProvider-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SeafFileProvider-resources.sh"; sourceTree = "<group>"; };
 		7DA50EE06559255732F9DCFD63847F7A /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.7.1/WXApi.h; sourceTree = "<group>"; };
 		7E20774790A880DD8AF1D527AC1BEA4D /* RLMObjectId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectId.h; path = include/RLMObjectId.h; sourceTree = "<group>"; };
-		7E29E4F3E81F87B3B92B5CD706ADDB7E /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
+		7E29E4F3E81F87B3B92B5CD706ADDB7E /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
 		7E48B6498E272527A88F80C29E3767DD /* SeafSyncAlbumSelectorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncAlbumSelectorViewController.m; sourceTree = "<group>"; };
 		7E75600A98CE1EC1781DC94F58488343 /* RLMUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMUser.h; path = include/RLMUser.h; sourceTree = "<group>"; };
 		7F496FA252AE321CE49ED7F4F14CC077 /* Pods-SeafFileProviderUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SeafFileProviderUI-dummy.m"; sourceTree = "<group>"; };
@@ -1362,7 +1364,7 @@
 		8129FDCFAC02148BA526F14B7BC878DC /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
 		81955DB2EFC04407CE4B53F42CBF18D2 /* SeafFileAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafFileAdapter.h; sourceTree = "<group>"; };
 		81CB99086803BB8E1FB7296BF7A3EFB6 /* SVPullToRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVPullToRefresh.release.xcconfig; sourceTree = "<group>"; };
-		820D175D446F3B3E33A3AD69C5348B56 /* RLMSyncSession.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSession.mm; path = Realm/RLMSyncSession.mm; sourceTree = "<group>"; };
+		820D175D446F3B3E33A3AD69C5348B56 /* RLMSyncSession.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncSession.mm; path = Realm/RLMSyncSession.mm; sourceTree = "<group>"; };
 		82A7A2AF63EA5962513FA8B55DBE1D79 /* RLMMongoCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMongoCollection.h; path = include/RLMMongoCollection.h; sourceTree = "<group>"; };
 		82EEA1C584E1569C33DCD5A01B6B4EBB /* SeafSyncTreeBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeBuilder.h; sourceTree = "<group>"; };
 		831D11DA83E3D04D5235E6F52B354270 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
@@ -1395,19 +1397,19 @@
 		8A0F8838BA9277F091921DB814DE823D /* UIImage+FileType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+FileType.m"; path = "Pod/Classes/UIImage+FileType.m"; sourceTree = "<group>"; };
 		8A9A4830C500A5A166915FF9537C86DB /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
 		8AA20BB495B5571880715E6B6DB164F9 /* SeafBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafBase.h; path = Pod/Classes/SeafBase.h; sourceTree = "<group>"; };
-		8AADE89F4744A8B43EED14E446895797 /* RLMSyncSubscription.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSubscription.mm; path = Realm/RLMSyncSubscription.mm; sourceTree = "<group>"; };
+		8AADE89F4744A8B43EED14E446895797 /* RLMSyncSubscription.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncSubscription.mm; path = Realm/RLMSyncSubscription.mm; sourceTree = "<group>"; };
 		8ACC5202D03482014D11ECFEB15FEF5B /* ImageSelectedSmallOff@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOff@2x.png"; path = "Pod/Assets/ImageSelectedSmallOff@2x.png"; sourceTree = "<group>"; };
 		8AF75DF2461A38AEFADDB00FDA578879 /* Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.debug.xcconfig; sourceTree = "<group>"; };
 		8B38F977D907AE4DE02779560683F340 /* SeafRecoveryRepositoryProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafRecoveryRepositoryProvider.h; sourceTree = "<group>"; };
 		8B415F192316495DA4056650E6E70DEA /* SeafRecoverySelectorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafRecoverySelectorViewController.m; sourceTree = "<group>"; };
 		8B57FDA881267769C6F9CB9A67DE4C4E /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MBProgressHUD; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA4B79B249890F0A2F999325CED391A /* MWGridViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MWGridViewController.m; path = Pod/Classes/MWGridViewController.m; sourceTree = "<group>"; };
-		8BDEA1322351AB25DFD60AE9AFC435B1 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = QBImagePicker/pl.lproj; sourceTree = "<group>"; };
+		8BDEA1322351AB25DFD60AE9AFC435B1 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = QBImagePicker/pl.lproj; sourceTree = "<group>"; };
 		8C6300EFE4C98336509937CC05154BE7 /* QBAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAssetCell.h; path = QBImagePicker/QBAssetCell.h; sourceTree = "<group>"; };
 		8CBBF477EFA8D58CB0A6452B9E7C469D /* SeafDeletedRepoItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafDeletedRepoItem.h; sourceTree = "<group>"; };
 		8DC2D1E00B11366914A68470A5DA037E /* UIBarButtonItemArrowLeft@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowLeft@2x.png"; path = "Pod/Assets/UIBarButtonItemArrowLeft@2x.png"; sourceTree = "<group>"; };
-		8E50FC9245F7355B1C7E09C9F15DA9C5 /* RLMFindOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMFindOptions.mm; path = Realm/RLMFindOptions.mm; sourceTree = "<group>"; };
+		8E50FC9245F7355B1C7E09C9F15DA9C5 /* RLMFindOptions.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMFindOptions.mm; path = Realm/RLMFindOptions.mm; sourceTree = "<group>"; };
 		8E64B6332D9A2B4788161E865937913D /* Pods-SeafFileProviderUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeafFileProviderUI.release.xcconfig"; sourceTree = "<group>"; };
 		8F1AEF04B1749BDB8128F00B3BE52A95 /* RLMApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMApp.h; path = include/RLMApp.h; sourceTree = "<group>"; };
 		8F2D1F3D01615E92AE2E528EAA1D76D6 /* SeafSyncSettingsRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSettingsRepository.h; sourceTree = "<group>"; };
@@ -1415,17 +1417,17 @@
 		90ABD9A8055E98BFE9779DCDADD3FAC0 /* SeafBackupExpiratorBackgroundTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafBackupExpiratorBackgroundTask.m; sourceTree = "<group>"; };
 		90D78755CDB610BF85510F611798FD13 /* SeafSyncronizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncronizer.h; sourceTree = "<group>"; };
 		911C19C6C91D564C7932CEC864A5703E /* RLMSectionedResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSectionedResults.h; path = include/RLMSectionedResults.h; sourceTree = "<group>"; };
-		921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = Realm; path = libRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		921BE4A82C4A7A5C72A0C6F8B8FEF200 /* libRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B43FD252B3481FB9A3110992A437D /* SeafDir.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafDir.h; path = Pod/Classes/SeafDir.h; sourceTree = "<group>"; };
 		92A87510745F7629ACC272384105EF2B /* SeafSyncFileProviderFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncFileProviderFactory.h; sourceTree = "<group>"; };
 		933FFB0C3E18F21A2365B175EF1DF7EE /* APLRUCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = APLRUCache.m; sourceTree = "<group>"; };
 		93D7B4C976C1D1514EB9DEE44509F136 /* RLMDecimal128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMDecimal128.h; path = include/RLMDecimal128.h; sourceTree = "<group>"; };
-		93FDC50291F05D61CA28161C5F1CF538 /* Pods-seafileApp */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-seafileApp"; path = "libPods-seafileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FDC50291F05D61CA28161C5F1CF538 /* libPods-seafileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-seafileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9456E1471B0AB6E4EE3D2BB4B36A9793 /* SeafUploadQueueBackgroundTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafUploadQueueBackgroundTask.h; sourceTree = "<group>"; };
 		9469E6B6DD1AE9A3FBEBB8F507B4A2DF /* SVPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVPullToRefresh.h; path = SVPullToRefresh/SVPullToRefresh.h; sourceTree = "<group>"; };
 		958AC042F7FEC92674CBDF3E27785787 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
 		9602510DB65FF8354C96393D8AE6FF40 /* SeafSyncTreeBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTreeBuilder.m; sourceTree = "<group>"; };
-		9658F6151317E0925CB61972E0B1EEFA /* RLMSectionedResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSectionedResults.mm; path = Realm/RLMSectionedResults.mm; sourceTree = "<group>"; };
+		9658F6151317E0925CB61972E0B1EEFA /* RLMSectionedResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSectionedResults.mm; path = Realm/RLMSectionedResults.mm; sourceTree = "<group>"; };
 		966AB2B845B284AEA57146C411350D59 /* SeafPermissionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafPermissionManager.m; sourceTree = "<group>"; };
 		97198859DB1073F74CAF38BD20D309A3 /* SeafConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafConnection.m; path = Pod/Classes/SeafConnection.m; sourceTree = "<group>"; };
 		971F21BB2D03B4CDD531B490367A6F7D /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
@@ -1437,7 +1439,7 @@
 		99DA57D05E809A343D9F852677EEEF05 /* QBVideoIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIndicatorView.h; path = QBImagePicker/QBVideoIndicatorView.h; sourceTree = "<group>"; };
 		9A28DF833258DA0C8C1F86A4FA09F59A /* SeafSyncBlindObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncBlindObserver.m; sourceTree = "<group>"; };
 		9A45DAB0A0B90436149C60D73CF29ADE /* RLMFindOneAndModifyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMFindOneAndModifyOptions.h; path = include/RLMFindOneAndModifyOptions.h; sourceTree = "<group>"; };
-		9AB6D66523FD824AAE4AC591E194A181 /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
+		9AB6D66523FD824AAE4AC591E194A181 /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
 		9ABA169191860D527B0CAF40FBD9744E /* SeafBackgroundEnqueueOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafBackgroundEnqueueOperation.h; sourceTree = "<group>"; };
 		9AC5EAC6C22A967FAF3AE2CBBB4F35D8 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
 		9ADFF8F176E97D25096B3D1339F83470 /* SeafSyncSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncSettings.m; sourceTree = "<group>"; };
@@ -1452,16 +1454,16 @@
 		9D40EAF31AA77DA3EFEC11982665AE3C /* SeafSyncExpiratorFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncExpiratorFactory.h; sourceTree = "<group>"; };
 		9D8363A77B40FD3EBFF99190C065B045 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
 		9D8C027C508BDCF687E064BF4666DC58 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D952D5D536C1E68F04BCBA46B80E4D1 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWLongPressGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
 		9DB703CBC3368B27F933EA69D7D70174 /* Pods-SeafFileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SeafFileProvider.release.xcconfig"; sourceTree = "<group>"; };
 		9E1318360F4C4FD28EE097963C54348B /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
 		9E3AC75135532A81D23BB653348C70AF /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedOff@3x.png"; path = "Pod/Assets/ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
 		9F1B58EE3FB11864E765220502EC0B0B /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
 		A02AEB5C403A871C42BE8C74B3E7AC97 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SWUtilityButtons.h"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
-		A0AA170F345B744D4B6EDEFB9D7226A5 /* Pods-SeafShare */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-SeafShare"; path = "libPods-SeafShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AA170F345B744D4B6EDEFB9D7226A5 /* libPods-SeafShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FA52C587DA47D23FEA4E1CE0AF2F1F /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
-		A0FB3A3434CD42FE90B96158C479B839 /* RLMSwiftValueStorage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSwiftValueStorage.mm; path = Realm/RLMSwiftValueStorage.mm; sourceTree = "<group>"; };
+		A0FB3A3434CD42FE90B96158C479B839 /* RLMSwiftValueStorage.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSwiftValueStorage.mm; path = Realm/RLMSwiftValueStorage.mm; sourceTree = "<group>"; };
 		A14EDAA599D03AE0BEDA4A83915FC1AE /* SeafCompositeFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafCompositeFilter.h; sourceTree = "<group>"; };
 		A19DA3D196E89763EAC5C30290FDECF9 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
 		A1B378D96B291265D2BF4E7CC0E7C231 /* SeafSyncObserverProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncObserverProtocol.h; sourceTree = "<group>"; };
@@ -1473,7 +1475,7 @@
 		A3B32C2D3BB544E8123034DD13C9DF5B /* SeafConnection+UserPlan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SeafConnection+UserPlan.h"; sourceTree = "<group>"; };
 		A41EBFE53E901CAD226DA45F0BF1B803 /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
 		A49F5B743E147806C552807A729D064E /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOn@2x.png"; path = "Pod/Assets/ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AFNetworking; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A523D9E224F3580AD6AE3DB7B28B6309 /* SeafSyncFolderObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncFolderObserver.m; sourceTree = "<group>"; };
 		A52805D32501DFDE26CBAA423582E685 /* RLMProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty.h; path = include/RLMProperty.h; sourceTree = "<group>"; };
 		A55A040F3C44E9DD10F2CD22B1B01139 /* QBSlomoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBSlomoIconView.m; path = QBImagePicker/QBSlomoIconView.m; sourceTree = "<group>"; };
@@ -1482,7 +1484,7 @@
 		A5D97F53CD64FC113B51C185C739A2C1 /* RLMAsymmetricObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAsymmetricObject.h; path = include/RLMAsymmetricObject.h; sourceTree = "<group>"; };
 		A5E02FF3A4FAC166A871F5B6223E5B61 /* SeafSyncDeviceFolderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncDeviceFolderCell.h; sourceTree = "<group>"; };
 		A6BB500B59E5D0645162EDF870704294 /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.7.1/WechatAuthSDK.h; sourceTree = "<group>"; };
-		A70EA4C7FC4300E9F992D23DA143F26C /* RLMError.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMError.mm; path = Realm/RLMError.mm; sourceTree = "<group>"; };
+		A70EA4C7FC4300E9F992D23DA143F26C /* RLMError.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMError.mm; path = Realm/RLMError.mm; sourceTree = "<group>"; };
 		A74DC7DC66CD244AFF3139A69869C58E /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
 		A7E446BE73C581C69F46BA94E5012CCF /* SeafSyncErrorLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncErrorLogger.m; sourceTree = "<group>"; };
 		A83C2E1979A3B6F6A72005B7492209AD /* NSData+Encryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Encryption.h"; path = "Pod/Classes/NSData+Encryption.h"; sourceTree = "<group>"; };
@@ -1492,11 +1494,11 @@
 		AA4D38F50D54D4DBA26D0B0147372405 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
 		AA89B7AC548F84BCF28DA91A104C084B /* ImageSelectedSmallOn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOn@3x.png"; path = "Pod/Assets/ImageSelectedSmallOn@3x.png"; sourceTree = "<group>"; };
 		AAC59C90BF09CF0F02A2140492F82ADA /* RLMScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMScheduler.h; path = include/RLMScheduler.h; sourceTree = "<group>"; };
-		AB1E08D3AA45A76CBFA3A1A338331234 /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
+		AB1E08D3AA45A76CBFA3A1A338331234 /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
 		ABF0E657D3805A005DF87C21F38D5E64 /* SeafSyncSelectorCellDataItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSelectorCellDataItemProtocol.h; sourceTree = "<group>"; };
 		AC059FCFE377C310C07BBA60179FB6AA /* BackgroundTasksRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BackgroundTasksRequestManager.h; sourceTree = "<group>"; };
 		AC6B8894DE091B14FEEACE79298AE68D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		ACBDC4BF8CE9417D11C1A978A3FAB1D3 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
+		ACBDC4BF8CE9417D11C1A978A3FAB1D3 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
 		AD346EBD815CD26D24CF9F9974179048 /* SeafFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafFile.m; path = Pod/Classes/SeafFile.m; sourceTree = "<group>"; };
 		ADA56C9C45F96D3EFFEA9D6245FA7B38 /* Pods-SeafFileProviderUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SeafFileProviderUI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ADFF402BEC5DC9957A1D06DB91B6B607 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
@@ -1508,7 +1510,7 @@
 		B0845069E60086E79009A405657FD5C0 /* Pods-SeafFileProviderUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SeafFileProviderUI-acknowledgements.plist"; sourceTree = "<group>"; };
 		B0A5B616229414D02785B258BF08C5B2 /* SeafDataTaskManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafDataTaskManager.m; path = Pod/Classes/SeafDataTaskManager.m; sourceTree = "<group>"; };
 		B0A64ABA2F5253706FE3AED0507BC35B /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SDWebImage; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B105AF67390A82EEEA553E95CAE4129D /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
 		B11C28CEF0ED2F410EF227E0258B466B /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		B2A82C217D44CBCCE84CFB916C70325A /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
@@ -1520,21 +1522,21 @@
 		B490D01A3CA5B1FF2802B678F4C04425 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		B553032978C64048B298B200818D0CE4 /* SeafSyncTreeFolderStateCoreDataRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeFolderStateCoreDataRepository.h; sourceTree = "<group>"; };
 		B5E0E3CEA7CB592E512746F7D382F3FF /* SeafSyncCoreDataSettingsRepository.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncCoreDataSettingsRepository.m; sourceTree = "<group>"; };
-		B5E6261C0690DE2F65D0F43E1BAA1BDD /* RLMMongoClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMongoClient.mm; path = Realm/RLMMongoClient.mm; sourceTree = "<group>"; };
+		B5E6261C0690DE2F65D0F43E1BAA1BDD /* RLMMongoClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMongoClient.mm; path = Realm/RLMMongoClient.mm; sourceTree = "<group>"; };
 		B63F10373BD4D26F26F42D9578BFA5BF /* Pods-SeafShare-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SeafShare-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B665A1D0327A1D09F9DD8A9C11F51046 /* RLMEmbeddedObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMEmbeddedObject.mm; path = Realm/RLMEmbeddedObject.mm; sourceTree = "<group>"; };
-		B7F6E4C86496EE65D03BE037F166AE3A /* RLMManagedSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedSet.mm; path = Realm/RLMManagedSet.mm; sourceTree = "<group>"; };
+		B665A1D0327A1D09F9DD8A9C11F51046 /* RLMEmbeddedObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMEmbeddedObject.mm; path = Realm/RLMEmbeddedObject.mm; sourceTree = "<group>"; };
+		B7F6E4C86496EE65D03BE037F166AE3A /* RLMManagedSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedSet.mm; path = Realm/RLMManagedSet.mm; sourceTree = "<group>"; };
 		B82B37AE4CA5E2B6F5115A6080C967BE /* APLRUCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APLRUCache-dummy.m"; sourceTree = "<group>"; };
 		B89298A7CF69F5A33F8994E53CDC3997 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		B8F9B6F55D9508BC6CA6175FC3F20947 /* RLMObjectBase_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Private.h; path = include/RLMObjectBase_Private.h; sourceTree = "<group>"; };
 		B94822BEC792EA5F4A53817BD21297B9 /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/RLMObject_Private.h; sourceTree = "<group>"; };
 		B96A585D9C1E53DB2A8A027CB94597C9 /* RLMBSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMBSON.h; path = include/RLMBSON.h; sourceTree = "<group>"; };
 		B9A4A8582A817CBC96E27C4EBB8FB221 /* SeafDateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafDateFormatter.h; path = Pod/Classes/SeafDateFormatter.h; sourceTree = "<group>"; };
-		B9C9C2C256BE81773D72A80D8BD4ACCD /* RLMScheduler.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMScheduler.mm; path = Realm/RLMScheduler.mm; sourceTree = "<group>"; };
+		B9C9C2C256BE81773D72A80D8BD4ACCD /* RLMScheduler.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMScheduler.mm; path = Realm/RLMScheduler.mm; sourceTree = "<group>"; };
 		BACC9D4BDCD2DCCE96E04DAB009EB9D2 /* UIBarButtonItemGrid.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIBarButtonItemGrid.png; path = Pod/Assets/UIBarButtonItemGrid.png; sourceTree = "<group>"; };
 		BC02F523F299D55B39BAB5853534656B /* Pods-SeafShare-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SeafShare-resources.sh"; sourceTree = "<group>"; };
-		BC256C6EB8E8C5A7D763EF8F8782AA01 /* RLMProviderClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProviderClient.mm; path = Realm/RLMProviderClient.mm; sourceTree = "<group>"; };
-		BC36D21506B21701EDAA87C114BCE604 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = QBImagePicker/en.lproj; sourceTree = "<group>"; };
+		BC256C6EB8E8C5A7D763EF8F8782AA01 /* RLMProviderClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMProviderClient.mm; path = Realm/RLMProviderClient.mm; sourceTree = "<group>"; };
+		BC36D21506B21701EDAA87C114BCE604 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = QBImagePicker/en.lproj; sourceTree = "<group>"; };
 		BC9A2DF13AD64F9DD1CB1D758F2AE832 /* SeafRecoveryFileFolderProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafRecoveryFileFolderProvider.h; sourceTree = "<group>"; };
 		BD1BF9438F676FBCE8953B94CF2E5988 /* SVPullToRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVPullToRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		BDF6D6E476EF0504246B68A38B8C8910 /* Pods-seafileApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-seafileApp-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -1543,20 +1545,20 @@
 		BFF1B9CDC665BD433BCDB4D689A45255 /* QBAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAssetCell.m; path = QBImagePicker/QBAssetCell.m; sourceTree = "<group>"; };
 		C0146581F5D70E84E91E9B586DB939B5 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonTapGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
 		C08EA93B2A5C7A4EFC2DC446D6DF1FEF /* BackgroundTasksRequestManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BackgroundTasksRequestManager.m; sourceTree = "<group>"; };
-		C0D837B33A6670F2721DDDE54ECA1AF0 /* Pods-SeafAction */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-SeafAction"; path = "libPods-SeafAction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D837B33A6670F2721DDDE54ECA1AF0 /* libPods-SeafAction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafAction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12704D8DC709EDDB38CB00BCA7A1F65 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
 		C1761908C8D6BE452B80E407B0525D69 /* SeafPermissionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafPermissionManager.h; sourceTree = "<group>"; };
 		C1B615817A00A8DC601EC40484A6D591 /* SeafPlanStandard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafPlanStandard.h; sourceTree = "<group>"; };
-		C1C43BD279FA9085D8EE2E44A9B54C1A /* RLMBSON.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMBSON.mm; path = Realm/RLMBSON.mm; sourceTree = "<group>"; };
-		C379D15E23BD5FB867B6FF163E9E0883 /* RLMLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMLogger.mm; path = Realm/RLMLogger.mm; sourceTree = "<group>"; };
+		C1C43BD279FA9085D8EE2E44A9B54C1A /* RLMBSON.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMBSON.mm; path = Realm/RLMBSON.mm; sourceTree = "<group>"; };
+		C379D15E23BD5FB867B6FF163E9E0883 /* RLMLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMLogger.mm; path = Realm/RLMLogger.mm; sourceTree = "<group>"; };
 		C388E05F14EAA8585ED2DB94839E34C7 /* SWTableViewCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.release.xcconfig; sourceTree = "<group>"; };
 		C3BA6CA9F073A36B54C5FA09FDFCEC95 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
 		C3F97228BA420AEB12624639B074B0E5 /* RLMEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMEvent.h; path = include/RLMEvent.h; sourceTree = "<group>"; };
 		C41673521184DFDC94E5FD1637FB0C06 /* SVPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
-		C473EC09A024C92ACEAC555B91D8ACFF /* RLMObjectId.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectId.mm; path = Realm/RLMObjectId.mm; sourceTree = "<group>"; };
+		C473EC09A024C92ACEAC555B91D8ACFF /* RLMObjectId.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectId.mm; path = Realm/RLMObjectId.mm; sourceTree = "<group>"; };
 		C51616CE03022126371F26137EE0522B /* SeafFileAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafFileAdapter.m; sourceTree = "<group>"; };
 		C5612FB720CE3A48FE49A47AE5D59073 /* SeafSyncQuotaExceededError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncQuotaExceededError.m; sourceTree = "<group>"; };
-		C5B9B110F169A9666E12AE5D64E09068 /* RLMManagedDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedDictionary.mm; path = Realm/RLMManagedDictionary.mm; sourceTree = "<group>"; };
+		C5B9B110F169A9666E12AE5D64E09068 /* RLMManagedDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMManagedDictionary.mm; path = Realm/RLMManagedDictionary.mm; sourceTree = "<group>"; };
 		C616F843860324B2BA078D6BBC492B7A /* SeafDateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafDateFormatter.m; path = Pod/Classes/SeafDateFormatter.m; sourceTree = "<group>"; };
 		C631C545D32EAC35D8B74A6ECC23BC75 /* Support4k.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Support4k.m; sourceTree = "<group>"; };
 		C68364649E4D6E6B1DE7BF16949A1B4E /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
@@ -1573,7 +1575,7 @@
 		C8E6A0C6BE23E91FA207D3334607C658 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		C950B51C9EED11D24A1D1FD3BE75C261 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
 		C96FFE0CF4EBACC9CF705D8033A0451E /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
-		C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePickerController-QBImagePicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "QBImagePickerController-QBImagePicker"; path = QBImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA135AA4A1751C872E303A9DFD65EB81 /* SeafSyncTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncTree.m; sourceTree = "<group>"; };
 		CA450D9E36FAFEEE0F301C4A3C8A62E1 /* SeafFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafFile.h; path = Pod/Classes/SeafFile.h; sourceTree = "<group>"; };
 		CBA692402FF6384FF6749DFF6BE7A4E1 /* Pods-seafileApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-seafileApp-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1591,7 +1593,7 @@
 		CF23A223748BFAC8ED88F0B3B7692A10 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+SVInfiniteScrolling.h"; path = "SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
 		CF5403A86D9072AA09F2E49535CA57F9 /* QBCheckmarkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBCheckmarkView.m; path = QBImagePicker/QBCheckmarkView.m; sourceTree = "<group>"; };
 		CFD365AEFF6B75D7495654995BD31EFB /* SeafSyncFolderObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncFolderObserver.h; sourceTree = "<group>"; };
-		D03A2B16F426CC73B8693823FE380590 /* RLMCredentials.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCredentials.mm; path = Realm/RLMCredentials.mm; sourceTree = "<group>"; };
+		D03A2B16F426CC73B8693823FE380590 /* RLMCredentials.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCredentials.mm; path = Realm/RLMCredentials.mm; sourceTree = "<group>"; };
 		D07E0BB93F85ECFEA0543961442FC4CD /* RLMMongoDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMongoDatabase.h; path = include/RLMMongoDatabase.h; sourceTree = "<group>"; };
 		D0BA4AEB9FE529F9E8880DC9E3F7FC1B /* SVPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVPullToRefresh-dummy.m"; sourceTree = "<group>"; };
 		D0BCE43183E42C35657C6202D253C498 /* SyncSettingsFilterStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SyncSettingsFilterStrategy.h; sourceTree = "<group>"; };
@@ -1603,8 +1605,8 @@
 		D1EF3EE282813B8954EDD572680D19F9 /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
 		D23A2106EB3AE39B7D1D4CF9C06353AD /* SeafSyncTreeChangeDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeChangeDetector.h; sourceTree = "<group>"; };
 		D23ABD7C8F0B68D24719B6BCDC4FA58A /* SeafTrashChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafTrashChecker.h; sourceTree = "<group>"; };
-		D247C00A5A253BA19333FB0A80D9F4C0 /* Icons */ = {isa = PBXFileReference; includeInIndex = 1; name = Icons; path = Pod/Resources/Icons; sourceTree = "<group>"; };
-		D2E8A3358ABA882BDA16377E8ACD190C /* RLMAPIKeyAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAPIKeyAuth.mm; path = Realm/RLMAPIKeyAuth.mm; sourceTree = "<group>"; };
+		D247C00A5A253BA19333FB0A80D9F4C0 /* Icons */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Icons; path = Pod/Resources/Icons; sourceTree = "<group>"; };
+		D2E8A3358ABA882BDA16377E8ACD190C /* RLMAPIKeyAuth.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAPIKeyAuth.mm; path = Realm/RLMAPIKeyAuth.mm; sourceTree = "<group>"; };
 		D30F66D6E850934EEF733D45D709CB7F /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		D31746BF904D5ED45E950DB59E0DF1B0 /* SeafSyncTreeState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeState.h; sourceTree = "<group>"; };
 		D377FC00E6B84D18D071BAF7C3972034 /* SeafSyncObserverFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncObserverFactory.m; sourceTree = "<group>"; };
@@ -1614,7 +1616,7 @@
 		D42EA64897C11A1F6257FC4313A6963A /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
 		D465F18AD46884FB811DDB553466FA72 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
 		D4940F13557F7E3013ADC87386A5C28D /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
-		D4997E678CD11AD4C788BB18E7E2684B /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "QBImagePicker/zh-Hans.lproj"; sourceTree = "<group>"; };
+		D4997E678CD11AD4C788BB18E7E2684B /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "QBImagePicker/zh-Hans.lproj"; sourceTree = "<group>"; };
 		D4F14C64D03D1BB20903161B991ECD10 /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
 		D515A744C46FA8FCD48091E4F9A815D0 /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowLeft@3x.png"; path = "Pod/Assets/UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
 		D542E3148946FC9360C268588BDAE89E /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
@@ -1642,30 +1644,30 @@
 		DAD3951D5023963F93701F65497DA282 /* SeafSyncSettingsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncSettingsViewController.h; sourceTree = "<group>"; };
 		DB19E7165029EEF141AFCE7BDCD4A1F6 /* RLMLogger_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMLogger_Private.h; path = include/RLMLogger_Private.h; sourceTree = "<group>"; };
 		DB61CFE527DF564EAE80467F9E5101C8 /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
-		DB6623FD8279AB0CF0E9A0DE81D756A4 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
+		DB6623FD8279AB0CF0E9A0DE81D756A4 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
 		DB7980E3A7A478E946378768E5A5DC03 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		DBDCCC3077AA5D0F3E032866A1192881 /* QuotaFilterStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QuotaFilterStrategy.m; sourceTree = "<group>"; };
 		DC42CC9C6F13158C2EC6AFB8503E1A1C /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		DC454A6F6007FBAB22E810A93702BE69 /* RLMSet_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSet_Private.h; path = include/RLMSet_Private.h; sourceTree = "<group>"; };
 		DC5BC428911E645F02737FA2F48818E3 /* SeafSyncDateCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncDateCell.h; sourceTree = "<group>"; };
 		DCB23327633C727E5B505B0F7E14B5C3 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DALabeledCircularProgressView.m; path = DACircularProgress/DALabeledCircularProgressView.m; sourceTree = "<group>"; };
-		DD30335DAEC2434043A2FB91F9FBD2B7 /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
+		DD30335DAEC2434043A2FB91F9FBD2B7 /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
 		DD5349D937DBB313E0D279BC1BCDE96E /* ImageSelectedSmallOff@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageSelectedSmallOff@3x.png"; path = "Pod/Assets/ImageSelectedSmallOff@3x.png"; sourceTree = "<group>"; };
 		DDC3015D09E17644AE991282FFEB17E5 /* SeafBackgroundTaskProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafBackgroundTaskProtocol.h; sourceTree = "<group>"; };
 		DE4B5A94FAED607B1BA2F1F68483FC77 /* AlreadyUploadedFilterStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AlreadyUploadedFilterStrategy.m; sourceTree = "<group>"; };
 		DE63B872EB8F077F5B2CDF27F818C633 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
-		DE76F49EDC06B947F632E9CFF7259685 /* Pods-SeafFileProvider */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-SeafFileProvider"; path = "libPods-SeafFileProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE76F49EDC06B947F632E9CFF7259685 /* libPods-SeafFileProvider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeafFileProvider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA747003F02091197D0F59D66B1D5EB /* SeafUploadSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafUploadSize.h; sourceTree = "<group>"; };
 		DEFDE35F8EB40D5365E8629324BAD9A9 /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
 		DEFE15C527AFF4E230C468CAFA3E67E5 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		DF1C341214C72E18A4C46ED244CF9F71 /* MWPhotoBrowser */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = MWPhotoBrowser; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1C341214C72E18A4C46ED244CF9F71 /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF80606682713511F59BBC0B24DF6B11 /* MWGridViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWGridViewController.h; path = Pod/Classes/MWGridViewController.h; sourceTree = "<group>"; };
-		E01A22F240F2104F986828C36985F6A7 /* SWTableViewCell */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SWTableViewCell; path = libSWTableViewCell.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E02C17536131FAFA356A9D5801DA48E2 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = QBImagePicker/es.lproj; sourceTree = "<group>"; };
+		E01A22F240F2104F986828C36985F6A7 /* libSWTableViewCell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSWTableViewCell.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02C17536131FAFA356A9D5801DA48E2 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = QBImagePicker/es.lproj; sourceTree = "<group>"; };
 		E081F63E1E38D123996E473F6EB85252 /* SeafSyncErrorFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncErrorFactory.m; sourceTree = "<group>"; };
 		E083C5845553BE4D17538CE34CAB2C06 /* Model.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E0AFBDA74338E4B35E03883AE4FF64F5 /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = PlayButtonOverlayLargeTap.png; path = Pod/Assets/PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
-		E110CA9E1A3F2B72419A81CE728B798B /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
+		E110CA9E1A3F2B72419A81CE728B798B /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
 		E1C5AB15E7A11391FD609493C8548D1B /* SeafDeleteDirent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafDeleteDirent.h; sourceTree = "<group>"; };
 		E1DE9E9DDBB1E3656453CD45FE7B46D2 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		E288AB054DC530E36853799A7738A768 /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
@@ -1678,19 +1680,19 @@
 		E3CA2F0EB42CE7290C831DEC9117402D /* SyncSettingBaseExpirator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SyncSettingBaseExpirator.h; sourceTree = "<group>"; };
 		E51C8761E68A882B9B35C372FD366452 /* SeafSyncFileProviderFilterStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncFileProviderFilterStrategy.h; sourceTree = "<group>"; };
 		E559E7C4DE788937E42DB0F8E2A8199B /* SeafSyncAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncAlbumCell.h; sourceTree = "<group>"; };
-		E6D16A54D43386659E8334BE5A2B7C89 /* Seafile-Seafile */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Seafile-Seafile"; path = Seafile.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D16A54D43386659E8334BE5A2B7C89 /* Seafile.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Seafile.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F70804BAC33D4065B8FFD290B3838C /* RLMSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema_Private.h; path = include/RLMSchema_Private.h; sourceTree = "<group>"; };
 		E73EB4631B4CF1D994B14DDC881406F4 /* SeafSyncLogRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncLogRepository.h; sourceTree = "<group>"; };
 		E773AB9FFA9FCC379A1EBF72B0B69886 /* UIBarButtonItemArrowRight.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = UIBarButtonItemArrowRight.png; path = Pod/Assets/UIBarButtonItemArrowRight.png; sourceTree = "<group>"; };
 		E7AC2CD1BD80459B2FD086AEC3F66FC8 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
 		E7C08D823E67AA733E5D97159C6E77C0 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
-		E83C52C3B31A682F2D14A283DF268AE5 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
+		E83C52C3B31A682F2D14A283DF268AE5 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
 		E89A95B4AB14270DFFC27CDBBBC99E2B /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "UIBarButtonItemArrowRight@2x.png"; path = "Pod/Assets/UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
 		E89D393657E373EEB7D091702B145F73 /* Support4kPreview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Support4kPreview.h; sourceTree = "<group>"; };
 		E922E8754782D5F373DD0F566B2B493E /* ExtentedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExtentedString.m; path = Pod/Classes/ExtentedString.m; sourceTree = "<group>"; };
 		E9645D3084946C26247CFE14E71A5535 /* SeafPhotoAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafPhotoAsset.m; path = Pod/Classes/SeafPhotoAsset.m; sourceTree = "<group>"; };
 		E977CC4F599E13E87529B520DE8F04E7 /* SeafSyncTreeService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeService.h; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SVProgressHUD; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98125202BB8E1FAD3C3B2A76463041C /* SyncTemporalSettingExpirator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SyncTemporalSettingExpirator.m; sourceTree = "<group>"; };
 		E9B70101D0A34F58ECDD986A3DD8EE29 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
 		E9E07A20A9D8488CAEC25A6518262BFE /* RLMUpdateResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMUpdateResult.h; path = include/RLMUpdateResult.h; sourceTree = "<group>"; };
@@ -1721,7 +1723,7 @@
 		F0918D0C0B273BD22796AFE35889253F /* QBCheckmarkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBCheckmarkView.h; path = QBImagePicker/QBCheckmarkView.h; sourceTree = "<group>"; };
 		F0AC14D1CB3EE3A5631C8321D27860E7 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
 		F0BFAE527FBCD00033C8F6067359FEC3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		F11FD43B5A1771FA545E3F58195A9F32 /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
+		F11FD43B5A1771FA545E3F58195A9F32 /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
 		F12A1CD77F55D5CDE01B0A6B26EA04D9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		F156C01E2E3CA8157FA49656A3A736F4 /* SeafSyncGalleryObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SeafSyncGalleryObserver.m; sourceTree = "<group>"; };
 		F166C2CF6FF90095A687C5502C729456 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
@@ -1735,7 +1737,7 @@
 		F3155BEBC8BF8F61659425590355EBB8 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F43678F1CF933D4FD8E9A3F8AFC6EFA1 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
 		F528651D28817E35DE1A36C485E39BA7 /* SeafBackgroundTasksManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafBackgroundTasksManager.h; sourceTree = "<group>"; };
-		F54B98F8590794352DAE39A7CE41CB0C /* RLMEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMEvent.mm; path = Realm/RLMEvent.mm; sourceTree = "<group>"; };
+		F54B98F8590794352DAE39A7CE41CB0C /* RLMEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMEvent.mm; path = Realm/RLMEvent.mm; sourceTree = "<group>"; };
 		F5708C765B78249A6FE4DAC884418590 /* SeafSyncTreeEnqueuer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncTreeEnqueuer.h; sourceTree = "<group>"; };
 		F5B5EF19636077B8AFD9C146A6AAF231 /* ImageError@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ImageError@2x.png"; path = "Pod/Assets/ImageError@2x.png"; sourceTree = "<group>"; };
 		F5B60C8024161A8B6C211311F04551EC /* SeafDir.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SeafDir.m; path = Pod/Classes/SeafDir.m; sourceTree = "<group>"; };
@@ -1754,14 +1756,14 @@
 		FB7945EB2A75A1419FCD4F2B5CDBD877 /* DACircularProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DACircularProgressView.h; path = DACircularProgress/DACircularProgressView.h; sourceTree = "<group>"; };
 		FB897C2C1079EDFAF866FBA5CD6A4127 /* SeafRepos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SeafRepos.h; path = Pod/Classes/SeafRepos.h; sourceTree = "<group>"; };
 		FB9FFB607D28203D8402C39BCB58A882 /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
-		FBE490F18302EA76BF8D45B3F23568FF /* RLMDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMDictionary.mm; path = Realm/RLMDictionary.mm; sourceTree = "<group>"; };
+		FBE490F18302EA76BF8D45B3F23568FF /* RLMDictionary.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMDictionary.mm; path = Realm/RLMDictionary.mm; sourceTree = "<group>"; };
 		FC37C1D062566A7F785C03B3434FACBA /* SeafSyncQuotaExceededError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SeafSyncQuotaExceededError.h; sourceTree = "<group>"; };
 		FC3C7B273E636D14A4331C023A733E26 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
 		FCF4C37A6E345808BF337AA4268DB29B /* MWGridCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MWGridCell.h; path = Pod/Classes/MWGridCell.h; sourceTree = "<group>"; };
 		FD466617EEB065300B587A896FB4FA39 /* Pods-SeafShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SeafShare-dummy.m"; sourceTree = "<group>"; };
 		FDC9626459D993853364154CE0ABBC9E /* RLMDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMDictionary.h; path = include/RLMDictionary.h; sourceTree = "<group>"; };
 		FE5F2C46CDAF9FD0D2AB00E258C7ED41 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		FE9A45C9726145331010C3D03FD2E093 /* htmls */ = {isa = PBXFileReference; includeInIndex = 1; name = htmls; path = Pod/Resources/htmls; sourceTree = "<group>"; };
+		FE9A45C9726145331010C3D03FD2E093 /* htmls */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = htmls; path = Pod/Resources/htmls; sourceTree = "<group>"; };
 		FF0D11EA4EC24B66C59064CC1EC321EB /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		FF1B87C9915E143EEE5FC66C42A58AD4 /* DefaultSeafSyncSettingsRepository.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DefaultSeafSyncSettingsRepository.h; sourceTree = "<group>"; };
 		FFA3D5FD5001EF519EFB9155B771FB2E /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
@@ -1955,7 +1957,6 @@
 				1BB04313C9AA7FA744AE4DB056C0A9FE /* SupportExtension.h */,
 				5490FAF40BC379EEA3DA4B9309DC352C /* SupportExtension.m */,
 			);
-			name = SeafFilters;
 			path = SeafFilters;
 			sourceTree = "<group>";
 		};
@@ -2019,7 +2020,6 @@
 				029B52EF10A0815F6762A65D9D9BAC39 /* SyncTemporalSettingExpirator.h */,
 				E98125202BB8E1FAD3C3B2A76463041C /* SyncTemporalSettingExpirator.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -2028,7 +2028,6 @@
 			children = (
 				F724CE2785C9D13E618A7CFAD3A9AB59 /* CoreData */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -2072,7 +2071,6 @@
 				D987E7876FCF54338DA53903FC43517A /* SeafPlanUser.h */,
 				69EE2D12C554FC785B82CA79188FE0FE /* SeafPlanUser.m */,
 			);
-			name = SeafAccountPlan;
 			path = SeafAccountPlan;
 			sourceTree = "<group>";
 		};
@@ -2084,7 +2082,6 @@
 				A1B378D96B291265D2BF4E7CC0E7C231 /* SeafSyncObserverProtocol.h */,
 				4C81F2D04E7436442F37C204A7B2ACA1 /* Impl */,
 			);
-			name = Observers;
 			path = Observers;
 			sourceTree = "<group>";
 		};
@@ -2109,7 +2106,6 @@
 				7888CEB89CA09709A9D66316FF860091 /* SeafSyncSelectorCellDataItem.m */,
 				ABF0E657D3805A005DF87C21F38D5E64 /* SeafSyncSelectorCellDataItemProtocol.h */,
 			);
-			name = SeafSyncSelectorCell;
 			path = SeafSyncSelectorCell;
 			sourceTree = "<group>";
 		};
@@ -2135,7 +2131,6 @@
 				1258B0735EE19C0E43F931055FFB20FD /* SyncSettingDetailsViewController.h */,
 				3864EF4E808FFB0F84286BF535D2CA33 /* SyncSettingDetailsViewController.m */,
 			);
-			name = ViewControllers;
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
@@ -2217,7 +2212,6 @@
 				CE92236F2CEE3A42211BB3ADA33295E9 /* SeafSyncTargetNotFoundError.h */,
 				3A044BF93BF0CCC941C5461B3EC8EEF9 /* SeafSyncTargetNotFoundError.m */,
 			);
-			name = ErrorTypes;
 			path = ErrorTypes;
 			sourceTree = "<group>";
 		};
@@ -2233,7 +2227,6 @@
 				3D0196EC6BEA3D3674641D3381F29069 /* SeafSyncGalleryProvider.h */,
 				1820EB67C84D042882B7E6017DDE6416 /* SeafSyncGalleryProvider.m */,
 			);
-			name = Providers;
 			path = Providers;
 			sourceTree = "<group>";
 		};
@@ -2255,7 +2248,6 @@
 				901B7F795FAD5D4B871F0DB69D632143 /* SeafSyncFileItem.h */,
 				24AC0E89A5FAB5332716BBEE47BF3A14 /* SeafSyncFileItem.m */,
 			);
-			name = SyncItems;
 			path = SyncItems;
 			sourceTree = "<group>";
 		};
@@ -2303,7 +2295,6 @@
 				7FCE8A6A2D0C6EEE3AF2D1232782F8D6 /* Repository */,
 				74B12106BEA72BFAAE5386C9AB722582 /* Services */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -2331,7 +2322,6 @@
 				E7FC10A558B83A4F93CA2FF423F0B6C1 /* Resources */,
 				E6B960FB1FD61B63019465346BEE6BF7 /* Support Files */,
 			);
-			name = QBImagePickerController;
 			path = QBImagePickerController;
 			sourceTree = "<group>";
 		};
@@ -2341,7 +2331,6 @@
 				EDFC8E8C3B7F776A976F07CEF93D8EEF /* Core */,
 				8D7700FCC038933736F5AA0A53C94099 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -2355,7 +2344,6 @@
 				BDD44A008982EC4E3239AF78A29E03EF /* TreeChangeDetector */,
 				F6E2F651685AEABB789F2C395AA35C4B /* TreeFolderState */,
 			);
-			name = Tree;
 			path = Tree;
 			sourceTree = "<group>";
 		};
@@ -2375,7 +2363,6 @@
 				3A254E984B066EFD7674FF986CE94ED5 /* SeafSyncSettingFolderObserver.h */,
 				1843FC22A5A69DF1BE51F31CEDB6D23D /* SeafSyncSettingFolderObserver.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -2396,7 +2383,6 @@
 				53FF156E5F106D88FFD53BE58912F21C /* SWUtilityButtonView.m */,
 				2B25F87014E02F048D80DE3FB6857D7F /* Support Files */,
 			);
-			name = SWTableViewCell;
 			path = SWTableViewCell;
 			sourceTree = "<group>";
 		};
@@ -2450,7 +2436,6 @@
 				9E7704F4B158B88F562AE60FFB485E07 /* Resources */,
 				D07A3662BD26A121197B22E660C1F25A /* Support Files */,
 			);
-			name = MWPhotoBrowser;
 			path = MWPhotoBrowser;
 			sourceTree = "<group>";
 		};
@@ -2460,7 +2445,6 @@
 				3F2477373DD888D3365A4CA31C5BFD06 /* SeafRecoverySelectorViewController.h */,
 				8B415F192316495DA4056650E6E70DEA /* SeafRecoverySelectorViewController.m */,
 			);
-			name = ui;
 			path = ui;
 			sourceTree = "<group>";
 		};
@@ -2470,7 +2454,6 @@
 				84F5DFA3946E022CA4C7A053D8F3AAD3 /* SeafFileFilterStrategy.h */,
 				170F2E646F0BE5506C916363AA7D1CF2 /* SeafFileProtocol.h */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -2481,7 +2464,6 @@
 				A3B32C2D3BB544E8123034DD13C9DF5B /* SeafConnection+UserPlan.h */,
 				8080FB13B8FA98006F413D951622BE5D /* SeafConnection+UserPlan.m */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -2494,7 +2476,6 @@
 				71EADBDB59133E7C70FF3F84545421F7 /* Repository */,
 				FEDA5B305CB0CFEA55678C16FB3A3E6A /* Services */,
 			);
-			name = Log;
 			path = Log;
 			sourceTree = "<group>";
 		};
@@ -2504,7 +2485,6 @@
 				10F52199185055BCEE1408E3F1C52BB8 /* SeafSyncLogUploadFileAdapter.h */,
 				4E40201470A1865A81372E4371988BDD /* SeafSyncLogUploadFileAdapter.m */,
 			);
-			name = Adapters;
 			path = Adapters;
 			sourceTree = "<group>";
 		};
@@ -2589,7 +2569,6 @@
 				99E72C6C2435C37327EDE68239240A57 /* Frameworks */,
 				A664A35B7A93279670655957D9CC3603 /* Support Files */,
 			);
-			name = "OpenSSL-Universal";
 			path = "OpenSSL-Universal";
 			sourceTree = "<group>";
 		};
@@ -2603,7 +2582,6 @@
 				9456E1471B0AB6E4EE3D2BB4B36A9793 /* SeafUploadQueueBackgroundTask.h */,
 				125645764BE5526173CBE0EEEC25DD84 /* SeafUploadQueueBackgroundTask.m */,
 			);
-			name = Tasks;
 			path = Tasks;
 			sourceTree = "<group>";
 		};
@@ -2693,7 +2671,6 @@
 				DCB23327633C727E5B505B0F7E14B5C3 /* DALabeledCircularProgressView.m */,
 				FB3114F3E4F021165D500EEDE4BF299B /* Support Files */,
 			);
-			name = DACircularProgress;
 			path = DACircularProgress;
 			sourceTree = "<group>";
 		};
@@ -2703,7 +2680,6 @@
 				E73EB4631B4CF1D994B14DDC881406F4 /* SeafSyncLogRepository.h */,
 				11C09EB5B5080941EF472124A68D6199 /* Impl */,
 			);
-			name = Repository;
 			path = Repository;
 			sourceTree = "<group>";
 		};
@@ -2713,7 +2689,6 @@
 				476057C635A7B462A632D1872C83293D /* SeafSyncLegacyMigrator.h */,
 				EF11DA7840131B84117AE1733B9DF452 /* SeafSyncLegacyMigrator.m */,
 			);
-			name = LegacyMigrator;
 			path = LegacyMigrator;
 			sourceTree = "<group>";
 		};
@@ -2728,7 +2703,6 @@
 				0EF7C8600260E499762AAF3324E0A261 /* Support Files */,
 				3A8161A7DCC378123C3F2DD247AA1A0A /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2741,7 +2715,6 @@
 				0631333FB858229D220D662CF3EB952E /* Frameworks */,
 				0E5C655ABA9163FFF649401DD448F15F /* Support Files */,
 			);
-			name = WechatOpenSDK;
 			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
@@ -2751,33 +2724,32 @@
 				86E6E6F1E50658E4AA83C28AF4139541 /* SeafSyncSettingsService.h */,
 				31BFB45875472B2AB09F6385BB5027E7 /* SeafSyncSettingsService.m */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
 		79F8FCC46DC83A8E978E8648A61C3534 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */,
-				28DA624838F72520F339DB475590FCCC /* APLRUCache */,
-				51347F8FB1BAB7E70C275E45A9516906 /* DACircularProgress */,
-				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */,
-				DF1C341214C72E18A4C46ED244CF9F71 /* MWPhotoBrowser */,
-				7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser-MWPhotoBrowser */,
-				C0D837B33A6670F2721DDDE54ECA1AF0 /* Pods-SeafAction */,
-				DE76F49EDC06B947F632E9CFF7259685 /* Pods-SeafFileProvider */,
-				0AA24B8CEBE5B5069693FDF45B9F8EBD /* Pods-SeafFileProviderUI */,
-				93FDC50291F05D61CA28161C5F1CF538 /* Pods-seafileApp */,
-				A0AA170F345B744D4B6EDEFB9D7226A5 /* Pods-SeafShare */,
-				20D73B80DBEDC9935666EB05B502A6E8 /* QBImagePickerController */,
-				C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePickerController-QBImagePicker */,
-				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */,
-				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
-				15A72A7C90B0E1343996E4E8038B3C4F /* Seafile */,
-				E6D16A54D43386659E8334BE5A2B7C89 /* Seafile-Seafile */,
-				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */,
-				7113486623047BA5B54451B578676668 /* SVPullToRefresh */,
-				E01A22F240F2104F986828C36985F6A7 /* SWTableViewCell */,
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */,
+				28DA624838F72520F339DB475590FCCC /* libAPLRUCache.a */,
+				51347F8FB1BAB7E70C275E45A9516906 /* libDACircularProgress.a */,
+				8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */,
+				DF1C341214C72E18A4C46ED244CF9F71 /* libMWPhotoBrowser.a */,
+				7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser.bundle */,
+				C0D837B33A6670F2721DDDE54ECA1AF0 /* libPods-SeafAction.a */,
+				DE76F49EDC06B947F632E9CFF7259685 /* libPods-SeafFileProvider.a */,
+				0AA24B8CEBE5B5069693FDF45B9F8EBD /* libPods-SeafFileProviderUI.a */,
+				93FDC50291F05D61CA28161C5F1CF538 /* libPods-seafileApp.a */,
+				A0AA170F345B744D4B6EDEFB9D7226A5 /* libPods-SeafShare.a */,
+				20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */,
+				C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */,
+				921BE4A82C4A7A5C72A0C6F8B8FEF200 /* libRealm.a */,
+				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
+				15A72A7C90B0E1343996E4E8038B3C4F /* libSeafile.a */,
+				E6D16A54D43386659E8334BE5A2B7C89 /* Seafile.bundle */,
+				E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */,
+				7113486623047BA5B54451B578676668 /* libSVPullToRefresh.a */,
+				E01A22F240F2104F986828C36985F6A7 /* libSWTableViewCell.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2788,7 +2760,6 @@
 				8F2D1F3D01615E92AE2E528EAA1D76D6 /* SeafSyncSettingsRepository.h */,
 				AB570E78E2F9FBA7606F82D743B0317C /* Impl */,
 			);
-			name = Repository;
 			path = Repository;
 			sourceTree = "<group>";
 		};
@@ -2815,7 +2786,6 @@
 				2FE075F857AC750E0FB8AD98B9D47358 /* Providers */,
 				31B2A36FF3E475A9E0219CF7D20FED50 /* SyncItems */,
 			);
-			name = FIleProvider;
 			path = FIleProvider;
 			sourceTree = "<group>";
 		};
@@ -2826,7 +2796,6 @@
 				B3AE4AC190D544EBA6E0B90EAD9C2E27 /* SeafSyncUtils.h */,
 				461327FB2502CCC4E9902DD67F3E2F95 /* SeafSyncUtils.m */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -2840,7 +2809,6 @@
 				2F735DF8E401946389675181C4CF464C /* SeafBackgroundUploaderOperation.h */,
 				C6C36EB365AC32401852B5525D3C622C /* SeafBackgroundUploaderOperation.m */,
 			);
-			name = Operations;
 			path = Operations;
 			sourceTree = "<group>";
 		};
@@ -2895,7 +2863,6 @@
 				82A780EFD9652C24B00D202C67561CCD /* Operations */,
 				66F89C0CFA5D6CDE6D24D8C21907D67B /* Tasks */,
 			);
-			name = BackgroundTasks;
 			path = BackgroundTasks;
 			sourceTree = "<group>";
 		};
@@ -2958,7 +2925,6 @@
 				FFA3D5FD5001EF519EFB9155B771FB2E /* UIScrollView+SVPullToRefresh.m */,
 				F7E6393E66C3DD56CF1CB78AA9F914DA /* Support Files */,
 			);
-			name = SVPullToRefresh;
 			path = SVPullToRefresh;
 			sourceTree = "<group>";
 		};
@@ -2981,7 +2947,6 @@
 				5861BB121CE747FFF74720531BFC4EEA /* Protocols */,
 				051F3D9809E0E8A1EC13A6A6F35AF235 /* SeafFilters */,
 			);
-			name = FilterFilePlanStrategy;
 			path = FilterFilePlanStrategy;
 			sourceTree = "<group>";
 		};
@@ -3008,7 +2973,6 @@
 				29CE1B3012A007E6906CCCDAF07DEC23 /* SeafSyncSettingCell.m */,
 				1BFB5F0FB17DF9EF281AFFD4318E716C /* SeafSyncSelectorCell */,
 			);
-			name = TableViewCells;
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
@@ -3028,7 +2992,6 @@
 				6ED73265465D7237F95B977EEDC77F94 /* SeafSyncCoreDataSettingsRepository.h */,
 				B5E0E3CEA7CB592E512746F7D382F3FF /* SeafSyncCoreDataSettingsRepository.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -3038,7 +3001,6 @@
 				76C09FC017F81EA5FEF71FD704DDCBDC /* SeafSyncFolderStateService.h */,
 				014C618EEC20023E84347B85617320D9 /* SeafSyncFolderStateService.m */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -3060,7 +3022,6 @@
 				B553032978C64048B298B200818D0CE4 /* SeafSyncTreeFolderStateCoreDataRepository.h */,
 				519E628723E738BD9380FA11CD87D4AC /* SeafSyncTreeFolderStateCoreDataRepository.m */,
 			);
-			name = CoreData;
 			path = CoreData;
 			sourceTree = "<group>";
 		};
@@ -3070,7 +3031,6 @@
 				0F4122FAB9AE80D0E7C91962D2F89438 /* SeafAlertChangePlan.h */,
 				29377F1EFF8F358FD23CE956DE24B9CF /* SeafAlertChangePlan.m */,
 			);
-			name = SeafAlertChangePlan;
 			path = SeafAlertChangePlan;
 			sourceTree = "<group>";
 		};
@@ -3083,7 +3043,6 @@
 				A7E446BE73C581C69F46BA94E5012CCF /* SeafSyncErrorLogger.m */,
 				2F2E4BF43E89E9CD53779855AB5BF8D1 /* ErrorTypes */,
 			);
-			name = Errors;
 			path = Errors;
 			sourceTree = "<group>";
 		};
@@ -3093,7 +3052,6 @@
 				D23A2106EB3AE39B7D1D4CF9C06353AD /* SeafSyncTreeChangeDetector.h */,
 				9C0C6CA36625B3921EE3CB3FD2195500 /* SeafSyncTreeChangeDetector.m */,
 			);
-			name = TreeChangeDetector;
 			path = TreeChangeDetector;
 			sourceTree = "<group>";
 		};
@@ -3107,7 +3065,6 @@
 				ED122107DDC2D86D8E11D9CE0663A84D /* Resources */,
 				17F055556593EF88554C09C365BE47B2 /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -3195,7 +3152,6 @@
 				F5708C765B78249A6FE4DAC884418590 /* SeafSyncTreeEnqueuer.h */,
 				143113327AA7B27E70CB138E5B3E199E /* SeafSyncTreeEnqueuer.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -3295,7 +3251,6 @@
 				6F49703470A0562A8C36068E8FB5FD2E /* Headers */,
 				8E95E445862D97D53456E94DD0884004 /* Support Files */,
 			);
-			name = Realm;
 			path = Realm;
 			sourceTree = "<group>";
 		};
@@ -3318,7 +3273,6 @@
 				0641A94761BB8D82929FB6BDFD43017B /* SeafSyncNetworkerService.m */,
 				51F086530A54B5A78B340D0C03EA18C1 /* SeafSyncNetworkerServiceObserverDelegate.h */,
 			);
-			name = NetworkStatus;
 			path = NetworkStatus;
 			sourceTree = "<group>";
 		};
@@ -3344,7 +3298,6 @@
 				8793AE5046288AC0728F5B77F6FA6744 /* SeafSyncExpiratorFactory.m */,
 				E5F1C3D8AC116FB423776455D924BA15 /* Expirators */,
 			);
-			name = Expiration;
 			path = Expiration;
 			sourceTree = "<group>";
 		};
@@ -3354,7 +3307,6 @@
 				1C3F3A981902074C24779982F528CB46 /* SeafRecoveryItemsProvider.h */,
 				EE4A42A12BEED1312CB30C531E3DD6EC /* Impl */,
 			);
-			name = Providers;
 			path = Providers;
 			sourceTree = "<group>";
 		};
@@ -3364,7 +3316,6 @@
 				E51C8761E68A882B9B35C372FD366452 /* SeafSyncFileProviderFilterStrategy.h */,
 				E61B524A25BCBAE84400BCEF6E9FB4F2 /* Impl */,
 			);
-			name = FilterStrategies;
 			path = FilterStrategies;
 			sourceTree = "<group>";
 		};
@@ -3389,7 +3340,6 @@
 				933FFB0C3E18F21A2365B175EF1DF7EE /* APLRUCache.m */,
 				045DE289112499B0EF6F80BA8AFF4220 /* Support Files */,
 			);
-			name = APLRUCache;
 			path = APLRUCache;
 			sourceTree = "<group>";
 		};
@@ -3420,7 +3370,6 @@
 				D6B214B0BAAF1E586421999663EEC1B9 /* SeafUploadFileAdapter.h */,
 				9CD15D0324C8DC5F39C1C1E0C1D2E894 /* SeafUploadFileAdapter.m */,
 			);
-			name = AdaptersFile;
 			path = AdaptersFile;
 			sourceTree = "<group>";
 		};
@@ -3431,7 +3380,6 @@
 				C08EA93B2A5C7A4EFC2DC446D6DF1FEF /* BackgroundTasksRequestManager.m */,
 				E7C1FD27DCB78B992CCC8C75B591FAAF /* Delegates */,
 			);
-			name = BackgroundTaskDelegates;
 			path = BackgroundTaskDelegates;
 			sourceTree = "<group>";
 		};
@@ -3456,7 +3404,6 @@
 				F3155BEBC8BF8F61659425590355EBB8 /* MBProgressHUD.m */,
 				8009FCDEF4A825D18FECB77D24E5C6DC /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -3482,7 +3429,6 @@
 				8CBBF477EFA8D58CB0A6452B9E7C469D /* SeafDeletedRepoItem.h */,
 				6BD7AA6E1B2DE523428B69CD09A17B79 /* SeafDeletedRepoItem.m */,
 			);
-			name = RecoveryItems;
 			path = RecoveryItems;
 			sourceTree = "<group>";
 		};
@@ -3492,7 +3438,6 @@
 				750A52A39EE94D7FC19ED113E05D6A4A /* SeafSyncExpiratorProtocol.h */,
 				10D0C836F863CA99AAAC50BDA94E68DE /* Impl */,
 			);
-			name = Expirators;
 			path = Expirators;
 			sourceTree = "<group>";
 		};
@@ -3510,7 +3455,6 @@
 				D0BCE43183E42C35657C6202D253C498 /* SyncSettingsFilterStrategy.h */,
 				D9C93F23BD9EBA22E1FB8B8A31E1E295 /* SyncSettingsFilterStrategy.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -3533,7 +3477,6 @@
 				2FB6889CD0F59A7CDABB91432EEB48D8 /* BackgroundUploadLinkDelegate.h */,
 				4CD74C256F1591872B100936893333A8 /* BackgroundUploadLinkDelegate.m */,
 			);
-			name = Delegates;
 			path = Delegates;
 			sourceTree = "<group>";
 		};
@@ -3545,7 +3488,6 @@
 				E977CC4F599E13E87529B520DE8F04E7 /* SeafSyncTreeService.h */,
 				05193DED2212F5FE3303016D8890B86D /* SeafSyncTreeService.m */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -3613,7 +3555,6 @@
 				04D2F3C49A681C5D1F9B89DE8A2C6740 /* SeafSyncTreeFolderStateRepository.h */,
 				B84CAEADF5630357EBD088254F917FDF /* CoreData */,
 			);
-			name = Repository;
 			path = Repository;
 			sourceTree = "<group>";
 		};
@@ -3627,7 +3568,6 @@
 				8B38F977D907AE4DE02779560683F340 /* SeafRecoveryRepositoryProvider.h */,
 				3A5B54E446F80BD05EFBA28D01D99B3D /* SeafRecoveryRepositoryProvider.m */,
 			);
-			name = Impl;
 			path = Impl;
 			sourceTree = "<group>";
 		};
@@ -3639,7 +3579,6 @@
 				EE1662E31FF3653D3A62BF1D9A8C8FD7 /* Repository */,
 				AEC2BC828C102BE12026D29D6F85B282 /* Services */,
 			);
-			name = TreeFolderState;
 			path = TreeFolderState;
 			sourceTree = "<group>";
 		};
@@ -3649,7 +3588,6 @@
 				A3A8763DDA0D11F13D2B8F9BFCFF1F66 /* SeafSyncCoreDataLogRepository.h */,
 				4D5ED304953AB9F5652158B18DE2580B /* SeafSyncCoreDataLogRepository.m */,
 			);
-			name = CoreData;
 			path = CoreData;
 			sourceTree = "<group>";
 		};
@@ -3673,7 +3611,6 @@
 				A8965968F2271EE73CDFD9A9C7D93E64 /* TableViewCells */,
 				2855BBC09FF37FEEBE36A36233C70EE5 /* ViewControllers */,
 			);
-			name = ui;
 			path = ui;
 			sourceTree = "<group>";
 		};
@@ -3695,7 +3632,6 @@
 				5602D9362A44E7D332184D162BE7AF76 /* SeafSyncLogsService.h */,
 				F18AA25E06C52C4DA0ACA7DC38674435 /* SeafSyncLogsService.m */,
 			);
-			name = Services;
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -3709,7 +3645,6 @@
 				2C38D524ED9EF367876D7D9F1DA01FB1 /* SeafSyncEnqueuerFactory.m */,
 				C40A7479A57AFDA1FBED9387DE8852D2 /* Impl */,
 			);
-			name = Enqueuers;
 			path = Enqueuers;
 			sourceTree = "<group>";
 		};
@@ -4163,7 +4098,7 @@
 			);
 			name = AFNetworking;
 			productName = AFNetworking;
-			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0411A4A048244E61C56B1A7AC11C4673 /* SVPullToRefresh */ = {
@@ -4180,7 +4115,7 @@
 			);
 			name = SVPullToRefresh;
 			productName = SVPullToRefresh;
-			productReference = 7113486623047BA5B54451B578676668 /* SVPullToRefresh */;
+			productReference = 7113486623047BA5B54451B578676668 /* libSVPullToRefresh.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
@@ -4197,7 +4132,7 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD */;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		3847153A6E5EEFB86565BA840768F429 /* SDWebImage */ = {
@@ -4214,7 +4149,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */;
+			productReference = B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		41ADD44161675F5A21DC4AB37AC1432E /* Pods-seafileApp */ = {
@@ -4245,7 +4180,7 @@
 			);
 			name = "Pods-seafileApp";
 			productName = "Pods-seafileApp";
-			productReference = 93FDC50291F05D61CA28161C5F1CF538 /* Pods-seafileApp */;
+			productReference = 93FDC50291F05D61CA28161C5F1CF538 /* libPods-seafileApp.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		587BFADB1CBCE980B39F0BDD8800FD4B /* MWPhotoBrowser-MWPhotoBrowser */ = {
@@ -4262,7 +4197,7 @@
 			);
 			name = "MWPhotoBrowser-MWPhotoBrowser";
 			productName = MWPhotoBrowser;
-			productReference = 7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser-MWPhotoBrowser */;
+			productReference = 7C8D4F1ABE417E5041301FAEA089DFE1 /* MWPhotoBrowser.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		61BA6C264452844A85D5C6AB863B249F /* Pods-SeafFileProvider */ = {
@@ -4284,7 +4219,7 @@
 			);
 			name = "Pods-SeafFileProvider";
 			productName = "Pods-SeafFileProvider";
-			productReference = DE76F49EDC06B947F632E9CFF7259685 /* Pods-SeafFileProvider */;
+			productReference = DE76F49EDC06B947F632E9CFF7259685 /* libPods-SeafFileProvider.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		68494F30B4A13F8E5E88BCCAEC25B0A4 /* Realm */ = {
@@ -4302,7 +4237,7 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = 921BE4A82C4A7A5C72A0C6F8B8FEF200 /* Realm */;
+			productReference = 921BE4A82C4A7A5C72A0C6F8B8FEF200 /* libRealm.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6D5F1EC0CF651BE576002B0A9B7C9D72 /* Pods-SeafFileProviderUI */ = {
@@ -4324,7 +4259,7 @@
 			);
 			name = "Pods-SeafFileProviderUI";
 			productName = "Pods-SeafFileProviderUI";
-			productReference = 0AA24B8CEBE5B5069693FDF45B9F8EBD /* Pods-SeafFileProviderUI */;
+			productReference = 0AA24B8CEBE5B5069693FDF45B9F8EBD /* libPods-SeafFileProviderUI.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		727FE957FE45A491E39D869A21099574 /* Pods-SeafShare */ = {
@@ -4347,7 +4282,7 @@
 			);
 			name = "Pods-SeafShare";
 			productName = "Pods-SeafShare";
-			productReference = A0AA170F345B744D4B6EDEFB9D7226A5 /* Pods-SeafShare */;
+			productReference = A0AA170F345B744D4B6EDEFB9D7226A5 /* libPods-SeafShare.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7A23764A8EFEFE42461DCFA4EC550069 /* DACircularProgress */ = {
@@ -4364,7 +4299,7 @@
 			);
 			name = DACircularProgress;
 			productName = DACircularProgress;
-			productReference = 51347F8FB1BAB7E70C275E45A9516906 /* DACircularProgress */;
+			productReference = 51347F8FB1BAB7E70C275E45A9516906 /* libDACircularProgress.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
@@ -4381,7 +4316,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		95A5B67F1E5695A1030654F074ED024E /* APLRUCache */ = {
@@ -4398,7 +4333,7 @@
 			);
 			name = APLRUCache;
 			productName = APLRUCache;
-			productReference = 28DA624838F72520F339DB475590FCCC /* APLRUCache */;
+			productReference = 28DA624838F72520F339DB475590FCCC /* libAPLRUCache.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		9818DF06F8D7D5B5C13B7F607FB408DE /* Seafile-Seafile */ = {
@@ -4415,7 +4350,7 @@
 			);
 			name = "Seafile-Seafile";
 			productName = Seafile;
-			productReference = E6D16A54D43386659E8334BE5A2B7C89 /* Seafile-Seafile */;
+			productReference = E6D16A54D43386659E8334BE5A2B7C89 /* Seafile.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		9A22F842E25981A68363E26DC06C612A /* Pods-SeafAction */ = {
@@ -4438,7 +4373,7 @@
 			);
 			name = "Pods-SeafAction";
 			productName = "Pods-SeafAction";
-			productReference = C0D837B33A6670F2721DDDE54ECA1AF0 /* Pods-SeafAction */;
+			productReference = C0D837B33A6670F2721DDDE54ECA1AF0 /* libPods-SeafAction.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A9FFDBF8D089F65392D226F74C4A8312 /* MWPhotoBrowser */ = {
@@ -4459,7 +4394,7 @@
 			);
 			name = MWPhotoBrowser;
 			productName = MWPhotoBrowser;
-			productReference = DF1C341214C72E18A4C46ED244CF9F71 /* MWPhotoBrowser */;
+			productReference = DF1C341214C72E18A4C46ED244CF9F71 /* libMWPhotoBrowser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AC60DD87A4716856282507DFBBBE720C /* SWTableViewCell */ = {
@@ -4476,7 +4411,7 @@
 			);
 			name = SWTableViewCell;
 			productName = SWTableViewCell;
-			productReference = E01A22F240F2104F986828C36985F6A7 /* SWTableViewCell */;
+			productReference = E01A22F240F2104F986828C36985F6A7 /* libSWTableViewCell.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C49345AFA49B098B0384C4FA864A4868 /* QBImagePickerController */ = {
@@ -4494,7 +4429,7 @@
 			);
 			name = QBImagePickerController;
 			productName = QBImagePickerController;
-			productReference = 20D73B80DBEDC9935666EB05B502A6E8 /* QBImagePickerController */;
+			productReference = 20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D74CE9127A97DAD58FF21A0D05094B5C /* Seafile */ = {
@@ -4515,7 +4450,7 @@
 			);
 			name = Seafile;
 			productName = Seafile;
-			productReference = 15A72A7C90B0E1343996E4E8038B3C4F /* Seafile */;
+			productReference = 15A72A7C90B0E1343996E4E8038B3C4F /* libSeafile.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		EAEBAE5C8257AED94B3BED47A0E0E3FA /* QBImagePickerController-QBImagePicker */ = {
@@ -4532,7 +4467,7 @@
 			);
 			name = "QBImagePickerController-QBImagePicker";
 			productName = QBImagePicker;
-			productReference = C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePickerController-QBImagePicker */;
+			productReference = C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -4558,8 +4493,6 @@
 				"zh-Hans",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 79F8FCC46DC83A8E978E8648A61C3534 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5447,7 +5380,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "iOS 11.0";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -5477,7 +5410,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -5504,7 +5437,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/Seafile/Seafile-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = Seafile;
@@ -5580,7 +5513,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -5606,7 +5539,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "iOS 11.0";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -5653,7 +5586,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -5757,7 +5690,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_PREFIX_HEADER = "Target Support Files/Seafile/Seafile-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = Seafile;
@@ -5944,8 +5877,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -5990,7 +5922,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Seafile;
 				INFOPLIST_FILE = "Target Support Files/Seafile/ResourceBundle-Seafile-Seafile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = Seafile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -6013,7 +5945,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6069,7 +6001,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6174,7 +6106,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6196,7 +6128,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				IBSC_MODULE = Seafile;
 				INFOPLIST_FILE = "Target Support Files/Seafile/ResourceBundle-Seafile-Seafile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = Seafile;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -6334,7 +6266,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6420,7 +6352,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6541,7 +6473,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6567,7 +6499,7 @@
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -6875,6 +6807,7 @@
 			children = (
 				E083C5845553BE4D17538CE34CAB2C06 /* Model.xcdatamodel */,
 			);
+			currentVersion = E083C5845553BE4D17538CE34CAB2C06 /* Model.xcdatamodel */;
 			name = Model.xcdatamodeld;
 			path = Pod/Resources/Model.xcdatamodeld;
 			sourceTree = "<group>";

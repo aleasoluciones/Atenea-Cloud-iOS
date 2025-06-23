@@ -9,8 +9,8 @@
 
 @interface SeafSyncCheckBoxCell ()
 
-@property (unsafe_unretained, nonatomic) IBOutlet UILabel *titleLabel;
-@property (unsafe_unretained, nonatomic) IBOutlet UISwitch *theSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *theSwitch;
 
 @property (nonatomic) SeafSyncCheckBoxCellCallback callback;
 @end

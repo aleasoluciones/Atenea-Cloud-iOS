@@ -16,9 +16,6 @@
 
 - (IBAction)onTouch:(id)sender;
 
-@property (nonatomic) SeafSyncDeviceFolderCellCallback callback;
-
-
 @end
 
 
@@ -31,13 +28,17 @@
     self.folderLabel.text = NSLocalizedString(@"Select source folder", @"Seafile");
 }
 
+
 - (IBAction)onTouch:(id)sender {
-    [self presentDocumentPicker];
-}
+    UIResponder *responder = self;
+    while (responder && ![responder isKindOfClass:[UIViewController class]]) {
+        responder = [responder nextResponder];
+    }
+    UIViewController *vc = (UIViewController *)responder;
 
-
-- (void) onFolderSelected:(SeafSyncDeviceFolderCellCallback) callback{
-    self.callback = callback;
+    if ([self.delegate respondsToSelector:@selector(seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:forCell:)]) {
+        [self.delegate seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:vc forCell:self];
+    }
 }
 
 - (void) setTitle:(NSString *) title{
@@ -48,35 +49,16 @@
     self.folderLabel.text = [folderURL lastPathComponent];
 }
 
--(void) presentDocumentPicker{
-    UIDocumentPickerViewController *documentPicker = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:@[(NSString *)kUTTypeFolder] inMode:UIDocumentPickerModeOpen];
-    documentPicker.delegate = self;
-    [self.window.rootViewController presentViewController:documentPicker animated:YES completion:nil];
-}
-
-- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
+-(void) setActiveState:(BOOL) active{
     
-    NSError *error;
-    NSURL *url = [urls firstObject];
-
-    if(url){
-        
-        if ([[NSFileManager defaultManager] ubiquityIdentityToken]) {
-            
-            [url startAccessingSecurityScopedResource];
-            
-            NSData* bookmark = [url bookmarkDataWithOptions:NSURLBookmarkCreationMinimalBookmark includingResourceValuesForKeys:nil relativeToURL:nil error:&error];
-            
-            
-            [self setFolderURL:url];
-            
-            if(self.callback){
-                self.callback(bookmark);
-            }
-            
-            [url stopAccessingSecurityScopedResource];
-        }
+    if(active){
+        self.contentView.alpha = 1;
+        self.userInteractionEnabled = TRUE;
+        return;
     }
+    
+    self.contentView.alpha = 0.1;
+    self.userInteractionEnabled = FALSE;
 }
 
 @end

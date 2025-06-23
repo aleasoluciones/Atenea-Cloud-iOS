@@ -87,6 +87,30 @@
 		58D40A7B1E9AF85100A68BEF /* seafile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D40A6C1E9AF7A400A68BEF /* seafile.xcdatamodeld */; };
 		58D40A7E1E9AF86D00A68BEF /* SeafData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D40A7C1E9AF86D00A68BEF /* SeafData.m */; };
 		D91519FD2DEF8999202CBDF8 /* libPods-SeafAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E63FA65242FF607104B845 /* libPods-SeafAction.a */; };
+		DD209DA12DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA02DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib */; };
+		DD209DA62DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA22DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib */; };
+		DD209DA72DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA32DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib */; };
+		DD209DA82DF2FFEC00858A14 /* SyncSettingDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA42DF2FFEC00858A14 /* SyncSettingDetailsViewController.xib */; };
+		DD616FFE2DF6AD670051D79F /* SeafSyncCheckBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DB22DF3004C00858A14 /* SeafSyncCheckBoxCell.xib */; };
+		DD616FFF2DF6ADDB0051D79F /* SeafSyncDeviceFolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAC2DF3004C00858A14 /* SeafSyncDeviceFolderCell.xib */; };
+		DD6170002DF6AE3D0051D79F /* SeafSyncDirSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAD2DF3004C00858A14 /* SeafSyncDirSelectorCell.xib */; };
+		DD6170012DF6B0660051D79F /* SeafSyncSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAE2DF3004C00858A14 /* SeafSyncSegmentedCell.xib */; };
+		DD6170022DF6B06F0051D79F /* SeafSyncAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAF2DF3004C00858A14 /* SeafSyncAlbumCell.xib */; };
+		DD6170032DF6B0820051D79F /* SeafSyncDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA92DF3004C00858A14 /* SeafSyncDateCell.xib */; };
+		DD6170042DF6B08B0051D79F /* SeafSyncSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DB02DF3004C00858A14 /* SeafSyncSettingCell.xib */; };
+		DD6170052DF6B08E0051D79F /* SeafSyncSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DB32DF3004C00858A14 /* SeafSyncSelectorCell.xib */; };
+		DDD952672E00593C00D14925 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A029981A16F95D009C9D7B /* MainInterface.storyboard */; };
+		DDD952682E0059FD00D14925 /* SyncSettingDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAA2DF3004C00858A14 /* SyncSettingDetailsViewController.xib */; };
+		DDD952692E005A0100D14925 /* SeafSyncDeviceFolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD69F4842DF71CA90026DB7D /* SeafSyncDeviceFolderCell.xib */; };
+		DDD9526A2E005A0400D14925 /* SeafSyncSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA02DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib */; };
+		DDD9526B2E005A0700D14925 /* SeafSyncAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAF2DF3004C00858A14 /* SeafSyncAlbumCell.xib */; };
+		DDD9526C2E005A0A00D14925 /* SeafSyncAlbumSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA22DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib */; };
+		DDD9526D2E005A0E00D14925 /* SeafSyncDirSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA32DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib */; };
+		DDD9526E2E005A1700D14925 /* SeafSyncDirSelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAD2DF3004C00858A14 /* SeafSyncDirSelectorCell.xib */; };
+		DDD9526F2E005A1D00D14925 /* SeafSyncSegmentedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DAE2DF3004C00858A14 /* SeafSyncSegmentedCell.xib */; };
+		DDD952702E005A2000D14925 /* SeafSyncSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DB02DF3004C00858A14 /* SeafSyncSettingCell.xib */; };
+		DDD952712E005A2D00D14925 /* SeafSyncCheckBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DB22DF3004C00858A14 /* SeafSyncCheckBoxCell.xib */; };
+		DDD952722E005A3000D14925 /* SeafSyncDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD209DA92DF3004C00858A14 /* SeafSyncDateCell.xib */; };
 		E70661FA2AE7CFE8009ABE85 /* BackgroundTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70661F92AE7CFE8009ABE85 /* BackgroundTasks.framework */; };
 		E71820012AA06A6900F95F78 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57814AF71AA8B55000D1D5D8 /* Photos.framework */; };
 		E71820022AA06A7A00F95F78 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57814AF71AA8B55000D1D5D8 /* Photos.framework */; };
@@ -808,6 +832,25 @@
 		B2C3D27B3B69553357824068 /* Pods-SeafFileProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.debug.xcconfig"; path = "Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		CCAC884A11C8021646B7FBDB /* Pods-SeafShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.debug.xcconfig"; path = "Target Support Files/Pods-SeafShare/Pods-SeafShare.debug.xcconfig"; sourceTree = "<group>"; };
 		D44FCEDEC6B2E85A944340F1 /* Pods-SeafFileProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafFileProvider.release.xcconfig"; path = "Target Support Files/Pods-SeafFileProvider/Pods-SeafFileProvider.release.xcconfig"; sourceTree = "<group>"; };
+		DD209DA02DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSettingsViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib; sourceTree = "<group>"; };
+		DD209DA22DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncAlbumSelectorViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib; sourceTree = "<group>"; };
+		DD209DA32DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDirSelectorViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib; sourceTree = "<group>"; };
+		DD209DA42DF2FFEC00858A14 /* SyncSettingDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SyncSettingDetailsViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib; sourceTree = "<group>"; };
+		DD209DA52DF2FFEC00858A14 /* SeafSyncSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSettingsViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib; sourceTree = "<group>"; };
+		DD209DA92DF3004C00858A14 /* SeafSyncDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDateCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDateCell.xib; sourceTree = "<group>"; };
+		DD209DAA2DF3004C00858A14 /* SyncSettingDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SyncSettingDetailsViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SyncSettingDetailsViewController.xib; sourceTree = "<group>"; };
+		DD209DAB2DF3004C00858A14 /* SeafSyncAlbumSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncAlbumSelectorViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncAlbumSelectorViewController.xib; sourceTree = "<group>"; };
+		DD209DAC2DF3004C00858A14 /* SeafSyncDeviceFolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDeviceFolderCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib; sourceTree = "<group>"; };
+		DD209DAD2DF3004C00858A14 /* SeafSyncDirSelectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDirSelectorCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDirSelectorCell.xib; sourceTree = "<group>"; };
+		DD209DAE2DF3004C00858A14 /* SeafSyncSegmentedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSegmentedCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSegmentedCell.xib; sourceTree = "<group>"; };
+		DD209DAF2DF3004C00858A14 /* SeafSyncAlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncAlbumCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncAlbumCell.xib; sourceTree = "<group>"; };
+		DD209DB02DF3004C00858A14 /* SeafSyncSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSettingCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSettingCell.xib; sourceTree = "<group>"; };
+		DD209DB12DF3004C00858A14 /* SeafSyncDirSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDirSelectorViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncDirSelectorViewController.xib; sourceTree = "<group>"; };
+		DD209DB22DF3004C00858A14 /* SeafSyncCheckBoxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncCheckBoxCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncCheckBoxCell.xib; sourceTree = "<group>"; };
+		DD209DB32DF3004C00858A14 /* SeafSyncSelectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSelectorCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncSelectorCell.xib; sourceTree = "<group>"; };
+		DD209DB42DF3004C00858A14 /* SeafSyncSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncSettingsViewController.xib; path = Pod/Classes/SeafSync/ui/ViewControllers/SeafSyncSettingsViewController.xib; sourceTree = "<group>"; };
+		DD61DBC52DF992C1008D918E /* SeafFileProviderActionsUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SeafFileProviderActionsUI.entitlements; sourceTree = "<group>"; };
+		DD69F4842DF71CA90026DB7D /* SeafSyncDeviceFolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SeafSyncDeviceFolderCell.xib; path = Pod/Classes/SeafSync/ui/TableViewCells/SeafSyncDeviceFolderCell.xib; sourceTree = "<group>"; };
 		E70661F92AE7CFE8009ABE85 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
 		E74EA3C32B03785C00C22042 /* plus_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_blue.png; sourceTree = "<group>"; };
 		E74EA3CA2B037B5B00C22042 /* ellipsis2_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipsis2_blue.png; sourceTree = "<group>"; };
@@ -1200,6 +1243,24 @@
 		57DB826215A833F900097CEC = {
 			isa = PBXGroup;
 			children = (
+				DD69F4842DF71CA90026DB7D /* SeafSyncDeviceFolderCell.xib */,
+				DD209DA02DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib */,
+				DD209DAF2DF3004C00858A14 /* SeafSyncAlbumCell.xib */,
+				DD209DA22DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib */,
+				DD209DA32DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib */,
+				DD209DA52DF2FFEC00858A14 /* SeafSyncSettingsViewController.xib */,
+				DD209DAC2DF3004C00858A14 /* SeafSyncDeviceFolderCell.xib */,
+				DD209DAD2DF3004C00858A14 /* SeafSyncDirSelectorCell.xib */,
+				DD209DB12DF3004C00858A14 /* SeafSyncDirSelectorViewController.xib */,
+				DD209DAE2DF3004C00858A14 /* SeafSyncSegmentedCell.xib */,
+				DD209DB32DF3004C00858A14 /* SeafSyncSelectorCell.xib */,
+				DD209DB02DF3004C00858A14 /* SeafSyncSettingCell.xib */,
+				DD209DB42DF3004C00858A14 /* SeafSyncSettingsViewController.xib */,
+				DD209DA42DF2FFEC00858A14 /* SyncSettingDetailsViewController.xib */,
+				DD209DAB2DF3004C00858A14 /* SeafSyncAlbumSelectorViewController.xib */,
+				DD209DB22DF3004C00858A14 /* SeafSyncCheckBoxCell.xib */,
+				DD209DA92DF3004C00858A14 /* SeafSyncDateCell.xib */,
+				DD209DAA2DF3004C00858A14 /* SyncSettingDetailsViewController.xib */,
 				E7B5E2742BCE9924008C7CE5 /* PrivacyInfo.xcprivacy */,
 				58D40A461E9ACEA000A68BEF /* common */,
 				57B14B6B1DF5325A0045112E /* SeafAction */,
@@ -1343,6 +1404,7 @@
 		F5AD6ADC24C42D140067F9AF /* SeafFileProviderActionsUI */ = {
 			isa = PBXGroup;
 			children = (
+				DD61DBC52DF992C1008D918E /* SeafFileProviderActionsUI.entitlements */,
 				F5AD6ADD24C42D140067F9AF /* DocumentActionViewController.h */,
 				F5AD6ADE24C42D140067F9AF /* DocumentActionViewController.m */,
 				F5AD6AE024C42D140067F9AF /* MainInterface.storyboard */,
@@ -1704,6 +1766,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD209DA62DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib in Resources */,
+				DD209DA12DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib in Resources */,
+				DD209DA72DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib in Resources */,
+				DD616FFF2DF6ADDB0051D79F /* SeafSyncDeviceFolderCell.xib in Resources */,
+				DD209DA82DF2FFEC00858A14 /* SyncSettingDetailsViewController.xib in Resources */,
+				DDD952672E00593C00D14925 /* MainInterface.storyboard in Resources */,
+				DD6170052DF6B08E0051D79F /* SeafSyncSelectorCell.xib in Resources */,
+				DD6170042DF6B08B0051D79F /* SeafSyncSettingCell.xib in Resources */,
+				DD6170032DF6B0820051D79F /* SeafSyncDateCell.xib in Resources */,
+				DD6170022DF6B06F0051D79F /* SeafSyncAlbumCell.xib in Resources */,
+				DD6170012DF6B0660051D79F /* SeafSyncSegmentedCell.xib in Resources */,
+				DD6170002DF6AE3D0051D79F /* SeafSyncDirSelectorCell.xib in Resources */,
+				DD616FFE2DF6AD670051D79F /* SeafSyncCheckBoxCell.xib in Resources */,
 				F52111CB21E1C12000D93BB8 /* SeafEventCell.xib in Resources */,
 				F5DF74D424FE83DB004CAB1E /* InfoPlist.strings in Resources */,
 				F5DF752224FE83DB004CAB1E /* unstar2.png in Resources */,
@@ -1803,6 +1878,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDD952722E005A3000D14925 /* SeafSyncDateCell.xib in Resources */,
+				DDD952712E005A2D00D14925 /* SeafSyncCheckBoxCell.xib in Resources */,
+				DDD9526C2E005A0A00D14925 /* SeafSyncAlbumSelectorViewController.xib in Resources */,
+				DDD952682E0059FD00D14925 /* SyncSettingDetailsViewController.xib in Resources */,
+				DDD9526A2E005A0400D14925 /* SeafSyncSettingsViewController.xib in Resources */,
+				DDD952702E005A2000D14925 /* SeafSyncSettingCell.xib in Resources */,
+				DDD9526F2E005A1D00D14925 /* SeafSyncSegmentedCell.xib in Resources */,
+				DDD9526D2E005A0E00D14925 /* SeafSyncDirSelectorViewController.xib in Resources */,
+				DDD9526E2E005A1700D14925 /* SeafSyncDirSelectorCell.xib in Resources */,
+				DDD952692E005A0100D14925 /* SeafSyncDeviceFolderCell.xib in Resources */,
+				DDD9526B2E005A0700D14925 /* SeafSyncAlbumCell.xib in Resources */,
 				F5DF754724FE83DB004CAB1E /* tab-star.png in Resources */,
 				F5DF751D24FE83DB004CAB1E /* arrowright.png in Resources */,
 				F5DF752324FE83DB004CAB1E /* unstar2.png in Resources */,
@@ -2745,9 +2831,9 @@
 				GCC_PREFIX_HEADER = "seafile/seafile-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.99.4;
+				MARKETING_VERSION = 2.99.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
@@ -2783,9 +2869,9 @@
 				GCC_PREFIX_HEADER = "seafile/seafile-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.99.4;
+				MARKETING_VERSION = 2.99.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
@@ -2828,7 +2914,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SeafFileProvider/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -2868,7 +2954,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SeafFileProvider/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2912,7 +2998,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SeafFileProviderUI/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.9.23;
@@ -2954,7 +3040,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SeafFileProviderUI/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.9.23;
@@ -2999,7 +3085,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3040,7 +3126,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafAction/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3170,6 +3256,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SeafFileProviderActionsUI/SeafFileProviderActionsUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -3186,7 +3273,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafFileProviderActionsUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -3215,6 +3302,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = SeafFileProviderActionsUI/SeafFileProviderActionsUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
@@ -3229,7 +3317,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafFileProviderActionsUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3277,7 +3365,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafShare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3322,7 +3410,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = SeafShare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 2.9.23;
 				MTL_ENABLE_DEBUG_INFO = NO;

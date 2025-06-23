@@ -88,6 +88,7 @@
  *  @brief Submits a specific background task to the background task scheduler.
  *  @param task The background task to be submitted.
  */
+/*
 - (void)submitBackgroundTask:(id<SeafBackgroundTaskProtocol>)task {
     NSError *error = nil;
     if (@available(iOS 13.0, *)) {
@@ -101,5 +102,43 @@
         NSLog(@"SYNC: Scheduling background task OK: %@", task.identifier);
     }
 }
+*/
+
+- (void)submitBackgroundTask:(id<SeafBackgroundTaskProtocol>)task {
+    NSError *error = nil;
+    if (@available(iOS 13.0, *)) {
+        BGTaskRequest *taskRequest = [task taskRequest];
+        [BGTaskScheduler.sharedScheduler submitTaskRequest:taskRequest error:&error];
+        
+        if (error) {
+            NSLog(@"SYNC: Error scheduling background task: %@ (Code: %ld)",
+                  error.localizedDescription, (long)error.code);
+            
+            // Códigos de error comunes:
+            // BGTaskSchedulerErrorCodeUnavailable = 1
+            // BGTaskSchedulerErrorCodeTooManyPendingTaskRequests = 2
+            // BGTaskSchedulerErrorCodeNotPermitted = 3
+            
+            switch (error.code) {
+                case 1: // BGTaskSchedulerErrorCodeUnavailable
+                    NSLog(@"SYNC: Background tasks unavailable");
+                    break;
+                case 2: // BGTaskSchedulerErrorCodeTooManyPendingTaskRequests
+                    NSLog(@"SYNC: Too many pending tasks");
+                    break;
+                case 3: // BGTaskSchedulerErrorCodeNotPermitted
+                    NSLog(@"SYNC: Task not permitted - check Info.plist");
+                    break;
+                default:
+                    NSLog(@"SYNC: Unknown error code: %ld", (long)error.code);
+                    break;
+            }
+            return;
+        }
+        NSLog(@"SYNC: Background task scheduled successfully: %@", task.identifier);
+    }
+}
+
+
 
 @end

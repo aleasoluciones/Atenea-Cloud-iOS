@@ -223,6 +223,8 @@ enum {
     [self.formatter setDateFormat:@"yyyy-MM-dd HH.mm.ss"];
     
     self.tableView.estimatedRowHeight = 55;
+    self.tableView.rowHeight = 60;
+    
     self.state = STATE_INIT;
     
     UIView *bView = [[UIView alloc] initWithFrame:self.tableView.frame];
@@ -1669,39 +1671,45 @@ enum {
         [self deleteDir: (SeafDir*)entry];
 }
 
-- (void)popupDeletedLibraries{
-    SeafRepos *repos = (SeafRepos*)self.directory;
+- (void)popupDeletedLibraries {
+    SeafRepos *repos = (SeafRepos *)self.directory;
     NSString *repoId = repos.repoId;
-    
-    UINavigationController *nestedNavigationController = [[UINavigationController alloc] init];
-    
-    id provider = [[SeafRecoveryRepositoryProvider alloc] initWithConnection:self.connection ];
-    
-    SeafRecoverySelectorViewController *controller = [[SeafRecoverySelectorViewController alloc] initWithConnection:self.connection andProvider:provider editable:TRUE clearable:FALSE];
+
+    id provider = [[SeafRecoveryRepositoryProvider alloc] initWithConnection:self.connection];
+
+    SeafRecoverySelectorViewController *controller =
+        [[SeafRecoverySelectorViewController alloc] initWithConnection:self.connection
+                                                           andProvider:provider
+                                                               editable:YES
+                                                              clearable:YES];
     controller.delegate = self;
-    
-    [nestedNavigationController pushViewController:controller animated:YES];
-    
-    [self.navigationController presentViewController:nestedNavigationController animated:YES completion:nil];
-    
+
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+
+    nav.modalPresentationStyle = UIModalPresentationFormSheet; // o FullScreen si prefieres
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 
-- (void)popupDeletedFiles{
-    SeafRepos *repos = (SeafRepos*)self.directory;
-    
-    UINavigationController *nestedNavigationController = [[UINavigationController alloc] init];
-    
-    id provider = [[SeafRecoveryFileFolderProvider alloc] initWithConnection:self.connection andRepository:self.directory.repoId andPath:self.directory.path];
-    
-    SeafRecoverySelectorViewController *controller = [[SeafRecoverySelectorViewController alloc] initWithConnection:self.connection andProvider:provider  editable:TRUE clearable:TRUE];
-    controller.delegate = self;
-    
-    [nestedNavigationController pushViewController:controller animated:YES];
-    
-    [self.navigationController presentViewController:nestedNavigationController animated:YES completion:nil];
-}
+- (void)popupDeletedFiles {
+    SeafRepos *repos = (SeafRepos *)self.directory;
 
+    id provider = [[SeafRecoveryFileFolderProvider alloc] initWithConnection:self.connection
+                                                              andRepository:self.directory.repoId
+                                                                    andPath:self.directory.path];
+
+    SeafRecoverySelectorViewController *controller =
+        [[SeafRecoverySelectorViewController alloc] initWithConnection:self.connection
+                                                           andProvider:provider
+                                                               editable:YES
+                                                              clearable:YES];
+    controller.delegate = self;
+
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+
+    nav.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:nav animated:YES completion:nil];
+}
 
 
 - (void)handleAction:(NSString *)title

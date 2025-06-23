@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface SeafRecoverySelectorViewController :  UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface SeafRecoverySelectorViewController : UITableViewController
 
 -(id) initWithConnection:(SeafConnection *) connection andProvider:(id<SeafRecoveryItemsProvider>) provider editable:(BOOL) editable clearable:(BOOL) clearable;
 

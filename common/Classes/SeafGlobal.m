@@ -18,7 +18,7 @@
 #import "Version.h"
 #import "SeafDbCacheProvider.h"
 #import "SeafStorage.h"
-
+#import <MobileCoreServices/MobileCoreServices.h>
 
 /*
 static NSError * NewNSErrorFromException(NSException * exc) {

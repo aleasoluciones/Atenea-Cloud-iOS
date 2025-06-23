@@ -24,7 +24,6 @@
 @interface SeafRecoverySelectorViewController ()
 
 @property (nonatomic) SeafConnection *connection;
-@property (unsafe_unretained, nonatomic) IBOutlet UITableView *tableView;
 @property NSArray<id<SeafRecoveryItem>> *availableItemsToRecover;
 @property SeafTrashRecoverer *recoverer;
 @property UIActivityIndicatorView *loadingView;
@@ -67,8 +66,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Recovery", @"Seafile");
-    
+        
     [self registerCells];
+    
+    //self.tableView.backgroundColor = [UIColor whiteColor];
+    self.tableView.tableFooterView = [[UIView alloc] init];
+        
     [self loadItemsToRecover];
     
     if(self.editable){
@@ -80,18 +83,13 @@
  Adds navigation buttons to the navigation bar.
  */
 -(void)renderNavigationButtons {
-    
-    
     if (@available(iOS 13.0, *)) {
         
         self.confirmButtom = [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"arrow.up.bin"] style:UIBarButtonItemStylePlain target:self action:@selector(confirmRecover)];
         
         self.selectButtom = [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"checkmark.square"] style:UIBarButtonItemStylePlain target:self action:@selector(activateSelect)];
-        
-        
  
-            self.clearTrashButton = [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"trash.slash"] style:UIBarButtonItemStylePlain target:self action:@selector(clearTrash)];
-        
+        self.clearTrashButton = [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"trash.slash"] style:UIBarButtonItemStylePlain target:self action:@selector(clearTrash)];
         
     } else {
         
@@ -123,11 +121,15 @@
     [self showLoadingView];
     
     [self.provider getItems:^(NSArray<id<SeafRecoveryItem>> * _Nonnull items) {
-        
         [self dismissLoadingView];
         self.availableItemsToRecover = items;
         [self displayEmptyTrashViewIfNeeded];
-        [self.tableView reloadData];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.tableView.dataSource = self;
+            self.tableView.delegate = self;
+            [self.tableView reloadData];
+        });
     }];
 }
 
@@ -212,8 +214,6 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
 }
 
-
-
 -(void) navigateToChildFolder:(id<SeafRecoveryItem>) parent{
     
     if(parent.recoveryItemType != SeafRecoveryItemTypeRepository){
@@ -242,8 +242,6 @@
     }
 }
 
-
-
 /**
  Called when a row is deselected in the table view.
  */
@@ -271,6 +269,10 @@
     self.confirmButtom.enabled = false;
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
 /**
  Returns the number of rows in the specified section of the table view.
  */
@@ -284,10 +286,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     id<SeafRecoveryItem> itemToRecover = [self.availableItemsToRecover objectAtIndex:indexPath.row];
-    
+        
     if(itemToRecover.isDir){
         cell.imageView.image = [UIImage imageForMimeType:nil ext:@"text-directory"];
-        
     }else{
         cell.imageView.image = [UIImage imageForMimeType:[FileMimeType mimeType:[itemToRecover fullPath]] ext:nil];
     }
@@ -295,6 +296,7 @@
     cell.textLabel.font = [UIFont systemFontOfSize:15];
     cell.textLabel.text = itemToRecover.name;
     cell.accessoryType = [itemToRecover isDir] ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
+    
     return cell;
 }
 

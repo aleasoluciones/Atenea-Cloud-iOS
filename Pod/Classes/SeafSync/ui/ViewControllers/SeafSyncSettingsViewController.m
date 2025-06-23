@@ -70,9 +70,20 @@
  * @param connection The SeafConnection for which the settings are displayed.
  * @return An initialized instance of SeafSyncSettingsView.
  */
+/*
 -(id) initWithConnection:(SeafConnection *) connection{
     self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
     if(self){
+        self.connection = connection;
+    }
+    return self;
+}
+*/
+
+- (instancetype)initWithConnection:(SeafConnection *)connection {   
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]]; // Obtiene el bundle correcto
+    self = [super initWithNibName:@"SeafSyncSettingsViewController" bundle:bundle];
+    if (self) {
         self.connection = connection;
     }
     return self;

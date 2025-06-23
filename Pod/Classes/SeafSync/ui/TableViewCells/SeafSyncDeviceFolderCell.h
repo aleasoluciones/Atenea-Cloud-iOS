@@ -6,23 +6,26 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SeafSyncBaseUITableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SeafSyncDeviceFolderCellDelegate;
 
-typedef void (^SeafSyncDeviceFolderCellCallback)(NSData *bookmark);
+@interface SeafSyncDeviceFolderCell : UITableViewCell
 
+@property (nonatomic, weak) id<SeafSyncDeviceFolderCellDelegate> delegate;
+@property (nonatomic, copy) void (^folderSelectedCallback)(NSData *bookmark);
 
-@interface SeafSyncDeviceFolderCell : SeafSyncBaseUITableViewCell<UIDocumentPickerDelegate>
-
-- (void) onFolderSelected:(SeafSyncDeviceFolderCellCallback) callback;
-
-- (void) setTitle:(NSString *) title;
-
-- (void) setFolderURL:(NSURL *) folderURL;
+- (void)setFolderURL:(NSURL *)url;
+- (void)setTitle:(NSString *)title;
+- (void)onFolderSelected:(void (^)(NSData *bookmark))callback;
+- (void)setActiveState:(BOOL)active;
 
 @end
 
+@protocol SeafSyncDeviceFolderCellDelegate <NSObject>
+- (void)seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:(UIViewController *)controller
+                                                                forCell:(SeafSyncDeviceFolderCell *)cell;
+@end
 
 NS_ASSUME_NONNULL_END

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @brief SeafSyncSettingsViewController class for managing synchronization settings.
  */
-@interface SeafSyncSettingsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface SeafSyncSettingsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIDocumentPickerDelegate>
 
 /**
  * @brief Constant representing the section index for active synchronization settings.

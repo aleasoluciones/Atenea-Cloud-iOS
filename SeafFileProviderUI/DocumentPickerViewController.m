@@ -23,6 +23,7 @@
 
 @implementation DocumentPickerViewController
 
+/*
 -(void)prepareForPresentationInMode:(UIDocumentPickerMode)mode
 {
     [SeafGlobal.sharedObject loadAccounts];
@@ -30,6 +31,22 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView reloadData];
     Debug("mode: %lu, documentStorageURL:%@", (unsigned long)mode, self.documentStorageURL);
+}
+*/
+
+-(void)prepareForPresentationInMode:(UIDocumentPickerMode)mode
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [SeafGlobal.sharedObject loadAccounts];
+        NSArray *conns = SeafGlobal.sharedObject.conns;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self->_conns = conns;
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+            [self.tableView reloadData];
+            Debug("mode: %lu, documentStorageURL:%@", (unsigned long)mode, self.documentStorageURL);
+        });
+    });
 }
 
 #pragma mark - Table view data source

@@ -7,6 +7,7 @@
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).enqueuer_background_task</string>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).uploader_background_task</string>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER).expirator_background_task</string>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER).sync-task</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
@@ -16,30 +17,14 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeIconFiles</key>
-			<array>
-				<string>app-icon-ipad-50</string>
-				<string>app-icon-ipad-72</string>
-			</array>
+			<array/>
 			<key>CFBundleTypeName</key>
-			<string>File</string>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
+			<string>Tu Documento</string>
 			<key>LSHandlerRank</key>
-			<string>Alternate</string>
+			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>public.content</string>
-				<string>public.text</string>
-				<string>public.plain-text</string>
-				<string>public.html</string>
-				<string>public.presentation</string>
-				<string>public.video</string>
-				<string>public.mpeg</string>
-				<string>public.audio</string>
-				<string>public.image</string>
-				<string>public.jpeg</string>
-				<string>public.tiff</string>
-				<string>public.data</string>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).documento</string>
 			</array>
 		</dict>
 	</array>
@@ -118,7 +103,7 @@
 		<key>MyFileAccessService</key>
 		<dict>
 			<key>NSFileProviderDomainIdentifier</key>
-			<string>com.cloud.atenea</string>
+			<string>com.ateneacloud.ios.SeafFileApp</string>
 			<key>NSFileProviderMode</key>
 			<array>
 				<string>UIDocumentPickerModeImport</string>
@@ -193,5 +178,25 @@
 	<true/>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Tu Documento</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.tucompania.tuapp.documento</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>tuext</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

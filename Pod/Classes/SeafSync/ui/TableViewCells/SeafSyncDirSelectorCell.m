@@ -29,6 +29,7 @@
 }
 
 - (IBAction)onTouch:(id)sender {
+    NSLog(@"DIR FOLDER CELL - onTouch ejecutado");
     [self navigateToDirSelectorController];
 }
 
@@ -43,18 +44,34 @@
         return;
     }
     
+    UIViewController *presentingViewController = [self findViewController];
+    
+    if (!presentingViewController) {
+        NSLog(@"ERROR: No se pudo encontrar el view controller para presentar el selector");
+        return;
+    }
+    
     UINavigationController *nestedNavigationController = [[UINavigationController alloc] init];
     
     SeafSyncDirSelectorViewController *dirSelector = [[SeafSyncDirSelectorViewController alloc] initWithConnection:self._connection];
     [dirSelector setDelegate:self];
     
-    
     [nestedNavigationController pushViewController:dirSelector animated:YES];
     
-    [self.window.rootViewController presentViewController:nestedNavigationController animated:YES completion:nil];
-    return;
+    [presentingViewController presentViewController:nestedNavigationController animated:YES completion:nil];
 }
 
+// MÉTODO AUXILIAR: Encontrar el view controller que contiene esta celda
+- (UIViewController *)findViewController {
+    UIResponder *responder = self;
+    while (responder) {
+        responder = [responder nextResponder];
+        if ([responder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)responder;
+        }
+    }
+    return nil;
+}
 -(void) onSelectDirecory:(SeafDir *) directory{
 
     if(self.callback){

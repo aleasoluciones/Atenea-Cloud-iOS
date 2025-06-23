@@ -239,7 +239,7 @@
             [Utils linkFileAtPath:self.lpath to:[SeafStorage.sharedObject documentPath:oid] error:nil];
             // files.app menory limit 15MB, reSizeImage will use more than 15MB
             // resize thumb while reaching memory limit in share extension
-            if ([[Utils currentBundleIdentifier] isEqualToString:@"com.cloud.atenea"]) {
+            if ([[Utils currentBundleIdentifier] isEqualToString:@"com.ateneacloud.ios"]) {
                 [self saveThumbToLocal:oid];
             }
             

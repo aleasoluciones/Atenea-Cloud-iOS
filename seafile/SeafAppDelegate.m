@@ -331,7 +331,9 @@
     [_global migrate];
     [SeafUIBridge initializeWith:self.window];
     [self initTabController];
+    
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.0/255.0 green:173.0/255.0 blue:239.0/255.0 alpha:1.0]];
+
     [SeafGlobal.sharedObject loadAccounts];
 
     self.window.backgroundColor = [UIColor whiteColor];

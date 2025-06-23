@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 #import "DocumentPickerViewController.h"
 #import "SeafDir.h"
 
-@interface SeafProviderFileViewController : UITableViewController
+@interface SeafProviderFileViewController : UITableViewController<UIDocumentPickerDelegate>
 
 @property (strong, nonatomic) SeafDir *directory;
 @property (strong) DocumentPickerViewController *root;
