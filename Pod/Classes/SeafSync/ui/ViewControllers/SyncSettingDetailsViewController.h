@@ -6,17 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 #import "SeafSyncSettings.h"
 #import "SeafSyncronizer.h"
-#import "SeafSyncDeviceFolderCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  * @brief The SyncSettingDetailsViewController class for managing synchronization setting details.
  */
-@interface SyncSettingDetailsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIDocumentPickerDelegate, SeafSyncDeviceFolderCellDelegate>
+@interface SyncSettingDetailsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 /**
  * @brief Constant representing the section index for the error in synchronization settings.
@@ -49,7 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 #define DEFAULT_SYNC_CELL_IDENTIFIER    @"DefaultSyncSettingCell"
 
-@property (nonatomic, assign) BOOL isPickerPresented;
 /**
  * @brief Initializes a new instance of SyncSettingDetailsViewController.
  *
@@ -62,3 +59,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+

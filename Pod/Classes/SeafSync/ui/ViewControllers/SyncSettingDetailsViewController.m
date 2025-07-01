@@ -33,8 +33,7 @@
 
 @class SeafEnqueuerProtocol;
 
-@interface SyncSettingDetailsViewController () <UITableViewDelegate, UITableViewDataSource, SeafSyncDeviceFolderCellDelegate, UIDocumentPickerDelegate>
-@property (nonatomic, weak) SeafSyncDeviceFolderCell *folderCell;
+@interface SyncSettingDetailsViewController ()
 
 /**
  * @brief Table view for displaying synchronization setting details.
@@ -558,23 +557,19 @@
  */
 - (UITableViewCell *)cellForSourceRow:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath {
     
-
+    
     //Source => Folder
-    if (self.settings.sourceType == Folder) {
+    if(self.settings.sourceType == Folder){
         SeafSyncDeviceFolderCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SeafSyncDeviceFolderCell class]) forIndexPath:indexPath];
-        [cell setTitle:NSLocalizedString(@"Source folder", @"Seafile")];
+        [cell setTitle: NSLocalizedString(@"Source folder", @"Seafile")];
         [cell setFolderURL:[SeafSyncUtils urlFromBookmark:self.settings.resourceId]];
-        cell.delegate = self;
-
-        cell.folderSelectedCallback = ^(NSData * _Nonnull bookmark) {
+        [cell onFolderSelected:^(NSData * _Nonnull bookmark) {
             self.settings.resourceId = bookmark;
             self.settings.fullSourceURL = [[SeafSyncUtils urlFromBookmark:bookmark] absoluteString];
-        };
+        }];
         
-        self.folderCell = cell;
         return cell;
     }
-    
     
     //Source => Album
     if(self.settings.sourceType == Album){
@@ -595,123 +590,6 @@
     return cell;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- (void)seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:(UIViewController *)controller
-                                                                forCell:(SeafSyncDeviceFolderCell *)cell {
-  /*
-   // OK - THIS WORKS
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Test"
-                                                                    message:@"Esto es un test"
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-        
-    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    [alert addAction:ok];
-        
-    [self presentViewController:alert animated:YES completion:nil];
-*/
-    
-    
-    
-    UTType *type = UTTypeData;
-    UIDocumentPickerViewController *picker = [[UIDocumentPickerViewController alloc] initForOpeningContentTypes:@[type]];
-    picker.delegate = self;
-    picker.modalPresentationStyle = UIModalPresentationFullScreen;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self presentViewController:picker animated:YES completion:nil];
-    });
-    
-    
-    /*
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    //imagePicker.delegate = self;
-    //imagePicker.allowsEditing = YES; // Si quieres permitir recorte
-    
-    [self presentViewController:imagePicker animated:YES completion:nil];
-    */
-    
-}
-
-- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
-    NSURL *selectedURL = urls.firstObject;
-    if (selectedURL) {
-        BOOL shouldStopAccessing = [selectedURL startAccessingSecurityScopedResource];
-        
-        @try {
-            NSLog(@"Seleccionado: %@", selectedURL.path);
-            // Aquí puedes guardar la URL, actualizar una celda, etc.
-            
-            // Ejemplo: guardar la URL en NSUserDefaults (convertida a bookmarkData)
-            // NSData *bookmarkData = [selectedURL bookmarkDataWithOptions:0
-            //                            includingResourceValuesForKeys:nil
-            //                                             relativeToURL:nil
-            //                                                         error:nil];
-            // [[NSUserDefaults standardUserDefaults] setObject:bookmarkData forKey:@"savedFolderBookmark"];
-
-        } @finally {
-            if (shouldStopAccessing) {
-                [selectedURL stopAccessingSecurityScopedResource];
-            }
-        }
-    }
-}
-
-
-- (void)documentPickerWasCancelled:(UIDocumentPickerViewController *)controller {
-    NSLog(@"Picker cancelado por el usuario.");
-}
-
-
-
-/*
-- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
-    self.isPickerPresented = NO;
-    NSURL *url = urls.firstObject;
-    if (url) {
-        NSError *error = nil;
-        [url startAccessingSecurityScopedResource];
-        NSData *bookmark = [url bookmarkDataWithOptions:NSURLBookmarkCreationMinimalBookmark
-                            includingResourceValuesForKeys:nil
-                                             relativeToURL:nil
-                                                     error:&error];
-        [url stopAccessingSecurityScopedResource];
-
-        if (bookmark && self.folderCell.folderSelectedCallback) {
-            self.folderCell.folderSelectedCallback(bookmark);
-        }
-    }
-}
-
-- (void)documentPickerWasCancelled:(UIDocumentPickerViewController *)controller {
-    self.isPickerPresented = NO;
-    NSLog(@"El usuario canceló la selección de documentos.");
-}
-*/
-
-
-
-
-
 /**
  * @brief Tells the delegate that the specified row is now selected.
  *
@@ -728,6 +606,9 @@
         [SeafAlertChangePlan showAlert: NSLocalizedString(@"ACCOUNT_PLAN_DISABLE_OPCION", @"Seafile") into:self];
     }
 }
+
+
+
 
 /**
  * Check if the user's plan supports customizable backups.

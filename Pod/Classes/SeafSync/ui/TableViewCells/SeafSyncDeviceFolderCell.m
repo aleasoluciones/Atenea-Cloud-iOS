@@ -16,6 +16,9 @@
 
 - (IBAction)onTouch:(id)sender;
 
+@property (nonatomic) SeafSyncDeviceFolderCellCallback callback;
+
+
 @end
 
 
@@ -28,17 +31,13 @@
     self.folderLabel.text = NSLocalizedString(@"Select source folder", @"Seafile");
 }
 
-
 - (IBAction)onTouch:(id)sender {
-    UIResponder *responder = self;
-    while (responder && ![responder isKindOfClass:[UIViewController class]]) {
-        responder = [responder nextResponder];
-    }
-    UIViewController *vc = (UIViewController *)responder;
+    [self presentDocumentPicker];
+}
 
-    if ([self.delegate respondsToSelector:@selector(seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:forCell:)]) {
-        [self.delegate seafSyncDeviceFolderCellDidRequestFolderSelectionFromController:vc forCell:self];
-    }
+
+- (void) onFolderSelected:(SeafSyncDeviceFolderCellCallback) callback{
+    self.callback = callback;
 }
 
 - (void) setTitle:(NSString *) title{
@@ -49,16 +48,35 @@
     self.folderLabel.text = [folderURL lastPathComponent];
 }
 
--(void) setActiveState:(BOOL) active{
+-(void) presentDocumentPicker{
+    UIDocumentPickerViewController *documentPicker = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:@[(NSString *)kUTTypeFolder] inMode:UIDocumentPickerModeOpen];
+    documentPicker.delegate = self;
+    [self.window.rootViewController presentViewController:documentPicker animated:YES completion:nil];
+}
+
+- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
     
-    if(active){
-        self.contentView.alpha = 1;
-        self.userInteractionEnabled = TRUE;
-        return;
+    NSError *error;
+    NSURL *url = [urls firstObject];
+
+    if(url){
+        
+        if ([[NSFileManager defaultManager] ubiquityIdentityToken]) {
+            
+            [url startAccessingSecurityScopedResource];
+            
+            NSData* bookmark = [url bookmarkDataWithOptions:NSURLBookmarkCreationMinimalBookmark includingResourceValuesForKeys:nil relativeToURL:nil error:&error];
+            
+            
+            [self setFolderURL:url];
+            
+            if(self.callback){
+                self.callback(bookmark);
+            }
+            
+            [url stopAccessingSecurityScopedResource];
+        }
     }
-    
-    self.contentView.alpha = 0.1;
-    self.userInteractionEnabled = FALSE;
 }
 
 @end
