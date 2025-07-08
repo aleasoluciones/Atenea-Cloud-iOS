@@ -24,9 +24,6 @@
 #import "ExtentedString.h"
 #import "Debug.h"
 
-#import <UIKit/UIKit.h>
-#import <MobileCoreServices/MobileCoreServices.h>
-
 typedef void (^ModificationHandler)(NSString *repoId, NSString *path);
 
 @interface SeafActivityViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -60,16 +57,13 @@ typedef void (^ModificationHandler)(NSString *repoId, NSString *path);
     [super viewDidLoad];
     if([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeAll;
-    
+
     // Do any additional setup after loading the view from its nib.
     self.title = NSLocalizedString(@"Activities", @"Seafile");
     self.navigationItem.rightBarButtonItem = [self getBarItemAutoSize:@"refresh2_blue" action:@selector(refresh:)];
-    //    self.navigationController.navigationBar.tintColor = BAR_COLOR;
-    
+//    self.navigationController.navigationBar.tintColor = BAR_COLOR;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 60.0;
-    self.tableView.rowHeight = 60;
-    
     self.tableView.tableFooterView = [UIView new];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -81,38 +75,22 @@ typedef void (^ModificationHandler)(NSString *repoId, NSString *path);
         self.navigationController.navigationBar.standardAppearance = barAppearance;
         self.navigationController.navigationBar.scrollEdgeAppearance = barAppearance;
     }
-    
-    
-    
-    self.title = @"Selector de Ficheros";
 
-    UIBarButtonItem *selectFolderButton = [[UIBarButtonItem alloc]
-                                           initWithTitle:@"Seleccionar"
-                                           style:UIBarButtonItemStylePlain
-                                           target:self
-                                           action:@selector(selectFolderTapped)];
-
-    self.navigationItem.rightBarButtonItem = selectFolderButton;
-    
-    
-    
-    
-    
     self.eventsMore = true;
     self.eventsOffset = 0;
     _eventDetails = [NSMutableDictionary new];
     _defaultAccountImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"account" ofType:@"png"]];
-    
+
     NSArray *keys2 = [NSArray arrayWithObjects:
                       @"Reverted library to status at",
                       @"Recovered deleted directory",
                       @"Changed library name or description",
                       nil];
     NSArray *values2 = [NSArray arrayWithObjects:
-                        NSLocalizedString(@"Reverted library to status at", @"Seafile"),
-                        NSLocalizedString(@"Recovered deleted directory", @"Seafile"),
-                        NSLocalizedString(@"Changed library name or description", @"Seafile"),
-                        nil];
+                       NSLocalizedString(@"Reverted library to status at", @"Seafile"),
+                       NSLocalizedString(@"Recovered deleted directory", @"Seafile"),
+                       NSLocalizedString(@"Changed library name or description", @"Seafile"),
+                       nil];
     self.prefixMap = [NSDictionary dictionaryWithObjects:values2 forKeys:keys2];
     self.typesMap = [NSDictionary dictionaryWithObjectsAndKeys:
                      NSLocalizedString(@"files", @"Seafile"), @"files",

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0757ED412E13FDC000F7B728 /* Model.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 0757ED3F2E13FDC000F7B728 /* Model.xcdatamodeld */; };
 		2FEC880895535C4E3DA1DBDB /* libPods-SeafFileProviderUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9356E62ACA55C4C9C3CF35 /* libPods-SeafFileProviderUI.a */; };
 		43DA5103CF021CC81FAE555B /* libPods-SeafShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864CF4A8C08E3DD2555ED7F4 /* libPods-SeafShare.a */; };
 		4A5E88CF22AD3102008146BA /* SeafActivitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E88CD22AD3102008146BA /* SeafActivitiesCell.m */; };
@@ -702,7 +703,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		57E228E51A0F4EE700C92330 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
@@ -713,11 +714,12 @@
 				57B14B751DF5325B0045112E /* SeafAction.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0757ED402E13FDC000F7B728 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		08FBD6D491F04703C00CCB51 /* Pods-SeafAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.debug.xcconfig"; path = "Target Support Files/Pods-SeafAction/Pods-SeafAction.debug.xcconfig"; sourceTree = "<group>"; };
 		0A4380824916A38029556D9A /* Pods-SeafShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafShare.release.xcconfig"; path = "Target Support Files/Pods-SeafShare/Pods-SeafShare.release.xcconfig"; sourceTree = "<group>"; };
 		0BCA81BAEAF55DB331DD049F /* Pods-SeafAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeafAction.release.xcconfig"; path = "Target Support Files/Pods-SeafAction/Pods-SeafAction.release.xcconfig"; sourceTree = "<group>"; };
@@ -1243,6 +1245,7 @@
 		57DB826215A833F900097CEC = {
 			isa = PBXGroup;
 			children = (
+				0757ED3F2E13FDC000F7B728 /* Model.xcdatamodeld */,
 				DD69F4842DF71CA90026DB7D /* SeafSyncDeviceFolderCell.xib */,
 				DD209DA02DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib */,
 				DD209DAF2DF3004C00858A14 /* SeafSyncAlbumCell.xib */,
@@ -1766,6 +1769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0757ED412E13FDC000F7B728 /* Model.xcdatamodeld in Resources */,
 				DD209DA62DF2FFEC00858A14 /* SeafSyncAlbumSelectorViewController.xib in Resources */,
 				DD209DA12DF2FF7F00858A14 /* SeafSyncSettingsViewController.xib in Resources */,
 				DD209DA72DF2FFEC00858A14 /* SeafSyncDirSelectorViewController.xib in Resources */,
@@ -2833,7 +2837,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.99.6;
+				MARKETING_VERSION = 2.99.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
@@ -2871,7 +2875,7 @@
 				INFOPLIST_FILE = "seafile/Supporting Files/seafile-appstore-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.99.6;
+				MARKETING_VERSION = 2.99.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ateneacloud.ios.SeafFileApp;
 				PRODUCT_NAME = "Atenea Cloud";
 				PROVISIONING_PROFILE = "";
@@ -3492,6 +3496,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		0757ED3F2E13FDC000F7B728 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0757ED402E13FDC000F7B728 /* Model.xcdatamodel */,
+			);
+			currentVersion = 0757ED402E13FDC000F7B728 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Pod/Resources/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		58D40A6C1E9AF7A400A68BEF /* seafile.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
